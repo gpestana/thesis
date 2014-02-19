@@ -1,0 +1,42 @@
+## On understanding the Energy Consuption of ARM-based Multicore Servers
+- - -
+
+```sh
+Bogdan Marius Tudor, Yong Meng Teo
+http://dl.acm.org/citation.cfm?id=2465553
+low power ARM, multicore, energy performance, analytical model
+```
+
+
+what
+---
+Proposal of  trace-driven analytical model for understanding the enrtgy performance of server workloads on ARM Cortex-A9, by modeling the degrees of the CPU core, emmoty and U/O resource overlap (?), and estimate the number of cores that and clock frequency that optimizes energy performance without comproziming execution time.
+
+why
+---
+Growing interest to replace traditional servers with low power multicore systems (ARM Cortex-A9, for example), which are usually used in mobile devices (require less I/O and memory resources than servers). Therefore, it is important to assess and study how the lack of resources in this CPUs would be handled in such an environment.
+
+challenges
+---
+- Low system utilization (when servers are in IDLE mode, not being used in a - estimated - low period); 
+- Selecting the optimal number of cores for best relation between performance and system-wide throughtput;
+- Understand the energy impact of the imbalance (lack of distribuition/propotion) between cores, memory and I/O resources;
+- Understand how active number of cores incluence the performance and server efficiency.
+
+contribuitions
+---
+- Hybrid measurement-analytical approach to characterize energy performance of server workloads of state-of-art low power multicores.
+- Analysis of execution performance and energy usage for a series of workloads covering high performance computing, web hosting and finantial applications.
+	- Few types of workloads benefit from executing in large core counts;
+	- Their model can predict cofiguration of the core counts and clock freqs. that reduce energy consuption, without affective execution time.
+	- Server workloads can anchieve better performance on low-power multicores IF performance of memoty and I/O is improved.  (to happen with ARM Cortex-15 and ARM Cortex-A50 families) 
+
+conclusions
+---
+
+
+
+notes/questions
+---
+
+
