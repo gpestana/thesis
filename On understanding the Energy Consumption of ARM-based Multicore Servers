@@ -33,8 +33,11 @@ contribuitions
 
 conclusions
 ---
-
-
+- Workload chracterization shows that:
+	- bursty memory fits a pareto distribution;
+	- non-bursty memory traffic can be modeled using exponential distribution;
+- Low-power multicores may not always deliver the most energy-efficient workloads (due to imbalance between cores, I/O and memory resources)
+- Higher memory and I/O bandwiths can improve both execution time and energy-efficiency.
 
 notes/questions
 ---
