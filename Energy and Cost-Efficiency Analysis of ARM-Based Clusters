@@ -1,0 +1,42 @@
+## Energy and Cost-Efficiency Analysis of ARM-Based Clusters
+- - -
+
+```sh
+Zhonghong Ou, Jukka K. Nurminen, Pan Hui, et al.
+http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=6217412
+energy efficiency, cost efficiency, ARM cluster, scale-out 
+```
+
+what
+---
+Measurements to understand the difference between clusters using wimpy (ARM-processor) and brawny cores (Intel X86 workstation), taking into consideration energy-efficiency and cost metrics. Three applications were used during the measurements: i) Web server throughput; ii) in-memory database; iii) video transcoding.
+The goal is to " compare the use of embeeded processors with the use of genereal-purpose processors and to understand the preformance, energy consuption and cost tradeoffs"
+
+why
+---
+- General-purpose computing domain is transfering from scale-up to scale-out (increase number of cores instead of increasing resources of cores).
+- Improvements in mobile device's cores regarding energy efficiency (due to battery constraints)
+- Answer the question: "Could wimpy mobile processors overtake the general-purpose processors in the future data centers ?"
+
+challenges
+---
+
+contribuitions
+---
+- For the same task, an ARM cluster is 1.2 to 9.5 times more efficient than a Intel X86 processors solution.
+- For advanced power management techiques (like SpeedTest), the linear model does not fit. 
+- SpeedTest can anchieve better performances under lightweight load;
+- ARM cluster based are cheaper than Intel X86 solutions when applications have small computational needs. Computation-intensive applications require more ARM CPUs, making it more expensive (although still better solution);
+
+conclusions
+---
+- Based on done measurements, ARM clusters are in general more energy-efficient than Intel X86 solutions. The difference of energy-efficiency varies from 1.21 to 9.5.
+- Multiple ARM processors are needed to provide comparable performance to an Intel X86 solution.
+- The power consuption model in Intel is not linear but step-like. Due to the dynamic voltage and frequency scalling techniques (like SpeedTest)
+- ARM clusters are advantageous in computationally lightweight applications. 
+
+notes/questions
+---
+- scale-out: scale horizontally by adding more machines to the cluster. 
+- scale-up: scale vertically, by increasing the resources of the existant machines. 
+
