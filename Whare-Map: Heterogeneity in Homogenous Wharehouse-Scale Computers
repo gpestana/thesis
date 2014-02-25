@@ -1,0 +1,42 @@
+## Whare-Map: Heterogeneity in Homogenous Wharehouse-Scale Computers
+- - -
+
+```sh
+Jason Mars, Linfjia Tang, Tobert Hundt
+http://dl.acm.org/citation.cfm?id=2485975
+heterogeneity computing, whare-map, opportunity factor
+```
+
+what
+---
+Warehouse-scale (WSC) computing systems are heterogenous - they are complex systems made by different and replaceable hardware devices. However, all studies and implementations do not take this into consideration, by assuming it as homogenous systems. This paper studies energy and performance advantages of leverage WSC heterogenity. To do so, the study suggests the use of a Whare-map (WSC Heterogenity-aware Mapper) so that the system can learn and adapt itself to the heterogenity environment.  
+
+why
+---
+- In nowadays' WSCs, new generations of hardware are deployed while old generation continue to operate, and hence the overall system is rather heterogeneous than homogeneous.
+- The assumption of WSC as homogeneous systems is not accurate and do not leverage opportunities to create a more efficient system. However, it has been widely applied.
+- To improve the overall performance of WSC, by taking in consideration its heterogeneity.
+- To understand how different hardware changes impact the systems' heterogeneity.
+- Try to map the different jobs running in the system with the different hardware types to indentify opportunities to boost the system's performance.
+
+challenges
+---
+- Adapt GWP (Google Wide Profiler) to provide learning and adaptation capabilities to WSCs.
+- Optimize assignments jobs-hardware.
+
+contribuitions
+---
+- Implementation of web services sensitive to heterogeneity by using metrics such as opportunity factor, microarchitectural configurations and application co-locations to leverage the system's heterogeneity.
+- Whare-Map, which consists in an adaptation of the current WSC architecture in order to intelegently map jobs with heterogeneous hardware types. This way, the heterogeneity of the system can be leveraged in order to boost the system.
+- Overall picture of the heterogeneity of WSC run by Google.
+- Study on understanding how systems become heterogeneous and metrics to understand the degree of homogeneity/heterogeneity of the system.
+- Proved that heterogeneity should not only be considered but also actively fostered since it can boost overall system's performance.
+
+conclusions
+---
+- The results are obvious and show that modeling WSCs as heterogeneous systems boosts the overall WSC's performance.
+- Large-scale servers can anchieve an overall performance boost of roughly 80% when heterogenity is considered.
+
+notes/questions
+---
+
