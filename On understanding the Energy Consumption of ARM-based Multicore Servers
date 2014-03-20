@@ -4,42 +4,42 @@
 ```sh
 Bogdan Marius Tudor, Yong Meng Teo
 http://dl.acm.org/citation.cfm?id=2465553
-low power ARM, multicore, energy performance, analytical model
+low power ARM, multi-core, energy performance, analytical model
 ```
 
 
 what
 ---
-Proposal of  trace-driven analytical model for understanding the enrtgy performance of server workloads on ARM Cortex-A9, by modeling the degrees of the CPU core, emmoty and U/O resource overlap (?), and estimate the number of cores that and clock frequency that optimizes energy performance without comproziming execution time.
+Proposal of  trace-driven analytical model for understanding the energy performance of server workloads on ARM Cortex-A9, by modeling the degrees of the CPU core, memory and I/O resource overlap (?), and estimate the number of cores that and clock frequency that optimizes energy performance without compromising execution time.
 
 why
 ---
-Growing interest to replace traditional servers with low power multicore systems (ARM Cortex-A9, for example), which are usually used in mobile devices (require less I/O and memory resources than servers). Therefore, it is important to assess and study how the lack of resources in this CPUs would be handled in such an environment.
+Growing interest to replace traditional servers with low power multi-core systems (ARM Cortex-A9, for example), which are usually used in mobile devices (require less I/O and memory resources than servers). Therefore, it is important to assess and study how the lack of resources in this CPUs would be handled in such an environment.
 
 challenges
 ---
 - Low system utilization (when servers are in IDLE mode, not being used in a - estimated - low period); 
-- Selecting the optimal number of cores for best relation between performance and system-wide throughtput;
-- Understand the energy impact of the imbalance (lack of distribuition/propotion) between cores, memory and I/O resources;
-- Understand how active number of cores incluence the performance and server efficiency.
+- Selecting the optimal number of cores for best relation between performance and system-wide throughput;
+- Understand the energy impact of the imbalance (lack of distribution/ proportion) between cores, memory and I/O resources;
+- Understand how active number of cores influence the performance and server efficiency.
 
-contribuitions
+contributions
 ---
-- Hybrid measurement-analytical approach to characterize energy performance of server workloads of state-of-art low power multicores.
-- Analysis of execution performance and energy usage for a series of workloads covering high performance computing, web hosting and finantial applications.
+- Hybrid measurement-analytical approach to characterize energy performance of server workloads of state-of-art low power multi-cores.
+- Analysis of execution performance and energy usage for a series of workloads covering high performance computing, web hosting and financial applications.
 	- Few types of workloads benefit from executing in large core counts;
-	- Their model can predict cofiguration of the core counts and clock freqs. that reduce energy consuption, without affective execution time.
-	- Server workloads can anchieve better performance on low-power multicores IF performance of memoty and I/O is improved.  (to happen with ARM Cortex-15 and ARM Cortex-A50 families) 
+	- Their model can predict configuration of the core counts and clock freqs. that reduce energy consumption, without affective execution time.
+	- Server workloads can achieve better performance on low-power multi-cores IF performance of memory and I/O is improved.  (to happen with ARM Cortex-15 and ARM Cortex-A50 families) 
 
 conclusions
 ---
-- Workload chracterization shows that:
-	- bursty memory fits a pareto distribution;
-	- non-bursty memory traffic can be modeled using exponential distribution;
-- Low-power multicores may not always deliver the most energy-efficient workloads (due to imbalance between cores, I/O and memory resources)
-- Higher memory and I/O bandwiths can improve both execution time and energy-efficiency.
+- Workload characterization shows that:
+	- burst memory fits a Pareto distribution;
+	- non-burst memory traffic can be modeled using exponential distribution;
+- Low-power multi-cores may not always deliver the most energy-efficient workloads (due to imbalance between cores, I/O and memory resources)
+- Higher memory and I/O bandwidths can improve both execution time and energy-efficiency.
 
-notes/questions
+notes/ questions
 ---
 
 

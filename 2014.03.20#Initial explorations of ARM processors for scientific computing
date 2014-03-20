@@ -1,0 +1,39 @@
+## Initial explorations of ARM processors for scientific computing
+- - -
+
+```sh
+David Abduravhmanov, Peter Elmer, Giulio Eulisse, Shahzad Muzaffar 
+http://arxiv.org/abs/1311.0269
+HEP computing, energy efficiency, ARM, CMSSW, CERN
+```
+
+
+what
+---
+Initial investigations into the use of ARM processors for scientific computing applications in CERN facilities. The port of the entire CMS stack - CMSSW framework - was successfully done and experiments were run. At the end, they have done comparisons between the energy performance between an ARMv7 development board and the actual Intel x86 software.  
+
+why
+---
+ - With the expected evolution of the CPUs and scientific computing at CERN (and others research centers), it is likely that x86-64 large cores will be replaced by simpler and more thrifty cores.
+ - The emphasis should shift from raw performance to aggregate throughput in scientific computing.
+ - At CERN, further discoveries can be dependent of increasing the dataset sizes and processing capacity, which leads to energy consumption problems.
+
+challenges
+---
+ - Some compatibility issues arouse when porting the CMS software stack to ARM processor, namely Oracle libs for ARMv7 architectures, among others.
+
+contributions
+---
+ - Port of CMS software stack to ARMv7 architecture
+ - Comparison of Events processed by minute by Watt between low power ARM CPU and current x86-54 cores. 
+ - ARM-based low power servers are a possibility to consider in the future to tackle problems such as power efficiency in scientific computing.
+
+conclusions
+---
+ - ARM-based low power servers show great potential for use with typical high energy physics computing applications. 
+
+notes/ questions
+---
+ - Some good information on required hardware for CMSSW in the 4.Test Setup section.
+
+
