@@ -5,7 +5,8 @@
 master's thesis repo
 
 (some) articles digest: https://github.com/gpestana/thesis/articles-digest
-CMSSW instalation guide: https://github.com/gpestana/thesis/cmssw/installationguide
+
+CMSSW instalation guide: https://github.com/gpestana/thesis/cmssw/installation_guide
 
 
-####Gonçalo Pestana
+Gonçalo Pestana	
