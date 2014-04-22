@@ -1,20 +1,21 @@
 ARM headless server (Viridis microserver) confs
 ---
 
-----------
 
 
 **Here I specify and explain how to:**
 
 A. Access to the headless Viridis ARM microserver's shell
-B. Access to internet in the server
+B. Get internet access in the server (via access pc)
 
-    briefing: 
-    i) configure DHCP in access machine;  
-    ii) open and configure serial link with server;  
-    iii) access server via ssh; 
-    iv) configure DNS forwarding;  
-    v) access internet in the serve
+
+> how to summary: 
+
+>    i) configure DHCP in access machine;  
+>    ii) open and configure serial link with server;  
+>    iii) access server via ssh; 
+>    iv) configure DNS forwarding;  
+>    v) access internet in the serve
 
 r.
 
@@ -28,33 +29,33 @@ My configuration:
         192.168.0.x    192.168.0.1  xxx.xxx.xxx.xxx
 
 
-Since the ARM server available in the dpt. is a headless server (ask for login credentials and check more info about the server here: http://wiki.bostonlabs.co.uk/w/index.php/Viridis:Landing_Page), we'll have to access to it via serial-com and manage it with IPMI and/or PXE protocols (check box)
+Since the ARM server available in the dpt. is a headless server (ask for login credentials and check more info about the server [here][1]), we'll have to access to it via serial-com and manage it with IPMI and/or PXE protocols (check box)
 
 
-> -IPMI (Intelligent Platform Management Interface) is a standarized message-based, hardware-level and OS independent computer
+> **IPMI** (Intelligent Platform Management Interface) is a standarized message-based, hardware-level and OS independent computer
 > sys interface. It is used to access and configure computers via serial
 > port and can work in different scenarios, such as i) before OS is
 > installed; ii) when computer is turned off; iii) after OS or sys
-> failure. more
->- PXE (Pre-boot execution environment) is an environment to boot computers using network interface, independently of data storage or
+> failure. [more][2]
+> **PXE** (Pre-boot execution environment) is an environment to boot computers using network interface, independently of data storage or
 > OS. The protocol is a rough mix of DHCP protocol (to locate boot
 > server/s) and TFTP (to download the initial bootstrap program and
-> initial files). more
+> initial files). [more] [3]
 
 Some tools that might be interesting (not mandatory) to install:
 
-> ipmitool - IPMItool provides a simple command-line interface to
+> **ipmitool** IPMItool provides a simple command-line interface to
 > IPMI-enabled devices through an IPMIv1.5 or IPMIv2.0 LAN interface or
 > Linux/Solaris kernel driver.
 > 
-> cxmanage - provides a way for client code to access a Calxeda System
+> **cxmanage** provides a way for client code to access a Calxeda System
 > on a Chip (SoC). The Cxmanage Python API focuses on the connectivity
 > between the issuing client and the Baseboard Management Controller
 > (BMC) by using a Python IPMI interface.
 > 
-> See how to install these tools here
+> See how to install these tools [here][4]
 
-Note: I realized by the end of the deployment that dnsmasq is more powerfull that I thought. It may be possible to use it to configure both DHCP server and DNS forwarding capabilities in the access machine.
+*Note: I realized by the end of the deployment that dnsmasq is more powerfull that I thought. It may be possible to use it to configure both DHCP server and DNS forwarding capabilities in the access machine.*
 
 ###A. Access to ARM server's shell
 
@@ -84,7 +85,7 @@ edit /ect/network/interfaces:
 > get apt-get install isc-dhcp-server
 
 3) configure DHCP server
-edit /etc/dhct/dhctp.conf (as explained here: http://wiki.bostonlabs.co.uk/w/index.php/External:Setup_a_DHCP_server_for_the_nodes)
+edit /etc/dhct/dhctp.conf (as explained [here][5])
 
     ddns-update-style interim;
      
@@ -158,8 +159,14 @@ This way, the laptop is connected to the internet via wlan and to the server via
 
 > dig www.google.com (ex.)
 
+[1]: http://wiki.bostonlabs.co.uk/w/index.php/Viridis:Landing_Page
+[2]: http://en.wikipedia.org/wiki/Ipmi
+[3]: http://en.wikipedia.org/wiki/Preboot_Execution_Environment
+[4]: http://wiki.bostonlabs.co.uk/w/index.php/Calxeda:Setup_ipmitool_%26_cxmanage
+[5]: http://wiki.bostonlabs.co.uk/w/index.php/External:Setup_a_DHCP_server_for_the_nodes
+ 
 ---
 
-Any question/comment/modification contact me (www.goncalopestana.co for my contact info) of make a pull request.
+Any question/comment/modification contact me - check my contacts @ www.goncalopestana.co - or make a pull request.
 
 **Gonçalo Pestana** 
