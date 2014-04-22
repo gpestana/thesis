@@ -35,6 +35,7 @@ Since the ARM server available in the dpt. is a headless server (ask for login c
 > port and can work in different scenarios, such as i) before OS is
 > installed; ii) when computer is turned off; iii) after OS or sys
 > failure. [more][2]
+
 > **PXE** (Pre-boot execution environment) is an environment to boot computers using network interface, independently of data storage or
 > OS. The protocol is a rough mix of DHCP protocol (to locate boot
 > server/s) and TFTP (to download the initial bootstrap program and
