@@ -9,15 +9,13 @@ A. Access to the headless Viridis ARM microserver's shell
 B. Get internet access in the server (via access pc)
 
 
-> how to summary: 
-
+> content summary: 
+>
 >    i) configure DHCP in access machine;  
 >    ii) open and configure serial link with server;  
 >    iii) access server via ssh; 
 >    iv) configure DNS forwarding;  
->    v) access internet in the serve
-
-r.
+>    v) access internet in the server.
 
 
 My configuration:
