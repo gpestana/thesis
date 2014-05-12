@@ -1,0 +1,9 @@
+SITECONF/
+├── local -> T1_CH_CERN
+└── T1_CH_CERN
+    ├── JobConfig
+    │   └── site-local-config.xml
+    └── PhEDEx
+        └── storage.xml
+
+4 directories, 2 files

@@ -1,0 +1,10 @@
+globaltag = PRE_MC62_V8::All
+271 DQMStore::DQMStore 
+----- Begin Fatal Exception 04-Nov-2014 13:31:48 EET-----------------------
+An exception of category 'Incomplete configuration' occurred while
+   [0] Constructing the EventProcessor
+   [1] Constructing ESSource: class=PoolDBESSource label='GlobalTag'
+Exception Message:
+Valid site-local-config not found at /SITECONF/local/JobConfig/site-local-config.xml
+----- End Fatal Exception -------------------------------------------------
+

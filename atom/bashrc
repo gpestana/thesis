@@ -1,0 +1,32 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+
+
+#CMSSW
+export CMSSW_SEARCH_PATH=/workbench/cmssw/slc6_amd64_gcc472/cms/cmssw/CMSSW_6_2_0/src
+export CMSSW_BASE=/workbench/cmssw
+export CMSSW_DATA_PATH=/workbench/cmssw/slc6_amd64_gcc472/cms/cmssw/CMSSW_6_2_0/src
+export CMSSW_VERSION=CMSSW_6_2_0
+
+#SCRAM:
+export SCRAM_ARCH=slc6_amd64_gcc472
+export PATH=$PATH:/workbench/cmssw/slc6_amd64_gcc472/lcg/SCRAMV1/V2_2_5_pre3/bin/
+
+#external GLIBCC needed
+export LD_LIBRARY_PATH=/workbench/cmssw/slc6_amd64_gcc472/external/gcc/4.7.2-cms/lib64:/workbench/cmssw/workbench/cmssw/slc6_amd64_gcc472/cms/cmssw/CMSSW_6_2_0/lib/slc6_amd64_gcc472:/workbench/cmssw/workbench/cmssw/slc6_amd64_gcc472/cms/cmssw/CMSSW_6_2_0/external/slc6_amd64_gcc472/lib
+
+#External Python
+#export PYTHONHOME=/workbench/cmssw/slc6_amd64_gcc472/external/python/2.7.3-cms5/lib/python2.7
+export PYTHONPATH=/workbench/cmssw/slc6_amd64_gcc472/cms/cmssw/CMSSW_6_2_0/python
+
+export PATH=$PATH:/workbench/cmssw/slc6_amd64_gcc472/cms/cmssw/CMSSW_6_2_0/bin/slc6_amd64_gcc472
+
+
+#others
+export VO_CMS_SW_DIR=/workbench/cmssw/
