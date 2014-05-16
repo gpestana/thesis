@@ -8,7 +8,7 @@
 #input:
 #	$1 config file name
 #	$2 name for folder (optional)
-# 
+#	$3 time for benchmarking 
 
 dir="$(date +'%d.%H%M')"'_'$2
 
