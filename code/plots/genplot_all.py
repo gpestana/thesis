@@ -6,31 +6,34 @@ import glob
 
 VOLTS = 12
 inputs = []
+name = sys.argv[1]
 
-for fileName in glob.glob('*.out'):
-	input = {}
-	data = np.genfromtxt(fileName, delimiter="\n", dtype=float)
-	input['name'] = fileName
-	input['data'] = data 
-	inputs.append(input)
-	print 'added '+fileName
+def gen(name):
 
-print 'gerenating plot..'
+	for fileName in glob.glob('*.out'):
+		input = {}
+		data = np.genfromtxt(fileName, delimiter="\n", dtype=float)
+		input['name'] = fileName
+		input['data'] = data 
+		inputs.append(input)
+		print 'added '+fileName
 
-fontP = FontProperties()
-fontP.set_size('small')
+	print 'gerenating plot..'
 
-labels=[]
+	fontP = FontProperties()
+	fontP.set_size('small')
 
-for i, input in enumerate(inputs):
-	d = input['data']
-	x = np.array(range(len(d)))
-	plot = plt.plot(x, d*VOLTS, 'o-')
-	labels.append(plot)
+	labels=[]
 
-legend(labels, ["1", "2"])
+	for i, input in enumerate(inputs):
+		d = input['data']
+		x = np.array(range(len(d)))
+		plot, = plt.plot(x, d*VOLTS, 'o-', label=input['name'])
+		labels.append(plot)
 
-plt.ylabel('Watts')
-plt.xlabel('Samplings')
-plt.show('test'+'.png')
+	plt.legend(loc=2)
+	plt.title(name)
+	plt.ylabel('Watts')
+	plt.xlabel('Samplings')
+	plt.show('test'+'.png')
 

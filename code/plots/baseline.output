@@ -1,0 +1,3460 @@
+11:02:58
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.500 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.100 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.400 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.700 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.300 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.100 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+--
+Temp 0           | 38 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 38 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+11:03:06
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.500 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.100 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.400 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.700 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.300 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.200 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+--
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+11:03:16
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.500 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.100 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.400 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.700 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.300 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.200 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+--
+Temp 0           | 38 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 39 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+11:03:28
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.500 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.100 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.400 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.700 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.300 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.100 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+--
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+11:03:39
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.500 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.100 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.400 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.700 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.300 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.200 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+--
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 38 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+11:03:49
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.500 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.100 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.400 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.700 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.300 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.100 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+--
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 38 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+11:04:01
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.500 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.100 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.400 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.700 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.300 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.200 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+--
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+11:04:13
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.500 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.100 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.400 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.700 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.300 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.200 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+--
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.53 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.53 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.53 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.53 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.53 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.53 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.53 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.53 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+11:04:25
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.500 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.100 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.400 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.700 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.300 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.200 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+--
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 40 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 39 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.90 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+11:04:36
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.500 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.100 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.400 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.700 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 3.300 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+Locating sensor record...
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.200 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+--
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 40 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns
+Temp 0           | 39 degrees C      | ok
+Temp 1           | 38 degrees C      | ok
+Temp 2           | 41 degrees C      | ok
+Temp 3           | 39 degrees C      | ok
+MP Temp 0        | 38 degrees C      | ok
+TOP Temp 0       | 39 degrees C      | ok
+TOP Temp 1       | 40 degrees C      | ok
+TOP Temp 2       | 39 degrees C      | ok
+V18 Voltage      | 1.80 Volts        | ok
+V09 Voltage      | 0.90 Volts        | ok
+VCORE Voltage    | 0.90 Volts        | ok
+DRAM VDD Voltage | 1.50 Volts        | ok
+Node Current     | 0.91 Amps         | ok
+Node Power       | 4.50 Watts        | ok
+Server Node      | Phy FRU @00h 07.1 | ok
+CX ECME          | Dynamic MC @ 20h  | ok
+OS Stop Reason   | Not Readable      | ns
+BMC Status       | Not Readable      | ns
+DDR Mem Err      | Not Readable      | ns
+L2 Cache Err     | Not Readable      | ns
+CPU1 Err         | Not Readable      | ns
+CPU2 Err         | Not Readable      | ns
+CPU3 Err         | Not Readable      | ns
+CPU4 Err         | Not Readable      | ns
+CPU Core         | Not Readable      | ns
+OS Boot Reason   | Not Readable      | ns
+OS Watchdog      | Not Readable      | ns
+ECME Watchdog    | Not Readable      | ns
+ECME Boot        | Not Readable      | ns
+ECME Firmware    | Not Readable      | ns

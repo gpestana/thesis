@@ -1,21 +1,30 @@
-import os, sys
+import os, sys, re
+import genplot_all as plot
 
 matchStr = 'Sensor Reading        : '
 
-script_dir = os.path.dirname(__file__)
-filePath = os.path.join(script_dir, sys.argv[1])
 
-#querygen.py inputName nameExp
-nameExp = sys.argv[2]
+#GEN:  querygen.py gen rawDataFileName
+#PLOT: querygen.py plot name
 
 allMatches = []
 
-f = open(filePath,'r')
-lines = f.readlines()
-f.close()
+#generate data
+if(sys.argv[1] == 'gen'):
+	script_dir = os.path.dirname(__file__)
+	filePath = os.path.join(script_dir, sys.argv[2])
+	f = open(filePath,'r')
+	lines = f.readlines()
+	f.close()
 
-for line in lines:
-    if matchStr in line:
-        allMatches.append(line)
+	for line in lines:
+	    if matchStr in line:
+	    	res = re.findall(r"[-+]?\d*\.\d+|\d+", line)
+	        allMatches.append(res[0])
 
-print allMatches[0::4]
+	for node in allMatches[0::8]:
+		print node
+
+#plotting
+if (sys.argv[1] == 'plot'):
+	plot.gen(sys.argv[2])
