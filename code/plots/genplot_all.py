@@ -3,37 +3,52 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.font_manager import FontProperties
 import glob
+import re
+from scipy import integrate
 
 VOLTS = 12
 inputs = []
-name = sys.argv[1]
+name = sys.argv[2]
 
-def gen(name):
+if name == 'arm':
+	mult = 1
+	baseline = 49.1
+elif name == 'atom':
+	mult = 2
+	baseline = 11.4
+elif name == 'quad':
+	mult = 2
+	baseline = 6.8
+else:
+	print 'invalid arch'
+	exit(0)
 
-	for fileName in glob.glob('*.out'):
-		input = {}
-		data = np.genfromtxt(fileName, delimiter="\n", dtype=float)
-		input['name'] = fileName
-		input['data'] = data 
-		inputs.append(input)
-		print 'added '+fileName
+#parsing data
+for fileName in glob.glob(sys.argv[1]+'//*'):
+	input = {}
+	data = np.genfromtxt(fileName, delimiter="\n", dtype=float)
+	input['name'] = fileName.split('/')[-1]
+	input['data'] = data 
+	inputs.append(input)
+	print 'added '+fileName
 
-	print 'gerenating plot..'
+fontP = FontProperties()
+fontP.set_size('small')
 
-	fontP = FontProperties()
-	fontP.set_size('small')
+labels=[]
 
-	labels=[]
+for i, input in enumerate(inputs):
+	d = input['data']
+	x = np.array(range(len(d)))
+	v = d*VOLTS*mult-baseline
+	input['name'] = input['name']+' '+str(integrate.simps(v))
+	plot, = plt.plot(x, v, '-', label=input['name'])
+	
+	labels.append(plot)
 
-	for i, input in enumerate(inputs):
-		d = input['data']
-		x = np.array(range(len(d)))
-		plot, = plt.plot(x, d*VOLTS, 'o-', label=input['name'])
-		labels.append(plot)
-
-	plt.legend(loc=2)
-	plt.title(name)
-	plt.ylabel('Watts')
-	plt.xlabel('Samplings')
-	plt.show('test'+'.png')
+plt.legend(loc=4)
+plt.title(name)
+plt.ylabel('Watts')
+plt.xlabel('Samplings')
+plt.show('test'+'.png')
 
