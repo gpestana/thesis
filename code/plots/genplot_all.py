@@ -6,22 +6,10 @@ import glob
 import re
 from scipy import integrate
 
+labels=[]
 VOLTS = 12
 inputs = []
 name = sys.argv[2]
-
-if name == 'arm':
-	mult = 1
-	baseline = 49.1
-elif name == 'atom':
-	mult = 2
-	baseline = 11.4
-elif name == 'quad':
-	mult = 2
-	baseline = 6.8
-else:
-	print 'invalid arch'
-	exit(0)
 
 #parsing data
 for fileName in glob.glob(sys.argv[1]+'//*'):
@@ -32,23 +20,57 @@ for fileName in glob.glob(sys.argv[1]+'//*'):
 	inputs.append(input)
 	print 'added '+fileName
 
-fontP = FontProperties()
-fontP.set_size('small')
-
-labels=[]
-
+#generate plot
 for i, input in enumerate(inputs):
 	d = input['data']
-	x = np.array(range(len(d)))
-	v = d*VOLTS*mult-baseline
-	input['name'] = input['name']+' '+str(integrate.simps(v))
-	plot, = plt.plot(x, v, '-', label=input['name'])
 	
+	#remove!
+	x = np.array(range(len(d)))
+	
+	#ATOM
+	if name == 'atom':
+		mult = 2
+		baseline = 11.4 if sys.argv[3]=='-cmssw' else 0
+		x = np.array(range(len(d)))*45/60
+		plt.xlabel('Time (m)')
+		if input['name'] == 'atom8cpu.out':
+			#59 samplings, each 90s
+			x = np.array(range(len(d)))*90/60
+
+	#QUAD
+	if name == 'quad':
+		mult = 2
+		baseline = 6.8 if sys.argv[3]=='-cmssw' else 0
+		x = np.array(range(len(d)))*10
+		plt.xlabel('Time (s)')
+		if input['name'] == 'quad8cpu.out':
+			#27 samplings, each 30s
+			x = np.array(range(len(d)))*30
+		
+
+	#ARM
+	if name == 'arm':
+		mult = 1
+		baseline = 49.1 if sys.argv[3]=='-cmssw' else 0
+		x = np.array(range(len(d)))*5
+		plt.xlabel('Time (m)')
+		if input['name'] == 'arm1cpu':
+			#1cpu- 10 samplings, each 10m
+			x = np.array(range(len(d)))*10
+
+
+	v = d*VOLTS*mult-baseline
+	plot, = plt.plot(x, v, '-', label=input['name'])
 	labels.append(plot)
 
+	#integration
+	print integrate.simps(d)
+
+
+fontP = FontProperties()
+fontP.set_size('small')
 plt.legend(loc=4)
 plt.title(name)
 plt.ylabel('Watts')
-plt.xlabel('Samplings')
 plt.show('test'+'.png')
 
