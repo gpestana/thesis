@@ -28,8 +28,11 @@ from matplotlib.font_manager import FontProperties
 
 # usage: python memory.py file.out 
 
+kb_to_GB = 1048576
+kb_to_MB = 1024
 data = {}
 file = open(sys.argv[1], "r")
+
 
 # data structure
 # procNr -> VIRT, RES, SHR, %CPU, %MEM
@@ -56,16 +59,21 @@ CPU = [0] * size
 MEM = [0] * size
 
 for dkey in data.keys():
-	for i, v in enumerate(data[dkey]['VIRT']):
-		VIRT[i] = VIRT[i] + float(v.replace('m','000'))
-	for i, v in enumerate(data[dkey]['RES']):
-		RES[i] = RES[i] + float(v.replace('m','000'))
-	for i, v in enumerate(data[dkey]['SHR']):
-		SHR[i] = SHR[i] + float(v.replace('m','000')) 
-	for i, v in enumerate(data[dkey]['CPU']):
-		CPU[i] = CPU[i] + float(v.replace('m','000')) 
-	for i, v in enumerate(data[dkey]['MEM']):
-		MEM[i] = MEM[i] + float(v.replace('m','000')) 
+      for i, v in enumerate(data[dkey]['VIRT']):
+            if(i<len(VIRT)):
+                  VIRT[i] = VIRT[i] + float(v.replace('m','000'))/kb_to_GB
+      for i, v in enumerate(data[dkey]['RES']):
+            if(i<len(RES)):
+                  RES[i] = RES[i] + float(v.replace('m','000'))/kb_to_GB
+      for i, v in enumerate(data[dkey]['SHR']):
+            if(i<len(SHR)):
+                  SHR[i] = SHR[i] + float(v.replace('m','000'))/kb_to_GB
+      for i, v in enumerate(data[dkey]['CPU']):
+            if(i<len(CPU)):
+                  CPU[i] = CPU[i] + float(v.replace('m','000')) 
+      for i, v in enumerate(data[dkey]['MEM']):
+            if(i<len(MEM)):
+                  MEM[i] = MEM[i] + float(v.replace('m','000')) 
 
 #plot VIRT, RES, SHR & CPU, MEM
 fontP = FontProperties()
@@ -77,17 +85,19 @@ plot, = plt.plot(x, VIRT, '-', label='virtual mem')
 plot, = plt.plot(x, RES, '-', label='non-swapped mem (code + data)')
 plot, = plt.plot(x, SHR, '-', label='shared mem')
 labels.append(plot)
-plt.legend(loc=4)
-#plt.title()
-plt.ylabel('MB')
+plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
+       ncol=5, mode="expand", borderaxespad=0.)
+#plt.title(sys.argv[1])
+plt.ylabel('GB')
 plt.xlabel('Samplings')
 plt.show()
 
-
 plot1, = plt.plot(x, MEM, '-', label='%mem')
-plot2, = plt.plot(x, CPU, '-', label='%cpu')			
+plot2, = plt.plot(x, CPU, '-', label='%cpu')                
+#plt.xticks(np.arange(min(x), max(x)+1, 25.0))
 labels.append(plot)
-plt.legend(loc=4)
+plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
+       ncol=2, mode="expand", borderaxespad=0.)
 #plt.title(name)
 plt.ylabel('%')
 plt.xlabel('Samplings')
