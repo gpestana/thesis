@@ -9,7 +9,7 @@ VOLTS = 12
 labels = ['1 process', '2 processes', '3 processes', '4 processes', '5 processes', '8 processes']
 
 
-#parsing data
+#parsing data (has to be copied and added to dictionaries above by hand)
 '''
 for fileName in glob.glob(sys.argv[1]+'//*'):
 	data = np.genfromtxt(fileName, delimiter="\n", dtype=float)
@@ -37,6 +37,11 @@ arm = {
 	'time': [575, 593, 595, 607, 764, 1253]
 	}
 
+power = {
+	'atom': [],
+	'quad': [],
+	'arm': []
+}
 
 #step = time/(len(power)-1)
 #x = np.arange(start=0, stop=time+1, step=step)
@@ -51,7 +56,11 @@ for i, time in enumerate(atom['time']):
 	y = [p * VOLTS-atom['baseline'] for p in atom['power'][i]]
 
 	totalW = np.trapz(y, x=x)
+	wattSecond = totalW/atom['time'][i]
 	print '[atom] '+labels[i]+': '+str(totalW)+' total Watts consumed'
+	print 'Watts per second: '+str(wattSecond)
+	power['atom'].append(wattSecond)
+
 	plot, = plt.plot(x, y, '-', label=labels[i])
 
 
@@ -73,7 +82,10 @@ for i, time in enumerate(quad['time']):
 	y = [p * VOLTS-quad['baseline'] for p in quad['power'][i]]
 
 	totalW = np.trapz(y, x=x)
+	wattSecond =  totalW/quad['time'][i]
 	print '[quad] '+labels[i]+': '+str(totalW)+' total Watts consumed'
+	print 'Watts per second: '+str(totalW/quad['time'][i])
+	power['quad'].append(wattSecond)
 
 	plot, = plt.plot(x, y, '-', label=labels[i])
 
@@ -92,7 +104,11 @@ for i, time in enumerate(arm['time']):
 	y = [p * VOLTS-arm['baseline'] for p in arm['power'][i]]
 	
 	totalW = np.trapz(y, x=x)
+	wattSecond =  totalW/arm['time'][i]
 	print '[ARM] '+labels[i]+': '+str(totalW)+' total Watts consumed'
+	print 'Watts per second: '+str(totalW/arm['time'][i])
+	power['arm'].append(wattSecond)
+
 
 	plot, = plt.plot(x, y, '-', label=labels[i])
 
@@ -100,4 +116,18 @@ plt.legend(loc=4)
 plt.title('ARM - Power consumption measured during Event\'s processing (clamp)')
 plt.xlabel('Time (s)')
 plt.ylabel('Power CMSSW consumed (W)')
+plt.show()
+
+
+#event second watt
+plt.scatter([1,2,3,4], power['atom'],color='blue',edgecolor='none', s=75, label = 'atom')
+plt.scatter([1,2,3,4,5,6], power['quad'],color='red',edgecolor='none',s=75, label = 'quad')
+plt.scatter([1,2,3,4,5,6], power['arm'],color='green',edgecolor='none',s=75, label = 'ARM')
+
+plt.xticks(range(7),(0,1,2,3,4,5,8))
+plt.yticks(range(1, 51, 5))
+plt.legend(loc=2)
+plt.title('Watts per second for each arch & nr processes during Event\'s processing')
+plt.xlabel('Nr processes')
+plt.ylabel('Power per second (W/s)')
 plt.show()

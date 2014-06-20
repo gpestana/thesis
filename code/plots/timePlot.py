@@ -37,10 +37,10 @@ if sys.argv[1] == '-arch':
 
 	plt.xticks(range(6),(1,2,3,4,5,8))
 	plt.yticks(range(0, 130, 10))
-	plt.ylabel('time(m)')
-	plt.xlabel('nr cpus')
+	plt.ylabel('Time(m)')
+	plt.xlabel('Nr cpus')
 
-	plt.title('time x nr_processes x arch')
+	plt.title('Time x Nr_processes x Arch')
 
 	plt.show()
 	
