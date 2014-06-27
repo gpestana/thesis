@@ -27,38 +27,37 @@
 #define MSR_RAPL_POWER_UNIT			0x606
 
 /* Package RAPL Domain */
-#define MSR_PKG_RAPL_POWER_LIMIT	0x610
-#define MSR_PKG_ENERGY_STATUS		0x611
-#define MSR_PKG_PERF_STATUS			0x613
-#define MSR_PKG_POWER_INFO			0x614
+#define MSR_PKG_RAPL_POWER_LIMIT        0x610
+#define MSR_PKG_ENERGY_STATUS           0x611
+#define MSR_PKG_PERF_STATUS             0x613
+#define MSR_PKG_POWER_INFO              0x614
 
-/* Package RAPL Domain */
-#define MSR_PKG_RAPL_POWER_LIMIT  	0x610
-#define MSR_PKG_ENERGY_STATUS   	0x611
-#define MSR_PKG_PERF_STATUS   		0x613
-#define MSR_PKG_POWER_INFO    		0x614
+/* PP0 RAPL Domain */
+#define MSR_PP0_POWER_LIMIT             0x638
+#define MSR_PP0_ENERGY_STATUS           0x639
+#define MSR_PP0_POLICY                  0x63A
+#define MSR_PP0_PERF_STATUS             0x63B
 
 /* PP1 RAPL Domain, may reflect to uncore devices */
-#define MSR_PP1_POWER_LIMIT			0x640
-#define MSR_PP1_ENERGY_STATUS		0x641
-#define MSR_PP1_POLICY				0x642
+#define MSR_PP1_POWER_LIMIT             0x640
+#define MSR_PP1_ENERGY_STATUS           0x641
+#define MSR_PP1_POLICY                  0x642
 
 /* DRAM RAPL Domain */
-#define MSR_DRAM_POWER_LIMIT		0x618
-#define MSR_DRAM_ENERGY_STATUS		0x619
-#define MSR_DRAM_PERF_STATUS		0x61B
-#define MSR_DRAM_POWER_INFO			0x61C
+#define MSR_DRAM_POWER_LIMIT            0x618
+#define MSR_DRAM_ENERGY_STATUS          0x619
+#define MSR_DRAM_PERF_STATUS            0x61B
+#define MSR_DRAM_POWER_INFO             0x61C
 
 /* RAPL UNIT BITMASK */
-#define POWER_UNIT_OFFSET			0
-#define POWER_UNIT_MASK				0x0F
+#define POWER_UNIT_OFFSET       0
+#define POWER_UNIT_MASK         0x0F
 
-#define ENERGY_UNIT_OFFSET			0x08
-#define ENERGY_UNIT_MASK			0x1F00
+#define ENERGY_UNIT_OFFSET      0x08
+#define ENERGY_UNIT_MASK        0x1F00
 
-#define TIME_UNIT_OFFSET			0x10
-#define TIME_UNIT_MASK				0xF000
-
+#define TIME_UNIT_OFFSET        0x10
+#define TIME_UNIT_MASK          0xF000
 
 int open_msr(int core) {
 	char msr_filename[BUFSIZ];
@@ -83,7 +82,7 @@ int open_msr(int core) {
 
 long long read_msr(int fd, int which) {
 	uint64_t data;
-	if (pread(fd, &data, sizeof data, which) != data) {
+	if (pread(fd, &data, sizeof data, which) != sizeof data) {
 		perror("rmdsr:pread");
 		exit(127);
 	}
@@ -141,7 +140,7 @@ int detect_cpu(void) {
 			printf("Found Sandybridge CPU\n");
 			break;
 		case CPU_SANDYBRIDGE_EP:
-			printf("Found Sandybridge-EP CPU\n");
+			//printf("CPU_SANDYBRIDGE_EP\n");
 			break;
 		case CPU_IVYBRIDGE:
 			printf("Found Ivybridge CPU\n");
@@ -162,43 +161,104 @@ int detect_cpu(void) {
 
 
 
-int main(int argc, char **argv) {
- 
-  int fd;
-  long long result;
-  double power_units,energy_units,time_units;
-  double package_before,package_after;
-  double pp0_before,pp0_after;
-  double pp1_before=0.0,pp1_after;
-  double dram_before=0.0,dram_after;
-  double thermal_spec_power,minimum_power,maximum_power,time_window;
-  int cpu_model;
-  int c;
+int rapl_measurements(int interval_s) {
 
-  //should select all cores
-  int core = 0;
- 
-  opterr=0;
+	int fd;
+	long long result;
+	double power_units,energy_units,time_units;
+	int cpu_model;
 
-  cpu_model=detect_cpu();
-  if (cpu_model<0) {
-	printf("Unsupported CPU type\n");
-	return -1;
-  }
+	double pck_before[36];
+	double pck_after[36];
+	double pp0_before[36];
+	double pp0_after[36];
+	double dram_before[36];
+	double dram_after[36];
+ 	opterr=0;
 
-    printf("core: #%d\n",core);
-    fd = open_msr(core);
+	cpu_model=detect_cpu();
+	if (cpu_model<0) {
+		printf("Unsupported CPU type\n");
+		return -1;
+	}
 
-    result = read_msr(fd, MSR_RAPL_POWER_UNIT);
+	/* calculate units used (same for all cpus) */
+	fd = open_msr(0);
+	result = read_msr(fd, MSR_RAPL_POWER_UNIT);
+	power_units=pow(0.5,(double)(result&0xf));
+	energy_units=pow(0.5,(double)((result>>8)&0x1f));
+	time_units=pow(0.5,(double)((result>>16)&0xf));
+	close(fd);
 
-  power_units=pow(0.5,(double)(result&0xf));
-  energy_units=pow(0.5,(double)((result>>8)&0x1f));
-  time_units=pow(0.5,(double)((result>>16)&0xf));
+	int core;
+	int  NR_CORES = 32;
+	
+	for(core = 0; core<NR_CORES; core++) {
+		fd = open_msr(core);
+		pck_before[core] = read_msr(fd,MSR_PKG_ENERGY_STATUS);
+		pp0_before[core] = read_msr(fd, MSR_PP0_ENERGY_STATUS);
+		dram_before[core] = read_msr(fd, MSR_DRAM_ENERGY_STATUS);
+		close(fd);	
+	}
 
-  printf("Power units = %.3fW\n",power_units);
-  printf("Energy units = %.8fJ\n",energy_units);
-  printf("Time units = %.8fs\n",time_units);
-  printf("\n");
+	
+	//timing controller
+	usleep(interval_s);
+	//sleep(interval_s);
+
+	for(core = 0; core<NR_CORES; core++) {	
+		fd = open_msr(core);
+		pck_after[core] = read_msr(fd,MSR_PKG_ENERGY_STATUS);
+                pp0_after[core] = read_msr(fd, MSR_PP0_ENERGY_STATUS);
+                dram_after[core] = read_msr(fd, MSR_DRAM_ENERGY_STATUS);
+		close(fd);
+	}
+		
+	for(core = 0; core<NR_CORES; core++) {
+		printf("#%d %.12fJ, %.12fJ, %.12fJ\n",core, (double)(pck_after[core]-pck_before[core])*energy_units, (double)(pp0_after[core]-pp0_before[core])*energy_units, (double)(dram_after[core]-dram_before[core])*energy_units);
+	}
 
 	return 0;
 }
+
+/*
+int package_id(void) {
+        char package_dsrc_filename[BUFSIZ];
+        int core, fd; 
+	int NR_CORES = 31; //+1
+    
+        for(core = 0; core < NR_CORES; core++) {
+                int pckg = core%8;
+
+                sprinf(package_dsrc_filename, "/sys/devices/system/cpu/cpu%d/topology/physical_package_id",pckg);
+                fd = open(package_dsrc_filename, O_RDONLY);
+                if(fd < 0) {
+                        pritnf("error opening package descriptor");
+                        exit(-1);
+                }   
+                printf("package opened!");
+        }   
+        close(fd);
+	return 0;
+} 
+*/
+
+
+
+int main(int argc, char **argv) {
+	int interval_1s = 1000000;
+	int interval_10ms = 10000;
+	int interval_1ms = 1000;
+	
+	int i = 0;
+
+	//package_id();
+	
+	while(1) {
+		printf("%d\n",i++);	
+		rapl_measurements(interval_1s);
+	}
+
+	return 0;
+}	
+	
