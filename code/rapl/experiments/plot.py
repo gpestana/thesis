@@ -1,39 +1,32 @@
 import sys
 import utils
 import matplotlib.pyplot as plt
+from pylab import *
 
 filePath = sys.argv[1]
-
 data = utils.parse(filePath)
-labels = []
-title = ''
 
-#options
-PCK_NR = int(float(sys.argv[2])) 
-PCK = 1
-PP0 = 1
-DRAM = 1 
+YLIM = 45
 
 for core in range(0, 32):
-    if(core/8 == PCK_NR):
-        if(PCK):
-            x = range(0, len(data[core]['pck']))
-            plot, = plt.plot(x, data[core]['pck'], color = 'blue')
+    PCK_NR = core/8
+    x = range(0, len(data[core]['pck']))
     
-        if(PP0):
-            x = range(0, len(data[core]['pp0']))
-            plot, = plt.plot(x, data[core]['pp0'], color='green')
+    p = plt.subplot(2,2, PCK_NR+1)
+    
+    plt.title('socket #'+str(PCK_NR))
+    pck_plot, = plt.plot(x, data[core]['pck'], color = 'blue')
+    pp0_plot, = plt.plot(x, data[core]['pp0'], color='green')
+    dram_plot, = plt.plot(x, data[core]['dram'], color='red')
+    
+    p.set_ylim([0, YLIM])
+    
 
-        if(DRAM):
-            x = range(0, len(data[core]['dram']))
-            plot, = plt.plot(x, data[core]['dram'], color='red')
-            plt.title('dram')
 
-#labels.append(plot)
-#plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
-#       ncol=5, mode="expand", borderaxespad=0.)
+plt.figlegend((pck_plot, pp0_plot, dram_plot), ('package','power plan0','dram'), loc = 'upper center', ncol=5, labelspacing=0. )
+plt.xlabel("time (s)")
+plt.ylabel('power (w)')
 
-plt.title('package nr #'+str(PCK_NR)+' - [blue]pck_'+str(PCK)+' [green]pp0_'+str(PP0)+' [red]dram_'+str(DRAM))
-plt.ylabel('E(J) and P(w)')
-plt.xlabel('T(s)')
+fig = gcf()
+fig.suptitle("note: all processores are represented. though, they overlap per package", fontsize=14, y=.05)
 plt.show()
