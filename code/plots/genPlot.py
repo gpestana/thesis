@@ -1,10 +1,10 @@
-import sys
 import glob
 import matplotlib.pyplot as plt
 import numpy as np
 
 import math
 
+NR_EVENTS = 10
 VOLTS = 12
 labels = ['1 process', '2 processes', '3 processes', '4 processes', '5 processes', '8 processes']
 
@@ -54,14 +54,9 @@ for i, time in enumerate(atom['time']):
 	step = float(atom['time'][i])/(len(atom['power'][i])-1)
 	x = np.arange(start=0, stop=atom['time'][i]+1, step=step)
 	y = [p * VOLTS-atom['baseline'] for p in atom['power'][i]]
-
-	totalW = np.trapz(y, x=x)
-	#wattSecond = totalW/atom['time'][i]
-	print '[atom] '+labels[i]+': '+str(totalW)+' total Watts consumed'
-	#print '[atom] '+labels[i]+': '+str(atom['time'][i])+' s'
-	#print 'Watts per second: '+str(wattSecond)
-	power['atom'].append(totalW)
-
+	avgW = np.mean(y)
+	perf = NR_EVENTS/float(time)
+	power['atom'].append(avgW/perf)
 	plot, = plt.plot(x, y, '-', label=labels[i])
 
 
@@ -81,15 +76,9 @@ for i, time in enumerate(quad['time']):
 	step = float(quad['time'][i])/(len(quad['power'][i])-1)
 	x = np.arange(start=0, stop=quad['time'][i]+1, step=step)
 	y = [p * VOLTS-quad['baseline'] for p in quad['power'][i]]
-
-	totalW = np.trapz(y, x=x)
-	#wattSecond =  totalW/quad['time'][i]
-	print '[quad] '+labels[i]+': '+str(totalW)+' total Watts consumed'
-	#print '[quad] '+labels[i]+': '+str(quad['time'][i])+' s'
-	#print 'Watts per second: '+str(totalW/quad['time'][i])
-	
-	power['quad'].append(totalW)
-
+	avgW = np.mean(y)
+	perf = NR_EVENTS/float(time)
+	power['quad'].append(avgW/perf)
 	plot, = plt.plot(x, y, '-', label=labels[i])
 
 plt.legend(loc=4)
@@ -105,16 +94,9 @@ for i, time in enumerate(arm['time']):
 	step = float(arm['time'][i])/(len(arm['power'][i])-1)
 	x = np.arange(start=0, stop=arm['time'][i]+1, step=step)
 	y = [p * VOLTS-arm['baseline'] for p in arm['power'][i]]
-	
-	totalW = np.trapz(y, x=x)
-	#wattSecond =  totalW/arm['time'][i]
-	print '[ARM] '+labels[i]+': '+str(totalW)+' total Watts consumed'
-	#print '[ARM] '+labels[i]+': '+str(arm['time'][i])+' s'
-	#print 'Watts per second: '+str(totalW/arm['time'][i])
-	
-	power['arm'].append(totalW)
-
-
+	avgW = np.mean(y)
+	perf = NR_EVENTS/float(time)
+	power['arm'].append(avgW/perf)
 	plot, = plt.plot(x, y, '-', label=labels[i])
 
 plt.legend(loc=4)
@@ -124,20 +106,10 @@ plt.ylabel('Power CMSSW consumed (W)')
 plt.show()
 
 
-#event second watt
-plt.scatter([1,2,3,4], power['atom'],color='blue',edgecolor='none', s=75, label = 'atom')
-plt.scatter([1,2,3,4,5,6], power['quad'],color='red',edgecolor='none',s=75, label = 'quad')
-plt.scatter([1,2,3,4,5,6], power['arm'],color='green',edgecolor='none',s=75, label = 'ARM')
 
-plt.xticks(range(7),(0,1,2,3,4,5,8))
-plt.yticks(range(0, 30001, 5000))
-plt.legend(loc=2)
-#plt.title('Watts per second for each arch & nr processes during Event\'s processing')
-plt.title('Watts for each arch & nr processes during Event\'s processing')
-plt.xlabel('Nr processes')
-#plt.ylabel('Power per second (W/s)')
-plt.ylabel('Total power consumed (W)')
-plt.show()
+
+# calculating power performance:
+#   power performance = (avgPower) / (nr_events/time(s))
 
 #event second watt (processes vs nr cpus)
 plt.scatter([.5, 1, 1.5, 2], power['atom'],color='blue',edgecolor='none', s=75, label = 'atom')
@@ -146,11 +118,11 @@ plt.scatter([.25, .5, .75, 1, 1.25, 2], power['arm'],color='green',edgecolor='no
 
 
 plt.xticks((0, .25, .5, .75, 1, 1.25, 1.5, 2))
-plt.yticks(range(0, 30001, 5000))
+plt.yticks(range(0, 3001, 500))
 plt.legend(loc=2)
 #plt.title('Watts per second for each arch & process/cpu during Event\'s processing')
 plt.title('Watts for each arch & process/cpu during Event\'s processing')
 plt.xlabel('Nr processes/Nr cpus')
 #plt.ylabel('Power per second (W/s)')
-plt.ylabel('Total power consumed (W)')
+plt.ylabel('Power efficiency (watts per Event per second)')
 plt.show()

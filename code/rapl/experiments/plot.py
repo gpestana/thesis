@@ -6,7 +6,7 @@ from pylab import *
 filePath = sys.argv[1]
 data = utils.parse(filePath)
 
-YLIM = 45
+YLIM = 100
 
 for core in range(0, 32):
     PCK_NR = core/8

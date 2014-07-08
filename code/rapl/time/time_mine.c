@@ -1,5 +1,9 @@
 #include <time.h>
 
+/*
+ * compilation: gcc time_mine.c -lrt
+ * */
+
 struct timespec start, end, temp;
 
 
@@ -17,18 +21,9 @@ struct timespec diff(struct timespec start, struct timespec end) {
 
 int main() {
 	while(1) {
-		clock_gettime(CLOCK_REALTIME, &start);
-
-		while(1) {
+            clock_gettime(CLOCK_REALTIME, &start);
 			clock_gettime(CLOCK_REALTIME, &end);
 			struct timespec d = diff(start, end);
 			printf("%lld.%.9ld \n", (long long)d.tv_sec, d.tv_nsec);
-			if (d.tv_sec == 1 && d.tv_nsec < .0001) {
-				printf("Now!\n");
-			}
-			break;
 		}
-		
-		
-	}
 }
