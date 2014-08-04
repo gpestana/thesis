@@ -1,0 +1,40 @@
+G4WT2 > ====================================================================
+G4WT2 > 
+G4WT0 > ### Run 0 starts on worker thread 0.
+G4WT3 > ### Run 0 starts on worker thread 3.
+G4WT2 > ### Run 0 starts on worker thread 2.
+G4WT1 > ### Run 0 starts on worker thread 1.
+G4WT2 > 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomNav1002
+      issued by : G4Navigator::ComputeStep()
+Track stuck or not moving.
+          Track stuck, not moving for 10 steps
+          in volume -GDS4- at point (417.466,-409.621,-1494.3)
+          direction: (-0.306197,0.397206,-0.865142).
+          Potential geometry or navigation problem !
+          Trying pushing it of 1e-07 mm ...Potential overlap in geometry!
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0 > Run terminated.
+G4WT0 > Run Summary
+G4WT0 >   Number of events processed : 210
+G4WT0 >   User=1301.32s Real=325.82s Sys=0.32s
+G4WT1 > Run terminated.
+G4WT1 > Run Summary
+G4WT1 >   Number of events processed : 210
+G4WT1 >   User=1307.94s Real=328.03s Sys=0.32s
+G4WT2 > Run terminated.
+G4WT2 > Run Summary
+G4WT2 >   Number of events processed : 210
+G4WT2 >   User=1309.71s Real=328.92s Sys=0.32s
+G4WT3 > Run terminated.
+G4WT3 > Run Summary
+G4WT3 >   Number of events processed : 210
+G4WT3 >   User=1312.35s Real=331.55s Sys=0.32s
+
+ ===================================================== 
+ Final random number = 0.609626
+ ===================================================== 
