@@ -1,0 +1,95 @@
+#!/bin/bash
+
+#set -x
+
+# enable the sensors
+echo 1 > /sys/bus/i2c/drivers/INA231/4-0045/enable
+echo 1 > /sys/bus/i2c/drivers/INA231/4-0040/enable
+echo 1 > /sys/bus/i2c/drivers/INA231/4-0041/enable
+echo 1 > /sys/bus/i2c/drivers/INA231/4-0044/enable
+
+# settle two seconds to the sensors get fully enabled and have the first reading
+sleep 2
+
+# add hid sensor (external)
+export PATH=/build/bin:$PATH
+
+# Main infinite loop
+while true; do
+
+DATE=`date +%s`
+
+# ----------- CPU DATA ----------- #
+
+# Node Configuration for CPU Frequency
+CPU0_FREQ=$((`cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq 2>/dev/null || echo 0`/1000))
+CPU1_FREQ=$((`cat /sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq 2>/dev/null || echo 0`/1000))
+CPU2_FREQ=$((`cat /sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq 2>/dev/null || echo 0`/1000))
+CPU3_FREQ=$((`cat /sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq 2>/dev/null || echo 0`/1000))
+
+#if [ $CPU0_FREQ -eq 0 -o $CPU1_FREQ -eq 0 -o $CPU2_FREQ -eq 0 -o $CPU3_FREQ -eq 0 ]; then
+#  echo "Skipping"
+#  sleep 1
+#  continue
+#fi
+
+CPU0_FREQ="${CPU0_FREQ}Mhz"
+CPU1_FREQ="${CPU1_FREQ}Mhz"
+CPU2_FREQ="${CPU2_FREQ}Mhz"
+CPU3_FREQ="${CPU3_FREQ}Mhz"
+
+# CPU Governor
+CPU_GOVERNOR=`cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor`
+
+# Note Configuration for CPU Core Temperature
+# This file is written on the following format:
+# CPU0 CPU1 CPU2 CPU3
+TMU_FILE=`cat /sys/devices/platform/exynos5-tmu/temp`
+
+# We need to slip those in nice variables...
+CPU0_TEMP=`echo $TMU_FILE | awk '{printf $1}'`"C"
+CPU1_TEMP=`echo $TMU_FILE | awk '{printf $2}'`"C"
+CPU2_TEMP=`echo $TMU_FILE | awk '{printf $3}'`"C"
+CPU3_TEMP=`echo $TMU_FILE | awk '{printf $4}'`"C"
+
+# Now lets get CPU Power Comsumption
+# Letter Values are:
+# V = Volts
+# A = Amps
+# W = Watts
+
+# External power sensor
+#HID_DATA=$(hidcount)
+
+# A7 Nodes
+A7_V=`cat /sys/bus/i2c/drivers/INA231/4-0045/sensor_V`"V"
+A7_A=`cat /sys/bus/i2c/drivers/INA231/4-0045/sensor_A`"A"
+A7_W=`cat /sys/bus/i2c/drivers/INA231/4-0045/sensor_W`"W"
+
+# A15 Nodes
+A15_V=`cat /sys/bus/i2c/drivers/INA231/4-0040/sensor_V`"V"
+A15_A=`cat /sys/bus/i2c/drivers/INA231/4-0040/sensor_A`"A"
+A15_W=`cat /sys/bus/i2c/drivers/INA231/4-0040/sensor_W`"W"
+
+
+# --------- MEMORY DATA ----------- #
+MEM_V=`cat /sys/bus/i2c/drivers/INA231/4-0041/sensor_V`"V"
+MEM_A=`cat /sys/bus/i2c/drivers/INA231/4-0041/sensor_A`"A"
+MEM_W=`cat /sys/bus/i2c/drivers/INA231/4-0041/sensor_W`"W"
+
+# ---------- GPU DATA ------------- #
+GPU_V=`cat /sys/bus/i2c/drivers/INA231/4-0044/sensor_V`"V"
+GPU_A=`cat /sys/bus/i2c/drivers/INA231/4-0044/sensor_A`"A"
+GPU_W=`cat /sys/bus/i2c/drivers/INA231/4-0044/sensor_W`"W"
+GPU_FREQ=`cat /sys/module/pvrsrvkm/parameters/sgx_gpu_clk`"Mhz"
+
+# ---------- FAN Speed ------------- #
+FAN_SPEED=$((`cat /sys/bus/platform/devices/odroidxu-fan/pwm_duty` * 100 / 255))"%"
+
+# ---------- DRAW Screen ----------- #
+
+#echo "$DATE | $CPU0_FREQ $CPU1_FREQ $CPU2_FREQ $CPU3_FREQ | $CPU0_TEMP $CPU1_TEMP $CPU2_TEMP $CPU3_TEMP | $FAN_SPEED | $A15_V $A15_A $A15_W | $A7_V $A7_A $A7_W | $MEM_V $MEM_A $MEM_W | $GPU_V $GPU_A $GPU_W | $GPU_FREQ | $HID_DATA"
+echo "$DATE | $CPU0_FREQ $CPU1_FREQ $CPU2_FREQ $CPU3_FREQ | $CPU0_TEMP $CPU1_TEMP $CPU2_TEMP $CPU3_TEMP | $FAN_SPEED | $A15_V $A15_A $A15_W | $A7_V $A7_A $A7_W | $MEM_V $MEM_A $MEM_W | $GPU_V $GPU_A $GPU_W | $GPU_FREQ"
+
+sleep 3
+done

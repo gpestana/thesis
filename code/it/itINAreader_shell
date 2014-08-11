@@ -1,0 +1,34 @@
+#!/bin/bash
+#set -x
+
+#enable sensors
+echo 1 > /sys/bus/i2c/drivers/INA231/4-0045/enable
+echo 1 > /sys/bus/i2c/drivers/INA231/4-0040/enable
+echo 1 > /sys/bus/i2c/drivers/INA231/4-0041/enable
+
+
+while true; do
+
+TIME=`date +"%T"`
+
+#A7 nodes
+A7_V=`cat /sys/bus/i2c/drivers/INA231/4-0045/sensor_V`"V"
+A7_A=`cat /sys/bus/i2c/drivers/INA231/4-0045/sensor_A`"A"
+A7_W=`cat /sys/bus/i2c/drivers/INA231/4-0045/sensor_W`"W"
+#A15 nodes
+A15_V=`cat /sys/bus/i2c/drivers/INA231/4-0040/sensor_V`"V"
+A15_A=`cat /sys/bus/i2c/drivers/INA231/4-0040/sensor_A`"A"
+A15_W=`cat /sys/bus/i2c/drivers/INA231/4-0040/sensor_W`"W"
+
+#memory
+MEM_V=`cat /sys/bus/i2c/drivers/INA231/4-0044/sensor_V`"V"
+MEM_A=`cat /sys/bus/i2c/drivers/INA231/4-0044/sensor_A`"A"
+MEM_W=`cat /sys/bus/i2c/drivers/INA231/4-0044/sensor_W`"W"
+
+echo "$TIME"
+echo "$A7_V $A7_A $A7_W"
+echo "$A15_V $A15_A $A15_W"
+echo "$MEM_V $MEM_A $MEM_W"
+
+sleep 1
+done
