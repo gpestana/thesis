@@ -1,0 +1,46 @@
+G4WT2 > ====================================================================
+G4WT2 > 
+G4WT0 > ### Run 0 starts on worker thread 0.
+G4WT1 > ### Run 0 starts on worker thread 1.
+G4WT7 > ### Run 0 starts on worker thread 7.
+G4WT2 > ### Run 0 starts on worker thread 2.
+G4WT3 > ### Run 0 starts on worker thread 3.
+G4WT4 > ### Run 0 starts on worker thread 4.
+G4WT5 > ### Run 0 starts on worker thread 5.
+G4WT6 > ### Run 0 starts on worker thread 6.
+G4WT7 > Run terminated.
+G4WT7 > Run Summary
+G4WT7 >   Number of events processed : 100
+G4WT7 >   User=1349.35s Real=168.96s Sys=0.51s
+G4WT0 > Run terminated.
+G4WT0 > Run Summary
+G4WT0 >   Number of events processed : 100
+G4WT0 >   User=1350.43s Real=169.11s Sys=0.51s
+G4WT2 > Run terminated.
+G4WT2 > Run Summary
+G4WT2 >   Number of events processed : 100
+G4WT2 >   User=1359.49s Real=170.63s Sys=0.52s
+G4WT3 > Run terminated.
+G4WT3 > Run Summary
+G4WT3 >   Number of events processed : 100
+G4WT3 >   User=1359.94s Real=170.71s Sys=0.52s
+G4WT5 > Run terminated.
+G4WT5 > Run Summary
+G4WT5 >   Number of events processed : 110
+G4WT5 >   User=1397.65s Real=180.15s Sys=0.52s
+G4WT6 > Run terminated.
+G4WT6 > Run Summary
+G4WT6 >   Number of events processed : 110
+G4WT6 >   User=1404.56s Real=182.46s Sys=0.52s
+G4WT4 > Run terminated.
+G4WT4 > Run Summary
+G4WT4 >   Number of events processed : 110
+G4WT4 >   User=1406.98s Real=183.67s Sys=0.52s
+G4WT1 > Run terminated.
+G4WT1 > Run Summary
+G4WT1 >   Number of events processed : 110
+G4WT1 >   User=1407.17s Real=183.86s Sys=0.52s
+
+ ===================================================== 
+ Final random number = 0.609626
+ ===================================================== 

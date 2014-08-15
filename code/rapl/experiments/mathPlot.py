@@ -8,11 +8,13 @@ data = utils.parse(filePath)
 
 nr_events = float(sys.argv[2])
 time = len(data[0]['pck'])
+#time = float(sys.argv[3])
 
 pp0_total = []
 pck_total = []
 dram_total = []
 
+all = []
 
 cpu_nr = 0
 for cpu in data:
@@ -40,9 +42,13 @@ for cpu in data:
     pck_total.append(np.mean(pck))
     pp0_total.append(np.mean(pp0))
     dram_total.append(np.mean(dram))
+   
+    #is this?? 
+    all.append(np.mean(pck)+np.mean(dram))
 
     cpu_nr=cpu_nr+1
 
+print 'time:' + str(time)
 
 #whole mean:
 mean_pck = np.mean(pck_total)
@@ -65,5 +71,8 @@ print throughput/mean_pp0
 print 'dram'
 print throughput/mean_dram
 
+print 'all'
+print throughput/np.mean(all)
 
-
+print 'sum all'
+print np.sum(all)
