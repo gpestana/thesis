@@ -1,0 +1,264 @@
+A. final measurements data
+B. machine specs 
+
+
+A. measurements
+
+0. baselines
+
+arm
+ internal
+ external
+
+intel
+ internal
+ external
+
+
+1. internal
+
+i. arm
+1 thread (1/4 threads per core):
+mean cpu: 1.52789342051 W
+mean_mem: 0.00280749415003 W
+mean all: 1.53070091466 W
+sum all: 2224.108429 W
+
+cpu: 0.112611134465 ev/s/W
+cpu+mem: 0.112404591764 ev/s/W
+
+2 threads (1/2 threads per core):
+mean cpu: 2.60371046371 W 
+mean_mem: 0.0028062016129 W
+mean all: 2.60651666532 W
+sum all: 1939.248399 W
+
+cpu: 0.129752460017 ev/s/W
+cpu+mem: 0.129612767235 ev/s/W
+
+4 threads (1 threads per core):
+mean cpu: 3.75217029982 W
+mean_mem: 0.00335890310786 W
+mean all: 3.75552920293 W
+sum all: 2054.274474 W
+
+cpu: 0.168678749052 ev/s/W
+cpu+mem: 0.168527884675 ev/s/W
+
+8 threads (2 threads per core):
+mean cpu: 2.58780693403 W
+mean_mem: 0.00280391550926 W
+mean all: 2.59061084954 W
+sum all: 2238.287774 W
+
+cpu: 0.117383836937 ev/s/W
+cpu+mem: 0.117256787998 ev/s/W
+
+
+16 threads (4 threads per core):
+mean cpu: 3.99541684804 W
+mean_mem: 0.00277633544304 W
+mean all: 3.99799341013 W
+sum all: 2446.771967 W
+
+cpu: 0.108806657057 ev/s/W
+cpu+mem: 0.108744373625 ev/s/W
+
+
+
+
+ii. intel
+8 thread (1/4 threads per core):
+mean pck: 49.1314268068 W
+mean pp0: 34.661131472 W
+mean dram: 12.4195447148 W
+mean pck+mem = 61.55 W
+ 
+pp0: 0.125329106952 ev/s/W
+pck+mem: 0.0705764433275 ev/s/W
+sum all: 1969.63108869 W
+
+16 thread (1/2 threads per core):
+mean pck: 69.0900106111 W
+mean pp0: 54.5016756087 W
+mean dram: 12.5414993165 W
+mean pck+mem = 81.6 W
+
+pp0: 0.150971418596
+pck+mem: 0.100796803707
+sum all: 2612.20831768 W
+
+32 thread (1 threads per core):
+mean pck: 74.7785799232 W
+mean pp0: 60.1653762331 W
+mean dram: 12.844034453 W
+mean pck+mem = 87.71 W
+
+pp0: 0.151742438465 ev/s/W
+pck+mem (all): 0.10419274711  ev/s/W
+sum all: 2803.92366004 W
+
+
+64 thread (2 threads per core):
+mean pck: 74.7380680276 W
+mean pp0: 60.1179836953 W
+mean dram: 12.8184731541 W
+mean pck+mem = 87.64 W
+
+pp0: 0.149406806018 ev/s/W
+pck+mem: 0.102585549942 ev/s/W
+sum all: 2801.80931781 W
+
+128 thread (4 threads per core):
+mean pck: 72.4435321083 W
+mean pp0: 57.8039194876 W
+mean dram: 13.0556899469 W
+mean pck+mem = 85.5 W
+
+pp0: 0.144245677634 ev/s/W
+pck+mem: 0.0975209520741 ev/s/W
+sum all: 2735.97510576 W
+
+
+iii. comparison intel vs arm
+
+1/4 thread per core:
+arm:  0.112404591764  ev/s/W
+intel  0.0705764433275 ev/s/W
+
+1/2 thread per core:
+arm: 0.129612767235  ev/s/W
+intel 0.100796803707 ev/s/W
+
+1 thread per core:
+arm: 0.168527884675 ev/s/W
+intel 0.105140977299 ev/s/W
+
+2 threads per core:
+arm:  0.117256787998  ev/s/W
+intel : 0.102585549942 ev/s/W
+
+As expected, the odroid board is more  energy efficient than the Xeon Ph.
+The external measurements done in Aalto shown a much bigger difference. I am now curious about the external results for these machines as well.
+
+
+
+2. external
+
+i. arm
+1 thread (1/4 threads per core):
+sum all: 6178.81 W
+whole mean: 4.14129356568 W
+0.0404608654417 ev/s/W
+
+2 threads (1/2 threads per core):
+sum all: 4181.547 W
+whole mean: 5.86472230014 W
+0.0597864857193 ev/s/W
+
+4 threads (1 threads per core):
+sum all: 3984.473 W
+whole mean: 7.48961090226 W
+0.0627435547938 ev/s/W
+
+8 threads (2 threads per core):
+sum all: 4873.621 W
+whole mean: 5.84367026379 W
+0.0512965616325 ev/s/W
+
+16 threads (4 threads per core):
+sum all: 4192.401  W
+whole mean: 9.21406813187 W
+0.0596317003073 ev/s/W
+
+ii. intel *
+8 thread (1/4 threads per core):
+sum all: W
+whole mean: 298 W
+ev/s/W
+
+16 thread (1/2 threads per core):
+sum all: W
+whole mean: 348 W
+ev/s/W
+
+32 thread (1 threads per core):
+sum all: W
+whole mean: 368 W
+ev/s/W
+
+64 thread (2 threads per core):
+sum all: W
+whole mean: 368 W
+ev/s/W
+
+128 thread (4 threads per core):
+sum all: W
+whole mean: 369 W
+ev/s/W
+
+
+3. internal vs external
+i. arm
+1 thread (1/4 threads per core): 
+cpu and dram account for 36% of total power consumed.
+2 threads (1/2 threads per core): 
+cpu and dram account for 46% of total power consumed.
+4 threads (1 threads per core): 
+cpu and dram account for 56 % of total power consumed.
+8 threads (2 threads per core): 
+cpu and dram account for 46% of total power consumed.
+
+ii. intel
+8 thread (1/4 threads per core):
+cpu and dram account for 20% of total power consumed.
+16 threads (1/2 threads per core):
+cpu and dram account for 23% of total power consumed.
+32 threads (1 threads per core):
+cpu and dram account for 24% of total power consumed.
+64 threads (2 threads per core):
+cpu and dram account for 24% of total power consumed.
+
+
+iii. comparison intel vs arm
+
+1/4 thread per core:
+arm:  ev/s/W (dif: 36%)
+intel  ev/s/W (dif: 20%)
+
+1/2 thread per core:
+arm: ev/s/W (dif: 46%)
+intel ev/s/W (dif: 23%)
+
+1 thread per core:
+arm: ev/s/W (dif: 56%)
+intel ev/s/W (dif: 24%)
+
+2 threads per core:
+arm:  ev/s/W (dif: 46%)
+intel : ev/s/W (dif: 24%)
+
+
+
+
+B. machine specs
+
+arm
+→ armcms0200 (ODROID XU+E)
+4 cores (with big.LITTLE technology)
+Samsung Exynos5 Octa : (4) Cortex™-A15 and Cortex™ (4) A7 big.LITTLE processor with 2GByte LPDDR3 RAM.
+(only 4 of the 8 cores are processing at a certain time. the kernel schedules the tasks to A7 or A15 taking in consideration the workload to maximize energy efficiency and performance) 
+mem
+L2: 512KB (A7), 2 MB (A15)
+dram 1789052 kB (1.8 GB). LPDDR3 800MHz 32bits
+
+intel 
+→ tlabphi02
+32 cores
+mem
+
+→ caesrv100
+32 cores
+mem
+
+

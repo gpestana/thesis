@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{LHCPAPER}
+Lyndon Evans and Philip Bryant.
+\newblock {LHC Machine}.
+\newblock {\em JINST}, 3:S08001, 2008.
+
+\bibitem{RAPL1}
+Balaji Subramaniam and Wu~chun Feng.
+\newblock Towards energy-proportional computing for enterprise-class server
+  workloads.
+
+\bibitem{INTELMAN}
+{\em Intel 64 and IA-32 Software Developer Manuals - Volume 3}.
+\newblock www.intel.com/content/www/us/en/processors/
+  architectures-software-developer-manuals.html.
+
+\bibitem{MSRTOOLS}
+Msr tools.
+\newblock \url{https://01.org/msr-tools}.
+\newblock Last time accessed: 28-07-2014.
+
+\end{thebibliography}
