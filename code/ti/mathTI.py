@@ -8,6 +8,9 @@ data = utils.parse(filePath)
 nr_events = float(sys.argv[2])
 time = float(sys.argv[3])
 
+print 'ev: '+str(nr_events)
+print 'time: '+str(time)
+
 total_cpu = []
 all = []
 
@@ -30,13 +33,13 @@ print "mean all: "+ str(mean_all)
 throughput = nr_events/time
 
 #thtoughtput per watt:
-print 'cpu'
+print 'cpu ev/s/w'
 print throughput/mean_cpu
 
-print 'mem'
+print 'mem ev/s/w'
 print throughput/mean_mem
 
-print 'all'
+print 'all ev/s/w'
 print throughput/mean_all
 
 print 'sum all'

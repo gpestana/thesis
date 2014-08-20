@@ -44,7 +44,7 @@ for cpu in data:
     dram_total.append(np.mean(dram))
    
     #is this?? 
-    all.append(np.mean(pck)+np.mean(dram))
+    all.append(np.mean(pck)+np.mean(dram)+np.mean(pp0))
 
     cpu_nr=cpu_nr+1
 
