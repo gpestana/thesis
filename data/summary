@@ -1,4 +1,4 @@
-A. final measurements data
+final measurements data
 B. machine specs 
 
 
@@ -7,12 +7,12 @@ A. measurements
 0. baselines
 
 arm
- internal
- external
+ internal 1.523W
+ external 1.84W
 
 intel
- internal
- external
+ internal 18.504W
+ external 211W
 
 
 1. internal
