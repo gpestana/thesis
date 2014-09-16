@@ -1,0 +1,18 @@
+#slide intro
+- in HTC, energy consumption has becoming an issue due to the amount of data to
+process. LHC, for example, consumes a lot of energy and it is expected
+in the future to increase.
+- it is expected that only the CMS experiment will have to increase the amount
+of data in 2 to 3 orders of magnitude int he next 15 years.
+- this raises important questions regarding energy consumption and its costs
+and has to be cope somehow.
+- one important way to improve energy efficiency of the system is to
+understand how and where is energy consumed in a HTC system.
+
+- in HTC, power consumption has becoming an issue. CMS experiment will increase.. -important to know how and where energy is consumed
+
+#slide plots
+- the chip monitors measurements are accounting for power consumed by dram and core. 
+- the experiment was performed using different number of threads per core.
+- the optimal is ARMv7 with 1 thread per core.
+- overcommited: intel the same, arm overcommited and thus got worse

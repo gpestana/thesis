@@ -1,14 +1,56 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{LHCPAPER}
 Lyndon Evans and Philip Bryant.
 \newblock {LHC Machine}.
 \newblock {\em JINST}, 3:S08001, 2008.
 
+\bibitem{WLHC}
+Bird I.
+\newblock {Computing for the Large Hadron Collider}.
+\newblock {\em Annual Review of Nuclear and Particle Science}, 61, 2011.
+
+\bibitem{CMSDET}
+S.~Chatrchyan et~al.
+\newblock {The CMS experiment at the CERN LHC}.
+\newblock {\em JINST}, 3:S08004, 2008.
+
+\bibitem{ATLAS}
+Aad~G et~al (Atlas~Collaboration).
+\newblock {The Atlas Experiment at the CERN Large Hadron Collider}.
+\newblock {\em JINST}, 3, S08003.
+
+\bibitem{CMSHIGGS}
+S.~Chatrchyan et~al.
+\newblock {Observation of a new boson at a mass of 125 GeV with the CMS
+  experiment at the LHC}.
+\newblock {\em Phys.Lett.}, B716:30--61, 2012.
+
+\bibitem{ATLASHIGGS}
+G.~Aad et~al.
+\newblock {Observation of a new particle in the search for the Standard Model
+  Higgs boson with the ATLAS detector at the LHC}.
+\newblock {\em Phys.Lett.}, B716:1--29, 2012.
+
+\bibitem{ACAT13ARM}
+David Abdurachmanov, Peter Elmer, Giulio Eulisse, and Shahzad Muzaffar.
+\newblock Initial explorations of arm processors for scientific computing.
+\newblock {\em Journal of Physics: Conference Series}, 523(1):012009, 2014.
+
+\bibitem{CHEP13ARMPHI}
+David Abdurachmanov, Kapil Arya, Josh Bendavid, Tommaso Boccali, Gene
+  Cooperman, Andrea Dotti, Peter Elmer, Giulio Eulisse, Francesco Giacomini,
+  Christopher~D Jones, Matteo Manzali, and Shahzad Muzaffar.
+\newblock Explorations of the viability of arm and xeon phi for physics
+  processing.
+\newblock {\em Journal of Physics: Conference Series}, 513(5):052008, 2014.
+
 \bibitem{RAPL1}
 Balaji Subramaniam and Wu~chun Feng.
 \newblock Towards energy-proportional computing for enterprise-class server
   workloads.
+\newblock {\em CPE '13 Proceedings of the 4th ACM/SPEC International Conference
+  on Performance Engineering}, 2012.
 
 \bibitem{INTELMAN}
 {\em Intel 64 and IA-32 Software Developer Manuals - Volume 3}.
