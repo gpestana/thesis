@@ -3,12 +3,8 @@
 \usepackage{lineno}
 \usepackage{hyperref}
 
-
-
 \begin{document}
 %\linenumbers
-
-
 
 \title{Techniques and tools for measuring energy efficiency of scientific software applications}
 
@@ -93,15 +89,13 @@ using CMS workloads.
 
 
 \section{Tools and techniques for energy measurement}
-As pictured in Figure 1, a HTC system is composed by several components.
-It is important to grasp where and how energy is consumed by 
-the system, so that researchers can trace, identify and improve energy 
-bottlenecks. Therefore, given the specificities of those components, different 
-types
-of tools and techniques should be used to measure energy consumption, according
-to what is suppose to measure.. 
-In this section, we will outline and describe different approaches to measure 
-energy consumption of the different components on a HTC system.  
+
+\begin{itemize}
+  \item it is important to be aware of how and where energy is consumed 
+  \item refer to Figure 1 and differentiate between overall and SoC
+energy consumption
+  \item different tools and techniques for different levels
+\end{itemize}
 
 \begin{figure}[ht!]
 \centering
@@ -112,49 +106,36 @@ energy consumption of the different components on a HTC system.
 
 \subsection{External probing devices}
 
-External probing devices measure the energy consumed by the whole system, 
-without breaking it down in components pictured on Figure 1. 
+\subsubsection{Noninvasive clamp meters}
+\begin{itemize}
+  \item show picture
+  \item brief description
+  \item mention drawbacks and good points
+  \item mention accuracy and resolution
+\end{itemize}
 
-\subsubsection{Noninvasive clamp meters and plug-in energy monitors} are probes 
-that allow to measure electrical current pulled by the system without making 
-physical contact or interfering with it. Generally, the accuracy of these tools
- is around 3\%, whereas its precision is in the order of seconds (Hz).
+\subsubsection{Power distribution units}
+\begin{itemize}
+  \item show picture
+  \item brief description
+  \item mention drawbacks and good points
+  \item mention accuracy and resolution
+\end{itemize}
 
-\subsubsection{Power distribution units} (PDU) are devices designed to distribute
-electric power to systems. They are broadly used in server's rack and usually
-have power monitoring capabilities embedded, which makes it useful for data
-warehouses and big computing facilities. The accuracy and precision of such 
-devices are similar to clamp meters described above.
-
-\textit {can we generalize the accuracy and precision based on the tools
-we used ? are there any references stating this ?}
 
 \subsection{Internal probing chips}
 
 \subsubsection{Running Average Power Limit}
-Running Average Power Limit (RAPL) provides a platform for monitoring and 
-limiting power of  systems on chip (SoC). It is an Intel technology which was 
-introduced initially on the Sandy Bridge processors. RAPL platform exposes 
-chip's energy measurements via the MSR registers. According to ~\cite{RAPL1}, 
-this technology offers power measurements of the system at a granularity 
-impossible to reach before with other tools.
+Running Average Power Limit (RAPL) provides a platform for monitoring and limiting power of  systems on chip (SoC). It is a Intel's technology which was introduced initially on the Sandy Bridge processors. RAPL platform exposes on-chip measurements via the MSR registers. According to ~\cite{RAPL1}, this technology offers power measurements of the system at a granularity impossible to reach before with other tools.
 
-As documented by Intel in ~\cite{INTELMAN}, there are 3 different domains to 
-sample energy consumed by different SoC components on a server. The domains are
- \textbf{package} (pck), which measures energy consumed by the system's sockets, 
-\textbf{power plane 0} (pp0), which measures energy consumed by the CPU core, and \textbf{dram}, which 
-accounts for the sum of energy consumed by memory in a given socket, excluding 
-the core caches. The measurements are dumped in the MSR registers at a 
-frequency of ~1 kHz and are exposed to the user via /dev/cpu/\textit{cpu\_nr}/msr. It 
-is also possible to read and write data from the MSR register using Intel’s 
-open source tool msr-tools ~\cite{MSRTOOLS}. 
+As documented by Intel in ~\cite{INTELMAN}, there are 3 different domains to sample energy consumed by different SoC components on a server. The domains are: package (accounting for the entire socket), power plane 0 or pp0 (accounting for energy consumed by the core) and dram (sum of energy consumed by memory in a given socket, excluding the core caches). The measurements are dumped in the MSR registers at a frequency of ~1 kHz and are exposed to the user via /dev/cpu/<cpu\_nr>/msr. It is also possible to read and write data from the MSR register using Intel’s open source tool msr-tools ~\cite{MSRTOOLS}. 
 
-In addition to power monitoring of the sockets, it can limit the power consumed 
-by the different domains. This feature, usually referred as power capping, 
-allows the user to define the average power consumption limit of a domain in a 
-defined time window. For more information about RAPL’s features and 
-configurations, refer to section 14.9.1 of Intel’s Developer’s manual 
-~\cite{INTELMAN}.
+In addition to power monitoring of the sockets, it can limit the power consumed by the different domains. This feature, usually referred as power capping, allows the user to define the average power consumption limit of a domain in a defined time window. For more information about RAPL’s features and configurations, refer to section 14.9.1 of Intel’s Developer’s manual ~\cite{INTELMAN}.
+
+\textit{
+EXPLAIN difference between RAPL mode 0 vs RAPL mode 1 \\
+"The DRAM RAPL is not enabled in BIOS by default. To enable in BIOS, go to Memory Configuration and change the mode from 'Performance' to 'Power Efficient'. Then select 'Mode 1'. This is the VR (voltage regulator) mode of power estimation. The accuracy of this mode is highly dependent on the OEM platform. For Intel reference platforms the accuracy of DRAM power estimation may produce up to ~30% error"
+}
 
 The advantages of using RAPL for measuring power consumption are a straightforward and already installed tool to perform fine grained measurements of energy consumption on SoC and its components.
 
@@ -162,41 +143,28 @@ On the other hand, the drawbacks are lack of documentation available about the m
 
 
 \subsubsection{Chip monitors}
- are  
+\begin{itemize}
+  \item show picture (ODROID XU3) - take pic here
+  \item brief description
+  \item mention drawbacks and good points
+  \item mention accuracy and resolution
+\end{itemize}
+
 
 \subsection{Software based measuring tools}
-
-There are software tools that provide insights about energy consumed by the
-system. In addition, they can interact directly with the software. This
-capability enables to map applications' code and energy consumption and help
-developers to develop energy efficient applications. There are several examples
-of software based measuring tools, such as powertop ~\cite{POWERTOP} and IgProf
-\cite{igprof-web}, a general-purpose and open-source application profiler that 
-was recently upgraded with energy measuring capabilities.
+\subsubsection{powertop and alike}
+\begin{itemize}
+  \item brief description
+  \item mention drawbacks and good points
+  \item mention accuracy and resolution
+\end{itemize}
 
 \subsection{IgProf}
-IgProf is an application profiler that profiles mainly performance and memory usage. The profiler collects data about the resources an application uses. The resource of interest can be for example execution time, memory or file descriptors. The main idea behind profiling is to find the parts of the application where a resource is used the most, i.e.\@ possible bottlenecks. When the bottlenecks have been located, it makes sense to make optimisations where the bottlenecks are, because resource usage is usually not uniformly distributed over the whole application. \cite{igprof-web} \cite{tuura08} \cite{fowler02}
+\textbf{Ask Filip to write this section} \\
 
-The profiler was available on the Intel x86 and x86-64 architectures, as well as on 32-bit ARM, but support for 64-bit ARM was missing. The port of IgProf to 64-bit ARM enables developers to evaluate how applications execute on the new architecture with regard to performance and memory usage.
 
-A simple energy profiling module extends the functionality of IgProf. The energy profiling module is based on sampling and uses the PAPI library to obtain energy measurements from the RAPL (Running Average Power Limit) interface present on recent Intel processors. \cite{weaver12}
-
-\begin{figure}[htb]
-  \begin{center}
-    \includegraphics{img/stream-pp-np.pdf}
-  \end{center}
-  \vspace{-20pt}
-  \caption{The results of performance and energy profiling of the stream tool.}
-  \label{fig:stream-pp-np} 
-\end{figure}
-
-Figure \ref{fig:stream-pp-np} shows the results from performance and energy profiling of the \emph{stream} benchmarking tool. The X-axis describes the four main functions contributing to the execution time and energy consumption of the stream tool: Add, Copy, Triad and Scale. The left scale of the Y-axis and the perf\_ticks series describe the execution time spent in each function, whereas the right scale of the Y-axis and the nrg\_pkg, nrg\_pp0 and nrg\_pp1 series describe the amount of energy spent in each function. The energy consumption of the processor package domain and the power plane 0 (describing the CPU cores) seem to follow the time spent in the functions, whereas the energy consumption of power plane 1 (describing the GPU) seems to be fairly constant. \cite{stream-web}
-
-The profiling results of a simple single-threaded application seem to show a correlation between the execution time and the energy spent in a function. The energy profiling module is, however, still rather limited; e.g.\@ it does not seem to profile multi-threaded applications correctly. 
-
-\section{Use case}
+\section{Comparison of power efficiency of ARM and Intel}
 \begin{itemize}
-  \item introduce section as an example of the tool's utilization 
   \item mention that ARM might be a good solution to energy efficient HTC
 architecture.
   \item references to previous works

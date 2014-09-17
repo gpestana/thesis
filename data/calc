@@ -1,6 +1,8 @@
-#(abs ext, abs int):(%ext, %int) | (abs ext, abs int):(%cpu, %mem). using avg
+#(external, internal):(%ext, %int) | (cpu, memory):(%cpu, %mem). using avg
 
 ## arm
+
+>> core + memory
 
 .25 (4.41W, 1.53W): (63%, 36%) | (1.5W, 0.0028W): (99.82%, 0.18%)
 .75 (5.86W, 2.6W): (56%, 44%)  | (2.6W, 0.0028W): (99.89%, 0.11%)
@@ -10,3 +12,32 @@
 
 
 ## intel
+
+>> pck + dram
+
+mean pck: 49.1314268068 W
+mean pp0: 34.661131472 W
+mean dram: 12.4195447148 W
+--> .25 (298W, 61.5W): (79%, 21%) | ..
+
+mean pck: 69.0900106111 W
+mean pp0: 54.5016756087 W
+mean dram: 12.5414993165 W
+--> .75 (348W, 81.6W): (77%, 23%) | ..
+
+mean pck: 74.7785799232 W
+mean pp0: 60.1653762331 W
+mean dram: 12.844034453 W
+--> 1   (368W, 87.7W): (76%, 24%) | ..
+
+mean pck: 74.7380680276 W
+mean pp0: 60.1179836953 W
+mean dram: 12.8184731541 W
+--> 2   (368W, 87.6W): (76%, 24%) | ..
+
+mean pck: 72.4435321083 W
+mean pp0: 57.8039194876 W
+mean dram: 13.0556899469 W
+i--> 4   (369W, 85.5W): (77%, 23%) | ..
+
+

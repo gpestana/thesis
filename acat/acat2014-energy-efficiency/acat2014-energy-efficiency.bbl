@@ -62,4 +62,41 @@ Msr tools.
 \newblock \url{https://01.org/msr-tools}.
 \newblock Last time accessed: 28-07-2014.
 
+\bibitem{POWERTOP}
+Powertop.
+\newblock \url{https://01.org/powertop}.
+\newblock Last time accessed: 17-09-2014.
+
+\bibitem{igprof-web}
+Giulio Eulisse and Lassi Tuura.
+\newblock Ig{P}rof, the {I}gnominous {P}rofiler.
+\newblock Web page. \url{http://igprof.org/}. Accessed 2014-03-27.
+
+\bibitem{tuura08}
+Lassi Tuura, Vincenzo Innocente, and Giulio Eulisse.
+\newblock Analysing {CMS} software performance using {IgProf}, {OProfile} and
+  callgrind.
+\newblock {\em Journal of Physics: Conference Series 119}, 2008.
+\newblock DOI 10.1088/1742-6596/119/4/042030.
+
+\bibitem{fowler02}
+Martin Fowler.
+\newblock Yet another optimization article.
+\newblock {\em {IEEE} Software}, 1(May/June):20--21, 2002.
+\newblock ISSN 0740-7459.
+
+\bibitem{weaver12}
+Vincent~M. Weaver, Matt Johnson, Kiran Kasichayanula, James Ralph, Piotr
+  Luszczek, Dan Terpstra, and Shirley Moore.
+\newblock Measuring energy and power with {PAPI}.
+\newblock {\em Proceedings of the International Conference on Parallel
+  Processing Workshops}, pages 262--268, 2012.
+\newblock DOI: 10.1109/ICPPW.2012.39.
+
+\bibitem{stream-web}
+John~D. McCalpin.
+\newblock {STREAM}: Sustainable memory bandwidth in high performance computers.
+\newblock Web page. \url{http://www.cs.virginia.edu/stream/}. Accessed
+  2014-09-04.
+
 \end{thebibliography}
