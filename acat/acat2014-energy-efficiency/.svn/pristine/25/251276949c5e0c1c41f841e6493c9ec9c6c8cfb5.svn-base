@@ -131,21 +131,9 @@ we used ? are there any references stating this ?}
 
 \subsection{Internal probing chips}
 
-\subsubsection{Chip monitors} perform energy monitoring from different modules
-of the system on the chip (SoC). It allows energy measurements of fine grained
-detail, being possible to individually monitor energy consumption of components 
-such as core, dram, and others. Chip monitors are usually not included in the 
-SoC from the manufacturer, but it can be added by third-party vendors. It can 
-also be embedded by users, although it not a trivial task. In addition, usually
- the user has to develop its own code to read the results dumped by the chip. 
-Commonly, the accuracy
-of the measurements is high and the resolution is in the order of microseconds. 
-An example of this chip monitors it the Texas Instrument INA231 (TI INA231)
-\cite{TIINA231} current-churn and power monitor. 
-
 \subsubsection{Running Average Power Limit}
-(RAPL) provides a platform for monitoring and 
-limiting power of  SoC. It is an Intel technology which was 
+Running Average Power Limit (RAPL) provides a platform for monitoring and 
+limiting power of  systems on chip (SoC). It is an Intel technology which was 
 introduced initially on the Sandy Bridge processors. RAPL platform exposes 
 chip's energy measurements via the MSR registers. According to ~\cite{RAPL1}, 
 this technology offers power measurements of the system at a granularity 
@@ -173,6 +161,8 @@ The advantages of using RAPL for measuring power consumption are a straightforwa
 On the other hand, the drawbacks are lack of documentation available about the monitoring chip. To the knowledge of the authors, specifications such as error degrees, accuracy and implementation diagrams are not publicly available. In addition, the RAPL technology is vendor locked. Considering those two points, it is difficult to accurately compare and reason power measurements between SoCs from Intel and other vendors.
 
 
+\subsubsection{Chip monitors}
+ are  
 
 \subsection{Software based measuring tools}
 
@@ -222,8 +212,8 @@ Figure 1). The external measurements were performed using a rack PDU, which
 provides an online API to gather the energy consumed by the system on the rack 
 at a sampling rate of around 1s.
 
-\subsubsection{\textbf{ARM}} We used the Texas Instrument power monitor chip 
-TI INA231 (see section 2.2.1 for more informations) which allows reading of the energy consumed by the
+\subsubsection{\textbf{ARM}} We used a Texas Instrument power monitor chip 
+(TI INA231) \cite{TIINA231} which allows reading of the energy consumed by the
 cores and dram at a sampling rate of microseconds. The chip was embedded in the 
 board (see Figure 3) from the vendor. For the external measurements, we used
 an external plug-in power monitor with a computer interface for gathering and

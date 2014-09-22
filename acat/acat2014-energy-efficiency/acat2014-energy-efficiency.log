@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.7.28)  17 SEP 2014 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.7.28)  22 SEP 2014 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -192,7 +192,19 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip44
 )
-(./acat2014-energy-efficiency.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count106
+\float@exts=\toks16
+\float@box=\box27
+\@float@everytoks=\toks17
+\@floatcapt=\box28
+)
+(./acat2014-energy-efficiency.aux
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+)
 \openout1 = `acat2014-energy-efficiency.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -209,20 +221,19 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
+\scratchcounter=\count107
 \scratchdimen=\dimen115
-\scratchbox=\box27
-\nofMPsegments=\count107
-\nofMParguments=\count108
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count109
+\scratchbox=\box29
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count110
 \MPscratchDim=\dimen116
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
-\everyMPtoPDFconversion=\toks17
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
+\everyMPtoPDFconversion=\toks19
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -238,7 +249,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box28
+\AtBeginShipoutBox=\box30
 Package hyperref Info: Link coloring OFF on input line 8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -247,7 +258,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count112
+\c@section@level=\count113
 )
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
@@ -307,21 +318,54 @@ Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- [3 <./img/energy_model.png>]
-<img/stream-pp-np.pdf, id=68, 364.36125pt x 188.705pt>
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.170 
+       <./img/energy_model.png>]
+<img/stream-pp-np.pdf, id=71, 364.36125pt x 188.705pt>
 File: img/stream-pp-np.pdf Graphic file (type pdf)
 
 <use img/stream-pp-np.pdf>
-Package pdftex.def Info: img/stream-pp-np.pdf used on input line 186.
+Package pdftex.def Info: img/stream-pp-np.pdf used on input line 196.
 (pdftex.def)             Requested size: 364.36035pt x 188.70453pt.
- [4 <./img/stream-pp-np.pdf>]
-(./acat2014-energy-efficiency.bbl [5])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 237.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 237.
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--217
+
+ []
+
+[4] <img/results1.png, id=90, 1204.5pt x 501.875pt>
+File: img/results1.png Graphic file (type png)
+ <use img/results1.png>
+Package pdftex.def Info: img/results1.png used on input line 248.
+(pdftex.def)             Requested size: 483.69684pt x 201.54286pt.
+
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 248--249
+ [][] 
+ []
+
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.252 
+       <./img/stream-pp-np.pdf>] (./acat2014-energy-efficiency.bbl [6pdfTeX war
+ning (ext4): destination with the same identifier (name{figure.3}) has been alr
+eady used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.8 \bibitem{WLHC}
+                   <./img/results1.png>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 294.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 294.
  (./acat2014-energy-efficiency.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 237.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 237.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 294.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 294.
 Package rerunfilecheck Info: File `acat2014-energy-efficiency.out' has not chan
 ged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -330,31 +374,34 @@ ged.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.78749pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 237.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 294.
  ) 
 Here is how much of TeX's memory you used:
- 5524 strings out of 493104
- 80379 string characters out of 6136932
- 169619 words of memory out of 5000000
- 8915 multiletter control sequences out of 15000+600000
- 9371 words of font info for 33 fonts, out of 8000000 for 9000
+ 5597 strings out of 493104
+ 81377 string characters out of 6136932
+ 171020 words of memory out of 5000000
+ 8974 multiletter control sequences out of 15000+600000
+ 9730 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,5n,23p,843b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,5n,23p,843b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
-.pfb>
-Output written on acat2014-energy-efficiency.pdf (6 pages, 215342 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+t9.pfb>
+Output written on acat2014-energy-efficiency.pdf (7 pages, 271049 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
- 44 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

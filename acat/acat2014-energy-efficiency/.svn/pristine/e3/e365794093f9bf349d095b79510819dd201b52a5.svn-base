@@ -103,7 +103,7 @@ to what is suppose to measure..
 In this section, we will outline and describe different approaches to measure 
 energy consumption of the different components on a HTC system.  
 
-\begin{figure}[ht!]
+\begin{figure}[H]
 \centering
 \includegraphics[width=70mm]{img/energy_model.png}
 \caption{Components that contribute for power consumption in HPC}
@@ -131,21 +131,9 @@ we used ? are there any references stating this ?}
 
 \subsection{Internal probing chips}
 
-\subsubsection{Chip monitors} perform energy monitoring from different modules
-of the system on the chip (SoC). It allows energy measurements of fine grained
-detail, being possible to individually monitor energy consumption of components 
-such as core, dram, and others. Chip monitors are usually not included in the 
-SoC from the manufacturer, but it can be added by third-party vendors. It can 
-also be embedded by users, although it not a trivial task. In addition, usually
- the user has to develop its own code to read the results dumped by the chip. 
-Commonly, the accuracy
-of the measurements is high and the resolution is in the order of microseconds. 
-An example of this chip monitors it the Texas Instrument INA231 (TI INA231)
-\cite{TIINA231} current-churn and power monitor. 
-
 \subsubsection{Running Average Power Limit}
-(RAPL) provides a platform for monitoring and 
-limiting power of  SoC. It is an Intel technology which was 
+Running Average Power Limit (RAPL) provides a platform for monitoring and 
+limiting power of  systems on chip (SoC). It is an Intel technology which was 
 introduced initially on the Sandy Bridge processors. RAPL platform exposes 
 chip's energy measurements via the MSR registers. According to ~\cite{RAPL1}, 
 this technology offers power measurements of the system at a granularity 
@@ -173,6 +161,8 @@ The advantages of using RAPL for measuring power consumption are a straightforwa
 On the other hand, the drawbacks are lack of documentation available about the monitoring chip. To the knowledge of the authors, specifications such as error degrees, accuracy and implementation diagrams are not publicly available. In addition, the RAPL technology is vendor locked. Considering those two points, it is difficult to accurately compare and reason power measurements between SoCs from Intel and other vendors.
 
 
+\subsubsection{Chip monitors}
+ are  
 
 \subsection{Software based measuring tools}
 
@@ -209,7 +199,7 @@ In this section, we demonstrate the potentialities of some of the tools
 presented in Section 2. To that end, we perform several measurements of workloads
 from CERN, running in different architectures. The workloads used in the 
 experiment run on top of Intel architectures, traditionally used in HTC and data
- centers, and ARM architectures. ARM architecture, initially developed for mobile
+ centers, and ARM architectures.ARM architecture, initially developed for mobile
  devices, has been considered \cite{ACAT13ARM, CHEP13ARMPHI} as a potential 
 alternative to Intel in HTC, given its energy efficient computing. We also 
 present brief comparison between ARM and Intel architectures from the energy
@@ -222,8 +212,8 @@ Figure 1). The external measurements were performed using a rack PDU, which
 provides an online API to gather the energy consumed by the system on the rack 
 at a sampling rate of around 1s.
 
-\subsubsection{\textbf{ARM}} We used the Texas Instrument power monitor chip 
-TI INA231 (see section 2.2.1 for more informations) which allows reading of the energy consumed by the
+\subsubsection{\textbf{ARM}} We used a Texas Instrument power monitor chip 
+(TI INA231) \cite{TIINA231} which allows reading of the energy consumed by the
 cores and dram at a sampling rate of microseconds. The chip was embedded in the 
 board (see Figure 3) from the vendor. For the external measurements, we used
 an external plug-in power monitor with a computer interface for gathering and
@@ -253,34 +243,8 @@ machines.
 
 
 \subsection{Analysis}
-As expected, the ARM architecture shows better results from the energy efficiency
- perspective than Intel in all the experiments performed. Also as expected, both 
-architectures do not performs better when overcommitted (more threads than the
-physical number of cores). An interesting feature of the ARM results when 
-overcommitted (8 threads) is the deterioration of the energy performance. It
-would be expected a behaviour similar to Intel in same circumstances. However, due
-to the relatively modest amount of available DRAM (see Figure 3), the machine
-started swapping. The memory swapping takes time and resources and, thus, 
-consumes more energy.
 
 \section{Conclusions}
-Energy efficiency has become a major concern on HTC, given the large amount of
-resources - and thus energy - that recent experiments require. The LHC is
-a relevant example of the need for energy efficiency facilities, given its present
-requirements and costs constrains. The urgency for energy efficiency brings up the
-need for accurately measure the different components of a HTC system. The goal is,
-thus, to understand how and where energy is consumed and improve the overall 
-energy efficiency. However, HTC systems are complex and composed of different 
-components. Therefore, we presented examples of techniques and tools that provide
-better knowledge of how and where energy is consumed from different perspectives
-and granularities. In addition, IgProf, an open source profiling tool, was 
-further developed to run on 64-bit ARM and include energy profiler capabilities. On 
-the endeavor to achieve better energy performance on HTC, ARM architecture has
-been considered to replace the traditional Intel machines. Therefore, and in 
-order to apply some energy measurement techniques studied in this article, we
-performed a simple comparison between ARMv7 and Intel architectures. The results 
-confirm the potential of ARMv7 for efficient HTC systems.   
-
 
 \section*{Acknowledgements}
 This work was partially supported by the National Science Foundation, under

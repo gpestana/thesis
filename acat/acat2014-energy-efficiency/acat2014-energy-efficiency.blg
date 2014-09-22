@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: acat2014-energy-efficiency.aux
 The style file: unsrt.bst
 Database file #1: acat2014-energy-efficiency.bib
-You've used 17 entries,
+You've used 18 entries,
             1791 wiz_defined-function locations,
-            541 strings with 6174 characters,
-and the built_in function-call counts, 3213 in all, are:
-= -- 271
-> -- 153
+            545 strings with 6238 characters,
+and the built_in function-call counts, 3322 in all, are:
+= -- 281
+> -- 154
 < -- 1
-+ -- 59
++ -- 60
 - -- 42
 * -- 179
-:= -- 528
-add.period$ -- 53
-call.type$ -- 17
-change.case$ -- 16
+:= -- 539
+add.period$ -- 56
+call.type$ -- 18
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 139
-empty$ -- 325
+cite$ -- 18
+duplicate$ -- 144
+empty$ -- 343
 format.name$ -- 42
-if$ -- 715
+if$ -- 744
 int.to.chr$ -- 0
-int.to.str$ -- 17
+int.to.str$ -- 18
 missing$ -- 12
-newline$ -- 90
+newline$ -- 95
 num.names$ -- 14
-pop$ -- 50
+pop$ -- 58
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 70
+skip$ -- 73
 stack$ -- 0
 substring$ -- 150
-swap$ -- 26
+swap$ -- 27
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
 while$ -- 25
-width$ -- 19
-write$ -- 181
+width$ -- 20
+write$ -- 190
