@@ -45,6 +45,11 @@ David Abdurachmanov, Kapil Arya, Josh Bendavid, Tommaso Boccali, Gene
   processing.
 \newblock {\em Journal of Physics: Conference Series}, 513(5):052008, 2014.
 
+\bibitem{TIINA231}
+Ti ina 231.
+\newblock \url{http://www.ti.com/product/ina231}.
+\newblock Last time accessed: 17-09-2014.
+
 \bibitem{RAPL1}
 Balaji Subramaniam and Wu~chun Feng.
 \newblock Towards energy-proportional computing for enterprise-class server
@@ -98,10 +103,5 @@ John~D. McCalpin.
 \newblock {STREAM}: Sustainable memory bandwidth in high performance computers.
 \newblock Web page. \url{http://www.cs.virginia.edu/stream/}. Accessed
   2014-09-04.
-
-\bibitem{TIINA231}
-Ti ina 231.
-\newblock \url{http://www.ti.com/product/ina231}.
-\newblock Last time accessed: 17-09-2014.
 
 \end{thebibliography}

@@ -1,0 +1,28 @@
+#title
+Energy efficiency in High Throughput Computing
+
+
+#goals
+the purpose of this research is twofold: to analyze the tools and techniques
+available for studying energy efficiency of HTC and utilize them to compare
+ARM and Intel architectures under complex and authentic scientific workflows 
+
+#structure
+
+1. introduction
+
+2. background
+
+3. tools and techniques for measuring energy efficiency of scientific
+software applications
+3.1. hardware based
+3.1.1. external probing devices
+3.1.2. internal probing chips
+3.2. software based
+
+4. experiments
+4.1. experimental methodology
+4.2. evaluation
+4.3. discussion
+
+5. conclusions

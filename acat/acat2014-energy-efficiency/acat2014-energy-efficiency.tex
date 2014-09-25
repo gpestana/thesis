@@ -3,7 +3,8 @@
 \usepackage{lineno}
 \usepackage{hyperref}
 \usepackage{float}
-
+\usepackage{lineno}
+\linenumbers
 
 \begin{document}
 %\linenumbers
@@ -52,7 +53,9 @@ scientific workloads. [Version of~\today]
 
  The most recent scientific applications have to process and store considerable 
 volume of data. It is foreseeable that the volume of data will increase 
-considerably in the future, as technology and requirements enhance. Thus, energy 
+considerably in the future, as technology and requirements enhance. In addition
+to the physical limitations in terms of power density, this phenomenon also
+increase considerably the costs with energy in a HTC system. Thus, energy 
 consumption has become a major concern amongst the scientific community. \\
  The Large Hadron Collider (LHC) ~\cite{LHCPAPER} at the European Laboratory for 
 Particle Physics (CERN) in Geneva, Switzerland, is one of the scientific
@@ -216,32 +219,30 @@ present brief comparison between ARM and Intel architectures from the energy
 consumption perspective, based on the results obtained. \\
 
 \subsection{Tools and techniques}
-\subsubsection{\textbf{Intel}} We used RAPL technology to
+On Intel architecture, we used RAPL technology to
 perform measurements of the energy consumed by the package, dram and cores (see
 Figure 1). The external measurements were performed using a rack PDU, which 
 provides an online API to gather the energy consumed by the system on the rack 
 at a sampling rate of around 1s.
 
-\subsubsection{\textbf{ARM}} We used the Texas Instrument power monitor chip 
-TI INA231 (see section 2.2.1 for more informations) which allows reading of the energy consumed by the
+As for the ARM machine, we used the Texas Instrument power monitor chip 
+TI INA231 (see section 2.2.1) which allows reading of the energy consumed by the
 cores and dram at a sampling rate of microseconds. The chip was embedded in the 
 board (see Figure 3) from the vendor. For the external measurements, we used
 an external plug-in power monitor with a computer interface for gathering and
 storing the results.
 
 \subsection{Experiment setup}
-\subsubsection{\textbf{Workload}} We used ParfullCMSi [?], which consists
-in a multi-threaded Geant4 [?] benchmark application. It uses the complex
-CMS geometry to simulate the offline tasks of CMS software. 
-\subsubsection{\textbf{Machines' specifications}} The specifications can be seen in
-the Figure 3.
-\subsubsection{\textbf{Setup}} Using ParfulCMS, we run CMS reconstruction tasks
+The workload used for the experiments was ParfullCMS [?]. It consists
+of a multi-threaded Geant4 [?] benchmark application and uses the complex
+CMS geometry to simulate the offline tasks of CMS software. Using ParfulCMS, 
+we ran CMS reconstruction tasks
 on both Intel and ARM machines (see Figure 3). The workflow was run several
 times for different number of threads in each machine. The number of threads
 running in each experiment is according to the number of the cores of the
-machines. 
+machines. The machine's specifications can be seen in the Figure 3. 
 
-\subsection{Results}
+\subsection{Analysis}
 
 \begin{figure}[H]
 \centering
@@ -250,9 +251,6 @@ machines.
 \label{overflow}
 \end{figure}
 
-
-
-\subsection{Analysis}
 As expected, the ARM architecture shows better results from the energy efficiency
  perspective than Intel in all the experiments performed. Also as expected, both 
 architectures do not performs better when overcommitted (more threads than the
