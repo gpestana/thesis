@@ -1,0 +1,20 @@
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\contentsline {chapter}{Abbreviations and Acronyms}{4}{chapter*.1}
+\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}
+\contentsline {chapter}{\numberline {2}Background}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}High Throughput Computing}{7}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Literature review}{7}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}CERN and the LHC experiment}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Literature review}{7}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Energy performance and measurement}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Literature review}{7}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}ARM architecture}{7}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Literature review}{7}{subsection.2.4.1}
+\contentsline {chapter}{\numberline {3}Tools and techniques for \\ measuring energy efficiency of \\scientific software applications}{8}{chapter.3}
+\contentsline {chapter}{\numberline {4}Experiments}{9}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclusions}{10}{chapter.5}
+\contentsline {chapter}{\numberline {A}First appendix}{12}{appendix.A}
