@@ -9,9 +9,11 @@
 \begin{document}
 %\linenumbers
 
+
+
 \title{Techniques and tools for measuring energy efficiency of scientific software applications}
 
-\author{David Abdurachmanov$^1$, Peter Elmer$^2$, Giulio Eulisse$^3$, Robert Knight$^4$, Tapio Niemi$^5$, Jukka K. Nurminen$^6$, Filip Nyback$^6$, Gon\c{c}alo Pestana$^5$ $^6$, Zhonghong Ou$^6$, Kashif Khan $^5$ $^6$}
+\author{David Abdurachmanov$^1$, Peter Elmer$^2$, Giulio Eulisse$^3$, Robert Knight$^4$, Tapio Niemi$^5$, Jukka K. Nurminen$^6$, Filip Nyback$^6$, Goncalo Pestana$^6$, Zhonghong Ou$^6$}
 
 \address{$^1$ Digital Science and Computing Center, Faculty of Mathematics and Informatics, Vilnius University, Vilnius, Lithuania}
 \address{$^2$ Department of Physics, Princeton University, Princeton, NJ 08540, USA}
@@ -20,10 +22,7 @@
 \address{$^5$ Helsinki Institute of Physics, PO Box 64, FI-00014, Helsinki, Finland }
 \address{$^6$ Aalto University, PO Box 11100, 00076 Aalto, Finland}
 
-\ead{goncalo.pestana@aalto.fi}
-
-
-
+\ead{g6pestana@gmail.com}
 
 \begin{abstract}
 The scale of scientific High Performance Computing (HPC) and High 
@@ -97,13 +96,11 @@ in this article. The experiments use CMS workloads and rely on the
 techniques and tools described earlier to perform the measurements.
 
 This article is structured as following. Firstly, we describe where
-is energy consumed in a HTC system and outline some of
+is energy consumed in a HTC system. Secondly, we outline some of
 the tools and techniques available to measure and monitor energy
-consumption on HTC systems (Section 2). Secondly, we present the results of a
+consumption on HTC systems. Finally, we present the results of a
 comparison between ARMv7 and Intel Xeon architecture using CMS
-workloads (Section 3). Finally, we present IgProf, a general purpose, open source
- application performance profile. In addition, we describe its recent added 
-energy profiling features and 64-bit ARM support.
+workloads.
 
 \section{Tools and techniques for energy measurement}
 
@@ -249,9 +246,7 @@ server-grade system in order to make a proper comparison.
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=170mm]{img/results1.png}
-\caption{Chip monitor and external measurements results. The results are shown
-according to the relation events per number of cores of each machine and their
-absolute number of cores. }
+\caption{Chip monitor and external measurements results}
 \label{fig:parfull-cms-benchmark}
 \end{figure}
 

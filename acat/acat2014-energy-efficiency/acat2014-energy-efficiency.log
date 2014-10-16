@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.7.28)  25 SEP 2014 11:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.7.28)  6 OCT 2014 13:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -200,11 +200,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks17
 \@floatcapt=\box28
 )
-(./acat2014-energy-efficiency.aux
-
-LaTeX Warning: Label `overflow' multiply defined.
-
-)
+(./acat2014-energy-efficiency.aux)
 \openout1 = `acat2014-energy-efficiency.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -221,7 +217,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count107
 \scratchdimen=\dimen115
@@ -271,101 +268,97 @@ LaTeX Info: Redefining \nameref on input line 9.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <18.06749> not available
-(Font)              size <17.28> substituted on input line 14.
+(Font)              size <17.28> substituted on input line 12.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <18.06749> not available
-(Font)              size <17.28> substituted on input line 14.
+(Font)              size <17.28> substituted on input line 12.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 16.
+(Font)              <10.95> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 16.
+(Font)              <8> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 16.
+(Font)              <6> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 18.
+(Font)              <9> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 18.
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--76
-
- []
-
+(Font)              <5> on input line 16.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 77--90
-
- []
-
-<img/energy_model.png, id=31, 341.275pt x 470.75874pt>
+<img/energy_model.png, id=35, 341.275pt x 470.75874pt>
 File: img/energy_model.png Graphic file (type png)
 
 <use img/energy_model.png>
-Package pdftex.def Info: img/energy_model.png used on input line 111.
+Package pdftex.def Info: img/energy_model.png used on input line 151.
 (pdftex.def)             Requested size: 199.16928pt x 274.74268pt.
- [2]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
- [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
+ [2] [3pdfTeX warning (ext4): destination with the same identifier (name{figure
+.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.173 
+l.212 
        <./img/energy_model.png>]
-<img/stream-pp-np.pdf, id=72, 364.36125pt x 188.705pt>
-File: img/stream-pp-np.pdf Graphic file (type pdf)
+<img/table.png, id=66, 1068.99374pt x 167.62625pt>
+File: img/table.png Graphic file (type png)
+ <use img/table.png>
+Package pdftex.def Info: img/table.png used on input line 216.
+(pdftex.def)             Requested size: 426.79134pt x 66.92397pt.
 
-<use img/stream-pp-np.pdf>
-Package pdftex.def Info: img/stream-pp-np.pdf used on input line 199.
-(pdftex.def)             Requested size: 364.36035pt x 188.70453pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--220
-
- []
-
-[4] <img/results1.png, id=91, 1204.5pt x 501.875pt>
+<img/results1.png, id=70, 1204.5pt x 501.875pt>
 File: img/results1.png Graphic file (type png)
  <use img/results1.png>
-Package pdftex.def Info: img/results1.png used on input line 249.
+Package pdftex.def Info: img/results1.png used on input line 251.
 (pdftex.def)             Requested size: 483.69684pt x 201.54286pt.
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 249--250
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 251--254
  [][] 
  []
 
-[5pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+
+Underfull \hbox (badness 3049) in paragraph at lines 272--283
+[]\OT1/cmr/m/n/10.95 In the \OT1/cmr/m/it/10.95 instrumentation \OT1/cmr/m/n/10
+.95 case, effective readings of profiled quantities (e.g. energy
+ []
+
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.253 
-       <./img/stream-pp-np.pdf>] [6pdfTeX warning (ext4): destination with the 
-same identifier (name{figure.3}) has been already used, duplicate ignored
+l.297 
+       <./img/table.png>]
+<img/stream-pp-np.pdf, id=84, 364.36125pt x 188.705pt>
+File: img/stream-pp-np.pdf Graphic file (type pdf)
+
+<use img/stream-pp-np.pdf>
+Package pdftex.def Info: img/stream-pp-np.pdf used on input line 312.
+(pdftex.def)             Requested size: 364.36035pt x 188.70453pt.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.287 \section*{References}
-                            <./img/results1.png>]
-(./acat2014-energy-efficiency.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 292.
+l.341 
+       <./img/results1.png>] (./acat2014-energy-efficiency.bbl [6pdfTeX warning
+ (ext4): destination with the same identifier (name{figure.4}) has been already
+ used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.50 
+      <./img/stream-pp-np.pdf>]
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no ” in font cmr9!
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 382.
  [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 292.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 382.
  (./acat2014-energy-efficiency.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 292.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 292.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 382.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 382.
 Package rerunfilecheck Info: File `acat2014-energy-efficiency.out' has not chan
 ged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -374,19 +367,16 @@ ged.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.78749pt have occurred.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 292.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 382.
  ) 
 Here is how much of TeX's memory you used:
- 5591 strings out of 493104
- 81260 string characters out of 6136932
- 173023 words of memory out of 5000000
- 8974 multiletter control sequences out of 15000+600000
- 9671 words of font info for 34 fonts, out of 8000000 for 9000
+ 5593 strings out of 493104
+ 81314 string characters out of 6136932
+ 173289 words of memory out of 5000000
+ 8981 multiletter control sequences out of 15000+600000
+ 9839 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,5n,23p,843b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,5n,23p,316b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
@@ -396,12 +386,12 @@ onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.
-pfb>
-Output written on acat2014-energy-efficiency.pdf (7 pages, 268080 bytes).
+/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on acat2014-energy-efficiency.pdf (7 pages, 307289 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

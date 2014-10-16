@@ -3,44 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: acat2014-energy-efficiency.aux
 The style file: unsrt.bst
 Database file #1: acat2014-energy-efficiency.bib
+Warning--empty year in GEANT4
 You've used 18 entries,
             1791 wiz_defined-function locations,
-            545 strings with 6238 characters,
-and the built_in function-call counts, 3322 in all, are:
-= -- 281
-> -- 154
-< -- 1
-+ -- 60
-- -- 42
-* -- 179
-:= -- 539
-add.period$ -- 56
+            547 strings with 6528 characters,
+and the built_in function-call counts, 3505 in all, are:
+= -- 297
+> -- 171
+< -- 3
++ -- 65
+- -- 47
+* -- 197
+:= -- 575
+add.period$ -- 54
 call.type$ -- 18
 change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 144
-empty$ -- 343
-format.name$ -- 42
-if$ -- 744
+cite$ -- 19
+duplicate$ -- 158
+empty$ -- 340
+format.name$ -- 47
+if$ -- 782
 int.to.chr$ -- 0
 int.to.str$ -- 18
-missing$ -- 12
-newline$ -- 95
-num.names$ -- 14
-pop$ -- 58
+missing$ -- 13
+newline$ -- 93
+num.names$ -- 15
+pop$ -- 48
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 73
+skip$ -- 88
 stack$ -- 0
-substring$ -- 150
-swap$ -- 27
-text.length$ -- 1
+substring$ -- 163
+swap$ -- 36
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 25
+warning$ -- 1
+while$ -- 27
 width$ -- 20
-write$ -- 190
+write$ -- 189
+(There was 1 warning)

@@ -16,5 +16,6 @@
 \contentsline {subsection}{\numberline {2.4.1}Literature review}{7}{subsection.2.4.1}
 \contentsline {chapter}{\numberline {3}Tools and techniques for \\ measuring energy efficiency of \\scientific software applications}{8}{chapter.3}
 \contentsline {chapter}{\numberline {4}Experiments}{9}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclusions}{10}{chapter.5}
-\contentsline {chapter}{\numberline {A}First appendix}{12}{appendix.A}
+\contentsline {chapter}{\numberline {5}Analysis}{19}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusions}{20}{chapter.6}
+\contentsline {chapter}{\numberline {A}First appendix}{22}{appendix.A}

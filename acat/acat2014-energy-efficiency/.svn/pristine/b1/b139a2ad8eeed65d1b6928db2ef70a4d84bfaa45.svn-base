@@ -156,17 +156,10 @@ architectures-software-developer-manuals.html"
 }
 
 @misc{igprof-web,
-  title = {Ig{P}rof, The {I}gnominous {P}rofiler},
-  howpublished = {\url{http://igprof.org/}. Accessed 2014-09-30.}
-}
-
-@article{igprofchep04,
   author = {Giulio Eulisse and Lassi Tuura},
-  title = {{IgProf Profiling Tool}},
-  year = {2004},
-  journal = {Proc. Computing In High Energy Physics (CHEP04) (Interlaken)},
+  title = {Ig{P}rof, The {I}gnominous {P}rofiler},
+  note = {Web page. \url{http://igprof.org/}. Accessed 2014-03-27.}
 }
-
 
 @article{tuura08,
   author = {Lassi Tuura and Vincenzo Innocente and Giulio Eulisse},
@@ -198,7 +191,7 @@ architectures-software-developer-manuals.html"
 @misc{stream-web,
   author = {John D. McCalpin},
   title = {{STREAM}: Sustainable Memory Bandwidth in High Performance Computers},
-  note = {Web page. \url{http://www.cs.virginia.edu/stream/}. Accessed 2014-09-30.}
+  note = {Web page. \url{http://www.cs.virginia.edu/stream/}. Accessed 2014-09-04.}
 }
 
 @misc{POWERTOP,
@@ -208,7 +201,7 @@ architectures-software-developer-manuals.html"
 }
 
 @misc{TIINA231,
-  title = {{Texas Instruments (TI) INA 231}},
+  title = {TI INA 231},
   howpublished = {\url{http://www.ti.com/product/ina231}},
   note = {Last time accessed: 17-09-2014}
 }
@@ -216,7 +209,7 @@ architectures-software-developer-manuals.html"
 @article{ABD2014,
   author = {David Abdurachmanov and Brian Bockelman and Peter Elmer and Giulio Eulisse and Robert Knight},
   year = {2014},
-  title = {{Heterogeneous High Throughput Scientific Computing with APM X-Gene and Intel Xeon Phi}},
+  title = {Heterogeneous High Throughput Scientific Computing with APM X-Gene and Intel Xeon Phi},
   journal = { to be published in ACAT 2014 proceedings }
 }
 

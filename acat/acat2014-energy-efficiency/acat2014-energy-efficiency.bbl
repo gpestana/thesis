@@ -32,6 +32,36 @@ G.~Aad et~al.
   Higgs boson with the ATLAS detector at the LHC}.
 \newblock {\em Phys.Lett.}, B716:1--29, 2012.
 
+\bibitem{HLLHC}
+L~Rossi and O~Bruning.
+\newblock {High Luminosity Large Hadron Collider A description for the European
+  Strategy Preparatory Group}.
+\newblock Technical Report CERN-ATS-2012-236, CERN, Geneva, Aug 2012.
+
+\bibitem{TIINA231}
+{Texas Instruments (TI) INA 231}.
+\newblock \url{http://www.ti.com/product/ina231}.
+\newblock Last time accessed: 17-09-2014.
+
+\bibitem{INTELMAN}
+{\em Intel 64 and IA-32 Software Developer Manuals - Volume 3}.
+\newblock www.intel.com/content/www/us/en/processors/
+  architectures-software-developer-manuals.html.
+
+\bibitem{RAPL1}
+Balaji Subramaniam and Wu~chun Feng.
+\newblock Towards energy-proportional computing for enterprise-class server
+  workloads.
+\newblock {\em CPE '13 Proceedings of the 4th ACM/SPEC International Conference
+  on Performance Engineering}, 2012.
+
+\bibitem{ABD2014}
+David Abdurachmanov, Brian Bockelman, Peter Elmer, Giulio Eulisse, and Robert
+  Knight.
+\newblock {Heterogeneous High Throughput Scientific Computing with APM X-Gene
+  and Intel Xeon Phi}.
+\newblock {\em to be published in ACAT 2014 proceedings}, 2014.
+
 \bibitem{ACAT13ARM}
 David Abdurachmanov, Peter Elmer, Giulio Eulisse, and Shahzad Muzaffar.
 \newblock Initial explorations of arm processors for scientific computing.
@@ -45,50 +75,23 @@ David Abdurachmanov, Kapil Arya, Josh Bendavid, Tommaso Boccali, Gene
   processing.
 \newblock {\em Journal of Physics: Conference Series}, 513(5):052008, 2014.
 
-\bibitem{TIINA231}
-Ti ina 231.
-\newblock \url{http://www.ti.com/product/ina231}.
-\newblock Last time accessed: 17-09-2014.
+\bibitem{GEANT4}
+S.~Agostinelli et~al.
+\newblock Geant4 — a simulation toolkit.
+\newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment}, pages
+  250--303.
+\newblock DOI: 10.1016/S0168-9002(03)01368-8.
 
-\bibitem{RAPL1}
-Balaji Subramaniam and Wu~chun Feng.
-\newblock Towards energy-proportional computing for enterprise-class server
-  workloads.
-\newblock {\em CPE '13 Proceedings of the 4th ACM/SPEC International Conference
-  on Performance Engineering}, 2012.
-
-\bibitem{INTELMAN}
-{\em Intel 64 and IA-32 Software Developer Manuals - Volume 3}.
-\newblock www.intel.com/content/www/us/en/processors/
-  architectures-software-developer-manuals.html.
-
-\bibitem{MSRTOOLS}
-Msr tools.
-\newblock \url{https://01.org/msr-tools}.
-\newblock Last time accessed: 28-07-2014.
-
-\bibitem{POWERTOP}
-Powertop.
-\newblock \url{https://01.org/powertop}.
-\newblock Last time accessed: 17-09-2014.
+\bibitem{igprofchep04}
+Giulio Eulisse and Lassi Tuura.
+\newblock {IgProf Profiling Tool}.
+\newblock {\em Proc. Computing In High Energy Physics (CHEP04) (Interlaken)},
+  2004.
 
 \bibitem{igprof-web}
-Giulio Eulisse and Lassi Tuura.
-\newblock Ig{P}rof, the {I}gnominous {P}rofiler.
-\newblock Web page. \url{http://igprof.org/}. Accessed 2014-03-27.
-
-\bibitem{tuura08}
-Lassi Tuura, Vincenzo Innocente, and Giulio Eulisse.
-\newblock Analysing {CMS} software performance using {IgProf}, {OProfile} and
-  callgrind.
-\newblock {\em Journal of Physics: Conference Series 119}, 2008.
-\newblock DOI 10.1088/1742-6596/119/4/042030.
-
-\bibitem{fowler02}
-Martin Fowler.
-\newblock Yet another optimization article.
-\newblock {\em {IEEE} Software}, 1(May/June):20--21, 2002.
-\newblock ISSN 0740-7459.
+Ig{P}rof, the {I}gnominous {P}rofiler.
+\newblock \url{http://igprof.org/}. Accessed 2014-09-30.
 
 \bibitem{weaver12}
 Vincent~M. Weaver, Matt Johnson, Kiran Kasichayanula, James Ralph, Piotr
@@ -102,6 +105,6 @@ Vincent~M. Weaver, Matt Johnson, Kiran Kasichayanula, James Ralph, Piotr
 John~D. McCalpin.
 \newblock {STREAM}: Sustainable memory bandwidth in high performance computers.
 \newblock Web page. \url{http://www.cs.virginia.edu/stream/}. Accessed
-  2014-09-04.
+  2014-09-30.
 
 \end{thebibliography}

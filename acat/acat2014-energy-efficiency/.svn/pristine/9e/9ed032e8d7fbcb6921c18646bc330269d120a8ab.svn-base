@@ -9,9 +9,11 @@
 \begin{document}
 %\linenumbers
 
+
+
 \title{Techniques and tools for measuring energy efficiency of scientific software applications}
 
-\author{David Abdurachmanov$^1$, Peter Elmer$^2$, Giulio Eulisse$^3$, Robert Knight$^4$, Tapio Niemi$^5$, Jukka K. Nurminen$^6$, Filip Nyback$^6$, Gon\c{c}alo Pestana$^5$ $^6$, Zhonghong Ou$^6$, Kashif Khan $^5$ $^6$}
+\author{David Abdurachmanov$^1$, Peter Elmer$^2$, Giulio Eulisse$^3$, Robert Knight$^4$, Tapio Niemi$^5$, Jukka K. Nurminen$^6$, Filip Nyback$^6$, Goncalo Pestana$^6$, Zhonghong Ou$^6$}
 
 \address{$^1$ Digital Science and Computing Center, Faculty of Mathematics and Informatics, Vilnius University, Vilnius, Lithuania}
 \address{$^2$ Department of Physics, Princeton University, Princeton, NJ 08540, USA}
@@ -20,10 +22,7 @@
 \address{$^5$ Helsinki Institute of Physics, PO Box 64, FI-00014, Helsinki, Finland }
 \address{$^6$ Aalto University, PO Box 11100, 00076 Aalto, Finland}
 
-\ead{goncalo.pestana@aalto.fi}
-
-
-
+\ead{g6pestana@gmail.com}
 
 \begin{abstract}
 The scale of scientific High Performance Computing (HPC) and High 
@@ -97,13 +96,11 @@ in this article. The experiments use CMS workloads and rely on the
 techniques and tools described earlier to perform the measurements.
 
 This article is structured as following. Firstly, we describe where
-is energy consumed in a HTC system and outline some of
+is energy consumed in a HTC system. Secondly, we outline some of
 the tools and techniques available to measure and monitor energy
-consumption on HTC systems (Section 2). Secondly, we present the results of a
+consumption on HTC systems. Finally, we present the results of a
 comparison between ARMv7 and Intel Xeon architecture using CMS
-workloads (Section 3). Finally, we present IgProf, a general purpose, open source
- application performance profile. In addition, we describe its recent added 
-energy profiling features and 64-bit ARM support.
+workloads.
 
 \section{Tools and techniques for energy measurement}
 
@@ -169,7 +166,7 @@ caches~\cite{INTELMAN}. As for the discrete components case, the
 timing resolution of measurements is in the millisecond range~\cite{RAPL1}.
 This is fine enough to permit exploiting such data to build an energy
 consumption sampling profiler for applications, similar to how performance
-sampling profilers work (see section~\ref{sec:sampling}).
+sampling profilers work (see section ~\ref{sec:sampling}).
 Finally, in addition to power
 monitoring of the sockets, RAPL can limit the power consumed by the
 different domains. This feature, usually referred as power capping,
@@ -195,8 +192,8 @@ the energy consumption perspective, based on the results obtained.
 \subsection{Tools and techniques}
 
 For the Intel architecture, we used the RAPL technology to perform measurements
-of the energy consumed by the package, DRAM and cores 
-(figure~\ref{fig:power-consumption-model}).
+of the energy consumed by the package, DRAM and cores (figure 
+~\ref{fig:power-consumption-model}).
 The external measurements for the baseline were performed using a
 rack PDU, which provides an online API to gather the energy consumed
 by the system on the rack at a sampling rate of 1 second.
@@ -208,7 +205,7 @@ we used an external plug-in power monitor with a computer interface
 for gathering and storing the results.
 In both cases we read the data as it was exposed to the system via
 the sysfs / devfs knobs.
-The machine specifications can be seen in figure~\ref{figure:machine-specs}.
+The machine specifications can be seen in figure ~\ref{figure:machine-specs}.
 
 
 \begin{figure}[ht!]
@@ -224,8 +221,8 @@ The machine specifications can be seen in figure~\ref{figure:machine-specs}.
 The workload used for the experiments was ParFullCMS, a multi-threaded
 Geant4~\cite{GEANT4} benchmark application which uses a complex CMS
 geometry for its simulation. Using ParFullCMS, we ran simulation
-tasks on both the Intel and ARM machines 
-(figure~\ref{fig:parfull-cms-benchmark}).  The workflow was run several times
+tasks on both the Intel and ARM machines (figure 
+~\ref{fig:parfull-cms-benchmark}).  The workflow was run several times
 with different number of threads in each machine. The number of
 threads run in each experiment is chosen according to the number of
 the cores of the machines.
@@ -236,10 +233,12 @@ As expected, the ARMv7 architecture shows encouraging results from
 the energy efficiency perspective than Intel in all the experiments
 performed. Also as expected, both architectures do not perform
 better when overcommitted (more threads than the physical number
-of cores).  Notice ARM results when overcommitted
-(8 threads) are much worse then Intel ones. This is due to the relatively 
-modest amount of available DRAM (figure~\ref{figure:machine-specs}), causing 
-the machine started swapping,
+of cores). An interesting feature of the ARM results when overcommitted
+(8 threads) is the deterioration of the energy performance. It would
+be expected a behaviour similar to Intel in same circumstances. 
+{\bf PE: What does this last sentence mean?}
+However, due to the relatively modest amount of available DRAM (figure 
+~\ref{figure:machine-specs}), the machine started swapping,
 greatly affecting performance. While this was expected, since the
 ARM system used is just a development board for mobile applications,
 this is a clear indication that when doing a final assessment of
@@ -249,9 +248,7 @@ server-grade system in order to make a proper comparison.
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=170mm]{img/results1.png}
-\caption{Chip monitor and external measurements results. The results are shown
-according to the relation events per number of cores of each machine and their
-absolute number of cores. }
+\caption{Chip monitor and external measurements results}
 \label{fig:parfull-cms-benchmark}
 \end{figure}
 
