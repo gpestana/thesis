@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{STACKOVERFLOW}
+Stack overflow.
+\newblock \url{http://stackoverflow.com/}.
+\newblock Accessed: 2014-10-27.
+
 \bibitem{QUESTIONS_ENERGY}
 {\sc Pinto, G., Castor, F., and Liu, Y.~D.}
 \newblock Mining questions about software energy consumption.
