@@ -10,10 +10,12 @@ an energy consumption perspective.
 In each set, we used different
 techniques and tools to perform the energy measurements. The techniques and tools
 used to perform the measurements are described and analyzed in depth in 
-Section 3. \\ 
+Section 3.
+
 The first part of this chapter outlines the scope, methodology and measurement
 tools used for each set. The latest part shows the results of the 
-experiments, which are analyzed in the next chapter. \\
+experiments, which are analyzed in the next chapter.
+
 Throughout the rest of the document, the different experiments will be termed as
 first (FSE), second (SSE) and third set of experiments (TSE). 
 
@@ -32,38 +34,38 @@ Done at CERN. Explain methodology and scope.
 \begin{figure}[h!]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_total_quad"}
-    \label{fig:nf_ss}
     \caption{Full single threading CMS experiments on Intel Quad}
+    \label{fig:aalto_quad_clamp}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_total_atom"}
-    \label{fig:nf_ss}
     \caption{Full single threading CMS experiments on Intel Atom}
+    \label{fig:aalto_atom_clamp}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_total_arm"}
-    \label{fig:nf_ss}
     \caption{Full single threading CMS experiments on ARMv7 server}
+    \label{fig:aalto_arm_clamp}
 \end{figure}
 
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_quadEvents"}
-    \label{fig:nf_ss}
     \caption{Full single threading CMS experiments on Intel Quad - event
+    \label{fig:aalto_quad_events}
 processing only}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_atomEvents"}
-    \label{fig:nf_ss}
     \caption{Full single threading CMS experiments on Intel Atom - event
+    \label{fig:aalto_atom_events}
 processing only}
 \end{figure}
 
@@ -71,9 +73,9 @@ processing only}
 \begin{figure}[h!]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_armEvents"}
-    \label{fig:nf_ss}
     \caption{Full single threading CMS experiments on ARMv7 server - event
 processing only}
+    \label{fig:aalto_arm_events}
 \end{figure}
 
 
@@ -106,6 +108,13 @@ processing only}
     \includegraphics[width=150mm]{"img/acat/results1"}
     \label{fig:nf_ss}
     \caption{Multithreaded ParFullCMS comparison Intel Xeon vs ODROID ARMv7}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=150mm]{"img/cern/rapl"}
+    \caption{RAPL measurements with different load combinations }
+    \label{fig:nf_ss}
 \end{figure}
 
 
@@ -143,6 +152,4 @@ binding}
     \caption{RAPL measurements of NUMA nodes - 32 processes. Processes 
 distributed evenly explicitly - 8 processes per node. }
 \end{figure}
-
-
 

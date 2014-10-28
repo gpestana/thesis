@@ -1,5 +1,21 @@
 \chapter{Background}
 
+\section{Energy consumption in Scientific Computing}
+\subsection{Literature review}
+
+% initial explorations of ARM processors for scientific computing
+According to  \cite{ACAT13ARM}, the computing requirements for HPC have 
+increased particularly in recent
+years. Projects of the magnitude and complexity of the Large Hadron Collider are
+overwhelming examples of that fact. To achieve results like the discovering of
+the Higgs boson and other significant scientific advances, it was necessary a 
+ to distribute the processing tasks across several partners and institutions
+through the WLCG. The equivalent capacity of such distributed systems was between 
+80,000 and 100,000 x86-64 cores in 2012.
+Further projects and discoveries will demand even more processing capacity from
+the WLCG. For example, as stated by \cite{ACAT13ARM}, to upgrade the LHC 
+detectors luminosity to its full power the datasets will increase sizes by 2-3
+orders of magnitude and processing power will have to increase in proportion.
 
 
 \section{High Throughput Computing}
@@ -16,8 +32,6 @@
 \subsection{Literature review}
 
 % mining questions about software energy consumption
-
-
 \textbf{on importance of energy consumption for engineers and scientists}
 \\
 The study conducted by \cite{QUESTIONS_ENERGY}, shows that engineers have been
@@ -43,4 +57,17 @@ energy efficient software.
 \subsection{Literature review}
 
 
+% initial explorations of ARM processors for scientific computing
+In \cite{ACAT13ARM}:
 
+- After 2015, processors have hit scaling limits. Two different paths started to be
+taken on the processor industry:  development of multiprocessor architectures that
+allow to run parallel tasks and the time clock frequency - which have been
+increasing throughout the years - stabilized.
+
+- Most High Physics Computing systems run in clusters of several cores.
+Additional cores are parallelized and can run at the same time, which allows the
+system to scale. However, also commodities such memory, I/O streams and energy
+scale proportionally in such architectures.
+ 
+ 

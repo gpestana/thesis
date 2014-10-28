@@ -5,6 +5,11 @@ Stack overflow.
 \newblock \url{http://stackoverflow.com/}.
 \newblock Accessed: 2014-10-27.
 
+\bibitem{ACAT13ARM}
+{\sc Abdurachmanov, D., Elmer, P., Eulisse, G., and Muzaffar, S.}
+\newblock Initial explorations of arm processors for scientific computing.
+\newblock {\em Journal of Physics: Conference Series 523}, 1 (2014), 012009.
+
 \bibitem{QUESTIONS_ENERGY}
 {\sc Pinto, G., Castor, F., and Liu, Y.~D.}
 \newblock Mining questions about software energy consumption.

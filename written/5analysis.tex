@@ -3,16 +3,65 @@
 
 
 The scope of the analysis presented in this section is twofold: to compare the
-energy efficiency of the studied platforms and analyze the tools and techniques 
-used on the different experiment sets. 
-\\
+platforms from an energy efficiency perspective and analyze the tools and techniques used on the different experiment sets. 
+
 Whereas the first two sections analyze the energy efficiency of the platforms
-studied and the particularities of the tools and techniques used, the last section
-covers the results and issues which arose when using RAPL to measure the energy 
-consumption of a NUMA environment.
+studied and the particularities of the tools and techniques used, the last 
+section covers the results and issues which arose when using RAPL to measure 
+the energy consumption in a NUMA environment.
 
 \section{First Set of Experiments}
 ARM server vs ATOM and QUAD, using clap and software-based experiments
+
+In figures~\ref{fig:aalto_quad_clamp}, ~\ref{fig:aalto_atom_clamp} 
+and~\ref{fig:aalto_arm_clamp}, it is plotted the physical measurements from the
+beginning of the workload until the end.
+
+\begin{description}
+\item[Stages] \hfill \\
+All the experiment sets show 3 stages. The stages can be better identified 
+when plotting
+the memory workload against cpu usage, rather than the energy consumption 
+measurements (see Figures in GDrive-Add?). The three stages consist in different 
+phase of the
+experiment. The first stage consists on the initialization process. During this
+stage mostly memory is being used, rather than cpu workload. The second stage
+is the connection phase. It has the goal of fetching the  meta data fetching from
+the CERN servers needed to perform the reconstruction of the events. Anew, 
+during this stage, the cpu load is low when compared to the 
+memory workload. Lastly, the third stage corresponds to the event processing
+phase. Therefore, the last stage is cpu intensive and the one that is performing 
+the useful computation for the reconstruction of events.
+
+\item[Stages comparison] \hfill \\
+Regardless the number of processes running, the time for the three stages is 
+constant in all the experiment sets, if the cpu is not overcommitted. When
+the number of processes exceed the number of available cores, the time to 
+process the events increases since there are no available cores to process the
+events concurrently. In the overcommitted situation, the time increase follows
+a ratio \textit{nr\_of\_processes/nr\_of\_cores\_available}. For example, if the
+number of processes running is 6 and the number of cores available is 4, the
+time needed to process the events increases roughly 2/3 compared to when the
+cpu is not overcommitted.   
+
+
+\item[Importance of the stages] \hfill \\
+Unarguably, the most important stage when studying the energy efficiency of
+workload in CERN is the third stage. There are two main reasons for that: first,
+ the CMSSW configuration at either CERN, 2nd and 3rd tiers has proxies
+and caches that speedup the second stage [refs]. Lastly, given the amount of
+data to be processed in the last phase and thus the energy consumed by the
+event processing stage, the energy consumed by the former stages becomes
+ irrelevant. Therefore, in the remainder of the chapter we focus our analysis on 
+ the event processing stage only. The energy measurements of the third stage are
+shown in the figures
+~\ref{fig:aalto_quad_events},~\ref{fig:aalto_atom_events} and~\ref{fig:aalto_arm_events}. 
+
+
+
+
+\end{description}
+
 
 \subsection{Comparison ARM and Intel architecures}
 \subsection{Tools and techniques}

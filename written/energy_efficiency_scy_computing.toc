@@ -6,14 +6,16 @@
 \contentsline {chapter}{Abbreviations and Acronyms}{4}{chapter*.1}
 \contentsline {chapter}{\numberline {1}Introduction}{7}{chapter.1}
 \contentsline {chapter}{\numberline {2}Background}{8}{chapter.2}
-\contentsline {section}{\numberline {2.1}High Throughput Computing}{8}{section.2.1}
+\contentsline {section}{\numberline {2.1}Energy consumption in Scientific Computing}{8}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Literature review}{8}{subsection.2.1.1}
-\contentsline {section}{\numberline {2.2}CERN and the LHC experiment}{8}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Literature review}{8}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Energy performance and measurement}{8}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Literature review}{8}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}ARM architecture}{9}{section.2.4}
+\contentsline {section}{\numberline {2.2}High Throughput Computing}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Literature review}{9}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}CERN and the LHC experiment}{9}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Literature review}{9}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Energy performance and measurement}{9}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Literature review}{9}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}ARM architecture}{9}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Literature review}{9}{subsection.2.5.1}
 \contentsline {chapter}{\numberline {3}Tools and techniques for \\ measuring energy efficiency of \\scientific software applications}{10}{chapter.3}
 \contentsline {chapter}{\numberline {4}Experiments}{11}{chapter.4}
 \contentsline {section}{\numberline {4.1}Experiments methodology}{11}{section.4.1}
@@ -21,14 +23,14 @@
 \contentsline {subsection}{\numberline {4.1.2}Second Set of Experiments}{11}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Third Set of Experiments: RAPL in NUMA environment}{11}{subsection.4.1.3}
 \contentsline {section}{\numberline {4.2}Results}{12}{section.4.2}
-\contentsline {chapter}{\numberline {5}Analysis}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}First Set of Experiments}{21}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Comparison ARM and Intel architecures}{21}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Tools and techniques}{21}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Second Set of Experiments}{21}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Comparison ARM and Intel architecures}{22}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Tools and techniques}{22}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Third Set of Experiments}{22}{section.5.3}
-\contentsline {chapter}{\numberline {6}Future Work}{23}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusions}{24}{chapter.7}
-\contentsline {chapter}{\numberline {A}First appendix}{26}{appendix.A}
+\contentsline {chapter}{\numberline {5}Analysis}{22}{chapter.5}
+\contentsline {section}{\numberline {5.1}First Set of Experiments}{22}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Comparison ARM and Intel architecures}{23}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Tools and techniques}{23}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Second Set of Experiments}{23}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Comparison ARM and Intel architecures}{24}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Tools and techniques}{24}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Third Set of Experiments}{24}{section.5.3}
+\contentsline {chapter}{\numberline {6}Future Work}{25}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusions}{26}{chapter.7}
+\contentsline {chapter}{\numberline {A}First appendix}{28}{appendix.A}
