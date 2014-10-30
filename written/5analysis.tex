@@ -10,6 +10,9 @@ studied and the particularities of the tools and techniques used, the last
 section covers the results and issues which arose when using RAPL to measure 
 the energy consumption in a NUMA environment.
 
+In the final of this section, we outline the highlights of the analysis for
+each set of experiments.
+
 \section{First Set of Experiments}
 ARM server vs ATOM and QUAD, using clap and software-based experiments
 
@@ -53,11 +56,66 @@ and caches that speedup the second stage [refs]. Lastly, given the amount of
 data to be processed in the last phase and thus the energy consumed by the
 event processing stage, the energy consumed by the former stages becomes
  irrelevant. Therefore, in the remainder of the chapter we focus our analysis on 
- the event processing stage only. The energy measurements of the third stage are
-shown in the figures
+ the event processing stage only. The energy measurements of only the third stage
+ are shown in the figures
 ~\ref{fig:aalto_quad_events},~\ref{fig:aalto_atom_events} and~\ref{fig:aalto_arm_events}. 
 
 
+\item[Relation number processes/number cores] \hfill \\
+The relation between the number of processes and number of cores and the
+influence of its ratio is clear in the figures 
+~\ref{fig:aalto_quad_events},~\ref{fig:aalto_atom_events} and~\ref{fig:aalto_arm_events}. 
+As expected, when the CPU is overcommitted the task takes more time than
+otherwise. For the QUAD~\ref{fig:aalto_quad_events} and ARM
+~\ref{fig:aalto_arm_events} architectures, it is clear that when the number of
+processes is bigger than 4, the task takes more time to be processes. In the
+ATOM architecture ~\ref{fig:aalto_atom_events}, the same happens when the number
+of processes exceed 2. More detailed information about this behavior can be
+drawn by analyzing the data acquired by the software-based tools during the
+experiments \textbf{[include ps, powertop, ect.. plots ?]} 
+
+
+\item[Time comparison] \hfill \\
+When comparing the time taken by the different architectures to process the same
+task~\ref{fig:aalto_time}, the pattern is evident. 
+Regardless the number of processes launched, the 
+QUAD architecture is faster than ATOM and ARM, whereas ATOM is faster than ARM.
+This fact is due to the architectures characteristics and its specifications, 
+most notably the CPU clock speed.\\
+
+\item[Energy efficiency comparison] \hfill \\
+The energy efficiency metric used in this study 
+is the ratio of performance per power consumed. Performance consist on the 
+average of events computed per second for each architecture. More details about 
+the reasons why 
+Events were considered the main data unit for CERN workloads are explained in the
+ Methodology Section. Given the above mentioned metrics, it is clear that  
+systems are  proportionally energy efficient with its ratio performance per 
+watts. Therefore, by analyzing the Figure~\ref{fig:aalto_efficiency_comparison}, it is evident that given the architectures and its configurations, ARM 
+architecture 
+outperforms in terms of energy efficiency its concurrence in all considered 
+scenarios. In addition, we conclude that between Intel architectures, ATOM is
+more energy efficient than QUAD architecture. 
+
+%% tools and techniques
+\item[Measuring tools: external monitoring] \hfill \\
+For this set of experiments, the external samples were acquired and recorded 
+manually.
+This factor had a visible impact on the resolution of the measurements. Clearly,
+the plot shows  spikes and rough transitions between samples. Moreover, the error
+tends to increase proportional to the human interaction with the experiment. 
+Therefore, it is more effective to use digital and automated ways to sample and
+log the data acquired during the measurements. The advantages of using digital
+and automated ways to sample and log data can be seen further on in the SSE.
+
+\item[Measuring tools: software-based monitoring] \hfill \\
+In this particular set of experiments, the software monitoring tools used were
+of particular help to distinguish the different stages, which existence was
+unknown before the experiment. The software-based tools can be used as a 
+decision support and for system behavior learning. Thus, even if the output is
+does not directly show information about energy consumption of the system, it
+can be important to support and explain expected - and unexpected - behaviors.
+  
 
 
 \end{description}
