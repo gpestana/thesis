@@ -1,0 +1,7 @@
+/mydet/SelectDetector Honeycomb
+/run/initialize
+/vis/scene/create
+/vis/open DAWNFILE
+/vis/viewer/flush
+/run/beamOn 1
+/vis/viewer/flush

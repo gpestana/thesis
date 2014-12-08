@@ -1,0 +1,89 @@
+$Id: History 77269 2013-11-22 10:30:02Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    hadr01 History file
+                    --------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+21-11-13 A. Dotti (test44-V09-06-03)
+- Use G4RunManager::ReinitializeGeometry() 
+
+30-07-13 A.Dotti  (test44-V09-06-02)
+- Fix compilation warnings for clang32: unused variables
+
+31-01-13  V.Ivant (test44-V09-06-01)
+- PhysicsList - add modifications to address reorganisation of PHysics List
+
+07-12-12  V.Ivant (test44-V09-06-00)
+- PhysicsList - removed CHIPS and LHEP builders
+
+24-10-12  A.Ribon (test44-V09-05-02)
+- Migrated to new stopping physics.
+
+11-10-12  G.Cosmo (test44-V09-05-01)
+- Explicit inclusion of units and constants headers.
+
+28-09-12  V.Ivant (test44-V09-05-00)
+- Removed obsolete headers 
+
+17-11-11  V.Ivant (test44-V09-04-03)
+- Removed call to obsolete G4Exception 
+
+22-04-11  V.Ivant (test44-V09-04-02)
+- Removed obsolete includes
+
+21-02-11  V.Ivant (test44-V09-04-01)
+- Fixed macro and scripts
+
+18-02-11  V.Ivant (test44-V09-04-00)
+- Fixed ROOT script
+
+22-11-10  V.Ivant (test44-V09-03-02)
+- Fixed PhysicsList - copied from Hadr01
+
+09-11-10  M.Asai (test44-V09-03-01)
+- Fix AIDA file option.
+
+29-07-10  V.Ivant (test44-V09-03-00)
+- PhysicsList and its messenger are taken from Hadr01 example to
+  be coherent with the recent updates of physics_list library
+
+28-11-09  V.Ivant (test44-V09-02-02)
+- A.Bagulya added scripts: run.py, reader_test44-online.py
+
+25-05-09 A.Bagulya ()
+- modified run.csh: set REFERENCE variable automatic
+- added scripts: run_py.csh, reader_test44.py 
+
+15-05-09  V.Ivant (test44-V09-02-01)
+- fixed script run.csh
+
+16-12-08  V.Ivant (test44-V09-02-00)
+- fixed plots
+
+19-11-08  V.Ivant (test44-V09-01-03)
+- fixed plot size
+
+28-08-08  V.Ivant (test44-V09-01-02)
+- fixed ROOT script
+
+27-08-08  V.Ivant (test44-V09-01-02)
+- fixed bug in run.csh script
+
+11-06-08  V.Ivant (test44-V09-01-01)
+- remove AIDA from GNUmakefile
+- fixed histograms
+     
+22-05-08 V.Ivant (test44-V09-01-00)
+- first release
+     

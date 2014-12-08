@@ -1,0 +1,53 @@
+# $Id: test3.mac 66356 2012-12-18 09:02:32Z gcosmo $
+# New Geant4 macro for test3
+# By I. Hrivnacova, IPN Orsay; 25/01/2008
+
+#/fred/volume NATALIA
+#/fred/volume VOXEL
+/fred/volume BOX
+#/fred/volume CONE
+#/fred/volume CONE2
+#/fred/volume ORB
+#/fred/volume PARA
+#/fred/volume SPHERE
+#/fred/volume TORUS1
+#/fred/volume TORUS2
+#/fred/volume TRAP
+#/fred/volume TRD
+#/fred/volume TUBS
+#/fred/volume ELLIPS
+#/fred/volume ELCONE
+#/fred/volume ELTUBE
+#/fred/volume EXTRU1
+#/fred/volume EXTRU2
+#/fred/volume EXTRU3
+#/fred/volume EXTRU4
+#/fred/volume HYPE
+#/fred/volume PCON
+#/fred/volume PCON2
+#/fred/volume PCON3
+#/fred/volume PCON4
+#/fred/volume PGON
+#/fred/volume PGON2
+#/fred/volume PGON3
+#/fred/volume TESSEL1
+#/fred/volume TESSEL2
+#/fred/volume TESSEL3
+#/fred/volume TESSEL4
+#/fred/volume TET
+#/fred/volume TWBOX
+#/fred/volume TWTRAP1
+#/fred/volume TWTRAP2
+#/fred/volume TWTRD
+#/fred/volume TWTUBS
+#/fred/volume BOOL1
+
+# initialize
+/run/initialize
+/tracking/verbose 1
+
+# run script 3
+/fred/test3/run
+
+# visualization
+#/control/execute vis.mac

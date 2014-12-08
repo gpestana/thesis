@@ -1,0 +1,66 @@
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test 25 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+19 July 2013  Dennis Wright (test25-V09-06-03)
+----------------------------------------------
+- test25.in: increase events per run from 1 to 100
+- add CMakeLists_Standalone.txt to build test outside of system testing
+- README: update for building in cmake
+- Tst25PhysicsList.cc: remove all LE (Gheisha) models and replace with
+    Bertini, FTFP and BinaryLightIon models
+- fission process (including G4LFission model) removed (redundant)
+
+6 June 2013  Michael Kelsey (test25-V09-06-02)
+-  Continue MT compatibility migrations, per Gunter.  Add new
+   Tst25ActionInitialization to replace runManager->SetUserAction() calls.
+
+5 June 2013  Gunter Folger
+-  correct test25.cc to compile in MT mode
+
+4 June 2013  Gunter Folger  (test25-V09-06-01)
+-  add needed static_cast in test25.cc
+
+30 May 2013  Michael Kelsey (test25-V09-06-00)
+- Migrate test25.cc to MT compatibility (G4MTRunManager)
+
+9th October 2012  Gabriele Cosmo (test25-V09-05-00)
+- Explicit inclusion of units and constants headers.
+
+18th March 2010  Gunter Folger (test25-V09-03-00)
+- Adapt to new multiple scattering classes.
+- Fix mac file for SetCut.
+
+2nd March 2009  Gunter Folger (test25-V09-02-00)
+- Fixed warnings on unused variables from gcc 4.3/slc5
+
+6th December 2005  Gabriele Cosmo
+- Trivial changes for support of CLHEP-2.0.X series.
+
+21st March 2004  Gabriele Cosmo (test25-V06-00-01)
+- Removed -pg compilation option in GNUmakefile which was most probably
+  originally introduced and forgotten...
+  It was causing profile build to be triggered and, as side effect,
+  confusing the output generated with Valgrind !
+
+19th March 2004  Gabriele Cosmo (test25-V06-00-00)
+- Fixed definition of materials and values in messenger.
+- Made test25.in be the default input script.
+
+16th March 2004  Gabriele Cosmo
+- Fixed compilation warnings.
+- Replaced usage of NULL with 0.
+
+7th November 2002  Hans-Peter Wellisch
+- Created the test.
+

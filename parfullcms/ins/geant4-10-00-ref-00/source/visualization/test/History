@@ -1,0 +1,441 @@
+$Id: History 66373 2012-12-18 09:41:34Z gcosmo $
+
+History file for visualization/test subdirectory
+------------------------------------------------
+
+26th October 2011  John Allison  vistest-V09-04-01
+- MyEventAction.cc: Fixed warning.
+
+25th October 2011  John Allison  vistest-V09-04-00
+- MySteppingAction.cc: Un-commented circle and square test.
+- test19.g4m: Removed old ray tracer commands.
+
+$Log: not supported by cvs2svn $
+Revision 1.125  2010/10/27 11:16:59  allison
+vistest-V09-03-00
+
+Revision 1.124  2010/10/26 16:17:44  allison
+Replaced MyPhysicsList by QGSP_BERT.
+
+Revision 1.123  2010/05/11 12:06:08  allison
+vistest-V09-03-00
+
+Revision 1.122  2010/05/11 12:04:39  allison
+Added printEPS to test19.g4m, as suggested by Laurent.
+
+Revision 1.121  2009/11/06 16:02:33  allison
+vistest-V09-02-01
+
+Revision 1.120  2009/11/06 16:01:57  allison
+Use G4UIExecutive in a more refined way.
+
+Revision 1.119  2009/09/29 21:36:38  allison
+vistest-V09-02-00
+
+Revision 1.118  2009/09/29 21:35:56  allison
+Changed main program, test19.cc, to use G4UIExecutive.
+
+Revision 1.117  2009/07/28 12:50:51  lgarnier
+Adding Qt support for test19
+
+Revision 1.117  2009/07/28 14:49:14  garnier
+Adding Qt support for test19
+
+Revision 1.116  2008/04/04 14:02:04  allison
+vistest-V09-01-01
+
+Revision 1.115  2008/04/04 14:01:14  allison
+Changed to thickness of box for 2D drawing to zero.
+
+Revision 1.114  2008/01/04 21:54:37  allison
+vistest-V09-01-00
+
+Revision 1.113  2008/01/04 21:53:51  allison
+MyEventAction: Added 2D polyhedron.
+
+Revision 1.112  2007/01/05 16:01:43  allison
+vistest-V08-02-00
+
+Revision 1.111  2007/01/05 16:00:48  allison
+Refines usage:
+// Usage: test19 [<session>] [<verbosity>]
+// Without verbosity, verbosity=warnings.
+// Without session, session=new G4UIterminal(), or if G4UI_USE_TCSH is set
+//                  session=new G4UIterminal(new G4UItcsh),
+
+Revision 1.110  2006/11/14 16:04:33  allison
+vistest-V08-01-05
+
+Revision 1.109  2006/11/14 16:03:56  allison
+Added G4EllipticalCone.
+
+Revision 1.108  2006/11/03 14:18:34  allison
+vistest-V08-01-04
+
+Revision 1.107  2006/11/03 14:18:21  allison
+Removed MyTrackingAction.
+
+Revision 1.106  2006/11/01 11:17:04  allison
+vistest-V08-01-03
+
+Revision 1.105  2006/11/01 11:15:27  allison
+Added a G4Polycone.
+
+Revision 1.104  2006/11/01 11:14:05  allison
+Added some G4Atts to magenta box.
+
+Revision 1.103  2006/08/14 11:26:49  allison
+vistest-V08-01-02
+
+Revision 1.102  2006/08/14 11:26:12  allison
+Added MyTrackingAction - uses G4RichTrajectory and triggers auxiliary points.
+
+Revision 1.101  2006/07/10 16:18:33  allison
+vistest-V08-01-01
+
+Revision 1.100  2006/07/10 16:18:05  allison
+Moved G4Cons and SetForceLineSegmentsPerCircle(100) for G4Sphere.
+
+Revision 1.99  2006/07/03 16:57:20  allison
+vistest-V08-01-00
+
+Revision 1.98  2006/07/03 16:56:42  allison
+Protect against zero run manager pointer.
+
+Revision 1.97  2006/06/05 08:13:38  perl
+Update history
+
+Revision 1.96  2006/05/25 09:15:38  perl
+Added G4Cons example.
+vistest-V08-00-08
+
+Revision 1.95  2006/05/25 09:15:38  allison
+vistest-V08-00-07
+
+Revision 1.94  2006/05/25 09:14:30  allison
+Restored test19.g4m.
+
+Revision 1.93  2006/05/25 09:12:37  allison
+Removed standalone - moved to examples/extended/visualization.
+
+Revision 1.92  2006/05/12 12:41:21  allison
+vistest-V08-00-06
+
+Revision 1.91  2006/05/12 12:39:16  allison
+Protected inclusion of G4visXXX library with G4VIS_USE.
+
+Revision 1.90  2006/05/12 12:37:46  allison
+Added /vis/scene/add/eventID.
+
+Revision 1.89  2006/05/12 12:36:45  allison
+Moved text to bottom right so as not to interfere with /vis/scene/add/eventID.
+
+Revision 1.88  2006/05/12 12:35:55  allison
+Commented out SetRunID.  Interferes with run number set in re-computation of transients.
+
+Revision 1.87  2006/05/04 14:44:02  allison
+vistest-V08-00-05
+
+Revision 1.86  2006/05/04 14:43:27  allison
+Remove UI->ApplyCommand("/tracking/storeTrajectory 1")
+
+Revision 1.85  2006/04/19 14:46:42  allison
+vistest-V08-00-04
+
+Revision 1.84  2006/04/19 14:44:57  allison
+Added drawing of 2D text.
+
+Revision 1.83  2006/03/28 15:41:54  allison
+vistest-V08-00-03
+
+Revision 1.82  2006/03/28 15:41:01  allison
+MyEventAction.cc:
+- Printed genuine Run and Event numbers.
+- Added transientTube.
+
+Revision 1.81  2006/03/28 15:38:10  allison
+test19.g4m: Modernised.
+
+Revision 1.80  2006/03/28 15:37:36  allison
+test19.cc: Added G4XXXFile, G4XXXStored and G4XXXSG.
+
+Revision 1.79  2006/03/28 15:36:27  allison
+Added CPPFLAGS += -DG4VIS_USE_XXXSG.
+
+Revision 1.78  2006/03/03 17:42:12  allison
+vistest-V08-00-02
+
+Revision 1.77  2006/03/03 17:39:44  allison
+MyEventAction.cc: Added transient drawing of box to test transient handling.
+
+Revision 1.76  2006/02/08 21:51:10  allison
+Added extra placements as a test of drawn volume path and corected duplicate naming of aTwistedTrd.
+
+Revision 1.75  2006/01/26 11:30:29  allison
+vistest-V08-00-01 - needs the head of geometry/solids/specific.
+
+Revision 1.74  2006/01/26 11:28:52  allison
+Restored MyDetectorConstruction.cc but added comments about voxelisation crash.
+
+Revision 1.73  2006/01/26 11:27:41  allison
+Changed OGLSX to OGLSXm for logical volume to allow inspection of voxels.
+Augmented RayTracer test.
+
+Revision 1.72  2006/01/26 10:45:59  allison
+Moved orb to avoid overlap.
+
+Revision 1.71  2006/01/13 12:19:19  allison
+test19.g4m: Added /tracking/verbose 2 for problem trajectory.  Reduced
+size of ray tracer windows for speed and added /vis/rayTracer/trace.
+
+Revision 1.70  2006/01/11 17:07:08  allison
+vistest-V08-00-00 - needs the head of geometry/solids/specific.
+
+Revision 1.69  2006/01/11 17:04:29  allison
+Improved Perspective example.
+
+Revision 1.68  2006/01/11 16:59:38  allison
+Added twisted solids.
+
+Revision 1.67  2006/01/09 17:23:22  allison
+Added CLHEP:: scope name.
+
+Revision 1.66  2005/11/22 15:53:47  allison
+vistest-V07-01-04
+
+Revision 1.65  2005/11/22 15:52:07  allison
+Added PerspectiveVisAction.
+
+Revision 1.64  2005/11/22 15:47:21  allison
+vistest-V07-01-04 (bum)
+
+Revision 1.63  2005/11/22 15:45:04  allison
+test19.g4m: Changed RayTracer to RayTracerX.
+
+Revision 1.62  2005/11/22 15:43:54  allison
+MyDetectorConstruction.cc: Added G4Tet.  Refined G4Polyhedra (generic
+constructor).
+
+Revision 1.61  2005/10/13 17:15:25  allison
+vistest-V07-01-03
+
+Revision 1.60  2005/10/13 17:14:04  allison
+Migrated to <sstream>.
+
+Revision 1.59  2005/10/13 17:13:08  allison
+Changed transparent atts to alpha=0.1.
+
+Revision 1.58  2005/10/13 17:11:32  allison
+Removed temporary CPPFLAGS += -DG4VIS_USE_RAYTRACERX.
+
+Revision 1.57  2005/09/16 01:10:40  allison
+vistest-V07-01-02
+
+Revision 1.56  2005/09/16 01:10:11  allison
+Added a G4AttValue with time.
+
+Revision 1.55  2005/09/13 16:55:26  allison
+vistest-V07-01-01
+
+Revision 1.54  2005/09/13 16:54:48  allison
+Removed RayTracerX from test19.cc - now in G4VisExecutive.
+
+Revision 1.53  2005/09/13 16:53:34  allison
+Set replica mothers invisible.
+
+Revision 1.52  2005/07/20 16:24:32  allison
+vistest-V07-01-00
+
+Revision 1.51  2005/07/20 16:23:39  allison
+test19.g4m: Commented out help (gives error in a macro).
+
+Revision 1.49  2005/07/20 16:20:15  allison
+G4LogoVisAction.cc: Experiment with creating tetrahedron with a missing face.
+
+Revision 1.48  2005/07/20 16:15:57  allison
+test19.cc: Added #include "G4RayTracerX.hh" and acted on command line argument, tcsh.
+
+Revision 1.47  2005/05/27 13:43:57  allison
+Passed vis attribs by reference to test SetVisAttributes.
+
+Revision 1.46  2005/05/06 08:30:45  allison
+VisActionWithAttDefs: updated for latest AttCheck.
+
+Revision 1.45  2005/05/06 08:27:56  allison
+MyEventAction: Added event no., draw with text.
+
+Revision 1.44  2005/03/23 17:44:05  allison
+First version of standalone/visActionWithAttDefs.
+
+Revision 1.43  2005/03/09 16:06:53  allison
+Added test of /vis/scene/add/logo.
+
+Revision 1.42  2005/03/09 16:05:48  allison
+Added G4Polyhedra.
+
+Revision 1.41  2005/03/03 16:46:20  allison
+Added G4Logo.
+
+Revision 1.40  2005/02/19 21:51:03  allison
+Added standalone.
+
+Revision 1.39  2005/02/04 16:28:53  johna
+Introduced General Particle Source under control of GPS macro.
+
+Revision 1.38  2005/02/04 16:26:38  johna
+Introduced G4VisExecutive.
+
+Revision 1.37  2005/01/26 17:17:02  johna
+Increased hall size for some new volumes and tested General Particle Source (commented out).
+
+Revision 1.36  2004/11/11 16:10:07  johna
+Added test of G4Orb.
+
+Revision 1.35  2004/09/22 20:17:40  johna
+vistest-V06-02-02: refined rotated tube test.
+
+Revision 1.34  2004/09/22 20:17:12  johna
+vistest-V06-02-02: refined rotated tube test.
+
+Revision 1.33  2004/09/13 21:13:48  johna
+Augmented ParameterisedBox and rotated a tracker tube for a test.
+
+Revision 1.32  2004/09/13 21:11:44  johna
+Added test of rotated tracker tube in test19.g4m.
+
+Revision 1.31  2004/07/14 10:41:10  johna
+vistest-V06-02-01
+
+Revision 1.30  2004/07/13 12:56:05  johna
+Added BuildHouse.hh.
+
+Revision 1.29  2004/07/13 12:53:57  johna
+Added /vis/viewer/set/hiddenEdge to test19.g4m.
+
+Revision 1.28  2004/07/01 15:53:20  johna
+vistest-V06-02-00
+
+Revision 1.27  2004/07/01 15:52:24  johna
+Added first version of BuildHouse.
+
+Revision 1.26  2004/07/01 15:51:38  johna
+Removed runManager->Initialize() - do with /run/initialize.
+
+Revision 1.25  2004/07/01 15:50:01  johna
+Corrected add/trajectories in test19.g4m.
+
+Revision 1.24  2004/07/01 15:47:59  johna
+Removed call_list.dat - taking space.
+
+Revision 1.23  2003/11/06 15:18:30  johna
+vis-V05-02-03: changed MyPhysicsList to follow kernel changes.
+
+Revision 1.22  2003/09/22 10:43:12  johna
+- Introduced Doxygen documentation for management, OpenGL and test.
+- Refined raytracer test.
+
+Revision 1.21  2003/09/02 14:20:12  johna
+Added Ray Tracer bug comment.
+
+Revision 1.20  2003/09/02 14:19:32  johna
+Changed to const G4Run*.
+
+Revision 1.19  2003/09/02 14:18:46  johna
+Fixed pedantic warnings.
+
+Revision 1.18  2002/08/12 10:16:54  johna
+Forced commit (-f) test of dollar Log.
+
+Revision 1.17  2002/08/12 10:14:23  johna
+Further test of dollar Log.
+
+Revision 1.16  2002/08/12 10:12:27  johna
+Added dollar Log for fun.
+
+22nd April 2002  John Allison
+- Added SharedSolidDetectorConstruction.
+
+27th September 2001  John Allison (vis-test-V03-02-00)
+- Removed hits and hit collection code to avoid dependence on STLinterface.
+
+24th August 2001  John Allison  (vis-V03-02-13)
+- Moved drawing of scale from stepping action to event action.
+
+17th August 2001  John Allison  (vis-V03-02-12)
+- test19.cc registers graphics system XXX.
+- MySteppingAction draws a scale.
+
+29th May 2001  John Allison
+- Cleaned up Linux pedantic warnings (unused variables, comparisons, etc.)
+
+15th March 2001  John Allison  (vis-V03-00-08)
+- Major re-work of replica instantiation in MyDetectorConstruction.cc
+  to ensure correspondence with rule that phi=0 bisects the replicated
+  sub-volume.  Note: replicas still cause crash on Linux in Ray Tracer.
+- Suppressed multiple scattereing lateral displacement in MyPhysicsList.cc
+  (can't remember why!).
+
+21st February 2001  John Allison
+- Changed test14.g4m to new commands.
+
+1st February 2001  John Allison (vis-V03-00-01)
+- Added /vis/set/sides 100 to test19.g4m and changed rayTracer to 400x400.
+
+16th January 2001  John Allison
+- Changed screen units to pixels in MySteppingAction.cc.
+
+3rd July 2000  John Allison
+- Switched to replicas in MyDetectorConstruction.
+
+22nd May 2000  John Allison
+- Invoke G4UItcsh in G4UIterminal in test19.cc (needs interfaces-V01-01-00).
+- Evgeni's node positions to avoid shared faces/edges in
+  MyDetectorConstruction.cc.
+- Changed colour of intercepts in MySteppingAction.cc.
+- Demonstrated G4VTreeGraphicsScene in test19.cc.
+
+12th April 2000  John Allison  vis-V01-01-01
+- Added more boolean shapes and window to test.
+
+11th January 2000  John Allison
+- Added Sphere and test of displaced solids.
+
+16th December 1999  John Allison
+- MyDetectorConstruction.cc: added replica volumes.
+- test19.cc: added more printing to check destruction of managers.
+- test19.g4m: added commands for viewing replicas.
+
+12th August  Guy Barrand
+- introduce the X11 resource file test19.xrm
+  to control appearance of things. It is used
+  as usual with : setenv XENVIRONMENT test19.xrm
+
+10th August  Guy Barrand
+- test19.cc : execute win32.g4m on NT.
+- correct Initialize method in test_utils/SD files.
+- GNUmakefiles : use G4ATLAS variable to say where is ATLAS
+                 and test is it is installed.
+
+vis-00-02-02  9th August  John Allison
+- Commented out old commands in test19.g4m.
+
+vis-00-07-01  3rd July 1998  John Allison
+- Added CPPFLAGS += -I$(G4BASE)/digits+hits/digits/include to GNUmakefile.
+
+vis-00-06-06  11th June 1998  John Allison
+- GNUmakefile handles new digits+hits.
+- GNUmakefile uses default vis library creation (separate libraries).
+- test_utils/GNUmakefile and babar_utils/GNUmakefile use G4VIS_USE.gmk.
+- test_utils - various hacking to get it to work with alpha07!
+
+vis-00-06-01 29th April 1998  John Allison
+- Made template instantiations exclusive to GNU_GCC in
+  test_utils/src/MyTrackerHit.cc and MyCalorimeterHit.cc.
+
+27th April 1998 Guy Barrand
+- test19.odb : remove the Xo button so that user,
+               by default create, through "Wo" gs,
+               an XoCamera seen handled by Wo.
+
+vis-test-00-05-01  18th March  John Allison
+- Changes to accomodate MyPhysicsList.

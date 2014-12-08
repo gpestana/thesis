@@ -1,0 +1,81 @@
+$Id: History 77281 2013-11-22 10:45:49Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                     Test 07 History file
+                     --------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+Nov 21st, 2013, Andrea Dotti  (test07-V09-06-00)
+- Add call to G4RunManager::ReinitializeGeometry()
+
+Oct 9th, 2012, Gabriele Cosmo (test07-V09-05-00)
+- Explicit inclusion of units and constants headers.
+
+Jul 20th, 2011  Gabriele Cosmo  (test07-V09-04-01)
+- Removed vis setup.
+
+Mar 31st, 2010  Gunter Folger  (test07-V09-03-00)
+- Replace obsolete G4MultipleScattering class by particle specific 
+  multiple scattering classes
+  
+Nov 22nd, 2006  Gabriele Cosmo (test07-V08-01-00)
+- Removed obsolete vis-manager classes. Now using G4VisExecutive.
+
+Dec 6th, 2005  Gabriele Cosmo
+- Trivial changes for support of CLHEP-2.0.X series.
+
+Mar 16th, 2004  Gabriele Cosmo
+- Fixed compilation warnings.
+- Replaced usage of NULL with 0.
+
+Nov 13th, 2003  John Allison
+- Removed OPACS from Vis Manager.
+
+Mar 12th, 2003  John Allison (test07-V05-00-00)
+- Added HepRep to vis manager.
+
+Dec 9th, 2002  Gabriele Cosmo (test07-V04-01-00)
+- Removed obsolete histogramming and cleaned warnings...
+
+Oct 18th, 2001  Steve O'Neale
+- Update reference output
+
+Feb 15th, 2001  Steve O'Neale
+- Update large_N reference output
+
+Nov 25th, 2000  Steve O'Neale (tagset210)
+- Update test outputs for min.delta energy cut
+- Update test outputs remove mu-,p,n energy cut tabulation (not used)
+
+Jun 17th, 2000  John Allison (test07-V01-01-00)
+- Updated test07.out for geant4-01-01-ref-06.
+
+Jun 7th, 1999  Gunter Folger
+- Modify GNUmakefile for NT.
+
+Apr 17th, 1999  Hisaya Kurashige 
+- Modify SetCuts() and ConstructParticle() in Tst07PhysicsList
+- Modify BeginOfRunAction() and EndOfRunAction() in Tst07RunAction
+- Modify UserSteppingAction() in Tst07SteppingAction
+- Modify BeginOfEventAction() and EndOfEventAction() in Tst07EventAct
+
+Sep 31st, 1998  Guy Barrand
+- "standardize" the test ; do the prerun in test07.in, 
+  regenerate .out on HP-aCC.
+
+Aug 28th, 1998  Frank Behner
+- Added histogramming
+
+Aug 24th, 1998  Gabriele Cosmo
+- Created.
+

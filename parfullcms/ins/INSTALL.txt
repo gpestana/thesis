@@ -1,0 +1,33 @@
+1- CMake
+cd cmake-2.8.11.2
+./bootstrap --prefix=<instdir>
+make && make install
+
+
+2- Xerces-C 3.1.1
+cd xerces-c-3.1.1
+./configure --prefix=<instdir>
+make && make install
+
+3- Geant4
+export PATH=<instdir>/bin
+cd buildG4
+cmake -DGEANT4_BUILD_MULTITHREADED=ON -DCMAKE_INSTALL_PREFIX=<instdir> -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_GDML=ON -DXERCESC_ROOT_DIR=<instdir> ../geant4-<ver>
+ARM: (-DGEANT4_USE_SYSTEM_EXPAT=OFF)
+Performances: (-DCMAKE_BUILD_TYPE=RelWithDebInfo)
+make && make install
+
+4- ParFullCMS (Application)
+export PATH=<instdir>/bin
+cd buildCMS
+cmake -DCMAKE_INSTALL_PREFIX=<instdir> -DGeant4_DIR=<instdir>/lib[64]/Geant4-10.0.0 ../ParFullCMS
+make && make install
+
+5- Running
+cd <instdir>
+source bin/geant4.sh
+- Edit mt.g4 change number of threads and number of events
+export LD_LIBRARY_PATH=.....
+cp share/ParFullCMS/cms.gdml .
+bin/ParFullCMS share/ParFullCMS/mt.g4
+

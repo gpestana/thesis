@@ -1,0 +1,116 @@
+#
+# Macro file of "test10"
+# for Optical photons geometry test
+#
+/run/initialize
+#/particle/list
+#
+# Sphere
+/run/beamOn 25
+#
+# Orb
+/mydet/SelectDetector Orb
+/run/beamOn 25
+#
+# Cone
+/mydet/SelectDetector Cone
+/run/beamOn 25
+#
+# Paraboloid
+/mydet/SelectDetector Paraboloid
+/run/beamOn 25
+#
+# Box
+/mydet/SelectDetector Box
+/run/beamOn 25
+#
+# Tube
+/mydet/SelectDetector Tube
+/run/beamOn 25
+#
+# CutTube
+/mydet/SelectDetector CutTube
+/run/beamOn 25
+#
+# Hype
+/mydet/SelectDetector Hype
+/run/beamOn 25
+#
+# Para
+/mydet/SelectDetector Para
+/run/beamOn 25
+#
+# Trd
+/mydet/SelectDetector Trd
+/run/beamOn 25
+#
+#
+/mydet/SelectDetector GenericTrap
+/run/beamOn 25
+#
+# Torus
+/mydet/SelectDetector Torus
+/run/beamOn 25
+#
+# Polyhedra
+/mydet/SelectDetector Polyhedra
+/run/beamOn 25
+#
+# Polycone
+/mydet/SelectDetector Polycone
+/run/beamOn 25
+#
+# Ellipsoid
+/mydet/SelectDetector Ellipsoid
+/run/beamOn 25
+#
+# EllipticalTube
+/mydet/SelectDetector EllipticalTube
+/run/beamOn 25
+#
+# EllipticalCone
+/mydet/SelectDetector EllipticalCone
+/run/beamOn 25
+#
+# Tet
+/mydet/SelectDetector Tet
+/run/beamOn 25
+#
+# TessellatedSolid
+/mydet/SelectDetector TessellatedSolid
+/run/beamOn 25
+#
+# ExtrudedSolid
+/mydet/SelectDetector ExtrudedSolid
+/run/beamOn 25
+#
+# UnionSolid
+/mydet/SelectDetector UnionSolid
+/run/beamOn 25
+#
+# IntersectionSolid
+/mydet/SelectDetector IntersectionSolid
+/run/beamOn 25
+#
+# SubtractionSolid
+/mydet/SelectDetector SubtractionSolid
+/run/beamOn 25
+#
+# TwistedTrap
+/mydet/SelectDetector TwistedTrap
+/run/beamOn 5
+#
+# TwistedTrap2
+/mydet/SelectDetector TwistedTrap2
+/run/beamOn 5
+#
+# TwistedTrd
+/mydet/SelectDetector TwistedTrd
+/run/beamOn 5
+#
+# TwistedBox
+/mydet/SelectDetector TwistedBox
+/run/beamOn 5
+# TwistedTubs
+/mydet/SelectDetector TwistedTubs
+/run/beamOn 5

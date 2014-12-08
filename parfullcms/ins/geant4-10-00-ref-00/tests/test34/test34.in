@@ -1,0 +1,18 @@
+#
+# Macro file for the initialization phase of "test34"
+#
+# Sets some default verbose
+#
+
+/gps/pos/centre 0 0 0
+/gps/particle  e-
+/gps/energy   20 GeV
+/gps/direction  0. 0. 1.0
+
+# Paramatrisation off
+/GFlash/flag 1
+
+/tracking/verbose 0
+
+/run/beamOn 10
+exit

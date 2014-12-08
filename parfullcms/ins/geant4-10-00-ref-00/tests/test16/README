@@ -1,0 +1,64 @@
+$Id: README 74862 2013-10-23 09:13:31Z gcosmo $
+------------------------------------------------------------------------------
+
+            =========================================================
+            Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+            =========================================================
+
+                                     Test16
+                                     ------
+
+Description:  test of n and p cross sections in the classes
+              G4NeutronInelasticCrossSection and G4ProtonInelasticCrossSection.
+              All electromagnetic, hadronic and decay processes are included.
+              For hadrons other than n and p, the default cross sections are
+              used.
+ 
+              Detector is a simple box of air, aluminum or lead.
+
+Usage:        auto-generated file provides input for neutron and proton runs 
+              with incident energies of 1, 10 and 20 GeV for each material.
+              18 runs in all, with the 10 events per run.  
+
+              Verbose atepping action available but not currently 
+              used.
+
+Building:     This test has a special CMakeLists.txt to be used only by system
+              testing.  It will not work when you run the test in stand-alone
+              mode.  To do that you must:
+
+              1. copy the test directory from geant4/tests to your working
+                 directory
+
+                 cp -r $G4SOURCE/tests/test16 .
+
+              2. replace the existing version of CMakeLists.txt with a
+                 stand-alone one:
+
+                 cd test16
+                 mv CMakeLists.txt CMakeLists.txtorig
+                 mv CMakeLists_Standalone.txt CMakeLists.txt
+
+              3. Clean up (if necessary) and re-configure, assuming at least
+                 Geant4 version 9.6:
+
+                 cmake .
+
+              4. Build both test16 and test16_hadronic_exerciser:
+
+                 make -f Makefile 
+                 
+Running:      First generate the input file:
+
+                 ./test16_hadronic_exerciser >& test16.in &
+
+              Finally, run the test:
+  
+                 ./test16 test16.in >& test16.out &
+ 
+
+Type of test: run to completion
+
+
+Output:       run log
+

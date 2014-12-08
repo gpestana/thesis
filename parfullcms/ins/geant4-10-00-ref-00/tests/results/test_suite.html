@@ -1,0 +1,672 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7C-CERN UNIX pcgeant 45 [en] (X11; I; Linux 2.2.12-20smp i686) [Netscape]">
+</head>
+<body>
+
+<h1>
+Test Suite</h1>
+
+To be sent to CatCoordinators for checking!
+
+<table BORDER WIDTH="100%" NOSAVE >
+<tr>
+<td><b>Range</b></td>
+
+<td><b>Description</b></td>
+</tr>
+
+<tr>
+<td>test01,...,99</td>
+
+<td>Real tests under geant4/tests, described in more detail below.</td>
+</tr>
+
+<tr>
+<td>test101,...,199</td>
+
+<td>Symbolic links to examples/novice/N01,...,99.</td>
+</tr>
+
+<tr>
+<td>test201,...,299</td>
+
+<td>Real tests under geant4/tests, reserved for visualization, user interfaces
+and environments.</td>
+</tr>
+
+<tr>
+<td>test301,...,399</td>
+
+<td>Reserved for future real tests.</td>
+</tr>
+
+<tr>
+<td>test401,...,499</td>
+
+<td>Symbolic links to examples/extended/persistency.</td>
+</tr>
+
+<tr>
+<td>test501,...,599</td>
+
+<td>Symbolic links to examples/extended/electromagnetic.</td>
+</tr>
+
+<tr>
+<td>test601,...,699</td>
+
+<td>Symbolic links to geant4 g3tog4 tests (check update procedures)</td>
+</tr>
+
+<tr>
+<td>test701,...,799</td>
+
+<td>Symbolic links to geant4  field tests for investigation of tracking in 
+electric field and field dependent electromagnetic processes.
+</td>
+</tr>
+
+<tr>
+<td>test801,...,899</td>
+
+<td>Symbolic links to geant4 biasing tests.</td>
+</tr>
+
+<tr>
+<td>test901,...,999</td>
+
+<td>Symbolic links to geant4 gdml tests.</td>
+</tr>
+
+<tr>
+<td>test1001,...,1099</td>
+
+<td>Symbolic links to geant4 olap tests (ovelapping geometries).</td>
+</tr>
+
+</table>
+
+<br>&nbsp;
+<table BORDER WIDTH="100%" NOSAVE >
+<tr>
+<td></td>
+
+<td><b>Category</b></td>
+
+<td><b>Coverage</b></td>
+
+<td><b>Other features</b></td>
+</tr>
+
+<tr>
+<td>test01</td>
+
+<td>geometry - CSG solids and navigator</td>
+
+<td>SimpleBox, Honeycomb.</td>
+
+<td>particle gun</td>
+</tr>
+
+<tr>
+<td>test02</td>
+
+<td>processes</td>
+
+<td>(a) Standard electromagnetic processes.
+<br>(b) (test02.hadron) Low energy and high energy hadronic processes and
+stopping, including coherent elastic scattering.</td>
+
+<td>particle gun, simple box, choice of material</td>
+</tr>
+
+<tr>
+<td>test03</td>
+
+<td></td>
+
+<td>Not used.&nbsp; Optical processes covered by examples/novice/N06.</td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test04</td>
+
+<td></td>
+
+<td>Not used.&nbsp; Persistency covered by examples/extended/persistency.</td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test05</td>
+
+<td>geometry</td>
+
+<td>STEP, BREPS</td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test06</td>
+
+<td>processes/electromagnetic</td>
+
+<td>test02 in integral approach + new p.e. effect (G4PhotoAbsorption).</td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test07</td>
+
+<td>processes, geometry, tracking</td>
+
+<td>Statistical evaluation prototype.</td>
+
+<td>calorimeter, statistical test</td>
+</tr>
+
+<tr>
+<td>test08</td>
+
+<td></td>
+
+<td>Not used.</td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test09</td>
+
+<td>processes/electromagnetic</td>
+
+<td>test02 + polarised Compton + new p.e. + synchrotron radiation</td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test10</td>
+
+<td>geometry, processes</td>
+
+<td>All CSGs using optical photons.</td>
+
+<td>events of 1000 photons</td>
+</tr>
+
+<tr>
+<td>test11</td>
+
+<td>processes/hadronic</td>
+
+<td>test02 + neutron transport.</td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test12</td>
+
+<td>processes/hadronic</td>
+
+<td>test02 + FTF fragmentation</td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test13</td>
+
+<td>processes/hadronic</td>
+
+<td>test02 + QGS (dual parton model, quark-gluon strings)</td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test14</td>
+
+<td>processes/electromagnetic/lowenergy</td>
+
+<td>LowEnergy em (photons and electrons).</td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test15</td>
+
+<td>processes/hadronic</td>
+
+<td>Isotope Production.</td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test16</td>
+
+<td>processes/hadronic</td>
+
+<td>n and p Cross-Sections.</td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test17</td>
+
+<td>processes/electromagnetic/lowenergy</td>
+
+<td>LowEnergy em (protons, antiprotons and ions)</td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test18</td>
+
+<td>processes/hadronic</td>
+
+<td>Radioactive decay.</td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test201</td>
+
+<td>interfaces, visualization, enviroments</td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr>
+<td>test20</td>
+
+<td>processes/electromagnetic/lowenergy</td>
+
+<td>For tests of polarised low energy e.m. processes.</td>
+
+<td>Not enough descripion!</td>
+</tr>
+
+<tr>
+<td>test21</td>
+
+<td>processes/hadronic</td>
+
+<td>?</td>
+
+<td>No description.</td>
+</tr>
+
+<tr>
+<td>test22</td>
+
+<td>processes/hadronic</td>
+
+<td>?</td>
+
+<td>No description.</td>
+</tr>
+
+<tr>
+<td>test23</td>
+
+<td>?</td>
+
+<td>Cut per material.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test32</td>
+
+<td>?</td>
+
+<td>For a leading_particle biasing model of G4Mars5GeV
+  based on MARS13.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test101</td>
+
+<td>?</td>
+
+<td>Defines only a geantino and a transportation
+process.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test102</td>
+
+<td>?</td>
+
+<td>All the so called 'electromagnetic processes' are
+     introduced for gamma, charged leptons, and charged hadrons.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test103</td>
+
+<td>?</td>
+
+<td>The primary kinematic consists of a single particle which hits the
+        calorimeter perpendicular to the input face.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test104</td>
+
+<td>?</td>
+
+<td> ExN04PhysicsList defines almost all of leptons and hadrons which
+Geant4 has dedicated classes for. Also almost all physics processes
+Geant4 has are defined. (Pythia)
+</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test105</td>
+
+<td>?</td>
+
+<td>ExampleN05 provides examples of the use of parameterisation facilities.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test106</td>
+
+<td>?</td>
+
+<td>how to use G4 for optical photon
+generation and transport.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test501</td>
+
+<td>processes/electromagnetic</td>
+
+<td>        The particle list is the one of novice/exampleN03.
+        The physics list contains the 'standard' electromagnetic processes,
+        and decay.
+</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test502</td>
+
+<td>processes/electromagnetic</td>
+
+<td>     This example allows to do the shower development of an single primary
+     particle, and to survey the physics processes which occur,
+     with printing and visualization.
+</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test503</td>
+
+<td>processes/electromagnetic</td>
+
+<td>This example simulates a simple Sampling Calorimeter setup.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test504</td>
+
+<td>processes/electromagnetic</td>
+
+<td>This example has been setup to test the low energy gamma processes.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test505</td>
+
+<td>processes/electromagnetic</td>
+
+<td>?</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test506</td>
+
+<td>processes/electromagnetic</td>
+
+<td>     This example is intended to test the process of
+     gamma conversion to a pair of muons.
+</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test508</td>
+
+<td>processes/electromagnetic</td>
+
+<td>    Test for investigation of ionisation in thin absorbers, transition
+    and synchrotron radiations.
+</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test5010</td>
+
+<td>processes/electromagnetic</td>
+
+<td>    Test for investigation of ionisation in thin absorbers, transition
+    and synchrotron radiations.
+</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test601</td>
+
+<td>g3tog4</td>
+
+<td>clGeometry</td>
+
+<td>No description!</td>
+</tr>
+
+<tr>
+<td>test602</td>
+
+<td>g3tog4</td>
+
+<td>cltog4</td>
+
+<td>No description!</td>
+</tr>
+
+<tr>
+<td>test701</td>
+
+<td>geometry/magneticfield</td>
+
+<td>    Test for investigation of tracking using magnetic field
+    and field dependent electromagnetic processes.
+</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test702</td>
+
+<td>geometry/magneticfield</td>
+
+<td>    Test for investigation of tracking in electric field
+    and field dependent electromagnetic processes.
+</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test703</td>
+
+<td>geometry/magneticfield</td>
+
+<td>    Example of tracking in magnetic field where field associated
+    to selected logical volumes varies.
+</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test801</td>
+
+<td>geometry/biasing</td>
+
+<td>How to  use scoring in the "tracking" geometry.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test802</td>
+
+<td>geometry/biasing</td>
+
+<td>How to use scoring in a "parallel" or "scoring"
+geometry.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test803</td>
+
+<td>geometry/biasing</td>
+
+<td>How to use biasing in the "tracking" geometry.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test804</td>
+
+<td>geometry/biasing</td>
+
+<td>How to use biasing according to a "parallel"
+or "importance" geometry.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test805</td>
+
+<td>geometry/biasing</td>
+
+<td>Biasing and Scoring in the "tracking" geometry.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test806</td>
+
+<td>geometry/biasing</td>
+
+<td>Biasing and scoring in a "parallel" geometry.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test807</td>
+
+<td>geometry/biasing</td>
+
+<td>Biasing neutrons and gammas in a "parallel" geometry.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test808</td>
+
+<td>geometry/biasing</td>
+
+<td>How to use importance sampling and weight window biasing
+together with scoring in a parallel geometry.</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test901</td>
+
+<td>?</td>
+
+<td>GDML</td>
+
+<td>README</td>
+</tr>
+
+<tr>
+<td>test1001</td>
+
+<td>geometry/biasing</td>
+
+<td>Debugging Tool for Ovelapping Geometries.</td>
+
+<td>README</td>
+</tr>
+
+</table>
+
+<hr WIDTH="100%">
+<br><i><a href="mailto:Serguei.Sadilov@cern.ch">Sergey Sadilov</a> 19th August
+2002</i>
+<br>&nbsp;
+</body>
+</html>

@@ -1,0 +1,116 @@
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test35 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+test35-V09-06-05  01 December 2013 V.Ivanchenko
+- added forgotten CLHEP headers
+
+test35-V09-06-04  23 October 2013 V.Ivanchenko
+- Removed LHEP and RPG
+
+test35-V09-06-03  10 May 2013 V.Ivanchenko
+- Added initialisation of ion tables, substitute LHEP by FTFP
+    in test35.in
+
+test35-V09-06-02  14 December 2012 A.Ribon
+- Removed unused include of the obsolete CHIPS header file
+  G4StringChipsInterface.hh .
+
+test35-V09-06-01  13 December 2012 V.Ivanchenko
+- Removed obsolete class depending on CHIPS
+
+test35-V09-06-00  10 December 2012 V.Ivanchenko
+- Removed dependences on CHIPS
+
+test35-V09-05-02  05 November 2012 V.Ivanchenko
+- Fixed variable shadowing
+
+test35-V09-05-01  9 October 2012 G.Cosmo
+- Explicit inclusion of units and constants headers.
+
+test35-V09-05-00  9 July 2012 A.Ribon
+- Replaced INCL with INCLXX.
+
+test35-V09-04-03  30 September 2011 V.Ivanchenko
+- fixed compillation gcc.4.6; use cross section
+  depending on flags in macro file; changed default macro 
+
+test35-V09-04-02  1 September 2011 V.Ivanchenko
+- migrate to new interface for cross sections 
+
+test35-V09-04-01  25 May 2011 V.Ivanchenko
+- removed obsolete interface to elastic 
+
+test35-V09-04-00  23 December 2010 V.Ivanchenko
+- minor update for 9.4
+
+test35-V09-03-03  09 November 2010 M.Asai
+- Fix AIDA file option.
+
+test35-V09-03-02  28 June 2010 V.Ivanchenko
+- make backward compatibility between old and new scripts
+
+test35-V09-03-01  28 April 2010 V.Ivanchenko
+- reduced memory leak at destruction
+
+test35-V09-03-00  26 March 2010 V.Ivanchenko
+- use environment variables to activate generators; use CHIPS
+  via G4QInelastic
+
+test35-V09-02-00  14 May 2009 V.Ivanchenko
+- improved scripts, added comments to the main
+
+test35-V09-01-02  10 December 2008 V.Ivanchenko
+- improved cout
+
+test35-V09-01-01  19 November 2008 V.Ivanchenko
+
+test35-V09-01-00  25 August 2008 V.Ivanchenko
+- Updated FTF models
+
+test35-V09-00-03  16 October 2007 V.Ivanchenko
+- added QGSB
+
+test35-V09-00-02  11 October 2007 V.Ivanchenko
+- added INCL and RPG models
+
+test35-V09-00-01  14 August 2007 V.Ivanchenko
+- Histo - use bool vector of active histograms, fix destructor
+
+test35-V09-00-00  31 July 2007 V.Ivanchenko
+- added Histo class
+
+test35-V08-03-00 24 May 2007  V.Ivanchenko 
+- substitute autoptr by normal pointers in Histo to avoid crash
+
+test35-V08-02-01  24 April 2007 V.Ivanchenko
+- added quasi-elastic to FTF
+
+test35-V08-02-00  06 Mar 2007 V.Ivanchenko
+- Use 0.0 low limit for QElastic 
+- Use GeV low limit for FTF
+- Initialise gamma as a particle
+
+test35-V08-01-02  27 Nov 2006 V.Ivanchenko
+- Use 0.0 low limit for HElastic 
+
+test35-V08-01-01  16 Nov 2006 V.Ivanchenko
+- LDFLAGS -> LOADLIBS
+- Add elastic 
+
+test35-V08-01-00  09 May 2006 V.Ivanchenko
+- move harp_test to test35
+
+

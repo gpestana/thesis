@@ -1,0 +1,53 @@
+$Id: History 68718 2013-04-05 09:16:24Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                Example for divisions History file
+                ----------------------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+22-03-13 G.Cosmo
+----------------
+- Fixed compilation warnings for variable shadowing...
+
+05-12-12 J.Allison
+----------------
+- Migrated to DrawTrajectory (i_mode argument no longer available).
+
+16-06-10 G.Cosmo
+----------------
+- Migrated physics-list to use particle-based multiple-scattering processes.
+
+18-05-07 G.Cosmo
+----------------
+- Removed G4GAGTree from vis-manager, no longer existing.
+
+08-06-06 G.Cosmo
+----------------
+- Use CLHEP namespace wherever necessary.
+
+09-11-05 G.Cosmo
+----------------
+- Migrated to <sstream> from deprecated <strstream>.
+
+06-06-05 G.Cosmo
+----------------
+- Fixed trivial compilation errors when using CLHEP 1.9 series.
+
+12-05-04 G.Cosmo
+----------------
+- Added support for reflections (courtesy of I.Hrivnacova), new input
+  argument for selection normal/reflected.
+
+17-10-03 P.Arce (exdivisions-V05-02-00)
+---------------
+- Created.

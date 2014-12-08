@@ -1,0 +1,117 @@
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test41 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+21-11-13 A. Dotti      (test41-V09-06-07)
+- Use G4RunManager::ReinitializeGeometry() 
+
+12-10-13, V.Ivanchenko (test41-V09-06-06)
+- Removed headers of unused models
+- PhysListEmStandardIG - use G4eSingleCoulombScatteringModel
+
+21-08-13, V.Ivanchenko (test41-V09-06-05)
+- Added test of GS model
+
+21-08-13, V.Ivanchenko (test41-V09-06-04)
+- Removed G4UrbanMscModel93 and 95
+
+14-06-13  V.Ivanchenko (test41-V09-06-03)
+- Cleanup scripts and PhysicsList class
+
+14-06-13  V.Ivanchenko (test41-V09-06-02)
+- Update PhysList for 10.0beta
+
+12-11-13  V.Ivanchenko (test41-V09-06-01)
+- Added Xi2 analysis
+
+03-04-13  A.Dotti (test41-V09-06-00)
+- Porting to new G4VPhysicsConstructor API needed for G4MT
+
+05-11-12  V.Ivanchenko (test41-V09-05-03)
+- Fixed variable shadowing
+
+11-10-12  G.Cosmo      (test41-V09-05-02)
+- Explicit inclusion of units and constants headers.
+
+28-08-12  V.Ivanchenko (test41-V09-05-01)
+- PhysListEmStandardIG - set polar angle limit back to 0.2
+
+23-08-12  V.Ivanchenko (test41-V09-05-00)
+- PhysListEmStandardIG - set polar angle limit pi; use default 
+    RangeFactor 
+
+20-07-11  G.Cosmo (test41-V09-04-04)
+- Removed vis setup.
+
+01-04-11  V.Ivanchenko (test41-V09-04-03)
+25-03-11  V.Ivanchenko (test41-V09-04-02)
+- Add test of G4UrbanMscModel95
+
+21-02-11  V.Ivanchenko (test41-V09-04-01)
+- Updated scripts
+
+21-12-10  V.Ivanchenko (test41-V09-04-00)
+- Added local Physics List in order to have comparisons with 
+  Urban90 and Urban93 models
+- Updated scripts
+
+28-05-10  V.Ivanchenko (test41-V09-03-01)
+- Added StackingAction
+- Updated scripts
+
+03-05-10  V.Ivanchenko (test41-V09-03-00)
+- Removed obsolete header
+
+22-11-09  V.Ivanchenko (test41-V09-02-03)
+- Fixed scripts and options
+
+21-11-09  V.Ivanchenko (test41-V09-02-02)
+- Substitute G4_GRAPHITE by G4_GRAPHITE_POROUS
+- Change names of options according to 9.3
+
+29-09-09  V.Ivanchenko (test41-V09-02-01)
+- Added cut per recoil
+
+14-05-09  V.Ivanchenko (test41-V09-02-00)
+- Updated scripts
+
+19-11-08  V.Ivanchenko (test41-V09-01-02)
+- Updated SS and IG PhysLists
+
+25-08-08  V.Ivanchenko (test41-V09-01-01)
+- Updated SS and IG PhysLists
+
+21-04-08  V.Ivanchenko (test41-V09-01-00)
+- use spline and polarAngleLimit
+
+09-10-07  V.Ivanchenko (test41-V09-00-04)
+- in standard and standardIG use subcutoff and linlosslimit=10^-6 
+- include standardIG option into run.csh
+- use G4MuMultipleScattering in standardIG physics 
+
+09-10-07  V.Ivanchenko (test41-V09-00-03)
+- use sub-cutoff options for standardSS and standardIG physics
+
+28-08-07  V.Ivanchenko (test41-V09-00-02)
+- add README
+
+29-07-07  V.Ivanchenko (test41-V09-00-01)
+- add PhysList standardIG with standardIG physics builder
+
+12-07-07  V.Ivanchenko (test41-V09-00-00)
+- prepared for production
+
+02-07-07  V.Ivanchenko (test41-V08-03-00)
+- first commit

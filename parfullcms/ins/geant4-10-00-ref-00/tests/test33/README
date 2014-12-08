@@ -1,0 +1,54 @@
+
+                 Test for importance sampling and scoring
+                 ========================================
+
+Remarks for system testing:
+==========================
+
+There are two macro files:
+- MassGeo_TimedApp.mac, and 
+- ParallelGeo_TimedApp.mac
+as input for testing the executable: test33.
+Please run the executable once for each macro file.
+
+Environment settings:
+=====================
+setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:$G4WORKDIR/lib/${G4SYSTEM}:${CLHEP_BASE_DIR}/lib
+
+
+Very short note on what test33 does:
+=====================================
+Importance sampling and scoring (and weight roulette) is tested
+using neutrons of 10 MeV bombarding a 180*cm high concrete cylinder.
+
+Several modes of running are possible:
+- fixed adjustments that may not be changed once they are set:
+  - "geometry"
+    - use the mass geometry
+    - use the parallel geometry
+  - "application"
+    - timed: run for a certain amount of time and produce a FOM*time
+    - visualise: use run for a certain number of events and display tracks
+- adjustments changeable on-line
+  - importance sampling
+  - scoring
+  - weight roulette
+
+
+The executable may be invoked with or without a macro file:
+- without macro file:
+  use on-line commands to setup the application. Commands may be found in 
+  the scripts below.
+- with script:
+  four main scripts exist:
+  - MassGeo_TimedApp.mac: uses the mass geometry and a timed application
+  - MassGeo_VisApp.mac: uses mass geometry and visualisation
+  - ParallelGeo_TimedApp.mac: uses the parallel geometry and a timed 
+    application
+  - ParallelGeo_VisApp.mac: uses the parallel geometry and visualisation
+  a script used in all four cases:
+  - SamplingChange.mac: create several sampling configurations with to
+    test importance sampling, scoring, (weight roulette) and changing
+    between those configurations
+- the script vis.mac is used when running in visualisation mode.
+

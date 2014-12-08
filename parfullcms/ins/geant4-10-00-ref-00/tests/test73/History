@@ -1,0 +1,88 @@
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test 73 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+21-11-13 A. Dotti         (test73-V09-06-04)
+- Use G4RunManager::ReinitializeGeometry()
+
+10 Sept 2013, A. Dotti    (test73-V09-06-03)
+Removed test73-local: use only production physics lists
+
+22 Aug 2013, V.Ivanchenko (test73-V09-06-02)
+Removed left G4UrbanMscModel93
+
+21 Aug 2013, V.Ivanchenko (test73-V09-06-01)
+Removed G4UrbanMscModel93
+
+03 Apr 2013, Andrea Dotti (test73-V09-06-00)
+Migrating to new G4VPhysicsConstructor API needed for G4MT
+
+29 Nov 2012, Gabriele Cosmo (test73-V09-05-18)
+Fixed variable shadowing cases from ROOT.
+
+12 Oct 2012, Andrea Dotti (test73-V09-05-17)
+Explicit inclusion of units and constants headers.
+
+11 October 2012, Gabriele Cosmo (test73-V09-05-16)
+Explicit inclusion of units and constants headers.
+
+21 Aug 2012, Andrea Dotti (test73-V09-05-15)
+Removing test73-local ctest from Nightly and Continous group (while leaving
+it in PhysicsChecks mode).
+
+27 July 2012, V.Ivanchenko (test73-V09-05-14)
+MyEmPhysicsList - use WentzelVI and CoulombScattering models for pions
+
+19 July 2012, V.Ivanchenko (test73-V09-05-13)
+MyEmPhysicsList - uncomment line in muon physics, which was a source of 
+  problem for muons   
+
+18 July 2012, Andrea Dotti (test73-V09-05-12)
+Improving output sentence in case of errors. Improving legends in PDF image.
+
+31 May 2012, Andrea Dotti (test73-V09-05-10, test73-V09-05-11)
+Adding LABELS property to test definition. Use of WORKING_DIRECTORY
+to correctly partse stderr. Needs cmake-V09-05-19
+
+19 May 2012, Andrea Dotti (test73-V09-05-09)
+Fixing compilation warnings on GCC 4.6 for set but unused variables
+
+18 May 2012, Andrea Dotti (test73-V09-05-08)
+Adding test for FTFP_BERT_EMX and tuning MSC parameters
+
+11 May 2012, Andrea Dotti (test73-V09-05-07)
+Create correct dependence between tests.
+
+09 May 2012, Andrea Dotti (test73-V09-05-06)
+Create dependence between tests to allow simultaneus running
+
+02 May 2012, Andrea Dotti (test73-V09-05-05)
+Removing sporious debug message in CMakeLists.txt
+
+30 April 2012, Andrea Dotti (test73-V09-05-04)
+Adding second test test73-local and renaming first one to
+proto-test73-FTFP_BERT. 
+
+24 April 2012, Andrea Dotti (test73-V09-05-03)
+Bug fix: do not delete and create a new SD, to avoid unpredictable
+crashes, instead re-use same instance.
+
+2 April 2012, Andrea Dotti (test73-V09-05-02)
+Bug fix: fixing GNUmakefile (wrong spaces in application name)
+for non-cmake builds
+
+29 March 2012, Andrea Dotti (test73-V09-05-01)
+Bug fix: copy macro files in running directory
+
+27 March 2012, Andrea Dotti (test73-V09-05-00)
+First import of new test (see README)

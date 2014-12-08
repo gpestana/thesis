@@ -4,45 +4,45 @@ The top-level auxiliary file: energy_efficiency_scy_computing.aux
 The style file: acm.bst
 Database file #1: sources.bib
 Warning--to sort, need author or key in STACKOVERFLOW
-You've used 3 entries,
+You've used 4 entries,
             2253 wiz_defined-function locations,
-            549 strings with 4468 characters,
-and the built_in function-call counts, 999 in all, are:
-= -- 95
-> -- 40
+            555 strings with 4713 characters,
+and the built_in function-call counts, 1361 in all, are:
+= -- 125
+> -- 72
 < -- 0
-+ -- 17
-- -- 14
-* -- 75
-:= -- 154
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 16
++ -- 30
+- -- 26
+* -- 109
+:= -- 220
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 38
-empty$ -- 89
-format.name$ -- 14
-if$ -- 216
+cite$ -- 5
+duplicate$ -- 47
+empty$ -- 108
+format.name$ -- 26
+if$ -- 284
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 2
-newline$ -- 18
-num.names$ -- 4
-pop$ -- 22
+int.to.str$ -- 4
+missing$ -- 3
+newline$ -- 23
+num.names$ -- 6
+pop$ -- 30
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 21
 quote$ -- 0
-skip$ -- 26
+skip$ -- 31
 stack$ -- 0
-substring$ -- 57
-swap$ -- 11
+substring$ -- 62
+swap$ -- 13
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
+type$ -- 16
 warning$ -- 1
-while$ -- 8
-width$ -- 4
-write$ -- 33
+while$ -- 10
+width$ -- 5
+write$ -- 42
 (There was 1 warning)

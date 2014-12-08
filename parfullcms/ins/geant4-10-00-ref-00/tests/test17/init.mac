@@ -1,0 +1,28 @@
+#
+# Macro file for the initialization phase of "test17" based on "TestEm6.cc"
+#
+# It creates the default geometry (simple absorber cylinder )        
+#
+/control/verbose 2
+/run/verbose 2
+/run/initialize
+#
+/calor/setAbsMat Aluminum
+/calor/setAbsThick 5 mm
+/calor/setAbsRad 20 mm
+/calor/update
+#
+#
+/lowenergy/lowlimE 250 eV
+/lowenergy/lowlimG 250 eV
+/lowenergy/secphotcut 1. keV
+#
+/calor/cutG 1.   micrometer    
+/calor/cutE 0.01   micrometer
+
+#
+# initialize  EVERYTHING
+#
+/run/initialize
+/run/particle/dumpCutValues
+#

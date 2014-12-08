@@ -1,0 +1,49 @@
+$Id: History 66356 2012-12-18 09:02:32Z gcosmo $
+----------------------------------------------------------------
+
+           History file for geometry/solids/test/fred
+	   ------------------------------------------
+This file should be used to briefly summarize all major modifications
+introduced in the code and keep track of all tags.
+It DOES NOT substitute the  CVS log-message one should put at every
+committal in the CVS repository !
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+Dec 05, 2012 - J.Allison
+------------------------
+- Migrated to DrawTrajectory (i_mode argument no longer available).
+
+Feb 18, 2008 - I.Hrivnacova
+---------------------------
+- Added missing solids in specific: G4Ellipsoid, G4EllipticalCone,
+  G4EllipticalTube, G4ExtrudedSolid, G4Orb, G4TessellatedSolid, G4Tet,
+  G4TwistedBox, G4TwistedTrap, G4TwistedTrd, G4TwistedTubs.
+- Added private methods FredDetectorConstruction::CreateExtrudedSolidN()
+  used for testing both extruded and tessellated solids.
+- Added method FredTest3::RunDebug() which parses the log file and tracks
+  geantino for each error.
+- Corrected instantiation of G4RayTracerX driver in FredVisManager.
+
+Nov 09, 2005 - G.Cosmo
+----------------------
+- Implemented migration to <sstream> from deprecated <strstream>.
+
+Dec 01, 2003 - G.Cosmo
+----------------------
+- Cleared compilation warnings...
+
+Jan 08, 2001 - G.Cosmo
+----------------------
+- Updated to compile on geant4 4.0. Removed warning from gcc-2.95.2.
+  Modified files: FredVoxelTest.cc, FredTest3.cc and fred.cc.
+
+Apr 20, 2001 - G.Cosmo
+----------------------
+- Updates for migration to STL vector, modified FredTrackCheck[.hh.cc].
+
+Nov 09, 2000 - G.Cosmo
+----------------------
+- Created.

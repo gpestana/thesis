@@ -1,0 +1,73 @@
+$Id: README 66892 2013-01-17 10:57:59Z gunter $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                            Test201
+                            -------
+
+  The purpose of this test is to test the visualization and 
+ graphical user interfaces.
+
+
+ Executing test201 :
+ -----------------
+  In order to get correct test201.g4m, etc... files,
+ the test should be started in the subdirectory corresponding 
+ to the GUI choosed. For example :
+ - G4UIterminal, G4UIXm, G4UIWin32, G4UIXaw, start test from 
+   basic subdirectory.
+
+  Examples ; for G4UIXm :
+
+   UNIX> cd $G4INSTALL/tests/tools/bin
+   UNIX> edit the specific.csh file for your environment.
+    csh> source setup.csh
+   ( sh> . ./setup.sh)
+    csh> setenv XENVIRONMENT $G4INSTALL/tests/test201/test201.xrm
+   ( sh> XENVIRONMENT=$G4INSTALL/tests/test201/test201.xrm;export XENVIRONMENT)
+   UNIX> cd $G4INSTALL/tests/test201/basic
+   UNIX> $G4WORKDIR/bin/$G4SYSTEM/test201 Xm
+
+  The upper assume that Geant4 libraries has been reconstructed
+ with the correct :
+     G4UI_BUILD_<session>_SESSION
+     G4VIS_BUILD_<driver>_DRIVER
+ and test201 has been reconstructed with the correct :
+     G4UI_USE_<session>
+     G4VIS_USE_<driver>
+ CPP flags.
+
+ Example of a session with Inventor :
+ ----------------------------------
+  If executed from basic, test201 offer a menu bar
+ (described in test201.g4m), then :
+  - Click 'Test/Detector 4' to define a simple geometry.
+  - Click 'Test/init' to initialize Geant4.
+  - 'Vis/Create scene' to create a scene that have
+    the geometry, trajectories and hits (see scene.g4m).
+  - 'Vis/OIWIN32' to create an Inventor viewer.
+  - 'Vis/notify' to update the viewer. The
+    detector must appears (a cube representing the mother
+    volume).
+    . In picking mode (click in the up arrow icon) :
+      * Ctrl/pick (the cube) goes down the next level of geometry :
+        you should be able to see some cubes and a cylinder.
+      * Shift/pick display the mother volume.
+    . In viewing mode (click in the hand icon) 
+      * Move left button : rotate.
+      * Ctrl move left button : pane.
+      * Ctrl+Shift+move left button : zoom in/out.
+      * Right button : popup menu. 
+  - 'Test/Set gun' to setup the gun particle, energy (it executes
+    the gun.g4m file).
+  - 'Test/Run beom one' to shoot an event. Some tracks
+    should be visible under the cube near the cylinder.
+    Use the zoom out to see them. With the popup menu
+    setup the wire-frame drawing to see an electromagnetic
+    shower inside the cube.
+  - Click again in the 'Test/Run beam on' to see more events.
+
+

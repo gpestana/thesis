@@ -1,0 +1,59 @@
+$Id: History 72982 2013-08-14 15:39:52Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test34 History file
+                    -------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+30th July 2013, A.Dotti (test34-V09-06-00)
+- Bug fixing for unused variables clang32
+
+9th October 2012, G.Cosmo (test34-V09-05-00)
+- Explicit inclusion of units and constants headers.
+
+20th July 2011, G.Cosmo (test34-V09-04-01)
+- Removed vis setup left over commands.
+
+25th March 2010, G.Cosmo (test34-V09-03-00)
+- Migrated physics list to use particle-based multiple-scattering processes.
+
+15th June 2009, G.Folger  (test34-V09-02-00)
+- Fixed warning on error output about no cuts defined for region crystals.
+
+27th August 2007, G.Cosmo (test34-V09-00-00)
+- Protected use of TCSH terminal.
+
+6th June 2007, G.Cosmo (test34-V08-03-01)
+- Cleared compilation warnings in Tst34SensitiveDetector. Removed unused
+  statements on RO-geometry.
+
+18th May 2007, M.Verderi (test34-V08-03-00)
+- Tst34PhysicsList.cc : register fast simulation process a discrete process.
+
+4th November 2005  J.Weng (test34-V07-01-01)
+- Porting to new scheme for G4Region as envelope.
+  Coworks with: gpara-V07-01-01, run-V07-01-03, geommng-V07-01-02,
+  procuts-V07-01-00, param-V07-01-01, raytracer-V07-01-05.
+
+4th October 2005  G.Cosmo (test34-V07-01-00)
+- Corrected GFlashHomoShowerParamterisation to
+  GFlashHomoShowerParameterisation.
+- Cowork with "gflash-V07-01-00".
+
+13th June 2005  G.Cosmo (test34-V07-00-00)
+- Corrected initialisation of sensitive detector.
+  Removed run-time errors reported by Valgrind.
+- General cleanup.
+
+26th November 2004  H.P.Wellisch (test34-V06-02-00)
+- First implementation of a system test for 'gflash' parameterisation.

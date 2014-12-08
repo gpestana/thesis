@@ -1,0 +1,16 @@
+#
+# Macro file run02.mac
+# for geometry/tracking performance test
+# 100 Gev geantino
+#
+# /control/verbose 2
+#
+/mydet/SelectMaterial Al
+/gun/particle geantino
+/gun/energy 100 GeV
+/run/initialize
+#
+/tsGun/randomGun randomPositionAndDirection
+/tracking/verbose 1
+/run/beamOn 100
+exit

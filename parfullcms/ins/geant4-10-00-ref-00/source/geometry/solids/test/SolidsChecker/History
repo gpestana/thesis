@@ -1,0 +1,31 @@
+$Id: History 66356 2012-12-18 09:02:32Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    SolidsChecker History file
+                    --------------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+Dec 05, 2012  John Allison
+- Migrated to DrawTrajectory (i_mode argument no longer available).
+
+Mar 18, 2005  Oliver Link
+- Added G4TwistedTrd and general G4TwistedTrap as test cases
+
+Nov 29th, 2004  Vladimir Grichine, Oliver Link (schecker-V06-02-00)
+- Added G4TwistedTrap and G4TwistedBox.
+- Generic improvements ...
+ 
+Jan 27th, 2004  Vladimir Grichine
+- Derived from system test test10.
+
+

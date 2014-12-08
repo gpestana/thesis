@@ -1,0 +1,22 @@
+$Id: README 66892 2013-01-17 10:57:59Z gunter $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                            Test01
+                            ----------
+
+  The purpose of this test is to exercise the CSG as well as boolean solids 
+  extensively using the full apparatus of the G4 geometry. It also exicises
+  assemblies with different configurations (simple,  assembly of assemblies
+  and containing reflections).
+
+  Author: Vladimir Grichine
+  Contributors: Simone Giani, John Apostolakis, Gabriele Cosmo,
+                Radovan Chytracek, Ivana Hrivnacova.
+
+  To run it you can use
+
+    test01 *.in or *.mac

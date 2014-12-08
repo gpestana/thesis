@@ -1,0 +1,23 @@
+# $Id: run12.mac 66241 2012-12-13 18:34:42Z gunter $
+#
+# Macro file for "TestEm6.cc"
+# (can be run in batch, without graphic)
+#
+#
+/control/verbose 2
+/run/verbose 2
+#
+/testem/det/setMat Carbon
+/testem/det/setSize 18.5 cm
+#
+/run/initialize
+#
+/testem/phys/SetGammaToMuPairFac  1000
+/testem/phys/SetAnnihiToMuPairFac 1000
+#
+/gun/particle e+
+/gun/energy 250 GeV
+#
+/testem/event/printModulo 1000
+#
+/run/beamOn 20000

@@ -1,0 +1,127 @@
+
+ setup.csh :
+ ---------
+  A file that you source to set up the environment.
+ It defines also some aliases like :
+    g4make
+    g4build
+    g4tail
+    g4filter
+ to spawn a reconstruction and analyse log files.
+
+  setup.csh calls specific.csh. This files
+ is dedicated for stt members customisation.
+ it uses `uname -n` to execute stt specific things.
+
+ build.sh :
+ -------- 
+  This script spawn the reconstruction of libraries
+ from $G4INSTALL/tests/tools/bin directory. The output of the job
+ is put in $G4WORKDIR/stt/$G4SYSTEM/gmake.log.
+  Aliases g4tail, g4log, defined by the setup.csh(.sh) file
+ permits to follow the job, and to filter output.
+
+  Usage :
+     UNIX> cd <g4install>/tests/tools/bin
+     UNIX> chmod u+x build.sh
+     UNIX> ./build.sh all
+     UNIX> ./build.sh lib all
+     UNIX> ./build.sh lib <category>
+     UNIX> ./build.sh test all
+     UNIX> ./build.sh test <test>
+     UNIX> ./build.sh run
+  The last command spawn tests.
+
+ filter.sh :
+ ---------
+  This script takes a gmake.log file
+ produced by a reconstruction. It filters
+ this file by removing lines found in 
+ file in a specific .filter file.
+
+ Usage :
+     UNIX> cd <g4install>/tests/tools/bin
+     UNIX> chmod u+x filter.sh
+     UNIX> ./filter.sh OSF1
+ or :
+       csh> cd <g4install>/tests/tools/bin
+       csh> source setup.csh
+       csh> g4filter
+
+  Then you have to provide a :
+       tests/tools/bin/<g4system>.filter
+ corresponding to your g4system(s).
+ In it you put part of the lines that 
+ you don't want to appear in the filtered 
+ output. See OSF1.filter and HP-aCC.filter
+ output. 
+
+
+ summary :
+ -------
+  Then mainly with these files, to reconstruct
+ for example the libs and survey without aliases :
+   UNIX> cd <g4install>/tests/tools/bin
+   UNIX> ./build.sh lib all
+   UNIX> tail -f $G4WORKDIR/stt/$G4SYSTEM/gmake.log
+   UNIX> ./filter.sh $G4SYSTEM
+
+  In csh with setup file, to spwan reconstruction 
+ of lib and tests programs do :
+    csh> cd <g4install>/tests/tools/bin
+    csh> source setup.csh
+    csh> g4build all
+ and to survey do :
+    csh> g4tail
+    csh> g4filter
+
+ SWON...
+
+ g4allsys.sh takes commands or a datafile to build and run tests on all systems.
+ 
+ g4allsys.sh invokes g4sbr.sh via remote shell
+      cli is parsed to tokens
+             host devprod debopt tag action actarg1 actarg2 actarg3 nonincremental
+      for each line giving a host a remote shell is invoked 
+          under account stesting to run the script (with full pathname)
+          /afs/cern.ch/sw/geant4/stt/$devprod/
+           testtools/geant4/tests/tools/bin/g4sbr.sh 
+          with the arguments devprod debopt tag action actarg1 actarg2 actarg3 nonincremental
+          and appends to an output logfile  $host.$devprod.$debopt.log
+      otherwise # indicates a comment
+                % indicates a (local) unix command
+
+ g4sbr.sh SetupBuildRun
+          Does a few checks on the environment and file systems
+          Environment variables are set (or unset) according to the arguments
+          G4LARGE_N
+          G4DEBUG
+          G4STTNONISO
+          G4NOHIST
+          and then runs (full path) setup.sh
+            which defines
+            CLHEP_BASE_DIR
+            G4STTDIR
+            G4WORKDIR
+            [finish/restructure]
+            G4INSTALL   /afs/cern.ch/sw/geant4/stt/dev1/src/geant4
+            G4SYSTEM    Linux-g++
+            G4STTDIR    /afs/cern.ch/sw/geant4/stt/dev1/testtools/geant4/tests/tools
+            G4WORKDIR   /afs/cern.ch/sw/geant4/stt/dev1/Linux-g++/debug
+            G4LIB       /afs/cern.ch/sw/geant4/stt/dev1/Linux-g++/debug/lib
+      
+          checks some locks
+            stt         is a softlink stt.reftag
+          makes a new stt.reftag directory (if non-incremental)
+          cd's to G4WORKDIR
+               sources (oops ${G4INSTALL}/tests/tools/bin/limit.sh)
+               source   ${G4STTDIR}/bin/tmpenv.sh
+               runs ${G4STTDIR}/bin/build.sh (arg1 arg2) if action build/all
+               runs ${G4STTDIR}/bin/run.sh   (arg3)      if action run/all
+          waits for completion (how ?)
+
+ setup.csh (blah above ?)
+ build.sh 
+   cd's to  $G4INSTALL/source and runs gmake -k
+   cd's to  $G4INSTALL/tests  and runs gmake -k clean_bin and then gmake -k
+

@@ -1,0 +1,28 @@
+# $Id: run1.mac 66356 2012-12-18 09:02:32Z gcosmo $
+#
+#
+
+/run/initialize
+
+#/mydet/SelectDetector Ellipsoid
+#/mydet/SelectDetector Torus
+#/mydet/SelectDetector Box
+#/mydet/SelectDetector Sphere
+#/mydet/SelectDetector Tube
+#/mydet/SelectDetector Orb
+#/mydet/SelectDetector Cone
+/mydet/SelectDetector Paraboloid
+#/mydet/SelectDetector TwistedTubs 
+#/mydet/SelectDetector TwistedBox
+#/mydet/SelectDetector TwistedTrd
+#/mydet/SelectDetector TwistedTrap
+#/mydet/SelectDetector HalfSphere
+#/mydet/SelectDetector HollowSphere
+#/mydet/SelectDetector HalfHollowSphere
+#/mydet/SelectDetector Q1Shell
+#/mydet/SelectDetector Ring
+#/mydet/SelectDetector Shell
+#/mydet/SelectDetector EllipticalCone
+
+/gun/particle geantino
+/run/beamOn 5

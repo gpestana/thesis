@@ -1,0 +1,88 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (X11; I; Linux 2.2.12-20 i686) [Netscape]">
+<title>Geant4 System Testing Team</title>
+<!-- Changed by: Serguei SADILOV, 16-Feb-2005 -->
+</head>
+<body background="http://cern.ch/geant4/images/backg.jpg">
+
+<div align="center"> 
+<p>
+<img src="http://cern.ch/geant4/images/g4_small.gif" width="312" height="76"> 
+</p>
+
+<h1>
+Bonsai Database for Tags and Testing
+</h1>
+<a NAME="Top"></a>
+
+<H2>
+<a href="http://geant4.cern.ch/collaboration/restricted/tags_database.shtml">
+<p><img src="http://cern.ch/geant4/images/bonsai.gif" border=none alt="Bonsai"></p>The "Bonsai" System</a>
+</H2>
+</div>
+
+<P>
+The Bonsai system was introduced in June 2000 and is used to track tags and testing.
+<br>
+Any tag in the CVS repository will create an entry in the bonsai database.
+<p>
+<li>
+There are 6 possible statuses for a tag:</li>
+
+<blockquote>
+<li>
+<b>Internal </b>- if you do not see your tag reach this state in bonsai database 
+please contact the STT team.</li>
+
+<li>
+<b>Proposed for Testing </b>- You may request a transition from Internal to 
+Proposed for Testing (or this may be performed by the STT, if notified to do so).
+A comprehensive description of the proposed tag should be entered, specifying
+possible co-working tags, if any.
+This is essentially a queue of work for the STT team, however it may be appropriate
+to revert to this state if one, but not all, of a set of co-working tags are
+rejected.
+</li>
+
+<li>
+<b>Selected for Testing </b>- The tag is being tested.
+The tag has been selected for testing and will contribute
+to an sdb file extracted from the Bonsai database. 
+There are three directories (prod,dev1 and dev2) in which testing may take place.
+</li>
+
+<li>
+<b>Tag Accepted </b>- the tag has passed the STT procedures and no further action 
+from the author is required. The tag should be included in the next reference tag.
+</li>
+
+<li>
+<b>Tag Rejected </b>- the tag has failed the STT procedures. This may happen if the 
+code (on one of the supported platform compilers) fails to compile, or causes failures
+in compilation of the base code, or unacceptable results are produced when executing 
+the test program suite.
+The STT team may contact the submitter with further information by mail.
+</li>
+
+<li>
+<b>Global </b>- the tag is a global reference tag and should conform to Geant4 
+naming conventions. Only the release manager is allowed to issue this selection.
+</li>
+
+</blockquote>
+
+<h2>
+Tag descriptions and problems</h2>
+
+<blockquote>
+<li>
+<a href="tag_information/index.html">Reference tag's problem summary</a></li>
+</blockquote>
+
+<hr WIDTH="100%">
+<br><i>Last modified: August 2010</i>
+</body>
+</html>

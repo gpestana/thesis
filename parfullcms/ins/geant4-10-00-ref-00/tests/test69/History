@@ -1,0 +1,72 @@
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test 69 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+12 November 2013, Davide Mancusi (test69-V09-06-10)
+- Remove the quick-and-dirty fix for Windows crash, the problem (?) was in
+  G4INCLXXInterfaceStore.
+
+12 November 2013, Davide Mancusi (test69-V09-06-09)
+- Quick-and-dirty fix for Windows crash.
+
+7 November 2013, Davide Mancusi (test69-V09-06-08)
+- Limit number of threads for HP-based tests.
+
+6 November 2013, Davide Mancusi (test69-V09-06-07)
+- Fix the path to the macro for the INCLXX/ABLA test
+
+6 November 2013, Davide Mancusi (test69-V09-06-06)
+- Activate the INCLXX/ABLA test.
+
+6 November 2013, Davide Mancusi (test69-V09-06-05)
+- Shorten tests with NeutronHP-based physics lists.
+- Add a test for INCLXX/ABLA.
+
+6 November 2013, Davide Mancusi (test69-V09-06-04)
+- Nothing new, just resubmit the tag.
+
+6 November 2013, Davide Mancusi (test69-V09-06-03)
+- Overhaul of test69.
+- Add "mix" material, which should help with exercising different sectors of
+  the physics list.
+- Reduce the number of test cases to 2:
+  o 40-GeV p + mix
+  o 12-GeV C12 + mix
+- Add the possibility to test different physics lists via an envvar.
+- Define unit tests for all the INCLXX-based physics lists.
+- Add visualisation and UIExecutive in interactive mode.
+
+21 May 2013, Davide Mancusi (test69-V09-06-01,test69-V09-06-02)
+- Fix: test69 was actually NOT testing the reactions due to particles being
+  prematurely killed.
+- Add definition for Li detector material.
+- Revise macros.
+
+13 May 2013, Davide Mancusi (test69-V09-06-00)
+- Migration to MT.
+- Suppress unused user stepping action.
+
+11 October 2012, Gabriele Cosmo (test69-V09-05-02)
+- Explicit inclusion of units and constants headers.
+
+14 September 2012, Davide Mancusi (test69-V09-05-01)
+- Move all macro files in a dedicated directory.
+
+14 September 2012, Davide Mancusi (test69-V09-05-00)
+- Split big test69 into many small tests, so that it can be run in parallel.
+- Updated README.
+
+26 October 2011, Pekka Kaitaniemi (test69-V09-04-00)
+- Created a new test for INCL++ cascade model.
+- Requires INCL++ tag hadr-inclxx-V09-04-03 or later.
+

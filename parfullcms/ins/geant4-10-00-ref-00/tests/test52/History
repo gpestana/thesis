@@ -1,0 +1,38 @@
+$Id: History 66892 2013-01-17 10:57:59Z gunter $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                      Category History file
+                      ---------------------
+This file should be used by G4 developers and category coordinators
+to briefly summarize all major modifications introduced in the code
+and keep track of all category-tags.
+It DOES NOT substitute the  CVS log-message one should put at every
+committal in the CVS repository !
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+02-12-2012 J.Allison   tag test52-V09-06-00
+  Migration to DrawTrajectory() (i_mode argument is no longer available):
+  o EventAction.cc: Removed argument from DrawTrajectory().
+
+11-10-2012 Gabriele Cosmo tag test52-V09-05-00
+           Explicit inclusion of units and constants headers.
+
+28-07-2011 Gabriele Cosmo tag test52-V09-04-01
+           Synchronised with versioning on main trunk.
+
+19-01-2011 Luciano Pandola tag test52-V09-04-00
+	   Clean-up, remove obsolete EM models.
+
+16-11-2007 Anton Lechner tag test52-V09-00-00
+           Equivalent to CVS head of obsolete version.
+
+12-04-2007 Susanna Guatelli (tag test52-V08-02-00)
+           Created, Sandia test.
+

@@ -1,0 +1,32 @@
+# $Id: test40.large_N.in 77278 2013-11-22 10:42:28Z gcosmo $
+#
+# Macro file for "TestEm2.cc" 
+# (can be run in batch, without graphic)
+#
+# PbWO4 L = 20 radl  R = 5 radl; electron 5 GeV
+#
+/control/verbose 2
+#
+/testem/phys/setCuts 1 mm
+#
+/run/initialize
+#
+#/run/particle/applyCuts
+#
+/run/verbose 1
+/tracking/verbose 0
+/event/verbose 0
+/process/em/workerVerbose 0
+/testem/event/printModulo 100
+#
+# Acceptance printout is activated
+/testem/det/acceptance  0.95140202  0.0082 8.0
+#
+/gun/particle e-
+/gun/energy 5 GeV
+/run/beamOn  500
+
+/globalField/verbose 1
+/globalField/setValue 0 0 10 gauss
+/run/beamOn  500
+

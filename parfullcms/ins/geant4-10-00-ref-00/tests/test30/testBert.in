@@ -1,0 +1,36 @@
+//---------------------------------------
+//        Macro file for test30
+//         examine PostStepDoIt 
+//        for hadronic physics
+//      Created: 13.03.2002 V.Ivanchenko
+//--------------------------------------- 
+#verbose
+0
+#events
+1000
+#print
+100
+#particle
+pi+
+//--------
+#material
+G4_Be
+#energy(MeV)
+6800.
+#emax(MeV)
+8000
+#nbinse
+25
+#nbinsd
+25
+#nangle
+5
+#angles
+30. 60. 90. 120. 150.  
+#generator
+bertini
+#run
+#generator
+bertini_preco
+#run
+#exit

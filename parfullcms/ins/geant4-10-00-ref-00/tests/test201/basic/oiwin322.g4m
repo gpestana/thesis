@@ -1,0 +1,4 @@
+/vis/viewer/create oiwin32
+/vis/scene/create
+/vis/sceneHandler/attach
+/vis/scene/notifyHandlers

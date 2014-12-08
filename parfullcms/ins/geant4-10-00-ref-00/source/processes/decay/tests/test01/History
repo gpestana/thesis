@@ -1,0 +1,23 @@
+$Id: History 66892 2013-01-17 10:57:59Z gunter $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Decay Test 01 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+May 07, 07 H.Kurashige
+- Modified to fit with geant4-08-02
+
+
+Feb 08, 01 H. Kurashige
+- Created.
+

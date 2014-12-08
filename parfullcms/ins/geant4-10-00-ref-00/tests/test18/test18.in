@@ -1,0 +1,68 @@
+################################################################################
+#                                                                              #
+#  ESA-CERN GEANT4 RADIOACTIVE DECAY MODULE                                    #
+#  VALIDATION TEST NUMBER 01                                                   #
+#                                                                              #
+#  This test generates the nuclei NA-24 (GND-STATE), NE-24, F-24, AL-24        #
+#  NA-24 (metastable), CR-46 and PO-215, and decays them.  The nuclear limits  #
+#  are RESTRICTED SO THAT DAUGHTERS ARE NOT DECAYED.  The geometry comprises   #
+#  a sphere of radius 125,000 km, within a box of side 500,000 km, within a    #
+#  box of side 10,000,000 km.  All volumes are centered on the coordinate      #
+#  origin and contain a vacuum.  Particles start off from the origin with an   #
+#  energy of 1 MeV.                                                            #
+#                                                                              #
+#  F LEI, DERA FARNBOROUGH, 8 MARCH 2000                                       #
+#                                                                              #
+################################################################################
+#
+/control/verbose 2
+/run/verbose 1
+/event/verbose 0
+/tracking/verbose 0
+/process/verbose 1
+/grdm/verbose 0
+/gun/energy 1 MeV
+/gun/particle ion
+#
+# First reaction is beta- decay of 24Na ground state.  The range of nuclei does
+# not have to be restricted since 24Mg is the only product and is stable.
+#
+/gun/ionL 11 24 11 0
+/run/beamOn 1
+#
+# 24Ne beta- decay
+#
+#/grdm/nucleusLimits 24 24 10 10
+/gun/ionL 10 24 10 0
+/run/beamOn 1
+#
+# 9F beta- decay
+#
+#/grdm/nucleusLimits 24 24 9 9
+/gun/ionL 9 24 9 0
+/run/beamOn 1
+#
+# 24Al (ground state) beta+ decay
+#
+#/grdm/nucleusLimits 24 24 13 13
+/gun/ionL 13 24 13 0
+/run/beamOn 1
+#
+# 24Na (472 keV metastable state) beta- decay and IT
+#
+#/grdm/nucleusLimits 24 24 11 11
+/gun/ionL 11 24 11 1
+/run/beamOn 1
+#
+# 46Cr beta+ decay
+#
+#/grdm/nucleusLimits 46 46 24 24
+/gun/ionL 24 46 24 0
+/run/beamOn 1
+#
+# 215Po alpha decay
+#
+/grdm/nucleusLimits 215 215 84 84
+/gun/ionL 84 215 84 0
+/run/beamOn 1
+

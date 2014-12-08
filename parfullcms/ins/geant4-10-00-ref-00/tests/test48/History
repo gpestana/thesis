@@ -1,0 +1,105 @@
+$Id: $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test 48 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+November 8, 2013 A.Ribon (test48-V09-06-11)
+- binmake.gmk: replaced lll_fission with fission and removed high_energy
+  and low_energy.
+
+May 10, 2013 V.Ivanchenko (test48-V09-06-10)
+- added initialisation of GenericIon, ion table and isomer table
+    needed for hadronic models
+
+February 3, 2013 Julia Yarba ( test48-V09-06-09)
+- finish cleaning up Root scripts for pi-, K-, Sigma- 
+  (somehow overlooked in previous round) 
+- remove several unnecessary variables and methods from
+  the source code
+
+January 30, 2013 Julia Yarba (test48-V09-06-08)
+- Fix name duplication in CMakeList (for CTest)
+
+January 29, 2013 Julia Yarba (test48-V09-06-07)
+- Include mu- capture test in CTest (actually there's a name duplication there)
+
+January 24, 2013 Julia Yarba (test48-V09-06-06)
+- Add config for mu- capture CTest
+- Update CMakeList.txt
+- Minor cleanups
+
+January 24, 2013 Julia Yarba (test48-V09-06-05)
+- Finish removing all ties to CHIPS; improve analysis scripts; update README
+
+December 18, 2012 Krzysztof Genser (test48-V09-06-04)
+- correcting CMakeLists.txt after deprecation of
+  GEANT4_COLLATE_APPLICATION_SOURCES
+
+December 18, 2012 Julia Yarba (test48-V09-06-03)
+- Removed old Geisha-style capture/annihilation code ("stopping" model)
+  (shell scripts updated but ROOT macrons still need to be cleaned up !)  
+
+December 11, 2012 Alberto Ribon (test48-V09-06-02)
+- Removed CHIPS stopping. 
+  (Clean-up of shell scripts and ROOT macros need to be done!)
+
+December 05, 2012 Julia Yarba (test48-V09-06-01)
+- /muminus : added exp.data on NNeut vs EKin (from R.M.Sundelin)
+- PlotMuMinus.C : added scripts to overlay Sindelin's data on simulated plots
+- g4val-upload-scripts : added xml for pbar upload
+
+November 28, 2012 Gabriele Cosmo (test48-V09-05-08)
+- fixed cases of variable shadowing
+
+November 8, 2012 Krzysztof Genser & Julia Yarba (test48-V09-05-07)
+- accepted (almost all) CMakeLists.txt file modifications by Pere Mato
+  to allow for simultaneous use of it within Geant4 and standalone build
+
+October 22, 2012 Krzysztof Genser (test48-V09-05-06)
+- disabled the test in cmake file if ROOT package is not found
+
+October 19, 2012 Krzysztof Genser (test48-V09-05-05)
+- removed unused parameter in TestStoppingPhysics::GetProcess
+
+October 19, 2012 Krzysztof Genser (test48-V09-05-04)
+- more explicitly used SystemOfUnits
+
+October 19, 2012 Krzysztof Genser (test48-V09-05-03)
+- removed unused MaterialsList; explicitly used SystemOfUnits
+
+October 18, 2012 Krzysztof Genser (test48-V09-05-02)
+- retagging to repropose the tag due to a cdash script problem?
+
+October 17, 2012 Krzysztof Genser (test48-V09-05-01)
+- renamed mu2e used physics constructor G4MuonMinusCapture to
+G4MuonMinusCapturePhysics plus other changes
+- other changes by Julia Yarba
+
+
+August 23, 2012 - Julia Yarba (test48-V09-06-00) 
+- Tagged to correspond to g4.9.6(-beta)
+- Includes updates
+  -- README
+  -- Root macros (added ReadExpData and PiMinusExpData) 
+
+
+
+August 14, 2012 - Julia Yarba (test48-V00-00-00)
+- Fisrt official tag 
+- Includes tools for the following testing and comparison vs exp.data: 
+  -- "traditional", CHIPS and Bertini models for pi-, K-, Sigma- 
+  -- "traditional", "new infrastructure" (since g4.9.6.b01), CHIPS for mu-
+  -- CHIPS and FTF for pbar 
+

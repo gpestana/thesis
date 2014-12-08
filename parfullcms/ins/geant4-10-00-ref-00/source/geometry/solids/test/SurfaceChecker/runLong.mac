@@ -1,0 +1,10 @@
+# $Id: runLong.mac 66356 2012-12-18 09:02:32Z gcosmo $
+#
+#
+
+#/random/resetEngineFrom currentEvent.rndm
+/random/setSavingFlag 1
+
+
+/gun/particle geantino
+/run/beamOn 1000000

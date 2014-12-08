@@ -5,6 +5,13 @@ Stack overflow.
 \newblock \url{http://stackoverflow.com/}.
 \newblock Accessed: 2014-10-27.
 
+\bibitem{ACAT14ARMDAVID}
+{\sc Abdurachmanov, D., Bockelman, B., Elmer, P., Eulisse, G., Knight, R., and
+  Muzaffar, S.}
+\newblock Heterogeneous high throughput scientific computing with {APM} x-gene
+  and intel xeon phi.
+\newblock {\em CoRR abs/1410.3441\/} (2014).
+
 \bibitem{ACAT13ARM}
 {\sc Abdurachmanov, D., Elmer, P., Eulisse, G., and Muzaffar, S.}
 \newblock Initial explorations of arm processors for scientific computing.

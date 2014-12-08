@@ -1,0 +1,99 @@
+$Id: README 74728 2013-10-21 08:45:03Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                            test40
+                            -------
+
+     This test is cloned from TestEm2 in order to perform benchmarking
+     TestEm2 allows to do the shower development of an single primary
+     particle, and to survey the physics processes which occur, with printing.
+
+     test40 inteded to control the performance for the setup with
+     10 radiation length absorber. The mean trancated energy deposited
+     in the absorber is compeared with the precalculated one. If
+     the deviation is less than 3 sigma the test result "is accepted"
+     unless "is not accepted".
+	
+ 1- GEOMETRY DEFINITION
+ 
+     The geometry consists of a cylinder of homegenous material.
+     This cylinder is replicated longitudinaly (slice) and radialy (ring).
+  
+     The default geometry is constructed in DetectorConstruction class,
+     but all of the above parameters can be modified interactively via
+     the commands defined in the DetectorMessenger class.
+  
+     Material can be choosen: Air Water lAr Al Fe BGO PbWO4 Pb.
+      
+     The size of the slices and rings are expressed in radiation length units
+     and can be changed.
+      
+     An uniform magnetic field along the cylinder axis can be set.
+     
+ 2- PHYSICS LISTS
+
+    Physics List is fixed
+    1. "particles" - particle definitions  
+    2. "general" - decays and transportation  
+    3. "standard" - standard EM physics opt0
+      	    
+ 3- AN EVENT : THE PRIMARY GENERATOR
+ 
+     The primary kinematic consists of a single particle which hits the
+     cylinder perpendicular to the input face. The type of the particle
+     and its energy are set in the PrimaryGeneratorAction class, and can
+     changed via the G4 build-in commands of ParticleGun class (see
+     the macros provided with this example).
+ 	
+     A RUN is a set of events.
+ 					  	
+ 4- HOW TO START ?
+ 
+     - compile and link to generate an executable
+ 		% cd test40
+ 		% gmake
+ 		
+     - execute test40 in batch mode from macro files
+ 		% test40 test40.in
+
+     - execute test40 in batch multi-thread (MT) mode from macro files 
+       and number of threads N 
+  		% test40 test40.in N
+       for instance
+  		% test40 test40.in 4
+       alternative one can define environment variable G4NUMBEROFTHREADS=N 		
+
+     - execute test40 in interactive mode
+ 		% test40
+ 		....
+ 		Idle> type your commands
+  		....
+ 		Idle> exit
+ 	
+ 5- HISTOGRAMS
+ 
+     test40 can produce several histo which are saved as test40.paw
+     
+     Content of these histo:
+  
+      1 : energy deposit       per event
+      2 : charged track length per event
+      3 : neutral track length per event
+            
+      4 : longitudinal energy profile
+      5 : cumulated longitudinal energy profile
+      6 : rms of cumulated longitudinal energy profile
+      
+      7 : gamma's flux
+      8 : positron's flux
+      9 : electron's flux
+                      
+     10 : radial energy profile    
+     11 : cumulated radial energy profile
+     12 : rms of cumulated radial energy profile
+
+ Note that histograms are disabled via the flag G4NOHIST in the GNUmakefile.

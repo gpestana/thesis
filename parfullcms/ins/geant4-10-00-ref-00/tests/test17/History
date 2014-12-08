@@ -1,0 +1,185 @@
+$Id: History 77277 2013-11-22 10:41:23Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                      Test History file
+                      ---------------------
+This file should be used by G4 developers and category coordinators
+to briefly summarize all major modifications introduced in the code
+and keep track of all category-tags.
+It DOES NOT substitute the  CVS log-message one should put at every
+committal in the CVS repository !
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+21 November 2013, A. Dotti   (test17-V09-06-04)
+	     Use of G4RunManager::ReinitializeGeomtry() method
+             requires run-V09-06-128
+
+21 August 2013, V.Ivanchenko (test17-V09-06-03)
+             Removed G4UrbanMscModel93
+
+31 July 2013, Andrea Dotti (test17-V09-06-02)
+             Bug fixing for unused variables for clang32. Second round
+
+30 July 2013, Andrea Dotti (test17-V09-06-01)
+             Bug fixing for unused variables for clang32
+
+3 April 2013, Andrea Dotti (test17-V09-06-00)
+	     Migration to new API of G4VPhysicsConstructor needed
+ 	     for G4MT
+
+9 October 2012, Gabriele Cosmo  (test17-V09-05-00)
+             Explicit inclusion of units and constants headers.
+
+30 September 2011 G.Folger                (test17-V09-04-02)
+             Fix gcc46 compilation warning in Test17SteppingAction.
+	     
+20 July 2011  G.Cosmo (test17-V09-04-01)
+             Removed vis commands from init.mac macro.
+
+20 January 2010  V.Ivanchenko (test17-V09-04-00)
+             Used Physics List from TestEm5, updated macro
+
+14 October 2010  V.Ivanchenko (test17-V09-03-01)
+             Temporary disable PIXE in the Physics List
+
+21 March 2010  V.Ivanchenko (test17-V09-03-00)
+             Cleanup Physics List - substitute obsolete classes
+
+24 Jun 2008  G.A.P.Cirrone tag: test17-V09-01-00
+             Corrected the test17.cc for test with qmtest
+
+06 Dec 2005  G.Cosmo
+             Trivial changes for support of CLHEP-2.0.X series.
+
+21 Nov 2005  G.Cosmo (test17-V07-01-00)
+             Tagged HEAD to use with new non-static particles.
+
+20 May 2005  V.Ivanchenko (test17-V07-00-02)
+             Remove modular physics list - use old one
+
+20 May 2005  V.Ivanchenko (test17-V07-00-01)
+             Remove hadronic physics 
+
+13 May 2005  V.Ivanchenko (test17-V07-00-00)
+             Use new version of particle cathegory
+
+08 Dec 2004  Gabriele Cosmo
+             Implemented missing migration to <cmath>:
+             Test17RunAction.cc.
+
+02 Dec 2004  MGP, tag test17-V06-02-00
+             Migration to <cmath>
+
+26 May 2004  V.Ivanchenko (test17-V06-01-00)
+             Introduce modular PhysicsList and cleanup
+
+27 Jan 2004  V.Ivanchenko (test17-V06-00-00)
+             Remove mu- capture at rest
+
+29 Aug 2003  V.Ivanchenko (test17-V05-02-01)
+             Substitute obsolete interface to cuts energy range
+
+27 Aug 2003  V.Ivanchenko (test17-V05-02-00)
+             Migrade to cut per region
+
+03 June 2003  V.Ivanchenko (test17-V05-01-00)
+             Remove warnings
+
+19 Feb 2003  V.Ivanchenko (test17-V05-00-00)
+             Remove warnings and update reference output
+
+09 Apr 2002  V.I., test17-V04-01-00
+             Extend test to fluorescence and Auger production
+
+09 Apr 2002  V.I., test17-V04-00-02
+             Extend test - include several GenericIons. Additional output.
+
+28 Feb 2002  V.I., test17-V04-00-00
+             Extend test - include GenericIons.
+
+03 Dec 2001  V.I., test17-V03-02-04
+             Remove warning about chemical formula. No difference in physics.
+
+28 Nov 2001  V.I., test17-V03-02-02
+             Increase cuts to decrease execution time. Output is changed.
+
+01 Nov 2001  MGP, test17-V03-02-01
+             Fixes for compilation warnings on Linux
+             Moved to new G4hLowEnergyIonisation with PIXE as default
+
+01 Nov 2001  MGP, test17-V03-02-00
+             Include all contributions by V.I. since the previous tag
+             listed below
+
+30 Oct 2001  V.I.  
+             -update reference output: add number secondaries
+
+Oct 18, 2001  Steve O'Neale (tests-V03-02-03)
+             - Update reference output
+
+20 July 2001  V.I.  
+             -update reference output: CSDA ranges + comparison
+              proton ranges with the ICRU49 data
+
+07 June 2001  V.I. 
+             -remove reflected particles 
+             -update reference output
+             -remove Test17.cc
+
+5 June 2001   MGP, test17-V03-01-02
+              New reference outputs, resulting from bug fixes in LowE
+              antiproton ionisation
+
+23 May  2001  MGP, test17-V03-01-00
+              Including V.I.'s modifications below
+
+22 May  2001  V.I. Clean up againist Linux strict ANSI mode
+              Who tagged test17-V03-01-01? No record in this file!
+
+23 May 2001   MGP, test17-V03-01-00
+              Including V.I.'s modifications below
+
+22 May   2001 V.Ivanchenko Clean up againist Linux strict ANSI mode
+              update reference output
+
+22nd Feb 2001 Steve O'Neale  remove Test17DetectorSD.cc from tag
+
+15th Feb 2001 Steve O'Neale  update reference outputs
+
+6th December  2000 Steve O'Neale (tagset221) large_N reference outputs
+              tag results to match tagged code 
+
+25th November 2000 Steve O'Neale (tagset210)
+- Update test outputs for min.delta energy cut in Gold and Graphite
+- Update test outputs for energy cut table only for e- and gamma
+- Update test outputs for small changes in Range in absorber due to emlowen tag
+
+  Following work is not tagged and not included in the code
+             08.11.2000 - V. Ivanchenko  
+             Reorganized sensitive detector, new test17.out
+
+18th August 2000 - V. Ivanchenko  
+             IonC12 energy is scaled in such a way that the range is
+             the same as the range of the proton
+     
+18th August 2000  Michel Maire  
+- standard G4ionIonisation removed from the PhysicsList
+
+18.08.2000 - VI,
+             Remove G4ionIonisation and G4ionLowEnergyIonisation
+             Clean up output and remove visualisation
+
+26.06.2000 - JA, tag test17-V01-01-03
+- Added test17.large_N.in.
+
+24.06.2000 - MGP, tag test17-V01-01-02
+             Modification to G4Ion... test classes by V. Ivanchenko to 
+	     fix crash on exit on Linux
+

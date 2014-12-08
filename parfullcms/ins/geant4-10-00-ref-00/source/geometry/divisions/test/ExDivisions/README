@@ -1,0 +1,34 @@
+$Id: README 66356 2012-12-18 09:02:32Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                       Test framework for divisions
+                       ----------------------------
+
+
+ This example defines a framework for testing divisions of volumes.
+ It runs in graphical mode and generates log-files for 'steps' and 'points'
+ generated at intersections.
+ 
+      - compile and link to generate an executable:
+ 	      % gmake
+		
+      - execute in 'interactive mode' with visualization.
+        --> exampleDiv [mode] [[placement] [[shape] [[option1] [option2] ...]]]
+	For example:
+ 	 % exampleDiv division reflected box  {or cons, tubs, para, trd, pcone, phedra}
+         % exampleDiv replica normal box  {or cons, tubs, para, trd, pcone, phedra}
+ 	      ....
+ 	      Idle> type your commands. For instance:
+	      Idle> /run/beamOn 10
+	      ....
+ 	      Idle> exit
+
+      - mode: replica, division
+      - placement: normal, reflected 
+      - options can be specified, for example:
+         % exampleDiv division tubs offset=1. divtype=0 width=0.1 startphi=90. deltaphi=360
+

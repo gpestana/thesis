@@ -1,0 +1,61 @@
+$Id: History 76329 2013-11-08 14:23:58Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test 47 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+November 8, 2013 - Alberto Ribon (test47-V09-06-06)
+- Removed forgotten G4LElastic from Test30Physics. 
+
+October 25, 2013 - Julia Yarba (test47-V09-06-05)
+- Cleanup compilation warnings from src/HistoEPTest47.cc
+
+October 24, 2013 - Julia Yarba (test47-V09-06-04)
+- Add config for (future) ctest-ing
+- update CMakeList.txt
+
+October 24, 2013 - Julia Yarba (test47-V09-06-03)
+- Finalize cleaning up (from scripts) LEP, HEP, RPG,CHIPS
+
+October 23, 2013 - Julia Yarba (test47-V09-06-02)
+- Include several earlier updates to the code, scripts, etc.
+- Remove LEP, HEP, RPG
+- Update CMakeList.tst to a standard format
+
+January 30, 2013 - Julia Yarba (test47-V09-06-01)
+- Finish cleaning up ties to CHIPS/QGSC/FTFC, 
+  from the code and the ITEP scripts
+- Remove MaterialsTest47 and replace with the use if G4NistManager
+- Update test47.inp for CTest 
+
+December 11, 2012 - Alberto Ribon (test47-V09-06-00)
+- Eliminated CHIPS and FTFC.
+  (Clean-up of shell scripts and ROOT macros need to be done!)
+  
+October 11, 2012 - Gabriele Cosmo (test47-V09-05-01)
+- Explicit inclusion of units and constants headers.
+
+September 30, 2010 - Alberto Ribon (test47-V09-05-00)
+- Migrated to the new cross sections and new INCL++.
+
+September 30, 2010 - Sunanda Banerjee (test47-V09-03-02)
+- Added possibility of testing Bertini with de-excitation from default.
+  Also added histograms to look at pion and kaon production at ITEP energies.
+
+August 13, 2010 - Sunanda Banerjee (test47-V09-03-01)
+- Changed the access of cross-sections for CHIPS and the plotting
+  functionality to go through multiple directories.
+
+June 10, 2009 - Sunanda Banerjee (test47-V09-02-00)
+- Created. First release.

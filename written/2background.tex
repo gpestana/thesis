@@ -18,6 +18,33 @@ detectors luminosity to its full power the datasets will increase sizes by 2-3
 orders of magnitude and processing power will have to increase in proportion.
 
 
+% heterogeneous high throughput scientific computing with APM X-gene and Intel Xeon Phi
+% TODO intel vs ARM pointers
+% 
+In \cite{ACAT14ARMDAVID}, a server-purpose ARM machine is compared with the recent
+Intel architectures, such as the recent Intel Xeon Phi and a dominating Intel product
+intended for HPC workloads (Intel Xeon E5-2650). The workload for comparing
+the architectures was ParfullCMS. They based the results on performance (events per
+second) and scalability over power (watts). In addition to performance and energy
+consumption comparisons, the paper describes the porting endeavors of the CMSSW to
+an ARMv8 64-bits architecture.
+
+%TODO describe better different architectures, side by side. 
+%TODO describe better experiment setup
+In \cite{ACAT14ARMDAVID}, they use an APM X-Gene 1 running on a development board. 
+It consists of a 8 physical core processor running at 2.4GHz with 16GB DDR3 memory.
+As the authors highlight, the firmware for managing processor ACPI power states was
+not yet available when the study was made. Thus, it is expected that the energy 
+performance will improve once the firmware is available \cite{ACAT14ARMDAVID}.
+
+Under the circumstances of the experiment, the overall results show that APM X-Gene 
+is 2.73 slower than Intel Xeon Phi. From the energy consumption performance (events
+per second per watt), the Intel Xeon E-2650 is the most efficient, with APM X-Gene
+presenting similar performances despite the absence of platform specific 
+optimizations. Therefore, \cite{ACAT14ARMDAVID} concludes by stating that the APM
+X-Gene 1 Server-On-Chip ARMv8 64-bit solution is relevant and potentially interesting
+platform for heterogeneous high-density computing. 
+
 \section{High Throughput Computing}
 \subsection{Literature review}
 

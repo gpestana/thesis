@@ -1,0 +1,69 @@
+# $Id: test2.mac 66356 2012-12-18 09:02:32Z gcosmo $
+# New Geant4 macro for test2
+# By I. Hrivnacova, IPN Orsay; 25/01/2008
+
+# select GRID gun
+/fred/gun GRID
+
+# select SHADOW draw mode
+/fred/draw SHADOW
+
+# select test volume
+#/fred/volume NATALIA
+#/fred/volume VOXEL
+/fred/volume BOX
+#/fred/volume CONE
+#/fred/volume CONE2
+#/fred/volume ORB
+#/fred/volume PARA
+#/fred/volume SPHERE
+#/fred/volume TORUS1
+#/fred/volume TORUS2
+#/fred/volume TRAP
+#/fred/volume TRD
+#/fred/volume TUBS
+#/fred/volume ELLIPS
+#/fred/volume ELCONE
+#/fred/volume ELTUBE
+#/fred/volume EXTRU1
+#/fred/volume EXTRU2
+#/fred/volume EXTRU3
+#/fred/volume EXTRU4
+#/fred/volume HYPE
+#/fred/volume PCON
+#/fred/volume PCON2
+#/fred/volume PCON3
+#/fred/volume PCON4
+#/fred/volume PGON
+#/fred/volume PGON2
+#/fred/volume PGON3
+#/fred/volume TESSEL1
+#/fred/volume TESSEL2
+#/fred/volume TESSEL3
+#/fred/volume TESSEL4
+#/fred/volume TET
+#/fred/volume TWBOX
+#/fred/volume TWTRAP1
+#/fred/volume TWTRAP2
+#/fred/volume TWTRD
+#/fred/volume TWTUBS
+#/fred/volume BOOL1
+
+# initialize
+/run/initialize
+
+# initialize x-windows OpenGL viewer
+/control/execute draw.script
+
+# select a large but not too time consuming number of tracks
+/gridGun/n1 40
+/gridGun/n2 40
+
+# run script 1
+/control/execute grids1.script
+
+# run script 2
+/control/execute grids2.script
+
+# run script 3
+/control/execute grids3.script

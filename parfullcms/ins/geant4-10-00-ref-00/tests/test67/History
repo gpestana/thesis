@@ -1,0 +1,145 @@
+$Id:  $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    test67 History file
+                    --------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+21-08-2013, V.Ivanchenko (test67-V09-06-14)
+  Removed G4UrbanMscModel93
+
+30-07-2013 A.Dotti   (test67-V09-06-13)
+  Bug fixing for compilation warnings for unused varialbes (clang32)
+
+19-Jul-2013 L. Pandola (test67-V09-06-12)
+        Remove obsolete private data member in ROOTAnalysis 
+        (slight change of logic for histogram booking)
+
+11-Jun-2013 A. Dotti  (test67-V09-06-11)
+        Add Mutex to access shared resources in all methods of 
+        singleton ROOTAnalysis class.
+
+24-May-2013 L.Pandola (test67-V09-06-10)
+        Protect the inclusion of ROOTAnalysis.hh with an 
+         #ifdef block in Run.cc (caused the rejection of 
+         test67-V09-06-09)
+
+22-May-2013 L.Pandola (test67-V09-06-09)
+        Protect the static analysis class with G4Mutex
+        Two instances of the same RunAction class used for 
+         master and slave.
+        Works in MT and sequential mode
+
+15-May-2013 L.Pandola (test67-V09-06-08)
+	First attempt of migration to MT (internal tag)
+
+03-Apr-2013 A.Dotti (test67-V09-06-07)
+	Migrating to new G4VPhysicsConstructor API needed for G4MT
+
+12-Feb-2013 L.Pandola and A.Dotti (test67-V09-06-06)
+	Fixed bug which caused the failure of the tests on 
+	CDash-PhysicsChecks with the standard_opt0 list.
+
+09-Feb-2013 L.Pandola and A.Dotti (test67-V09-06-05)
+	Solve issue with warning of shadowing of variables in PhysicsList.cc
+
+08-Feb-2013 L.Pandola and A.Dotti (test67-V09-06-04)
+	Correct CMakeLists.txt introducing correct tests names and 
+	dependencies
+
+06-Feb-2013 L.Pandola and A.Dotti (test67-V09-06-03)
+	Updated the CMakeLists.txt file to include 4 executions of 
+	test67 (one per each EM builder) in the PhysicsChecks 
+	testing on CDash.
+
+06-Feb-2013 L.Pandola (test67-V09-06-02)
+	fix units of measurements in src/ROOTAnalysis.cc. Fix the 
+	returnCode in test67.cc. Add a new macro to test std_opt0 
+	builder. One reference dataset replaced.
+
+21-Dec-2012 M.Kelsey (test67-V09-06-01)
+	test67.cc: Move declaration of "returnCode" inside #ifdef block to
+	fix "unused variable" compiler warning.
+
+20-Dec-2012 L.Pandola (test67-V09-06-00)
+        Implemented a (dumb) cross-check of the results: the program complains if 
+        results are very different with respect of those of a reference file. 
+        No test is performed if the reference file is not found.
+        Add reference root files for 4 EM physics builders
+
+28-Nov-2012 G.Cosmo (test67-V09-05-05)
+        Fixed variable shadowing in PrimaryGeneratorAction.
+
+18-Oct-2012 V.Ivanchenko (test67-V09-05-04)
+        Explicit inclusion of units in one class
+
+11-Oct-2012 G.Cosmo (test67-V09-05-03)
+        Explicit inclusion of units and constants headers.
+
+05-Oct-2012 L.Pandola (test67-V09-05-02)
+        Register the new EM builder G4EmStandardPhysics_option4 as 
+        a valid option. Applicable since geant4-09-05-ref-09. 
+
+16-Apr-2012 L.Pandola (test67-V09-05-01)
+	Copy of the previous tag (rejected for other reasons)
+
+04-Apr-2012 L.Pandola (test67-V09-05-00)
+	Removed the local physics list using the (obsolete)
+	Penelope01 models, that are going to be removed from
+	lowenergy/
+
+14-Nov-2011 G.Folger  (test67-V09-04-11)
+        Add include of time.h needed on Windows.
+
+02-Nov-2011 L.Pandola (test67-V09-04-10)
+	    Added a UI command to give the possibility to use a 
+            fixed (user-chosen) random seed instead of time(0)
+
+23-Aug-2011 L.Pandola (test67-V09-04-09)
+	    Migrated G4Exception(). Added macro for high-statistics
+	    production.
+
+10-Jun-2011 L.Pandola (test67-V09-04-08)
+	    Edited the local PhysListPenelope physics list to 
+	    comply with the new atomic deexcitation interface
+
+31-May-2011 G.Folger   (test67-V09-04-07)
+	    Fix typo introduced in test67.cc
+	    
+30-May-2011 G.Folger   (test67-V09-04-06)
+	    Fix test67.cc for Windows, i.e. protect use of G4UItcsh
+	    
+27-May-2011 L. Pandola (test67-V09-04-05)
+	    Fix compilation problem on Windows which caused the 
+	    rejection of tag test67-V09-04-04
+
+25-May-2011 L. Pandola (test67-V09-04-04)
+	    Update to tag emlowen-V09-04-36, where v2008 is the default 
+            for Penelope models and v2001 is the (obsolete) alternative. 
+            Changed physics lists, README and macros accordingly. 
+
+25-May-2011 L. Pandola (test67-V09-04-03)
+	    Improve coding according to Gunter's suggestions
+	    
+04-May-2011 L. Pandola (test67-V09-04-02)
+	    Edit EventAction.cc to get rid of a valgrind warning
+
+02-May-2011 L. Pandola (test67-V09-04-01)
+	    Remove local physics list called PhysEmLivermore containing old 
+            (deprecated) G4LowEnergy processes, which are going to be deleted.
+	    Compiles against geant4-V09-04-ref04.    
+
+27-Apr-2011 L. Pandola (test67-V09-04-00)
+	    First version
+
+

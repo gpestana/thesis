@@ -1,0 +1,64 @@
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test 61 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+22 July 2013  Dennis Wright  (test61-V09-06-04)
+-----------------------------------------------
+- Tst61PhysicsList: remove fission (redundant) and replace G4LCapture model
+  with G4NeutronRadCapture
+
+3 July 2013  Dennis Wright  (test61-V09-06-03)
+----------------------------------------------
+- Tst61PhysicsList: complete the removal of LEP models and clean up
+
+12 June 2013  Dennis Wright (test61-V09-06-02)
+----------------------------------------------
+- Migrate to multi-threaded:
+    added option to use G4MTRunManager in test61.cc
+    created class Tst61ActionInitialization and moved some user init methods
+      there
+    added empty method Tst18GeometryConstruction::ConstructSDandField()
+
+- added CMakeLists_Standalone.txt to be used for stand-alone running 
+  (developed by Makoto Asai)
+
+- updated README for cmake build
+
+29-Apr-2013  Tatsumi Koi (test61-V09-06-01)
+-------------------------------------------
+- Replace CLHEP::HepRandom to G4Random
+- Add "showEngineStatus" at the end of job
+
+22-Apr-2013  Tatsumi Koi (test61-V09-06-00)
+- Replace deprecated hadronic models
+
+30-Oct-2012, Gunter Folger (test61-V09-05-02)
+- Use default Precompound, and therefore default setting for de-excitation.
+
+11-Oct-2012, Gabriele Cosmo (test61-V09-05-01)
+- Explicit inclusion of units and constants headers.
+
+27-Jul-2012, Vladimir Ivanchenko (test61-V09-05-00)
+- Fixed hadron elastic.
+
+07-Nov-2011, Pere Mato (test61-V09-04-01)
+- Added ENVIRONMENT ${GEANT4_TEST_ENVIRONMENT} to the CTest definition.
+
+15-Jun-2011, Gunter Folger (test61-V09-04-00)
+- Update test61.in to replace obsolete /run/particle/SetCut by /run/SetCut.
+
+18-Nov-2009, Tatsumi Koi (test61-V09-02-00)
+- Change multiple scattering processes to particle dedicated.
+
+28-Oct-2008, Tatsumi Koi (test61-V09-01-00)
+- Created the test for QMD.

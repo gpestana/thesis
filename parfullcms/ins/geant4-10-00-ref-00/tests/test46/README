@@ -1,0 +1,22 @@
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+
+			    Test46
+                            ------
+                     Author V.Ivanchenko
+             
+Simulation of simplified combined calorimeter. Crystal electromagnetic (ECAL) 
+calorimeter and sampling hadronic calorimeter (HCAL) are built. 
+
+Geometry options:
+       - ECAL may be not constructed;
+       - preshower may be constructed consisting of thin layers
+         of all materials from Geant4 material DB.
+
+Analysis is done only using ROOT histograms for energy deposition in 
+ECAL and HCAL, transfer shape in ECAL, total calorimeter response. 
+
+ 
+

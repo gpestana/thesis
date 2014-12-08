@@ -1,0 +1,22 @@
+#**************
+#**
+#** Demonstrates the basic functionality of this example by running a
+#** a single event with the default configuration
+#**
+#**************
+/run/verbose 1
+/tracking/verbose 1
+#/LXe/detector/MainScintYield 100
+#/optics_engine/selectOpProcess Scintillation
+#/optics_engine/setOpProcessUse false
+/run/initialize
+/LXe/saveThreshold 1000
+/LXe/pmtThreshold 2
+/LXe/eventVerbose 1
+#/LXe/forceDrawPhotons true #/LXe/forceDrawNoPhotons false
+#/optics_engine/selectOpProcess OpBoundary
+#/optics_engine/setOpProcessVerbose 1
+/optics_engine/selectOpProcess Scintillation
+#/optics_engine/setOpProcessVerbose 1
+/optics_engine/setTrackSecondariesFirst false
+/run/beamOn 1

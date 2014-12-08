@@ -1,0 +1,33 @@
+#photoelectric cross section
+#in analogue way compton and conversion cross section
+/control/verbose 1
+/tracking/verbose 0
+/run/verbose 0
+/event/verbose 0
+/physics/addPhysics photon-penelope
+/physics/addPhysics electron-eedl
+/physics/addPhysics positron-standard
+/physics/cutE 1. micrometer
+/run/initialize
+/process/list
+#/process/inactivate PenPhotoElec 
+/process/inactivate  PenCompton
+/process/inactivate  PenConversion
+/process/inactivate  PenRayleigh
+/target/setTargetMat Aluminium
+/target/update
+/gun/particle gamma
+/gun/energy 50. keV
+/target/setTargetThick 0.005 mm
+/target/update
+/run/beamOn  1000
+/gun/energy 10. keV
+/run/beamOn  1000
+/target/setTargetThick 0.03 mm
+/target/update
+/gun/energy 15. keV
+/run/beamOn  1000
+/target/setTargetThick 0.05 mm
+/target/update
+/gun/energy 20. keV
+/run/beamOn  1000

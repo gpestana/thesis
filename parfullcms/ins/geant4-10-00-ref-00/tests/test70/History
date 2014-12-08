@@ -1,0 +1,102 @@
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test 70 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+11.11.2013 M.K                  tag test70-V09-06-06
+-----------------------------------------------------
+- Remove test70 from tests
+
+10.10.2013 M.K                  tag test70-V09-06-05
+-----------------------------------------------------
+- Add #include time.h in test70.cc
+- Remove verbose in ReactionAction::TimeStepAction()
+
+06.10.2013 M.K			tag test70-V09-06-04
+-----------------------------------------------------
+- Remove nightly tests
+
+04.10.2013 M.K                  tag test70-V09-06-03
+-----------------------------------------------------
+- Change check on MT mode
+
+04.10.2013 M.K 			tag test70-V09-06-02
+-----------------------------------------------------
+- Change tag's name
+- Use the unused variable
+
+03.10.2013 M.K			tag test70-v90-06-01 (should have been called test70-V09-06-01)
+-----------------------------------------------------
+ Update to MT framework
+ Update to DNA dev
+ Define new tests
+
+1st August 2013 L.Garnier   
+-----------------------------------------------------
+  remove an accent in a comment to be UTF-8 compliant.
+
+30 July 2013 A.Dotti   (test70-V09-06-00)
+-----------------------------------------------------
+  Bug fixing for compilation warnings for unused varialbes (clang32)
+
+23 October 2012, M.K (test70-V09-05-11)
+------------------------------------------------------
+Add #include "G4UImanager.hh" in LaunchG4.cc
+
+17 October 2012, M.K (test70-V09-05-10)
+------------------------------------------------------
+Rename G4DNADiffustionControlledModel to G4DNASmoluchowskiReactionModel
+
+11 October 2012, Gabriele Cosmo (test70-V09-05-09)
+------------------------------------------------------
+- Explicit inclusion of units and constants headers.
+
+26 March 2012, M.K      (test70-V09-05-08)
+------------------------------------------------------
+- Remove [system("rm output.txt");] in test70.cc
+
+24 March 2012, M.K      (test70-V09-05-07)
+------------------------------------------------------
+- Remove visualization
+
+22 March 2012, M.K      (test70-V09-05-06)
+------------------------------------------------------
+- Fix compilation error on windows:
+Add #include <ctime> in test70.cc
+
+21 March 2012, M.K      (test70-V09-05-05)
+------------------------------------------------------
+- Fix compilation error on windows:
+comment struct timespec fStart, fEnd; in LaunchG4
+
+20 March 2012, M.K      (test70-V09-05-04)
+------------------------------------------------------
+- Remove "-lrt" library dependence which failed the compilation
+  on certain platform
+
+16 March 2012, Pere Mato      (test70-V09-05-03)
+------------------------------------------------------
+- CMakeLists.txt: copy commands.mac to binary tree
+
+3 March 2012, Gunter Folger      (test70-V09-05-02)
+------------------------------------------------------
+- comment timer
+- change G4Launch to LaunchG4
+
+1 February 2012, Gunter Folger      (test70-V09-05-01)
+------------------------------------------------------
+- add History and CMakeList.txt
+- fix gcc 4.6 complation warning in PrimaryGeneratorAction.cc
+
+31 January 2012, Mathieu Karamitros (test70-V09-05-00)
+------------------------------------------------------
+- new test70

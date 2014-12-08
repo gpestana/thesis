@@ -1,0 +1,36 @@
+# $Id: test53_long.in 66892 2013-01-17 10:57:59Z gunter $
+#
+# Macro file for "test53.cc"
+# (can be run in batch, without graphic)
+#
+# Lead-liquidArgon 50 layers; electron 1 GeV
+#
+/control/verbose 2
+/run/verbose 2
+#
+#/testem/phys/addPhysics  empenelope
+/testem/phys/addPhysics  emlivermore_pol
+#/testem/phys/addPhysics  emstandard
+#/testem/phys/addPhysics  emstandard_opt3
+#
+/run/initialize
+/process/eLoss/verbose 1
+#
+/gun/particle gamma
+/gun/energy 10 MeV
+#
+/testem/histo/setFileName testem3
+/testem/histo/setFileType root
+/testem/histo/setHisto 1 100 7. 10. MeV	#edep in absor1
+/testem/histo/setHisto 2 100   0.  3. MeV	#edep in absor2
+/testem/histo/setHisto 11 52   0.   52.  none	#long. profile in absor1
+/testem/histo/setHisto 12 52   0.   52.  none	#long. profile in absor2
+/testem/histo/setHisto 21 102  0.   102. none	#energy flow
+/testem/histo/setHisto 22 102  0.   102. none	#lateral energy leakage
+#
+/tracking/verbose 0
+/testem/event/printModulo 50
+#
+/run/beamOn 100000
+
+

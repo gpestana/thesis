@@ -1,0 +1,67 @@
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test 64 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+25 November 2013  Gunter Folger          test64-V09-06-03
+---------------------------------------------------------
+- test64.cc : MS VC18 compilation fix.
+
+21 November 2013  Makoto Asai            test64-V09-06-02
+---------------------------------------------------------
+- test64.cc : roll back to G4RunManager. Initialize() is invoked
+  after G4DecayPhysics.ConstructParticle();
+
+13 June 2013  Dennis Wright              test64-V09-06-01
+---------------------------------------------------------
+- test64.cc : migrated CLHEP::HepRandom to G4Random
+
+13 June 2013  Dennis Wright              test64-V09-06-00
+---------------------------------------------------------
+- Migrate to multi-threaded:
+    added option to use G4MTRunManager in test64.cc
+    created class Tst64ActionInitialization and moved user init method
+      there
+    added empty method Tst64GeometryConstruction::ConstructSDandField()
+
+- added CMakeLists_Standalone.txt to be used for stand-alone running 
+  (developed by Makoto Asai)
+
+- updated README for cmake build  
+
+11 Oct 2012 Gabriele Cosmo               test64-V09-05-06
+---------------------------------------------------------
+- Explicit inclusion of units and constants headers.
+
+11 Oct 2012 Alberto Ribon                test64-V09-05-05
+---------------------------------------------------------
+- Fixed compilation warning in Windows (<ctime>, std::time).
+
+08 Oct 2012 Alberto Ribon                test64-V09-05-04
+- Fixed warning on Windows.
+
+05 Oct 2012 Alberto Ribon                test64-V09-05-03
+- Moved from "Experimental" group to "Nightly" and "Continuous".
+
+09 Aug 2012 Alberto Ribon                test64-V09-05-02
+- Ready to be proposed for testing, for the first time.
+
+08 Aug 2012 Alberto Ribon                test64-V09-05-01
+- Can be built with CMake and ready for CTest.
+  However, it creates too many tests, so it needs to be improved.
+
+08 Aug 2012 Alberto Ribon                test64-V09-05-00
+- Created a new test for BERT and FTFP nuclear capture at rest.
+  In this first version, only GNUmakefile (no CMake), and the
+  tests are steered by a shell script (not working on Windows).
+

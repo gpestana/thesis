@@ -1,0 +1,106 @@
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test 68 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+21-11-13 A. Dotti                         test68-V09-06-09
+----------------------------------------------------------
+- Use G4RunManager::ReinitializeGeometry() to change
+  geometry between runs
+
+17 Jun 2013 Alberto Ribon                 test68-V09-06-08
+----------------------------------------------------------
+- Disabled temporarily G4MTRunManager until a good solution
+  is found to deal with G4MT.
+
+14 Jun 2013 Alberto Ribon                 test68-V09-06-07
+----------------------------------------------------------
+- Set the number of threads to 1 (instead of 4) otherwise the 
+  different threads try to access the same file.
+
+14 Jun 2013 Alberto Ribon                 test68-V09-06-06
+----------------------------------------------------------
+- Fixed problem of renaming currentEvent.rndm in Windows.
+
+13 June 2013  Dennis Wright
+---------------------------------------------------------
+- Migrate to multi-threaded:
+    added option to use G4MTRunManager and changed from CLHEP::HepRandom
+      to G4Random in test68.cc
+    created class Tst68ActionInitialization and moved user init method
+      there
+    added empty method Tst68GeometryConstruction::ConstructSDandField()
+
+- added CMakeLists_Standalone.txt to be used for stand-alone running 
+  (developed by Makoto Asai)
+
+- updated README for cmake build
+
+12 Jun 2013 Alberto Ribon                 test68-V09-06-05
+----------------------------------------------------------
+- Fixed problem of conflicting currentEvent.rndm between the 5 tests.
+
+12 Jun 2013 Alberto Ribon                 test68-V09-06-04
+- Split the 5 configurations that are tested for reproducibility
+  in 5 independent tests, each with 100 events.
+
+07 Jun 2013 Alberto Ribon                 test68-V09-06-03
+- Increased the timeout for the reproducibility test (now 1 hour).
+
+09 Apr 2013 Pere Mato                     test68-V09-06-02
+- Increased the timeout for the reproducibility test.
+
+26 Feb 2013 Alberto Ribon                test68-V09-06-01
+- Reduced the number of events from 100 to 80 to avoid timeout errors.
+
+10 Jan 2013 Alberto Ribon                test68-V09-06-00
+- Increased the time limit to avoid timeout errors.
+
+13 Nov 2012 Alberto Ribon                test68-V09-05-09
+- Fixed the massive non-reproducibility in Windows due to use of
+  a Unix command (mv) in the script reproducibility.py .
+
+11 Oct 2012 Gabriele Cosmo               test68-V09-05-08
+- Explicit inclusion of units and constants headers.
+
+11 Oct 2012 Alberto Ribon                test68-V09-05-07
+- Fixed compilation warning in Windows (<ctime>, std::time).
+
+10 Oct 2012 Alberto Ribon                test68-V09-05-06
+- Use $<CONFIGURATION> (instead of hardwired "RelWithDebInfo")
+  to get the subdirectory where the executable is placed in Windows.
+
+10 Oct 2012 Alberto Ribon                test68-V09-05-05
+- Fix bad output format: it could fix the non-reproducibility
+  seen in both Mac and Windows.
+
+10 Oct 2012 Alberto Ribon                test68-V09-05-04
+- Try to fix the problem on Windows by specifying explicitly the
+  path and name of the executable invoked by the Python script.
+
+05 Oct 2012 Alberto Ribon                test68-V09-05-03
+- Moved from "Experimental" group to "Nightly" and "Continuous".
+  Increased the number of events from 10 to 100.
+
+08 Aug 2012 Alberto Ribon                test68-V09-05-02
+- Fixed small mistake.
+
+08 Aug 2012 Alberto Ribon                test68-V09-05-01
+- Can be built with CMake and ready for CTest.
+
+08 Aug 2012 Alberto Ribon                test68-V09-05-00
+- Created new test for the reproducibility of FTFP_BERT.
+  In this first version, only GNUmakefile (no CMake), and the
+  tests are steered by a shell script (not working on Windows),
+  which calls a Python script (also not working on Windows).
+

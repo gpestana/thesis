@@ -1,0 +1,277 @@
+$Id: History 78052 2013-12-03 08:20:09Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                      Ctests History file
+                      ---------------------
+This file should be used by G4 developers and category coordinators
+to briefly summarize all major modifications introduced in the code
+and keep track of all category-tags.
+It DOES NOT substitute the CVS log-message one should put at every
+committal in the CVS repository !
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+ctests-V09-06-32 2  December 2013 Andrea Dotti
+- Temporary enable RE04 in Continous for debugging
+
+ctests-V09-06-31 29 November 2013 Gunter Folger
+- Build and run hadronic/Hadr05 example only with shared libs
+
+ctests-V09-06-30 28 November 2013 Ivana Hrivnacova
+- Added new extended biasing/GB02 example in tests
+
+ctests-V09-06-29 28 November 2013 Ivana Hrivnacova
+- Added new extended hadronic/Hadr05 example in tests
+
+ctests-V09-06-28 27 November 2013 Ivana Hrivnacova
+- Added new extended biasing/GB01 example in tests
+
+ctests-V09-06-27 26 November 2013 Pere Mato
+- fixed example-ext-biasing-b03 by adding the ENVIRONMENT
+
+ctests-V09-06-26 22 November 2013 Ivana Hrivnacova
+- Added new extended biasing/B03 example in tests;
+  re-activated biasing/B02 in GNUmake text
+
+ctests-V09-06-25 22 November 2013 Ivana Hrivnacova
+- Added extended Hadr03 and Hadr04 examples in tests
+
+ctests-V09-06-24 19 November 2013 Gunter Folger
+- GNUMakeTestfile.cmake: attempt to set environment.
+
+ctests-V09-06-23 9 November 2013 Ivana Hrivnacova
+- Updated test for removal A01 example
+
+ctests-V09-06-22 7 November 2013 Ivana Hrivnacova
+- Fixed directory name in added electroScattering2 test
+
+ctests-V09-06-21 6 November 2013 Ivana Hrivnacova
+- Added extended example electroScattering2
+
+ctests-V09-06-20 3 Movember 2013 Pere Mato
+- Fixed example-ext-polarisation-pol01 adding the ENVIRONMENT
+
+ctests-V09-06-19 31 October 2013 Peter Gumplinger
+- Fixed OpNovice and field06 test in CMake and GNUMakeTestfile
+
+ctests-V09-06-18 31 October 2013 Luciano Pandola
+- revert to ctests-V09-06-16
+
+ctests-V09-06-17 30 October 2013 Luciano Pandola
+- fix problem in ctests-V09-06-16 which caused failure 
+ of Nightlies on Windows
+
+ctests-V09-06-16 29 October 2013 Luciano Pandola
+- added advanced example example-adv-microelectronics
+
+ctests-V09-06-15 04 October 2013 Ivana Hrivnacova
+- Fixed B5 test in CMake
+
+ctests-V09-06-14 03 October 2013 Ivana Hrivnacova
+- Added basic/B5 example 
+
+ctests-V09-06-13 30 September 2013 Ivana Hrivnacova
+- N03Con test replaced with B1Con
+
+ctests-V09-06-12 13 June 2013 Andrea Dotti
+- factor out phonons example test definition.
+  Requires phononExample-V09-06-03
+
+ctests-V09-06-11 30 May 2013 Gunter Folger
+- remove advanced example radioprotection 
+
+ctests-V09-06-10 29th May 2013 Ivana Hrivnacova
+- Added test for GCCXML, and changed test for BUILD_SHARED_LIBS with
+  Geant4_shared_FOUND for example-ext-persistency-p01-read/write tests
+
+ctests-V09-06-09 14th March 2013 Andrea Dotti
+- Adding tests example-adv-underground_physics and
+  example-adv-lArCal
+
+ctests-V09-06-08 01st March 2013 Ivana Hrivnacova
+- Updated test for removing novice/N01,N02,N03 examples
+
+ctests-V09-06-07 14th February 2013 Ivana Hrivnacova
+- Updated test for removal extended/geometry/olap example
+
+ctests-V09-06-06  9th January 2012 Gunter Folger
+- remove fake subtree tags/home/work/packages/geant4/geant4_... including a
+   duplicate CMakeLists.txt.
+
+ctests-V09-06-05 04th January 2013 Ivana Hrivnacova
+- Fixed previously added tests (path to executable): 
+  example-ext-optical-opnovice and example-ext-runandevent-re05,06
+
+ctests-V09-06-04 19th December 2012 Ivana Hrivnacova
+- Updated test for moving novice/N04,N07 in extended/runAndEvent/RE05,RE06
+
+ctests-V09-06-03 18th December 2012 Ivana Hrivnacova
+- Changed also test name (example-nov-n06 to example-ext-optical-opnovice)
+  and moved test just before example-ext-optical-lxe
+
+ctests-V09-06-02 17th December 2012 Peter Gumplinger
+- moved novice/N06 to /extended/optical/OpNovice
+
+ctests-V09-06-01 14th December 2012 Ivana Hrivnacova
+- Fixed SOURCE_DIR and BINARY_DIR in added test
+  (example-ext-parameterisations-par01)
+
+ctests-V09-06-00 13th December 2012 Ivana Hrivnacova
+- Updated test for moving novice/N05 in extended/parameterisations/Par01
+
+ctests-V09-05-38 8th November 2012 Pere Mato
+- Fixed typo in the definition of test example-ext-exoticphysics-phonons
+
+ctests-V09-05-37 6th November 2012 Gunter Folger
+- Updated GNUMakeTestfile for example-bas-b4a,b,c,d for changes in B4 example;
+  now handling program arguments in a new way
+
+ctests-V09-05-36 2nd November 2012 Luciano Pandola
+- removed the comparison of the cerr output of gammaray_telescope
+  against the expected error message gammaraytel.err
+
+ctests-V09-05-35 1st November 2012 Ivana Hrivnacova
+- Updated example-bas-b4a,b,c,d for changes in B4 example;
+  now handling program arguments in a new way
+
+ctests-V09-05-34 1st November 2012 Michael Kelsey
+- Rename directory "phononExample" to "phonon" per request from Gabriele
+  Cosmo.  Requires phononExample-V09-05-04 or later.
+
+ctests-V09-05-33 1st November 2012 Gunter Folger
+- Add project names for several advanced examples:
+   gammaray_telescope, phononExample, and air_shower 
+
+ctests-V09-05-32 31th October 2012 Francesco Romano
+- Correct case for hadrontherapy example to follow changes in the example 
+   CMakeLists.txt file
+
+ctests-V09-05-31 30th October 2012 Michael Kelsey
+- Improve phononExample following discussion with Ivana: Envvar CRYSTALMAPS
+  points to input directory used by executable; new input file runs without
+  graphics; output files are compared with references from source directory.
+  Requires phononExample-V09-05-02 or later.
+
+ctests-V09-05-30 30th October 2012 Gunter Folger
+- Add project names for several advanced examples:
+   human_phantom,purging_magnet, radioprotection, xray_fluorescence,
+   medical_linac
+
+ctests-V09-05-29 29th October 2012 Gunter Folger
+- Correct case for several examples to follow changes in example 
+   CMakeLists.txt files
+   
+ctests-V09-05-28 26th October 2012 Michael Kelsey
+- Add phononExample extended example using vis.mac as input.  The latter
+  should be changed to a non-graphical version when available.
+
+ctests-V09-05-27 26th October 2012 Gunter Folger
+- Add gammaknife advanced example using simulation.mac as input.
+
+ctests-V09-05-26 24th October 2012 Pere Mato
+- Moved GNUMakeTestfile.cmake from the CDash scripts to this package
+  to ensure consistency of test definitions with G4 released versions.
+
+ctests-V09-05-25 19th October 2012 Ivana Hrivnacova
+- Fix in example-ext-medical-dicom: added ENVIRONMENT
+
+ctests-V09-05-24 16th October 2012 Ivana Hrivnacova
+- Synchronizing tests with updated CMakeLists.txt in 
+  example/extended/medical (exMedical-V09-05-01)
+
+ctests-V09-05-23 08th October 2012 Ivana Hrivnacova
+- Synchronizing tests with updated CMakeLists.txt in 
+  example/extended/runAndEvent (exRunAndEvent-V09-05-00)
+
+ctests-V09-05-22 29th September 2012 Ivana Hrivnacova
+- Synchronizing tests with updated CMakeLists.txt in 
+  example/extended/eventGenerator, hadronic, polarisation
+  (exEventgenerator-V09-05-01, exHadronic-V09-05-01, 
+  exPolarisation-V09-05-01)
+
+ctests-V09-05-21 26th September 2012 Ivana Hrivnacova
+- Synchronizing tests with updated CMakeLists.txt in 
+  example/extended/eventGenerator (exEventgenerator-V09-05-00)
+
+ctests-V09-05-20 24th September 2012 Ivana Hrivnacova
+- Synchronizing tests with updated CMakeLists.txt in 
+  example/extended/parameterisations, persistency, polarisation
+  (exParameterisations-V09-05-00, exPersistency-V09-05-00,
+   exPolarisation-V09-05-00)
+- Fixed test example-ext-biasing-reversemc01   
+
+ctests-V09-05-19 21st September 2012 Ivana Hrivnacova
+- Synchronizing tests with updated CMakeLists.txt in 
+  example/extended/hadronic, medical 
+  (exHadronic-V09-05-00, exMedical-V09-05-00)
+
+ctests-V09-05-18 20th September 2012 Ivana Hrivnacova
+- Synchronizing tests with updated CMakeLists.txt in 
+  example/extended/geometry, errorpropagation 
+  (exGeometry-V09-05-00, exerrprop-V09-05-05) 
+- Added geometry/transforms and field/field06 in tests
+
+ctests-V09-05-17 19th September 2012 Ivana Hrivnacova
+- Synchronizing tests with updated CMakeLists.txt in example/extended: 
+  exbiasing-V09-05-01
+
+ctests-V09-05-16 3rd September 2012 Ivana Hrivnacova
+- Synchronizing tests with updated CMakeLists.txt in example/extended: 
+  example-ext-analysis-anaex03: now built only when AIDA is found
+  example-ext-analysis-n03con: the project name is now different from the 
+  executable name (by Pere Mato) 
+
+ctests-V09-05-15 9th August 2012 Pere Mato
+- Disabling "validate_sources" test to understand random failures of tests on the macosx platform
+
+ctests-V09-05-14 11th July 2012 Pere Mato
+- Improved "validate_sources" target as a new test
+
+ctests-V09-05-13 11th July 2012 Pere Mato
+- Added "validate_sources" target as a new test
+
+ctests-V09-05-12 10th July 2012 Andrea Dotti
+- Adding new path for SimplifiedCalorimeter
+
+ctests-V09-05-11 4th July 2012 Gunter Folger
+- Add examples/extended/hadronic/Hadr03 to testing
+
+ctests-V09-05-10 27th June 2012 Pere Mato
+- Fix for the advanced examples
+
+ctests-V09-05-09 26th June 2012 Pere Mato
+- Disable example-ext-analysis-anaex0 if ROOT not availbale. 
+- Changed to use parameter WORKING_DIRECTORY instead of 'cmake -E chdir'
+
+ctests-V09-05-08 18th June 2012 Pere Mato
+- Disable example-ext-persistency-p01 tests if only static libraries are build
+
+ctests-V09-05-07 14th June 2012 Pere Mato
+- Added test  example-ext-analysis-anaex03 
+
+ctests-V09-05-06 8st June 2012 Pere Mato
+- Removed test example-ext-g3tog4-cltog4 
+
+ctests-V09-05-05 1st June 2012 Andrea Dotti
+- Added reference to SimplifiedCalorimeter testing suite: note test definition is done
+  in SimplifiedCalorimeter
+
+ctests-V09-05-04 10th April 2012  Pere Mato
+- Added tests example-ext-persistency-p01-write and example-ext-persistency-p01-read
+
+ctests-V09-05-03 9th March 2012  Pere Mato
+- Created new tag to test CTest/CDash with propossed tags
+
+ctests-V09-05-02 19th January 2012  Pere Mato
+- Fixed example-ext-medical-electronScattering by creating the needed directory
+
+ctests-V09-05-01 15th December 2011  Pere Mato
+- Removed project statement to avoid failures on Windows
+
+ctests-V09-05-00 13th December 2011  Pere Mato
+- Created as new category to collect all the CTest tests (mainly for Examples)

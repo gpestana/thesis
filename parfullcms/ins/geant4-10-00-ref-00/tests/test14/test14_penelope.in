@@ -1,0 +1,229 @@
+#
+# Macro file test14.in
+# for tests of basic low energy e.m. processes (based on test09) 
+#
+/control/verbose 2
+/run/verbose 2
+#
+/lowenergy/addPhysics photon-penelope
+/lowenergy/addPhysics electron-penelope
+/lowenergy/addPhysics positron-penelope
+/run/initialize
+#
+/process/list
+/particle/list
+#
+/lowenergy/cutG .01 micrometer
+/lowenergy/cutE .01 micrometer
+/lowenergy/lowlimG 1.0e-4
+/lowenergy/lowlimE 1.0e-4
+#
+/run/particle/dumpCutValues
+#
+/calor/setAbsThick 10 cm  
+/calor/setAbsRad 12.0 cm
+/calor/update
+#
+#
+/gun/direction 0 0 1
+#
+/calor/setAbsMat Aluminium
+#=========================
+/gun/particle gamma
+#------------------
+# 
+/gun/energy 10 keV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+# 
+/gun/energy 2 keV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 600 eV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 300 eV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/particle e-
+#---------------
+/gun/energy 10 keV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 2 keV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 600 eV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 300 eV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/calor/setAbsMat Lead      
+#====================
+#
+/gun/particle gamma
+#------------------
+#
+/gun/energy 10 keV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+# 
+/gun/energy 2 keV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 600 eV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 300 eV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/particle e-
+#---------------
+/gun/energy 10 keV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 2 keV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 600 eV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 300 eV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+#
+/calor/setAbsMat Water
+#======================
+#
+/gun/particle gamma
+#------------------
+#
+/gun/energy 10 keV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+# 
+/gun/energy 2 keV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 600 eV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 300 eV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/particle e-
+#-----------------
+/gun/energy 10 keV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 2 keV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 600 eV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/energy 300 eV
+/tracking/verbose 1
+/run/beamOn 1
+/tracking/verbose 0
+/run/beamOn 1000
+#
+/gun/particle gamma
+#------------------
+/process/inactivate Rayl
+/process/inactivate compt
+/process/inactivate phot
+/process/inactivate eIoni
+/process/inactivate msc
+/process/inactivate eBrem
+
+/calor/setAbsMat Aluminium
+#======================
+/tracking/verbose 0
+/gun/energy 2 MeV
+/run/beamOn 1000
+/gun/energy 100 MeV
+/run/beamOn 100
+/calor/setAbsMat Lead
+#======================
+/tracking/verbose 0
+/gun/energy 2 MeV
+/run/beamOn 1000
+/gun/energy 100 MeV
+/run/beamOn 100
+/calor/setAbsMat Water
+#======================
+/tracking/verbose 0
+/gun/energy 2 MeV
+/run/beamOn 1000
+/gun/energy 100 MeV
+/run/beamOn 100
+
+exit

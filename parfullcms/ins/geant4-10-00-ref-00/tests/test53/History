@@ -1,0 +1,56 @@
+$Id: History 77265 2013-11-22 10:25:30Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    test53 History file
+                    --------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+21-11-13 A. Dotti    (test53-V09-06-02)
+- Use G4RunManager::ReinitializeGeometry() 
+
+30-07-2013 A.Dotti   (test53-V09-06-01)
+  Bug fixing for compilation warnings for unused varialbes (clang32) 
+
+02-12-2012 J.Allison  (test53-V09-06-00)
+  Migration to DrawTrajectory() (i_mode argument is no longer available):
+  o EventAction.cc: Removed argument from DrawTrajectory().
+
+16-10-12  V.Ivanchenko (test53-V09-05-02)
+- Do not save random seed per event
+
+11-10-12  G.Cosmo (test53-V09-05-01)
+- Explicit inclusion of units and constants headers.
+
+16-04-11  L.Pandola (test53-V09-05-00)
+- Migrated to comply with emlowen-V09-05-16 (removed Penelope01 
+  files, obsolete).
+
+26-05-11  L.Pandola (test53-V09-04-01)
+- Migrated to comply with emlowen-V09-04-38 (Penelope08 files 
+  moved as Penelope models, new Penelope01 files).
+
+28-04-11  S.Incerti (test53-V09-04-00)
+- Switched to Livermore polarized photons.
+
+09-11-10  M.Asai (test53-V09-03-02)
+- Fix AIDA file option.
+
+13-04-10  V.Ivanchenko (test53-V09-03-01)
+- Removed old obsolete low-energy builders
+
+19-03-10  L.Pandola (test53-V09-03-00)
+- Added local physics list to test Penelope08 models (only gamma rays 
+  at the moment)
+     
+18-04-09  V.Ivanchenko (test53-V09-02-00)
+- First version

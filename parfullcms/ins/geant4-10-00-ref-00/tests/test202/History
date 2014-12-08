@@ -1,0 +1,98 @@
+$Id:$
+-----------------------------------------------------------------------------
+
+History file for test/test202 subdirectory
+------------------------------------------------
+
+25th November 2013 Gunter Folger    (test202-V09-06-06)
+- fix for VC18, use DumpInfo in place of StreamInfo construct.
+
+22nd November 2013 Tatiana Nikitina (test202-V09-06-05)
+- Use G4GenericPolycone for polycone shape with decreasing Z-section.
+
+30th August 2013 Gunter Folger (test202-V09-06-04)
+- Enable to run test202, if fake X server Xvfb is installed in system.
+
+28th May 2013  John Allison (test202-V09-06-03)
+- CMakeLists.txt: Curtailed to prevent, for now, launching into the test system.
+
+28th May 2013  John Allison (test202-V09-06-02)
+- test202.cc: Changed "QGSP_BERT" to "QBBC" (following B1).
+  o Note: For vis testing, the physics list is irrelevant, but we need
+    to be sure we are not using a deprecated physics list so that we 
+    can compile and test safely.
+- Tst202DetectorConstruction.cc:
+  o Incorporated "Extra_placements" in "Tubes_etc".
+  o Added "G4Paraboloid", "G4GenericTrap", "Simple_tessellated",
+    "Simple_union".
+  o Revamped "Polycone".
+  o Brought new volumes, "G4Paraboloid", "G4GenericTrap" (including a
+    boolean subtraction), "Simple_tessellated" and "Simple_union", under
+    control of /test202/select.
+- vis.mac: Took account of changes in Tst202DetectorConstruction.cc.
+- CMakeLists.txt: Added run0.mac to files copied to test location.
+
+15th February 2013 Garnier Laurent
+- Add xvfb file to control generation of images without graphic card
+
+5th February 2013 Garnier Laurent (test202-V09-06-01)
+- New tests without any graphical card with xvfb-run. Will be removed if it failed
+
+29th November 2012  Gabriele Cosmo (test202-V09-05-08)
+- Exclude changes introduced in tags -05 and -06 which fail in testing!
+
+28th November 2012  Gabriele Cosmo (test202-V09-05-07)
+- Fixed cases of variable shadowing.
+
+6th November 2012  Laurent Garnier (test202-V09-05-05 test202-V09-05-06)
+- test202
+  o Remove 198 and make only 2 tests by driver (IX,SI,IXm,SXm,IQt,SQt)
+  o Update reference folders regarding to the new tests
+  o Fix a bug in Test scripts: Test don't have to be run in parallele
+
+30th October 2012  Laurent Garnier (test202-V09-05-01 / test202-V09-05-02
+                                    test202-V09-05-03 test202-V09-05-04)
+- First proposition tag for test202 tests
+- Fix CMakeList
+
+27th October 2012  Laurent Garnier
+- Add tests for test202 on X, Xm, Qt
+
+9th October 2012  Gabriele Cosmo  (test202-V09-05-00)
+- Explicit inclusion of units and constants headers.
+
+25th September 2011  John Allison  (test202-V09-04-00)
+- Tst202DetectorConstruction.cc:
+  o  Added box_in_box, a test of the BooleanProcessor for the case of a
+     "hollow" subtraction, i.e., making a hollow box using G4SubtractionSolid.
+  o Added G4GenericTrap and boolean operation thereon.
+  o Made experimental hall bigger to accommodate the above.
+  o Made calorimeter boxes transparent (test of transparency).
+- vis.mac: Disabled auto-refresh while establishing scene.
+
+30th November 2010  Gunter Folger  (test202-V09-03-01)
+- fix for windows compilation, use CLHEP::pi instead of M_PI 
+   in Tst202DetectorConstruction.cc
+
+10th July 2010  John Allison  (test202-V09-03-00)
+- test202.cc: Changed to QGSP_BERT.
+- vis.mac: Changed to /vis/open OGL.
+
+21st November 2009  John Allison  (test202-V09-02-01)
+- Introduced G4UIExecutive.
+
+9th March 2009  John Allison  (test202-V09-02-00)
+- Suppressed all deselection of problem volumes.  All volumes OK now.
+- Minor refinements.
+
+19th November 2007  John Allison  (test202-V09-00-01)
+- Re-introduced G4EllipticalCone into standard vis.mac.
+
+21st August 2007  Tatiana Nikitina  (test202-V09-00-00)
+- Correction in definition of G4EllipticalCone.
+
+21st May 2007  John Allison  (test202-V08-03-00)
+- Fix compiler warnings.
+
+8th February 2007  John Allison  (test202-V08-02-00)
+- First version based on visualization/test/test19

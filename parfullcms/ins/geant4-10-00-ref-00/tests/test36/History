@@ -1,0 +1,75 @@
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test36 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+21-11-13 A. Dotti (test36-V09-06-06)
+- Use G4RunManager::ReinitializeGeometry() 
+
+30-07-13 A.Dotti      (test36-V09-06-05)
+- Removing unused variables: clang32 compilation warning
+
+09-07-13 V.Ivanchenko (test36-V09-06-04)
+- Em10SteppingAction - cleanup old code
+- Em10PhysicsList - use G4PAIModel instead of G4PAIPhotonModel
+
+08-05-13 V.Ivanchenko (test36-V09-06-03)
+- Em10PhysicsList - use G4PAIPhotonModel instead of G4PAIModel
+    in order to cover all models in stt testing
+
+03-04-13 A.Dotti (test36-V09-06-02)
+- Proting to new G4VPhysicsConstructor interface needed for G4MT
+
+28-02-13 V.Ivanchenko (test36-V09-06-01)
+- XTRPhotoElectricEffect - changed method to access G4SandiaTable
+
+22-02-13 V.Ivanchenko (test36-V09-06-00)
+- XTRPhotoElectricEffect - changed method to access G4SandiaTable
+
+28-11-12  G.Cosmo (test36-V09-05-05)
+- Fixed cases of variable shadowing.
+
+09-10-12  G.Cosmo (test36-V09-05-04)
+- Explicit inclusion of units and constants headers.
+
+13-07-12  V.Ivanchenko (test36-V09-05-03)
+- Em10RunAction - removed protection for better testing
+
+11-07-12  V.Ivanchenko (test36-V09-05-02)
+- Em10RunAction - cleanup initialisation
+
+10-07-12  V.Ivanchenko (test36-V09-05-01)
+- Em10RunAction - fixed write outside boundaries of C-array 
+
+30-05-12  V.Ivanchenko (test36-V09-05-00)
+- Fixed compilation warnings for unused variables
+
+20-07-11  G.Cosmo (test36-V09-04-02)
+- Removed vis setup...
+- Fixed compilation warnings for unused variables
+
+19-01-11  L.Pandola (test36-V09-04-00)
+- porting to Geant4 9.4
+
+01-06-07  V.Ivanchenko (test36-V08-03-03)
+- disable previous changing and restore XTR test
+
+30-05-07  V.Ivanchenko (test36-V08-03-02)
+- update Physics Lists
+
+30-05-07  V.Ivanchenko (test36-V08-03-01)
+- fixed problem of CVS
+
+25-05-07  V.Ivanchenko (test36-V08-03-00)
+- first commit

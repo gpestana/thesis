@@ -1,0 +1,9 @@
+# $Id: runSingle.mac 66356 2012-12-18 09:02:32Z gcosmo $
+#
+#
+
+/random/resetEngineFrom currentEvent.rndm
+
+
+/gun/particle geantino
+/run/beamOn 2

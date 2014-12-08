@@ -1,0 +1,52 @@
+$Id: History 77263 2013-11-22 10:23:46Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    test55 History file
+                    --------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+21-11-13 A. Dotti    (test55-V09-06-02)
+- Use G4RunManager::ReinitializeGeometry()
+
+30-07-2013 A.Dotti   (test55-V09-06-01)
+  Bug fixing for compilation warnings for unused varialbes (clang32)
+
+02-12-2012 J.Allison  (test55-V09-06-00)
+  Migration to DrawTrajectory() (i_mode argument is no longer available):
+  o EventAction.cc: Removed argument from DrawTrajectory().
+
+16-10-12  V.Ivanchenko (test55-V09-05-01)
+- Do not save random seed per event
+
+11-10-12  G.Cosmo (test55-V09-05-00)
+- Explicit inclusion of units and constants headers.
+
+07-06-11  V.Ivanchenko (test55-V09-04-00)
+- Reduced size of log output.
+
+09-11-10  M.Asai (test55-V09-03-01)
+- Fix AIDA file option.
+
+13-04-10  A.Lechner (test55-V09-03-00)
+- Removed local physics lists containing outdated physics processes.
+
+24-04-09  A.Lechner (test55-V09-02-01)
+- Added scoring functionality for the mean energy loss of primaries
+  transmitted through a material layer. Affected classes are:
+  SteppingAction, RunAction.
+- Added functionality to compare range and energy loss of primaries
+  against reference values (specified in macro file). New classes are
+  Test, TestSeries, RunActionMessenger.
+
+18-04-09  V.Ivanchenko (test55-V09-02-00)
+- First version.

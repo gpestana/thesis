@@ -1,0 +1,5 @@
+/vis/sceneHandler/create OIWIN32
+/vis/viewer/create
+/vis/sceneHandler/attach
+
+

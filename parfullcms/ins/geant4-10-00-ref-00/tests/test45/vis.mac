@@ -1,0 +1,42 @@
+#
+# Macro file for the initialization phase of "TestEm9.cc"
+#
+# Sets some default verbose
+# and initializes the graphic.
+#
+/control/verbose 2
+/run/verbose 2
+#
+# Create empty scene ("world" is default)
+/vis/scene/create
+#
+# Create a scene handler for a specific graphics system
+# Edit the next line(s) to choose another graphic system
+#
+/vis/open OGLIX
+#/vis/open OGLIXm
+#
+#/vis/open DAWNFILE
+#
+# Draw scene
+/vis/viewer/set/viewpointThetaPhi -90 0 deg
+/vis/viewer/zoom 1.0
+/vis/viewer/flush
+#
+# for drawing the tracks
+# if too many tracks cause core dump => storeTrajectory 0
+/tracking/storeTrajectory 1
+/vis/scene/endOfEventAction accumulate
+#
+/testhadr/TargetMat        G4_C 
+/testhadr/TargetWidth      2  cm
+/testhadr/TargetLength     15 mm
+#
+/run/initialize
+#
+/testhadr/DrawTracks       all
+#
+/gun/particle proton
+/gun/energy 50. MeV
+/run/beamOn 1000
+#

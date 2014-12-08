@@ -1,0 +1,78 @@
+$Id: History 73007 2013-08-15 08:42:59Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test 60 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+30 July 2013  S.Incerti tag test60-V09-06-06
+            - Fixed MAC/clang32 warning
+
+30 July 2013  S.Incerti tag test60-V09-06-05
+            - Fixed MAC/clang32 warning
+
+11 June 2013  M.Karamitros tag test60-V09-06-04
+            - Convert RunAction::fProcCounter into an object rather than a pointer
+
+6 June 2013   M.Karamitros tag test60-V09-06-03
+            - Fix bugs after migration to MT 
+
+23 Mai 2013   M.Karamitros tag test60-V09-06-02
+            - Migration to MT frame
+
+07 Dec 2012   V.Ivanchenko tag test60-V09-06-01
+            - PhysicsList - substituted obsolete SetModel method
+              by SetEmModel
+
+02 Dec 2012   J.Allison   tag test60-V09-06-00
+            - Migration to DrawTrajectory() (i_mode argument is no longer
+              available):
+              o EventAction.cc: Removed argument from DrawTrajectory().
+
+11 Oct 2012   G.Cosmo     tag test60-V09-05-00
+            - Explicit inclusion of units and constants headers.
+
+30 Sep 2011   G.Folger    tag test60-V09-04-03
+            - Fix gcc46 compilation warning in PrimaryGeneratorAction.cc
+
+Sep 10, 2011  Pere Mato   tag test60-V09-04-02
+              Fixed missing dependency between tests in CMakeLists.txt
+
+21 Jan 2011 - S. Incerti  tag test60-V09-04-01
+              Added excitation for hydrogen
+
+09 Sep 2010 - S. Incerti  tag test60-V09-03-01
+              Added new vibrational and attachment e- models
+              To be used with G4LEDATA 6.16 and above
+
+25 Mar 2010 - G.Folger    tag test60-V09-03-00
+	      Do not G4UItcsh on Windows
+
+16 Nov 2009 - G. Cosmo    tag test60-V09-02-05
+              Renamed main file (and exacutable) from Test60 to test60
+              to be conformed with all other tests. 
+
+12 Nov 2009 - S. Incerti  tag test60-V09-02-04
+              Removed useless include files in physics list
+
+13 Aug 2009 - S. Incerti  tag test60-V09-02-03
+              Replaced H2O by NIST G4_WATER
+
+05 Aug 2009 - H.Kurashige  tag test60-V09-02-02
+              Add DisableCheckParticleList to avoid G4Exception by PhysicsList
+
+25 May 2009 - S. Incerti, tag tag test60-V09-02-01
+              Added History and README files.
+
+04 May 2009 - S. Incerti, tag test60-V09-02-00
+              First version.

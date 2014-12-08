@@ -1,0 +1,52 @@
+#/geom/select classic
+#/geom/select assembly
+#/geom/switch
+/tracking/verbose 1
+/run/verbose 1
+/gun/particle geantino
+/gun/position  600  600 -601 mm
+/gun/direction 0      0    1
+/run/initialize
+/tracking/storeTrajectories 1
+/vis/open VRMLFILE
+/vis/drawVolume
+/vis/viewer/set/style wireframe
+/vis/scene/add/trajectories
+/run/beamOn 1
+/vis/viewer/update
+/gun/position -600  600 -601 mm
+/gun/direction 0      0    1
+/run/beamOn 1
+/vis/viewer/update
+/gun/position -600 -600 -601 mm
+/gun/direction 0      0    1
+/run/beamOn 1
+/vis/viewer/update
+/gun/position  600 -600 -601 mm
+/gun/direction 0      0    1
+/run/beamOn 1
+/vis/viewer/update
+#################################################################
+/geom/switch assembly
+/gun/position  600  600 -601 mm
+/gun/direction 0      0    1
+/vis/open VRMLFILE
+/vis/drawVolume
+/vis/viewer/set/style wireframe
+/run/initialize
+/vis/scene/add/trajectories
+/run/beamOn 1
+/vis/viewer/update
+/gun/position -600  600 -601 mm
+/gun/direction 0      0    1
+/run/beamOn 1
+/vis/viewer/update
+/gun/position -600 -600 -601 mm
+/gun/direction 0      0    1
+/run/beamOn 1
+/vis/viewer/update
+/gun/position  600 -600 -601 mm
+/gun/direction 0      0    1
+/run/beamOn 1
+/vis/viewer/update
+

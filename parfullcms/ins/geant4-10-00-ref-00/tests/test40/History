@@ -1,0 +1,116 @@
+$Id: History 77278 2013-11-22 10:42:28Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    test40 History file
+                    --------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+21-11-13 A.Dotti (test40-V09-06-09)
+- Using G4GlobalMagFieldMessneger
+
+21-11-13 A.Dotti (test40-V09-06-08)
+- Invoke G4RunManager::ReinitializeGeometry() if
+  /testem/det/update ui command is invoked.
+  Note: this is a minimal change, the correct thing to do 
+        to substantially reduce code is shown in TestEm5 that
+        is the basis of this example.
+
+31-10-13 A.Dotti (test40-V09-06-07)
+- Fix a double delete: PrimaryGeneratorAction was shared among threads
+
+19-10-13 V.Ivanchenko (test40-V09-06-06)
+19-10-13 V.Ivanchenko (test40-V09-06-05)
+- reduced not needed cout, increased large.N check value to 8 
+
+18-10-13 V.Ivanchenko (test40-V09-06-04)
+- fixed RunAction for sequential mode
+
+18-10-13 V.Ivanchenko (test40-V09-06-03)
+- fixed main for MAC
+
+18-10-13 V.Ivanchenko (test40-V09-06-02)
+- fixed cmake
+
+18-10-13 V.Ivanchenko & A.Bagulya (test40-V09-06-01)
+- Migration to MT model, addition of phsyics check on EM shower 
+    shape - test will fail in CDASH if energy deposition inside 
+    Moller radius will differ more than 3 RMS of the nominal one
+
+30-07-2013 A.Dotti         (test40-V09-06-00)
+- Bug fixing compilation warning from clang32
+
+11-10-2012 G.Cosmo         (test40-V09-05-00)
+- Explicit inclusion of units and constants headers.
+
+30-09-2011 G.Folger        (test40-V09-04-02)
+- Fix gcc46 compilation warning in /DetectorConstruction.cc
+
+Sep 10, 2011  Pere Mato (test40-V09-04-01)
+- Fixed missing dependency between tests in CMakeLists.txt
+
+20-07-11 G.Cosmo (test40-V09-04-00)
+- Removed left-over vis setup.
+
+11-06-07 V.Ivanchenko (test40-V08-03-01)
+- Fixed macro file - phys list name
+
+21-05-07 V.Ivanchenko (test40-V08-03-00)
+- Use PhysicsLists components from physics_lists library
+
+02-02-06 V.Ivanchenko (test40-V08-00-01)
+- Add medium.in and test40.large_N.in
+
+11-01-06 V.Ivanchenko (test40-V08-00-00)
+- Migrade to new particle design
+
+06-12-05 G.Cosmo
+- Trivial changes for support of CLHEP-2.0.X series.
+
+08-12-04 G.Cosmo
+- Implemented migration to <cmath>.
+
+30-11-04 V.Ivanchenko (test40-V06-02-02)
+- consolidation for the release
+
+06-07-04 J.Apostolakis & V.Ivanchenko (test40-V06-02-01)
+RunAction.cc
+- Inactivate enforced automatic saving of RNG in external file at each event 
+and run. Can still be activated using /random command.
+
+01-07-04 J.Apostolakis & V.Ivanchenko (test40-V06-02-00)
+- Fixed the initialisation of radial profile
+- Took out the VisManager
+- New values for ( <E>, sigma, interval ) for use with release 6.1 and SPEC
+
+18-06-04 V.Ivanchenko (test40-V06-01-00)
+- Update for the release 6.2
+
+16-03-04 G.Cosmo
+- Fixed compilation warnings.
+- Replaced usage of NULL with 0.
+
+05-02-04 G.Cosmo (test40-V06-00-01)
+- Fixed compilation problem on gcc-3.2 in RunAction for usage
+  of std stream manipulators.
+  NOTE: this test will be soon migrated to conforming class names
+        and brought up to date with the original extended example
+        electromagnetic/TestEm2.
+
+25-01-04 G.Cosmo (test40-V06-00-00)
+- Include it in reference tags.
+
+27-11-03 V.Ivanchenko (test40-V05-02-00)
+- Update for the release 6.0
+     
+18-12-02 
+- Cloned from testem2

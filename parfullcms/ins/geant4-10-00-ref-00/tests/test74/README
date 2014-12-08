@@ -1,0 +1,15 @@
+$Id: README 66892 2013-01-17 10:57:59Z gunter $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                            Test74
+                            ------
+
+This test will check all G4MuElec* processes and models.
+
+It shoots 1 or 10 e-, proton, ion of respectively 10 keV, 100 kev and 100 keV/nucleon in silicon.
+
+

@@ -1,0 +1,102 @@
+$Id: History 77266 2013-11-22 10:26:24Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                      Category History file
+                      ---------------------
+This file should be used by G4 developers and category coordinators
+to briefly summarize all major modifications introduced in the code
+and keep track of all category-tags.
+It DOES NOT substitute the  CVS log-message one should put at every
+committal in the CVS repository !
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+21-11-13 A. Dotti        tag test50-V09-06-07
+- Use G4RunManager::ReinitializeGeometry() 
+
+21-08-2013, V.Ivanchenko tag test50-V09-06-06
+  Removed G4UrbanMscModel93
+
+31-07-2013 A.Dotti     tag test50-V09-06-05
+  Correct behavior if G4ANALYSIS_USE define is set
+
+31-07-2013 A.Dotti     tag test50-V09-06-04
+  Fix compilation warnings with clang32 for unused private data members
+
+30-07-2013 S.Incerti     tag test50-V09-06-03
+  Fix MAC/clang32 compilation warnings
+
+30-07-2013 S.Incerti     tag test50-V09-06-02
+  Fix MAC/clang32 compilation warnings
+
+03-04-2013 A.Dotti     tag test50-V09-06-01
+  Porting to new G4VPhysicsConstructor API needed for G4MT
+
+02-12-2012 J.Allison   tag test50-V09-06-00
+  Migration to DrawTrajectory() (i_mode argument is no longer available):
+  o Tst50EventAction.cc: Removed argument from DrawTrajectory().
+
+11-10-2012 G.Cosmo - tag test50-V09-05-01
+           Explicit inclusion of units and constants headers.
+
+11-05-2012 G.Folger - tag test50-V09-05-00
+	   Fix compilation warnings on unused variables when G4ANALYSIS_USE 
+	   is not set.
+
+16-09-2011 P. Mato - tag test50-V09-04-02
+	   Added Missing <time.h> header (needed for VC9)
+
+20-01-2011 V. Ivanchenko - tag test50-V09-04-01
+	   Use Physics List from test17
+
+19-01-2011 L. Pandola - tag test50-V09-04-00
+	   Make test50 with Geant4 9.4, removed obsolete Penelope and 
+           LowEnergy processes
+
+09-11-2010 M. Asai - tag test50-V09-03-03
+           Fix AIDA file option.
+
+07-06-2010 G. Cosmo - tag test50-V09-03-02
+           Protected code with G4ANALYSIS_USE where necessary.
+           Replaced use of SetFacrange() with SetRangeFactor() to fix
+           compilation errors...
+
+05-06-2010 J. Perl - tag test50-V09-03-01
+           Updated vis parameters.
+
+01-04-2010 S. Incerti - tag test50-V09-03-00
+           Removed obsolete multiple scattering models 
+
+27-01-2006 Stephane Chauvie 
+	   Added Pbar Test
+
+07-12-2005 Susanna Guatelli (tag test50-V07-01-01)
+           Ions fron G4Vions deleted
+
+07-12-2005 Susanna Guatelli (tag test50-V07-01-00)
+           Particles updated
+           Big fix in the main
+
+06-12-2005 Gabriele Cosmo
+           Trivial changes for support of CLHEP-2.0.X series.
+
+21-06-2005 Susanna Guatelli
+	   Step Limiter introduced.
+
+08-12-2004 Gabriele Cosmo
+           Implemented migration to <cmath>.
+
+25-11-2004 Susanna Guatelli
+           SP and CSDA range of alpha added.
+
+12-11-2003 John Allison
+           Reconstructed Vis Manager.
+
+12-03-2003 MGP, tag test50-V05-00-01
+           On top of tag test50-P05-00-27, porting to RH 7.3, gcc 3.2

@@ -1,0 +1,6 @@
+/vis/open OGLIX
+/vis/viewer/reset
+#/vis/viewer/zoom 2
+/vis/drawVolume
+
+/tracking/storeTrajectory 1

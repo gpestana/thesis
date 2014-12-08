@@ -1,0 +1,15 @@
+/tracking/verbose 1
+/run/verbose 1
+/run/initialize
+/tracking/storeTrajectory 1
+/vis/open DAWNFILE
+/vis/scene/add/trajectories
+/vis/drawVolume
+/run/beamOn 1
+/vis/viewer/flush
+/geom/switch assembly
+/vis/open DAWNFILE
+/vis/scene/add/trajectories
+/vis/drawVolume
+/run/beamOn 1
+/vis/viewer/flush

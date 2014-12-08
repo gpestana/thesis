@@ -1,0 +1,114 @@
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    Test37 History file
+                    --------------------
+This file should be used by the test developer to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+21-11-13 A. Dotti      (test37-V09-06-05)
+- Use G4RunManager::ReinitializeGeometry() 
+
+30-07-13  A.Dotti      (test37-V09-06-04)
+- Fix compilation warning for unused variables (clang32)
+
+24-06-13  V.Ivanchenko (test37-V09-06-03)
+- Updated Physics List and run script
+
+13-06-13  V.Ivanchenko (test37-V09-06-02)
+- TaAl.in macro is fixed
+
+15-04-13  V.Ivanchenko (test37-V09-06-01)
+- RunAction - use tolerance (1 keV) to select beam energy
+- macro files extended - Be target is added
+
+03-04-13  A.Dotti (test37-V09-06-00)
+- Porting to new G4VPhysicsConstructor API needed for G4MT
+
+11-10-12  G.Cosmo (test37-V09-05-03)
+- Explicit inclusion of units and constants headers.
+
+23-08-12  V.Ivanchenko (test37-V09-05-02)
+- IG Physics List - use 0.2 for polar angle limit
+
+23-08-12  V.Ivanchenko (test37-V09-05-01)
+- IG Physics List - use pi for polar angle limit
+
+09-02-12  V.Ivanchenko (test37-V09-05-00)
+- Fixed IG Physics List - use G4MuMultipleScattering for e- (only this
+    Physics List allowing combination with single scattering so far)
+
+20-07-11  G.Cosmo (test37-V09-04-02)
+- Removed vis setup.
+
+21-02-11  V.Ivanchenko (test37-V09-04-01)
+- Updated scripts
+
+21-12-10  V.Ivanchenko (test37-V09-04-00)
+- Updated scripts for 9.4 
+
+14-06-10  V.Ivanchenko (test37-V09-03-03)
+- Fixed script for opt2 Physlist 
+
+07-06-10  V.Ivanchenko (test37-V09-03-02)
+- Updated scripts 
+- RunAction - use overwrite mode for Sandia.out file
+
+28-05-10  V.Ivanchenko (test37-V09-03-01)
+- Updated PhysList for WentzelVI model and scripts
+
+03-05-10  V.Ivanchenko (test37-V09-03-00)
+- Removed obsolete header
+
+22-22-09  V.Ivanchenko (test37-V09-02-05)
+- Fixed option setup
+
+21-22-09  V.Ivanchenko (test37-V09-02-04)
+- PhysicsList - construct "standardGS" on top of "emstandard_opt3"
+- update builders according to 9.3
+
+19-06-09  V.Ivanchenko (test37-V09-02-03)
+- PhysicsList - fixed typo in builder name
+
+18-06-09  V.Ivanchenko (test37-V09-02-02)
+- Substitute "emstandard_opt1" physics by "standardGS", which
+  uses Goudsmit-Sounderson msc model for e+,e-
+
+27-05-09  V.Ivanchenko (test37-V09-02-01)
+- RunAction - fixed non-initialised variable
+
+25-02-09  V.Ivanchenko (test37-V09-02-00)
+- Cleanup user actions, add output on number of steps
+
+19-11-08  V.Ivanchenko (test37-V09-01-02)
+
+25-08-08  V.Ivanchenko (test37-V09-01-01)
+- Updated SS and IG PhysLists
+
+21-04-08  V.Ivanchenko (test37-V09-01-00)
+- use spline and polarAngleLimit
+
+09-10-07  V.Ivanchenko (test37-V09-00-02)
+- in standard and standardIG use subcutoff and linlosslimit=10^-6 
+- include standardIG option into run.csh
+- define cuts as 1/10 of absober thinckness
+- use G4MuMultipleScattering in standardIG physics 
+
+09-10-07  V.Ivanchenko (test37-V09-00-01)
+- use sub-cutoff options for standardSS and standardIG physics
+
+29-07-07  V.Ivanchenko (test37-V09-00-00)
+- add PhysList standardSS with standardIG physics builder
+- update thicknesses inside macro files accourding to O.Kadri
+  investigation in litrature
+
+30-05-07  V.Ivanchenko (test37-V08-03-00)
+- first commit

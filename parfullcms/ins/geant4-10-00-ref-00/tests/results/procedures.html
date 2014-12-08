@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>Geant4 System Test Team Procedures</title></head><body>
+
+<h1> System Test Procedures</h1>
+<p>
+<b>Please note: Sytem Test Procedures are being updated.</b>
+<br>Gunter Folger, April 2011
+
+</p><h1>Introduction</h1>
+
+The testing of Geant4 is using the nightly build system running at CERN/SFT. 
+An introduction to this system is given e.g. in 
+<a href="http://cerncourier.com/cws/article/cnl/39608%22">this CNL article by S.Roiser</a>, 
+or in GEANT 4 NIGHTLY BUILDS SYSTEM, 
+Victor Diez et.al., <a href="http://iopscience.iop.org/1742-6596/219/4/042038/">
+J. Phys.: Conf. Ser. 219 042038</a>.
+
+<br>
+<br>
+Testing is run an several machines in parallel, to test on different
+systems, on different hardware, using different compilers, and to
+distribute the load. The architecture is a client-server model, with
+clients starting a test script via cron or a similar system tool. The
+testing script then queries a server for a setup or configuration which
+needs to be tested by providing information about its capabilities. For
+example, the client could tell "I am slc5 on 64 bit hardware, with gcc
+4.3 and gcc-4.1".
+The server then provides a specific configuration out of the all of
+configurations, see below for details of a configuration.&nbsp; <br>
+The scripts then check out the source code of geant4, using the svn
+repository based upon the configuration to be tested, for example using
+accepted and selected tags on top of the reference tag, or a candiate
+reference tag. The configuration of the build and test environment is
+obtained from a CMT requirements file. The code is compiled using teh
+normal Geant4 build system, and tests and examples are tested using teh
+QMtest tool.<br>
+Results from compilation and testing are copied to afs and become
+available in a web browser. Summaries are also stored in a database.<br>
+<br>
+a configuration 
+is a combination of OS/hardware/compiler and slot. A slot defines the software 
+configuration of teh software tested. In Geant4 we normally use two slots, 
+one for testing ongoing development, and one to test tags prior to a reference tag 
+or release.
+
+  
+Basically, every night a testing run is started, and results are reported on a 
+<a href="http://lcgapp.cern.ch/spi/cgi-bin/nightly.py?view=slots&amp;slots=17-18&amp;tag=None&amp;dates=week&amp;hiddenSlots=19-16-14-13-22-21-20-23&amp;hiddenTags=58-60-61-41-23-25-35-48-64-50-55&amp;hiddenPlatforms=&amp;slotOrder=58-60-61-41-23-25-35-48-64-50-55">
+web page</a>.
+A testing run for a given platform, i.e. OS/compiler combination, contains both a 
+build using optimized and debug mode. The platforms are specified in a configuration
+file, /afs/cern.ch/sw/lcg/app/nightlies/scripts/configuration_geant4.xml. For Geant4,
+we usually test two configurations, one testing tags as these are proposed, 
+called tags_bonsai, 
+the second configuration is used to test globals tags prior to release.
+
+Testing itsself is local to testing machines, only log files are kept in afs, and
+are made available on a 
+<a href="http://lcgapp.cern.ch/spi/cgi-bin/nightly.py?view=slots&amp;slots=17-18&amp;tag=None&amp;dates=week&amp;hiddenSlots=19-16-14-13-22-21-20-23&amp;hiddenTags=58-60-61-41-23-25-35-48-64-50-55&amp;hiddenPlatforms=&amp;slotOrder=58-60-61-41-23-25-35-48-64-50-55">
+web page</a>.  
+<br>
+<br>
+<h3>Definitions</h3>
+A <span style="font-weight: bold;">configuration</span> is a
+combination of Operating system, type of hardware (32 or 64 bit), and
+compiler name and version, and includes the Geant4 configration to be
+tested.&nbsp; We regularily test proposed tags in the slot geant4 using
+the pseudo tag name geant4-dev. The platforms are specified in a
+configuration file <span style="font-family: monospace;">configuration_geant4.xml </span> in the directory <span style="font-family: monospace;">/afs/cern.ch/sw/lcg/app/nightlies/scripts/</span>.<br>
+<br>
+A <span style="font-weight: bold;">testing slot</span> defines the
+software configuration of the software tested. The configuration file
+defines one which OS/hardware/compiler combinations will tested in a
+given slot.<br>
+<br>
+A <span style="font-weight: bold;">QMtest test case</span> is the
+running of a test or example with a specific input; this implies that
+the same executable run with different input are distinct tests. We
+also made the build of the test or example a QMtest.<br>
+<br>
+<h1><span style="font-weight: bold;">Testing Procedure</span></h1>
+<h3>Testing proposed tags</h3>
+Testing fo proposed tags proceeds in interations of selecting tags, checking results, accepting, rejecting or postponing tags.<br>
+<br>
+<h3>Selecting Tags</h3>
+Tags are selected from proposed tags using the full interface to the <a href="https://sftweb.cern.ch/geant4/geant4tagsadmin" target="_blank">Geant4 Tags system</a>.
+At the bottom of the window you can select tags by their status, for
+selecting tags it is useful to choose mark only "proposed tags", filter
+the list of tags. From the set of proposed tags select all the tags you
+want to test by marking these, and then click on the "Change status"
+button. If depencies for co-working tags are given in the comment
+field, be sure to take all of co-working tags together. All tags
+getting the status changed&nbsp; are groupped into a tag list, creating
+a new taglist is the default. If you want to add a tag to an existing
+taglist,&nbsp; you can do this by selecting the tag, click "Change
+status", and then tick the box add to tagslist choosing the last one.
+Tags should not be added to an existing taglist once a taglist has be
+tested in the nightlies, in this case create a new taglist.<br>
+<br>
+If there are many tags proposed, it&nbsp; usually is safe to select
+tests or exmaples for testing.&nbsp; Several tags in related categories
+is more challanging, in case tests fail&nbsp; it will be more difficult
+to identify the culprit.<br>
+<br>
+<h3>Checking Results</h3>
+Results of testing are shown on the <a href="http://lcgapp.cern.ch/spi/cgi-bin/nightly.py?permalink=1&amp;openSlots=21-22-18-38-17-24&amp;tag=&amp;dates=2011-04-07_2011-04-13&amp;slotGroup=2&amp;visibleCompilers=1-2-3-4&amp;visibleOsystems=1-2-3&amp;visibleArchitectures=1-2&amp;visibleModes=1-2-3&amp;slotOrder=days&amp;scrollElement=slot&amp;orderingCriteria=5268" target="_blank">nightlies page</a>;
+this should show only Geant4 related results, but you may tailor the
+display using the customisation options on this page. With the current
+configuration_geant4.xml, proposed tags are tested in the slot geant4
+using the tag g4tags-dev. We have a small number of tests failing on
+nearly all platforms, but this number <span style="text-decoration: underline;">must not</span>
+increase. To check the log file of a given platform, click in the field
+showing the number of failures. You can also get an overview of all
+failing tests by clicking on the blue magnifier symbol in the date
+area. To reorder the platforms use the arrows in the platform box. In
+general nearly everything in this page is a link, and you need to
+experiment a bit.<br>
+<h3>Accepting, rejecting, or postponing tags</h3>
+In general most tags get accepted. You must not accept tags, if there
+is a compilation warning, or worse an error, with the code of the tag,
+or if there are tests failing newly. If a test previously ok is
+failing, the tag causing this must be identified and rejected. It is
+recommended to not accept reminder of tags under testing, unless a new
+testing run has shown sucess again.<br>
+To accept tags, you can either select the tags you want to accept using
+the select box, and then click teh "Chaneg status" button. A faster
+method is to choose at&nbsp; the top left the tab taglist,&nbsp; then
+to choose the correct, in general the latest, taglist, and select&nbsp;
+all tags using the select box in the header row, and the click the
+"Change status" button, and select the accept box before confirming the
+change. <br>
+<br>
+Rejecting tags is similar to accepting, execpt that you would select
+the reject box, and then fill in some description why the tag is
+rejected,&nbsp; before confirming the change. A mail with this
+description&nbsp; is sent to the person who has submitted the tag, but
+if you want to give more detail, please send this more detailed
+information in a separate mail, where you also can CC for example the
+working group coordinator.<br>
+<br>
+If a rejected tag is part of a set of co-working tags, you cannot leave
+the dependant tags in testing until a fix for the rejected tag is
+available. In this case, change teh status of the dependant tags to
+"postponed". When the fix for the rejected tag(s) becomes available,
+teh postponed tags can be selected again.<br>
+<br>
+<h1>Scripts for System Testing</h1>
+<blockquote>
+
+
+
+</blockquote>
+<br>
+<h1>Large N Tests</h1>
+Every Sunday we use a special set of tags, using a different QMTest
+configuration file to test a subset of all test cases, but using higher
+statistics.<br>
+<br>
+<h1>Making a Global (geant4-wide) Reference Tag</h1>
+
+Make sure <b><tt>src/geant/tests</tt></b> is up to date.&nbsp; In <b><tt>src/geant4/</tt></b>
+of the relevant test area, <b><tt>cvs tag &lt;tag-name&gt; &gt;&amp; cvs_log_&lt;tag-name&gt;.log
+&amp;</tt></b>, where <b><tt>&lt;tag-name&gt;</tt></b> is <b><tt>geant4-xx-yy-ref-zz</tt></b>,
+where <b><tt>xx-yy</tt></b> refer to the most recent past Geant4 release
+and <b><tt>zz</tt></b> is a serial number.
+<p>Announce on the Tags Blackboard and invite category coordinators to
+add further information.
+</p>
+<h1>
+Candidate Tags</h1>
+
+These are simply global tags used internally by the STT to define a version
+of geant4 which has not yet been tested.&nbsp; The format is <b><tt>geant4-xx-yy-cand-zz</tt></b>,
+where <b><tt>zz</tt></b> refers to the next global reference tag.
+<br>
+
+<hr width="100%">
+<br>
+<blockquote><i><a href="mailto:John.Allison@man.ac.uk">John Allison</a> ,
+<a href="mailto:Serguei.Sadilov@cern.ch">Serguei
+Sadilov</a>&nbsp; and <a href="mailto:Steve.O%27Neale@cern.ch">Steve O'Neale</a>&nbsp;
+19th August 2002</i>
+
+</blockquote>
+</body></html>

@@ -1,0 +1,822 @@
+$Id: History 78217 2013-12-05 13:34:57Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                      Category History file
+                      ---------------------
+This file should be used by G4 developers and category coordinators
+to briefly summarize all major modifications introduced in the code
+and keep track of all category-tags.
+It DOES NOT substitute the CVS log-message one should put at every
+committal in the CVS repository !
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+tests-V10-00-00 25th October 2013  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-10-00-ref-00.
+- Includes tags: test07-V09-06-00, test11-V09-06-07, test17-V09-06-04,
+                 test18-V09-06-11, test19-V09-06-05, test23-V09-06-05,
+                 test24-V09-06-04, test31-V09-06-06, test33-V09-06-09,
+                 test35-V09-06-05, test36-V09-06-06, test37-V09-06-05,
+                 test40-V09-06-09, test41-V09-06-07, test44-V09-06-03,
+                 test45-V09-06-02, test46-V09-06-08, test47-V09-06-06,
+                 test48-V09-06-11, test50-V09-06-07, test53-V09-06-02,
+                 test54-V09-06-02, test55-V09-06-02, test56-V09-06-04,
+                 test58-V09-06-02, test64-V09-06-03, test68-V09-06-09,
+                 test69-V09-06-10, test70-V09-06-06, test73-V09-06-04,
+                 test74-V09-06-02, test202-V09-06-06, ctests-V09-06-32.
+
+tests-V09-06-10 25th October 2013  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-06-ref-10.
+- Includes tags: test11-V09-06-05, test16-V09-06-03, test18-V09-06-10,
+                 test24-V09-06-03, test35-V09-06-04, test40-V09-06-06,
+                 test41-V09-06-06, test70-V09-06-05, ctests-V09-06-15.
+
+tests-V09-06-09 17th September 2013  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-06-ref-09.
+- Includes tags: test73-V09-06-03, test202-V09-06-04.
+
+tests-V09-06-08 29th August 2013  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-06-ref-08.
+- Includes tags: test13-V09-06-02, test17-V09-06-03, test18-V09-06-08,
+                 test22-V09-06-17, test24-V09-06-02, test25-V09-06-03,
+                 test27-V09-06-03, test28-V09-06-02, test31-V09-06-03,
+                 test33-V09-06-01, test34-V09-06-00, test36-V09-06-05,
+                 test37-V09-06-04, test40-V09-06-00, test41-V09-06-05,
+                 test44-V09-06-02, test45-V09-06-01, test46-V09-06-07,
+                 test50-V09-06-06, test53-V09-06-01, test54-V09-06-01,
+                 test55-V09-06-01, test56-V09-06-03, test58-V09-06-01,
+                 test60-V09-06-06, test61-V09-06-04, test67-V09-06-14,
+                 test70-V09-06-00, test73-V09-06-02, test74-V09-06-01,
+                 test201-V09-06-00.
+
+tests-V09-06-07 18th July 2013  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-06-ref-07.
+- Includes tags: test11-V09-06-03, test13-V09-06-01, test18-V09-06-04,
+                 test22-V09-06-12, test24-V09-06-01, test27-V09-06-02,
+                 test28-V09-06-01, test36-V09-06-04, test61-V09-06-03.
+
+tests-V09-06-06 28th June 2013  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-06-ref-06.
+- Includes tags: test11-V09-06-02, test12-V09-06-00, test13-V09-06-00,
+                 test16-V09-06-02, test18-V09-06-03, test24-V09-06-00,
+                 test25-V09-06-02, test27-V09-06-01, test28-V09-06-00,
+                 test37-V09-06-03, test41-V09-06-03, test60-V09-06-04,
+                 test61-V09-06-02, test64-V09-06-01, test65-V09-06-00,
+                 test67-V09-06-11, test68-V09-06-08, test202-V09-06-03,
+                 ctests-V09-06-12, testtools-V09-06-00,
+                 testtools-ctest-V09-06-00.
+
+tests-V09-06-05 31st May 2013  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-06-ref-05.
+- Includes tags: test11-V09-06-01, test30-V09-06-05, test31-V09-06-02,
+                 test35-V09-06-03, test48-V09-06-10, test60-V09-06-02,
+                 test61-V09-06-01, test67-V09-06-10, test69-V09-06-02,
+                 ctests-V09-06-11.
+
+tests-V09-06-04 24th April 2013  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-06-ref-04.
+- Includes tags: test11-V09-06-00, test14-V09-06-00, test17-V09-06-00,
+                 test31-V09-06-01, test36-V09-06-02, test37-V09-06-01,
+                 test41-V09-06-01, test46-V09-06-05, test50-V09-06-01,
+                 test58-V09-06-00, test67-V09-06-07, test68-V09-06-02,
+                 test73-V09-06-00, ctests-V09-06-09.
+
+tests-V09-06-03 15th March 2013  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-06-ref-03.
+- Includes tags: test27-V09-06-00, test31-V09-06-00, test36-V09-06-01,
+                 test44-V09-06-01, test46-V09-06-03, test47-V09-06-01,
+                 test48-V09-06-09, test67-V09-06-06, test68-V09-06-01,
+                 test75-V09-06-02, ctests-V09-06-08.
+
+tests-V09-06-02 18th January 2013  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-06-ref-02.
+- Includes tags: test30-V09-06-03, test67-V09-06-01, test68-V09-06-00,
+                 ctests-V09-06-06.
+
+tests-V09-06-01 20th December 2012  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-06-ref-01.
+- Deleted tests: test15, test19, test22, test23, test29, test38, test39, test49.
+- Includes tags: test02-V09-06-01, test10-V09-06-00, test16-V09-06-00,
+                 test18-V09-06-00, test30-V09-06-02, test33-V09-06-00,
+                 test35-V09-06-02, test44-V09-06-00, test45-V09-06-00,
+                 test46-V09-06-02, test47-V09-06-00, test48-V09-06-04,
+                 test50-V09-06-00, test52-V09-06-00, test53-V09-06-00,
+                 test54-V09-06-00, test55-V09-06-00, test60-V09-06-01,
+                 test74-V09-06-00, ctests-V09-06-01.
+
+tests-V09-06-00 30th November 2012  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-06-ref-00.
+- Includes tags: test01-V09-05-01, test11-V09-05-06, test12-V09-05-07,
+                 test13-V09-05-03, test15-V09-05-04, test16-V09-05-03,
+                 test23-V09-05-07, test30-V09-05-17, test31-V09-05-04,
+                 test35-V09-05-02, test36-V09-05-05, test41-V09-05-03,
+                 test45-V09-05-01, test46-V09-05-04, test48-V09-05-08,
+                 test58-V09-05-01, test67-V09-05-05, test68-V09-05-09,
+                 test70-V09-05-12, test73-V09-05-18, test74-V09-05-03,
+                 test201-V09-05-01, test202-V09-05-08, ctests-V09-05-38.
+
+tests-V09-05-10 2nd November 2012  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-05-ref-10.
+- Includes tags: ctests-V09-05-33, test01-V09-05-00, test02-V09-05-01,
+                 test05-V09-05-00, test07-V09-05-00, test01-V09-05-00,
+                 test01-V09-05-00, test11-V09-05-03, test12-V09-05-06,
+                 test13-V09-05-02, test14-V09-05-00, test15-V09-05-03,
+                 test16-V09-05-02, test17-V09-05-00, test18-V09-05-00,
+                 test19-V09-05-02, test22-V09-05-04, test23-V09-05-06,
+                 test24-V09-05-01, test25-V09-05-00, test27-V09-05-01,
+                 test28-V09-05-01, test29-V09-05-00, test30-V09-05-16,
+                 test31-V09-05-03, test33-V09-05-01, test34-V09-05-00,
+                 test35-V09-05-01, test36-V09-05-04, test37-V09-05-03,
+                 test39-V09-05-00, test40-V09-05-00, test41-V09-05-02,
+                 test44-V09-05-02, test45-V09-05-00, test46-V09-05-03,
+                 test47-V09-05-01, test48-V09-05-06, test49-V09-05-00,
+                 test50-V09-05-01, test52-V09-05-00, test53-V09-05-02,
+                 test54-V09-05-01, test55-V09-05-01, test56-V09-05-02,
+                 test58-V09-05-00, test60-V09-05-00, test61-V09-05-02,
+                 test62-V09-05-01, test64-V09-05-06, test67-V09-05-04,
+                 test68-V09-05-08, test69-V09-05-02, test70-V09-05-11,
+                 test73-V09-05-17, test74-V09-05-02, test201-V09-05-00,
+                 test202-V09-05-00.
+
+tests-V09-05-09 2nd October 2012  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-05-ref-09.
+- Includes tags: test44-V09-05-00, test47-V09-05-00, test69-V09-05-01,
+                 ctests-V09-05-22.
+
+tests-V09-05-08 5th September 2012  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-05-ref-08.
+- Includes tags: test11-V09-05-01, test12-V09-05-04, test13-V09-05-00,
+                 test15-V09-05-01, test16-V09-05-00, test23-V09-05-04,
+                 test30-V09-05-15, test37-V09-05-02, test41-V09-05-01,
+                 test64-V09-05-02, test73-V09-05-15, ctests-V09-05-16.
+
+tests-V09-05-07 10th August 2012  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-05-ref-07.
+- Includes tags: test22-V09-05-03, test23-V09-05-03, test27-V09-05-00,
+                 test28-V09-05-00, test30-V09-05-13, test35-V09-05-00,
+                 test36-V09-05-03, test61-V09-05-00, test62-V09-05-00,
+                 test68-V09-05-02, test73-V09-05-14, ctests-V09-05-14.
+
+tests-V09-05-06 29th June 2012  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-05-ref-06.
+- Includes tags: ctests-V09-05-10, test11-V09-05-00, test22-V09-05-02.
+
+tests-V09-05-05 31st May 2012  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-05-ref-05.
+- Includes tags: test12-V09-05-03, test19-V09-05-01, test30-V09-05-11,
+                 test31-V09-05-01, test36-V09-05-00, test46-V09-05-01,
+                 test50-V09-05-00, test56-V09-05-00, test73-V09-05-11,
+                 test74-V09-05-01.
+
+tests-V09-05-04 27th April 2012  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-05-ref-04.
+- Includes tags: ctests-V09-05-04, test19-V09-05-00, test29-V09-05-00,
+                 test30-V09-05-04, test31-V09-05-00, test53-V09-05-00,
+                 test67-V09-05-01, test73-V09-05-03, test74-V09-05-00.
+
+tests-V09-05-003 30th March 2012  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-05-ref-03.
+- Includes tags: test30-V09-05-01, test70-V09-05-08.
+
+tests-V09-05-02 29th February 2012  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-05-ref-02.
+- Archived test21.
+- Includes tags: test37-V09-05-00.
+
+tests-V09-05-01 31st January 2012  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-05-ref-01.
+- Includes tags: ctests-V09-05-02, test15-V09-05-00, test30-V09-05-00,
+                 test33-V09-05-00, test46-V09-05-00.
+
+tests-V09-05-00 2nd December 2011  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-05-ref-00.
+- Updated general CMake scripts (P.Mato).
+- Includes tags: test10-V09-04-03, test11-V09-04-07, test19-V09-04-05,
+                 test29-V09-04-05, test31-V09-04-03, test33-V09-04-00,
+                 test39-V09-04-03, test44-V09-04-03, test45-V09-04-01,
+                 test46-V09-04-02, test49-V09-04-05, test58-V09-04-03,
+                 test61-V09-04-01, test67-V09-04-11.
+                
+tests-V09-04-10 7th November 2011  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-04-ref-10.
+- Includes tags: test10-V09-04-02, test11-V09-04-04, test30-V09-04-10,
+                 test69-V09-04-00.
+
+tests-V09-04-09 7th October 2011  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-04-ref-09.
+- Includes tags: test10-V09-04-01, test14-V09-04-03, test17-V09-04-02,
+                 test19-V09-04-01, test23-V09-04-03, test29-V09-04-01,
+                 test30-V09-04-06, test31-V09-04-02, test35-V09-04-03,
+                 test39-V09-04-02, test40-V09-04-02, test49-V09-04-04,
+                 test50-V09-04-02, test60-V09-04-03, test201-V09-04-00,
+                 test202-V09-04-00.
+
+tests-V09-04-08 16th September 2011  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-04-ref-08.
+- Includes tags: test02-V09-04-01, test10-V09-04-00, test11-V09-04-03,
+                 test12-V09-04-03, test18-V09-04-02, test30-V09-04-04,
+                 test35-V09-04-02, test40-V09-04-01, test60-V09-04-02,
+                 test67-V09-04-09.
+
+tests-V09-04-07 2nd August 2011  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-04-ref-07.
+- Includes tags: test07-V09-04-01, test17-V09-04-01, test18-V09-04-01,
+                 test23-V09-04-02, test31-V09-04-01, test34-V09-04-01,
+                 test36-V09-04-02, test37-V09-04-02, test40-V09-04-00,
+                 test41-V09-04-04, test45-V09-04-00, test49-V09-04-02,
+                 test52-V09-04-01.
+
+                 27th July 2011  Pere Mato
+- Added CMakeLists.txt files for each test directory and the top level one.
+  Exceptions are: test03, test04, test06, test08, test26, test32, test42,
+                  test43, test51, test57, test59, test63, test66
+
+tests-V09-04-06 30th June 2011  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-04-ref-06.
+- Includes tags: test14-V09-04-02, test21-V09-04-01, test23-V09-04-01,
+                 test28-V09-04-00, test55-V09-04-00, test58-V09-04-02,
+                 test61-V09-04-00, test62-V09-04-01, test67-V09-04-08.
+
+tests-V09-04-05 31st May 2011  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-04-ref-05.
+- Includes tags: test14-V09-04-01, test30-V09-04-03, test35-V09-04-01,
+                 test39-V09-04-01, test41-V09-04-03, test49-V09-04-01,
+                 test53-V09-04-01, test58-V09-04-01, test67-V09-04-07.
+
+tests-V09-04-04 29th April 2011  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-04-ref-04.
+- Includes tags: test30-V09-04-02, test44-V09-04-02, test53-V09-04-00,
+                 test58-V09-04-00.
+
+tests-V09-04-03 1st April 2011  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-04-ref-03.
+- Includes tags: test02-V09-04-00, test11-V09-04-02, test12-V09-04-01,
+                 test13-V09-04-00, test15-V09-04-00, test16-V09-04-00,
+                 test21-V09-04-00, test23-V09-04-00, test30-V09-04-01,
+                 test56-V09-04-00.
+
+tests-V09-04-02 3rd March 2011  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-04-ref-02.
+- Includes tags: test12-V09-04-00, test30-V09-04-00, test37-V09-04-01,
+                 test41-V09-04-01, test44-V09-04-01, test46-V09-04-01.
+
+tests-V09-04-01 31st January 2011  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-04-ref-01.
+- Archived test20.
+- Includes tags: test14-V09-04-00, test17-V09-04-00, test19-V09-04-00,
+                 test29-V09-04-00, test35-V09-04-00, test36-V09-04-00,
+                 test37-V09-04-00, test39-V09-04-00, test41-V09-04-00,
+                 test46-V09-04-00, test49-V09-04-00, test50-V09-04-01,
+                 test52-V09-04-00, test60-V09-04-01.
+
+tests-V09-04-00 17th December 2010  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-04-ref-00.
+- Includes tags: test10-V09-03-02, test12-V09-03-01, test30-V09-03-08,
+                 test35-V09-03-03, test44-V09-03-02, test45-V09-03-00,
+                 test46-V09-03-01, test50-V09-03-03, test53-V09-03-02,
+                 test54-V09-03-01, test55-V09-03-01, test58-V09-03-00,
+                 test202-V09-03-01.
+
+tests-V09-03-09 29th October 2010  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-03-ref-09.
+- Includes tags: test19-V09-03-07, test30-V09-03-07, test31-V09-03-02.
+
+tests-V09-03-08 1st October 2010  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-03-ref-08.
+- Includes tags: test14-V09-03-05, test47-V09-03-02, test60-V09-03-01.
+
+tests-V09-03-07 27th August 2010  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-03-ref-07.
+- Includes tags: test19-V09-03-06, test30-V09-03-06, test35-V09-03-02,
+                 test44-V09-03-00, test47-V09-03-01, test202-V09-03-00.
+
+tests-V09-03-06 26th June 2010  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-03-ref-06.
+- Includes tags: test01-V09-03-00, test10-V09-03-00, test12-V09-03-00,
+                 test18-V09-03-00, test19-V09-03-03, test22-V09-03-02,
+                 test28-V09-03-00, test29-V09-03-00, test30-V09-03-05,
+                 test31-V09-03-01, test37-V09-03-03, test39-V09-03-04,
+                 test41-V09-03-01, test49-V09-03-00, test50-V09-03-02.
+
+tests-V09-03-05 28th May 2010  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-03-ref-05.
+- Includes tags: test37-V09-03-00, test41-V09-03-00, test47-V09-02-04,
+                 test201-V09-03-02.
+
+tests-V09-03-04 30th April 2010  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-03-ref-04.
+- Includes tags: test07-V09-03-00, test30-V09-03-03, test31-V09-03-00,
+                 test35-V09-03-01, test46-V09-03-00, test53-V09-03-01,
+                 test54-V09-03-00, test55-V09-03-00.
+
+tests-V09-03-03 1st April 2010  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-03-ref-03.
+- Includes tags: test09-V09-03-00, test13-V09-03-00, test15-V09-03-01,
+                 test16-V09-03-00, test17-V09-03-00, test22-V09-03-00,
+                 test23-V09-03-00, test24-V09-03-00, test25-V09-03-00,
+                 test27-V09-03-00, test32-V09-03-00, test33-V09-03-00,
+                 test34-V09-03-00, test53-V09-03-00, test60-V09-03-00,
+                 test62-V09-03-00.
+
+tests-V09-03-02 8th March 2010  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-03-ref-02.
+- Includes tags: test19-V09-03-00, test21-V09-03-00, test39-V09-03-00.
+
+tests-V09-03-01 8th February 2010  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-03-ref-01.
+- Corrected default definition of G4INSTALL to GNUmakefiles where necessary.
+- Includes tags: test30-V09-03-01.
+
+tests-V09-03-00 17th December 2009  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-03-ref-00.
+- Includes tags: test11-V09-02-02, test12-V09-02-07, test19-V09-02-09,
+                 test37-V09-02-05, test39-V09-02-03, test41-V09-02-03,
+                 test44-V09-02-02, test49-V09-02-00, test60-V09-02-05,
+                 test61-V09-02-00, test202-V09-02-01.
+
+tests-V09-02-10 9th November 2009  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-02-ref-10.
+- Includes tags: test02-V09-02-01, test11-V09-02-01, test12-V09-02-06,
+                 test13-V09-02-01, test16-V09-02-01, test19-V09-02-08,
+                 test21-V09-02-01, test23-V09-02-01, test29-V09-02-04.
+
+tests-V09-02-09 13th October 2009  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-02-ref-09.
+- Includes tags: test19-V09-02-07, test41-V09-02-01.
+
+tests-V09-02-08 4th September 2009  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-02-ref-08.
+- Includes tags: test12-V09-02-05, test19-V09-02-03, test29-V09-02-03,
+                 test47-V09-02-03, test60-V09-02-03.
+
+tests-V09-02-07 7th August 2009  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-02-ref-07.
+- Includes tags: test12-V09-02-04, test20-V09-02-00, test29-V09-02-01,
+                 test47-V09-02-02, test60-V09-02-02.
+
+tests-V09-02-06 3rd July 2009  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-02-ref-06.
+- Includes tags: test34-V09-02-00, test37-V09-02-03, test47-V09-02-00.
+
+tests-V09-02-05 4th June 2009  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-02-ref-05.
+- Includes tags: test02-V09-02-00, test10-V09-02-00, test11-V09-02-00,
+                 test12-V09-02-01, test13-V09-02-00, test15-V09-02-00,
+                 test16-V09-02-00, test19-V09-02-00, test21-V09-02-00,
+                 test23-V09-02-00, test29-V09-02-00, test31-V09-02-01,
+                 test35-V09-02-00, test37-V09-02-01, test39-V09-02-02,
+                 test41-V09-02-00, test44-V09-02-01, test45-V09-02-00,
+                 test46-V09-02-00, test60-V09-02-01.
+
+tests-V09-02-04 30th April 2009  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-02-ref-04.
+- Includes tags: test53-V09-02-00, test54-V09-02-00, test55-V09-02-01.
+
+tests-V09-02-03 27th March 2009  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-02-ref-03.
+- Includes tags: test25-V09-02-00, test31-V09-02-00, test202-V09-02-00.
+
+tests-V09-02-02 27th February 2009  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-02-ref-02.
+- Includes tags: test30-V09-02-00, test37-V09-02-00.
+
+tests-V09-02-01 30th January 2009  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-02-ref-01.
+
+tests-V09-02-00 18th December 2008  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-02-ref-00.
+- Includes tags: test20-V09-01-03, test30-V09-01-04, test35-V09-01-01,
+                 test37-V09-01-02, test41-V09-01-02, test44-V09-01-03,
+                 test61-V09-01-00, test62-V09-01-00.
+
+tests-V09-01-12 17th November 2008  Gunter Folger
+- Added new test61 and test62 directories.
+
+tests-V09-01-11 14th November 2008  Gunter Folger
+- Added building of test61 for target all.
+
+tests-V09-01-10 10th November 2008  Gunter Folger
+- Added building of test61.
+- Added test61 to run.sh test script.
+ 
+tests-V09-01-09 7th November 2008  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-01-ref-09.
+- Includes tags: test11-V09-01-01.
+
+tests-V09-01-08 30th September 2008  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-01-ref-08.
+- Includes tags: test11-V09-01-00, test31-V09-01-03, test44-V09-01-02.
+
+tests-V09-01-07 26th August 2008  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-01-ref-07.
+- Includes tags: test02-V09-01-00.
+
+tests-V09-01-06 30th June 2008  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-01-ref-06.
+- Includes tags: test30-V09-01-01, test31-V09-01-02, test44-V09-01-01,
+                 test45-V09-01-01.
+
+tests-V09-01-05 4th June 2008  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-01-ref-05.
+- Includes tags: test30-V09-01-00, test31-V09-01-01, test44-V09-01-00.
+
+tests-V09-01-04 6th May 2008  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-01-ref-04.
+- Includes tags: test33-V09-01-00, test37-V09-01-00, test41-V09-01-00.
+
+tests-V09-01-03 28th March 2008  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-01-ref-03.
+- Includes tags: test31-V09-01-00.
+
+tests-V09-01-02 28th February 2008  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-01-ref-02.
+
+tests-V09-01-01 1st February 2008  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-01-ref-01.
+
+tests-V09-01-00 13th December 2007  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-01-ref-00.
+- Includes tags: test20-V09-00-02, test30-V09-00-06, test35-V09-00-03,
+                 test37-V09-00-02, test41-V09-00-04, test52-V09-00-00,
+                 test202-V09-00-03.
+
+tests-V09-00-03 2nd November 2007  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-00-ref-03.
+- Includes tags: test30-V09-00-03.
+
+tests-V09-00-02 12th October 2007  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-00-ref-02.
+- Includes tags: test37-V09-00-01, test41-V09-00-03.
+
+tests-V09-00-01 31st August 2007  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-00-ref-01.
+- Includes tags: test02-V09-00-00, test10-V09-00-00, test11-V09-00-00,
+                 test12-V09-00-00, test13-V09-00-00, test15-V09-00-00,
+                 test16-V09-00-00, test30-V09-00-02, test34-V09-00-00,
+                 test35-V09-00-01, test37-V09-00-00, test41-V09-00-02,
+                 test202-V09-00-00.
+
+tests-V09-00-00 26th June 2007  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-09-00-ref-00.
+- Includes tags: test10-V08-02-02, test11-V08-03-03, test14-V08-03-00,
+                 test15-V08-03-00, test16-V08-03-00, test31-V08-03-04,
+                 test33-V08-03-02, test34-V08-03-01, test35-V08-03-00,
+                 test36-V08-03-03, test37-V08-03-00, test40-V08-03-01,
+                 test202-V08-03-00.
+
+tests-V08-03-00 8th May 2007  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-03-ref-00.
+
+tests-V08-02-04 27th April 2007  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-02-ref-04.
+- Includes tags: test10-V08-02-01, test35-V08-02-01.
+
+tests-V08-02-03 5th April 2007  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-02-ref-03.
+- Includes tags: test10-V08-02-00, test35-V08-02-00, teststools-V08-02-02.
+
+tests-V08-02-02 2nd March 2007  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-02-ref-02.
+- Includes tags: test19-V08-02-00, test29-V08-02-00, test30-V08-02-00,
+                 test202-V08-02-00, tests-gmk-V08-02-01, testtools-V08-02-01.
+
+tests-V08-02-01 26th January 2007  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-02-ref-01.
+
+tests-V08-02-00 15th December 2006  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-02-ref-00.
+- Includes tag: test39-V08-01-03.
+
+tests-V08-01-05 30th November 2006  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-01-ref-05.
+- Includes tags: test07-V08-01-00, test10-V08-01-00, test18-V08-01-00,
+                 test21-V08-01-01, test31-V08-01-00, test33-V08-01-00,
+                 test35-V08-01-02, test39-V08-01-02, test201-V08-01-00.
+- Archived test06 and test26.
+
+tests-V08-01-04 1st November 2006  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-01-ref-04.
+- Includes tags: tests-gmk-V08-01-00.
+
+tests-V08-01-03 29th September 2006  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-01-ref-03.
+- Includes tags: test19-V08-01-01.
+
+tests-V08-01-02 25th August 2006  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-01-ref-02.
+- Includes tags: test19-V08-01-00, test29-V08-01-00.
+
+tests-V08-01-01 26th July 2006  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-01-ref-01.
+- Includes tags: test21-V08-01-00.
+
+tests-V08-01-00 30th June 2006  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-01-ref-00.
+- Changed disclaimer on each file.
+- Includes tags: tests-gmk-V08-00-06, test05-V08-00-00.
+
+tests-V08-00-05 1st June 2006  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-00-ref-05.
+- Includes tags: tests-gmk-V08-00-04, test01-V08-00-02.
+
+tests-V08-00-04 28th April 2006  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-00-ref-04.
+
+tests-V08-00-03 31st March 2006  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-00-ref-03.
+- Includes tags: tests-gmk-V08-00-02, test19-V08-00-00, test29-V08-00-00,
+                 test31-V08-00-01.
+
+tests-V08-00-02 2nd March 2006  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-00-ref-02.
+- Includes tags: tests-gmk-V08-00-01, test40-V08-00-01.
+
+tests-V08-00-01 27th January 2006  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-00-ref-01.
+- Includes tags: test31-V08-00-00, test40-V08-00-00.
+
+tests-V08-00-00 15th December 2005  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-08-00-ref-00.
+- Includes tags: test01-V07-01-00, test17-V07-01-00, test22-V07-01-01,
+                 test29-V07-01-10, test31-V07-01-01, test33-V07-01-03,
+                 test50-V07-01-01.
+
+tests-V07-01-06 6th December 2005  Gabriele Cosmo
+- Fixes for support of CLHEP-2.0.X series.
+- Correction to GNUmakefile for test33 to use its two input macros.
+
+tests-V07-01-05 18th November 2005  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-07-01-ref-05.
+- Includes tags: test18-V07-01-00, test33-V07-01-00, test34-V07-01-01,
+  test201-V07-01-00.
+
+tests-V07-01-04 31st October 2005  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-07-01-ref-04.
+- Includes tags: test19-V07-01-05, test29-V07-01-09, test34-V07-01-00.
+
+tests-V07-01-03 30th September 2005  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-07-01-ref-03.
+- Includes tags: test10-V07-01-00, test22-V07-01-00, test29-V07-01-05.
+
+tests-V07-01-02 2nd September 2005  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-07-01-ref-02.
+- Includes tags: tests-gmk-V07-01-00, test19-V07-01-02 and test29-V07-01-03.
+
+tests-V07-01-01 27th July 2005  Gabriele Cosmo
+- Includes tags: test19-V07-01-01, test29-V07-01-01.
+
+tests-V07-01-00 30th June 2005  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-07-01-ref-00.
+  Includes tags: test02-V07-00-01, test14-V07-00-00, test19-V07-00-00,
+                 test28-V07-00-00, test29-V07-00-00, test31-V07-00-03,
+                 test33-V07-00-00, test34-V07-00-00.
+
+tests-V07-00-03 27th May 2005  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-07-00-ref-04.
+
+tests-V07-00-02 28th April 2005  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-07-00-ref-03.
+  Includes tag: test10-V07-00-00.
+
+tests-V07-00-01 18th March 2005  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-07-00-ref-02.
+
+tests-V07-00-00 23rd February 2005  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-07-00-ref-01.
+
+tests-V06-02-07 16th December 2004  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-07-00-ref-00.
+- Includes tags: test10-V06-02-00, test32-V06-02-01, test34-V06-02-00,
+                 test40-V06-02-02, test50-V06-02-02.
+
+tests-V06-02-06 8th December 2004 Gabriele Cosmo
+- Implemented migration to <cmath>.
+
+tests-V06-02-05 26th November 2004  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-06-02-ref-05.
+- Includes tags: test32-V06-02-00, test33-V06-02-00.
+
+tests-V06-02-04 29th October 2004  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-06-02-ref-04.
+
+tests-V06-02-03 25th October 2004  Sergei Sadilov
+- Tag for 6.2.patch-02. Updated reference outputs.
+
+tests-V06-02-02 29th September 2004  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-06-02-ref-03.
+- GNUmakefile: reorganised activation of examples.
+- Updated list of responsibles.
+
+tests-V06-02-01 27th August 2004  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-06-02-ref-02.
+- GNUmakefile: added target 'hadronics' to build hadronic tests only.
+
+tests-V06-02-00 28th July 2004  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-06-02-ref-01.
+
+tests-V06-01-02 24th June 2004  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-06-02-ref-00.
+- Includes tags: test02-V06-01-00, test23-V06-01-00, test27-V06-01-01,
+                 test28-V06-01-00, test40-V06-01-00.
+- Updated README, GNUmakefile and list of responsibles.
+
+tests-V06-01-01 28th May 2004  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-06-01-ref-02.
+
+tests-V06-01-00 30th April 2004  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-06-01-ref-01.
+- Includes tags: test23-V06-00-01, test27-V06-01-00.
+
+27th April 2004  Gabriele Cosmo
+- Added test23 for muon-capture in CHIPS.
+  Updated GNUmakefile, README and responsibles list.
+
+tests-V06-00-04 25th March 2004  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-06-01-ref-00.
+
+tests-V06-00-03 21st March 2004  Gabriele Cosmo
+- Revision of GNUmakefiles on all tests. Removed obsolete setup for
+  old unsupported platforms and cut&paste mistakes ...
+- Replaced usage of NULL with 0 in remaining classes in test14/17/27/50/201.
+
+tests-V06-00-02 16th March 2004  Gabriele Cosmo
+- Fixed compilation warnings.
+- Replaced usage of NULL with 0.
+- Removed obsolete files in tools.
+
+tests-V06-00-01 26th February 2004  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-06-00-ref-02.
+- Includes tags: test40-V06-00-01.
+
+tests-V06-00-00 30th January 2004  Gabriele Cosmo
+- Updated reference outputs according to reference tag geant4-06-00-ref-01.
+- Added test40 and updated GNUmakefile, README and list of responsibles.
+
+tests-V05-02-06 8th December 2003  Sergei Sadilov
+- Updated reference outputs according to candidate tag geant4-06-00-cand-03.
+
+tests-V05-02-05 8th December 2003  Sergei Sadilov
+- Brought up-to-date vis-managers.
+
+tests-V05-02-04 28th November 2003  Gabriele Cosmo
+- Updated reference outputs for development tag geant4-05-02-ref-06.
+- Added test27.
+
+tests-V05-02-03 31st October 2003  Gabriele Cosmo
+- Updated reference outputs for development tag geant4-05-02-ref-05.
+
+tests-V05-02-02 10th October 2003  Gabriele Cosmo
+- Updated reference outputs for development tag geant4-05-02-ref-04.
+
+tests-V05-02-01 26th September 2003  Gabriele Cosmo
+- Updated reference outputs for development tag geant4-05-02-ref-03.
+
+tests-V05-02-00 29th August 2003  Gabriele Cosmo
+- Updated reference outputs for development tag geant4-05-02-ref-02.
+
+tests-V05-01-01 27th June 2003  Gabriele Cosmo
+- Updated reference outputs.
+
+tests-V05-01-00 30th May 2003  Gabriele Cosmo
+- Updated reference outputs.
+- Archived test23.
+
+tests-V05-00-02 30th April 2003  Gabriele Cosmo
+- Updated reference outputs.
+
+tests-V05-00-01 28th March 2003  Gabriele Cosmo
+- Updated reference outputs.
+
+tests-V05-00-00 27th February 2003  Gabriele Cosmo
+- Updated reference outputs.
+- Updated summary of outstanding problems.
+- Added test26 for cuts-by-region testing.
+- Moved tests descriptions to README file and removed from GNUmakefile
+
+tests-V04-01-04 9th December 2002  Gabriele Cosmo
+- Removed obsolete histogramming tests.
+- Some cleanup...
+
+tests-V04-01-03 4th December 2002  Makoto Asai
+- Migration to new G4AppliationState
+
+1st June 2002  Gabriele Cosmo
+- Added test23 for cut-per-material and physics table persistency test.
+- Updated tests/GNUmakefile.
+
+tests-V04-00-04 31st May 2002  Serguei Sadilov
+- Updated reference outputs for tag geant4-04-00-ref-05.
+
+tests-V03-02-06 13th December 2001  Gabriele Cosmo
+- Updated reference outputs.
+
+tests-V03-02-05 19th November 2001  John Allison
+- This tag is geant4-04-00-cand-01 plus changes to VisManagers
+  for new graphics systems and defaults.
+
+tests-V03-02-03  18th Oct 2001  Steve O'Neale
+- update reference outputs in tests directory
+- consolidate individual contributions to the test suite
+
+tests-V03-02-01  25th Sep 2001  Steve O'Neale
+- update reference outputs in tests directory
+
+tests-V03-02-00  28th Aug 2001  Gabriele Cosmo
+- removed obsolete files in directories "results" and "tools"
+  and synchronised with CVS head.
+
+tests-V03-00-01  16th Feb 2001  Steve O'Neale 
+- consolidate updates for stl migration and new refence outputs
+
+tests-V03-00-00  25th Jan 2001  Steve O'Neale 
+- update reference outputs for the monthly reference tag
+  There has been considerable work in the EM areas so almost
+  every test has at the very least different values for the
+  min.delta Energy in solids and   sometimes liquids and gases.
+  For the tests printing tracking output there are completely 
+  new values. I have the impression from browsing files with
+  tkdiff that there are more energy-loss steps and there are
+  a few cases where a physics process changes - a change from
+  conv to brems changes the output log. 
+  There are no identified changes from the geometry tags.
+
+tests-V02-00-07   6th December 2000 Steve O'Neale 
+- install large_N reference outputs
+ 
+tests-V02-00-06  18th November 2000 Steve O'Neale 
+- update test02.hadron and test17 SUN reference outputs 
+
+tests-V02-00-05  4th November 2000 Steve O'Neale 
+- update test outputs for test14 
+
+tests-V02-00-04  28th August 2000 Steve O'Neale 
+- update test outputs tags145, and code changes in tests needed 
+  for recent EM work
+
+tests-V02-00-02  9th August 2000 Steve O'Neale 
+- updated outputs from tests for public patch geant4-02-00
+  work on stt scripts will pickup a tag but the "real" versions
+  are in a transition phase in testtools.
+
+tests-V01-01-01  3rd May 2000  John Allison
+- test14.out updated for em-V01-01-01.
+- Changed update.sh for Bonsai.
+
+tests-V01-01-00  2nd May 2000  John Allison
+- Corresponds to geant4-01-01-0ref-03.
+
+tests-01-00-03  April 26th 1999  Makoto Asai
+- Changed interfaces of user action classes
+
+March 27th 1999  John Allison
+- Updated test05.out and test08.out.
+- Forced order of x,y,z in Tst10PrimaryGeneratorAction.cc.
+
+February 6th 1999  John Allison
+- Commented out troublesome printing:
+  - tracking/verbose in various places.
+  - run/verbose in some .in files to suppress timing information which
+    spoils the diff.
+
+tests-01-00-02  January 28th 1999  John Allison
+- Removed `exit' from setup.sh.
+- Updated some .in files to reduce output.
+- Updated .out files to SUN debug except 05 and 07.
+
+tests-01-00-01  January 20th 1999  John Allison
+- First attempt at reworked scripts for new stt structure.
+
+September 10th, 1998 - Gabriele Cosmo
+- Added statements to each main() function to define RanecuEngine as
+  the default engine.
+- Updated the following reference-output files accordingly (run on SUN-AFS):
+  test01.geom1.out, test02.EM.out, test02.hadron.out, test03.out, test05.out
+  testT07.out.
+
+August 26th, 1998 - John Allison (tests-00-02-01)
+- Backed out G4UIGAG as default - G4UIterminal is now default.
+
+14th August 1998  John Allison
+- Added checkout.sh and 2 .sdb files.
+
+July 20th 1998 - G.Cosmo (tests-00-01-07)
+- Many updates since last _not_ announced tags on test01,02,04,05 and
+  new reference output files.
+
+July 8th 1998 - G.Cosmo (tests-00-01-03)
+- Created test04 (Y.Morita)
+- Added hadronic processes to Tst02PhysicsList.cc in test02 (F.Jones)
+- Removed test02.in from test02 (M.Asai)
+
+July 6th 1998 - G.Cosmo (tests-00-01-02)
+- Created test01
+- Tagged.
+
+July 6th 1998 - G.Cosmo
+- Created.

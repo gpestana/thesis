@@ -1,0 +1,13 @@
+./build.sh: 145: ./build.sh: ./configure: not found
+make: *** No targets specified and no makefile found.  Stop.
+make: *** No rule to make target 'install'.  Stop.
+./build.sh: 1: eval: Syntax error: ")" unexpected
+./build.sh: 145: ./build.sh: ./configure: not found
+make: *** No targets specified and no makefile found.  Stop.
+make: *** No rule to make target 'install'.  Stop.
+./build.sh: 1: eval: /home/gpestana/thesis/parfullcms/ins/bin/cmake: not found
+make: *** No targets specified and no makefile found.  Stop.
+make: *** No rule to make target 'install'.  Stop.
+./build.sh: 1: eval: /home/gpestana/thesis/parfullcms/ins/bin/cmake: not found
+make: *** No targets specified and no makefile found.  Stop.
+make: *** No rule to make target 'install'.  Stop.

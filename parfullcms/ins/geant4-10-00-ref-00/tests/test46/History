@@ -1,0 +1,85 @@
+$Id: History 77267 2013-11-22 10:27:52Z gcosmo $
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                    test46 History file
+                    --------------------
+This file should be used by the G4 example coordinator to briefly
+summarize all major modifications introduced in the code and keep
+track of all tags.
+
+     ----------------------------------------------------------
+     * Reverse chronological order (last date on top), please *
+     ----------------------------------------------------------
+
+21-11-13 A. Dotti      (test46-V09-06-08)
+- Use G4RunManager::ReinitializeGeometry() 
+
+21-08-13  V.Ivanchenko (test46-V09-06-07)
+- Obsolete G4UrbanMscModel93 model is copied from source and
+    renamed to UrbanMscModel93 in order be able continue testing
+
+30-07-13 A.Dotti (test46-V09-06-06)
+- Bug fixing for compilation warning unused variable (clang32)
+
+03-04-13  A.Dotti (test46-V09-06-05)
+- Porting to new G4VPhysicsConstructor API needed for G4MT
+
+17-03-13  V.Ivanchenko (test46-V09-06-04)
+- StackingAction, HistoManager - taking into account track weight
+    for scoring 
+
+31-01-13  V.Ivanchenko (test46-V09-06-03)
+- Modifications needed for migration to new physics_list
+  structure
+
+18-12-12  V.Ivanchenko (test46-V09-06-02)
+- Updated histograms, scripts are moved to verification
+
+10-12-12  V.Ivanchenko (test46-V09-06-01)
+- Removed dependences on CHIPS
+
+02-12-12  J.Allison (test46-V09-06-00)
+- Migration to DrawTrajectory() (i_mode argument is no longer available):
+  o EventAction.cc: Removed argument from DrawTrajectory().
+
+05-11-12  V.Ivanchenko (test46-V09-05-04)
+- Fixed variable shadowing
+
+20-05-12  V.Ivant (test46-V09-05-03)
+- Added extra PhysicsLists and code cleanup
+
+11-10-12  G.Cosmo (test46-V09-05-02)
+- Explicit inclusion of units and constants headers.
+
+30-05-12  V.Ivant (test46-V09-05-01)
+- migrated to internal histograms
+
+06-01-12  V.Ivant (test46-V09-05-00)
+- README fixed 
+- added option of beam uniform smearing over central crystal 
+
+16-11-11 V.Ivant (test46-V09-04-02)
+- removed old G4Exception
+
+21-02-11 V.Ivant (test46-V09-04-01)
+- improved scripts and macro
+
+21-12-10 V.Ivant (test46-V09-04-00)
+- macro files to be used in nightly tests are prepared
+
+09-11-10 M.Asai (test46-V09-03-01)
+- Fix AIDA file option.
+
+13-04-10 V.Ivant (test46-V09-03-00)
+- added count of average number of steps per particle type
+
+09-09-09 V.Ivant (test46-V09-02-01)
+- added script for test of EM initialisation time
+
+14-05-09 V.Ivant (test46-V09-02-00)
+- first release
+     

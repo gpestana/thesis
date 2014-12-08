@@ -1,0 +1,8 @@
+#Example of configuration for MIC:
+instdir=/data/adotti/MIC
+
+Geant4:
+/afs/cern.ch/sw/lcg/external/CMake/2.8.8/x86_64-slc5-gcc43-opt/bin/cmake -DCMAKE_TOOLCHAIN_FILE=../mic-toolchain-file.cmake -DCMAKE_INSTALL_PREFIX=$instdir -DGEANT4_USE_GDML=ON -DXERCESC_LIBRARY=${instdir}/lib/libxerces-c-3.1.so -DXERCESC_INCLUDE_DIR=${instdir}/include -DGEANT4_USE_SYSTEM_EXPAT=OFF -DGEANT4_INSTALL_DATA=ON -DCMAKE_AR=/usr/linux-k1om-4.7/bin/x86_64-k1om-linux-ar -DCMAKE_LINKER=/usr/linux-k1om-4.7/bin/x86_64-k1om-linux-ld ../../geant4-09-06-ref-09a
+
+ParFullCMS:
+/afs/cern.ch/sw/lcg/external/CMake/2.8.8/x86_64-slc5-gcc43-opt/bin/cmake -DCMAKE_INSTALL_PREFIX=$instdir -DGeant4_DIR=${instdir}/lib/Geant4-10.0.0 -DCMAKE_TOOLCHAIN_FILE=../mic-toolchain-file.cmake -DCMAKE_AR=/usr/linux-k1om-4.7/bin/x86_64-k1om-linux-ar -DCMAKE_LINKER=/usr/linux-k1om-4.7/bin/x86_64-k1om-linux-ld ../../ParFullCMS
