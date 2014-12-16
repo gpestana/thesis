@@ -1,0 +1,3 @@
+#!/bin/bash
+ipmitool -H $1 -U admin -P admin -I lanplus sensor get 'Node Power'
+

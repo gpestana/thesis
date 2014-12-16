@@ -1,0 +1,93 @@
+
+#4 threads:
+G4WT3 > ### Run 0 starts on worker thread 3.
+G4WT1 > ### Run 0 starts on worker thread 1.
+G4WT2 > ### Run 0 starts on worker thread 2.
+G4WT0 > ### Run 0 starts on worker thread 0.
+
+#Only running node up:
+Getting power status...
+8 successes  |  0 errors  |  0 nodes left  |  .  
+
+Power status
+192.168.0.12    : off
+192.168.0.16    : on
+192.168.0.13    : off
+192.168.0.15    : off
+192.168.0.10    : off
+192.168.0.11    : off
+192.168.0.14    : off
+192.168.0.17    : off
+
+
+#measurements using ipmitool:
+gpestana@workstation:~/thesis$ ./ipmitool 192.168.0.16
+
+
+##MEASUREMENTS
+
+#resting state:
+Sensor ID              : Node Power (0x62)
+ Entity ID             : 19.2
+ Sensor Type (Analog)  : Power Unit
+ Sensor Reading        : 4.500 (+/- 0) Watts
+ Status                : ok
+ Lower Non-Recoverable : 17.100
+ Lower Critical        : 17.100
+ Lower Non-Critical    : 17.100
+ Upper Non-Critical    : 9.000
+ Upper Critical        : 8.600
+ Upper Non-Recoverable : 8.100
+
+
+#INIT time:
+3m15s (+-200s)
+
+
+##A. 60 events
+#before
+Sensor Reading        : 5.100 (+/- 0) Watts
+#during
+Sensor Reading        : 6.300 (+/- 0) Watts
+##time:
+G4WT0 > Run Summary
+G4WT0 >   Number of events processed : 15
+G4WT0 >   User=811.67s Real=210.65s Sys=0.34s
+
+real  6m42.080s
+user  16m42.540s
+sys 0m1.760s
+
+
+##B. 300 events
+
+0.  Sensor Reading        : 6.200 (+/- 0) Watts
+2.  Sensor Reading        : 6.400 (+/- 0) Watts
+4.  Sensor Reading        : 6.300 (+/- 0) Watts
+6.  Sensor Reading        : 6.300 (+/- 0) Watts
+8.  Sensor Reading        : 6.400 (+/- 0) Watts
+10. Sensor Reading        : 6.400 (+/- 0) Watts
+12. Sensor Reading        : 6.400 (+/- 0) Watts
+14. Sensor Reading        : 6.300 (+/- 0) Watts
+
+##time
+G4WT1 > Run Summary
+G4WT1 >   Number of events processed : 80
+G4WT1 >   User=3583.17s Real=945.89s Sys=0.71s
+
+real  18m56.865s
+user  62m54.110s
+sys 0m2.180s
+
+##C. 500 events
+##time
+G4WT1 > Run Summary
+G4WT1 >   Number of events processed : 132
+G4WT1 >   User=5860.22s Real=1512.32s Sys=1.64s
+
+real  28m25.065s
+user  100m51.650s
+sys 0m3.240s
+
+
+
