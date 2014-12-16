@@ -1,0 +1,189 @@
+# The format of this file is documented in the dhcpd.leases(5) manual page.
+# This lease file was written by isc-dhcp-4.3.1
+
+lease 192.168.0.10 {
+  starts 1 2014/12/01 14:36:56;
+  ends 1 2014/12/08 14:36:56;
+  tstp 1 2014/12/08 14:36:56;
+  cltt 1 2014/12/01 14:36:56;
+  binding state free;
+  hardware ethernet 54:ee:75:1f:74:82;
+}
+lease 192.168.0.11 {
+  starts 1 2014/12/08 15:52:21;
+  ends 1 2014/12/15 15:52:21;
+  tstp 1 2014/12/15 15:52:21;
+  cltt 1 2014/12/08 15:52:21;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:5a:43:6e;
+}
+lease 192.168.0.17 {
+  starts 1 2014/12/08 15:52:22;
+  ends 1 2014/12/15 15:52:22;
+  tstp 1 2014/12/15 15:52:22;
+  cltt 1 2014/12/08 15:52:22;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:b9:1d:d6;
+}
+lease 192.168.0.13 {
+  starts 1 2014/12/08 15:52:22;
+  ends 1 2014/12/15 15:52:22;
+  tstp 1 2014/12/15 15:52:22;
+  cltt 1 2014/12/08 15:52:22;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:76:a2:9a;
+}
+lease 192.168.0.14 {
+  starts 1 2014/12/08 15:52:31;
+  ends 1 2014/12/15 15:52:31;
+  tstp 1 2014/12/15 15:52:31;
+  cltt 1 2014/12/08 15:52:31;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:01:f7:be;
+}
+lease 192.168.0.15 {
+  starts 1 2014/12/08 15:52:33;
+  ends 1 2014/12/15 15:52:33;
+  tstp 1 2014/12/15 15:52:33;
+  cltt 1 2014/12/08 15:52:33;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:45:7b:e6;
+}
+lease 192.168.0.18 {
+  starts 1 2014/12/08 15:52:34;
+  ends 1 2014/12/15 15:52:34;
+  tstp 1 2014/12/15 15:52:34;
+  cltt 1 2014/12/08 15:52:34;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:0c:ce:a2;
+}
+lease 192.168.0.16 {
+  starts 1 2014/12/08 15:52:34;
+  ends 1 2014/12/15 15:52:34;
+  tstp 1 2014/12/15 15:52:34;
+  cltt 1 2014/12/08 15:52:34;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:28:16:12;
+}
+lease 192.168.0.12 {
+  starts 1 2014/12/08 15:52:35;
+  ends 1 2014/12/15 15:52:35;
+  tstp 1 2014/12/15 15:52:35;
+  cltt 1 2014/12/08 15:52:35;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:c9:ea:16;
+}
+lease 192.168.0.39 {
+  starts 1 2014/12/08 15:52:41;
+  ends 1 2014/12/15 15:52:41;
+  tstp 1 2014/12/15 15:52:41;
+  cltt 1 2014/12/08 15:52:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:c9:ea:14;
+  client-hostname "aalto4";
+}
+lease 192.168.0.40 {
+  starts 1 2014/12/08 15:52:41;
+  ends 1 2014/12/15 15:52:41;
+  tstp 1 2014/12/15 15:52:41;
+  cltt 1 2014/12/08 15:52:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:76:a2:98;
+  client-hostname "aalto5";
+}
+lease 192.168.0.35 {
+  starts 1 2014/12/08 15:52:41;
+  ends 1 2014/12/15 15:52:41;
+  tstp 1 2014/12/15 15:52:41;
+  cltt 1 2014/12/08 15:52:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:28:16:10;
+  client-hostname "aalto3";
+}
+lease 192.168.0.27 {
+  starts 1 2014/12/08 15:52:41;
+  ends 1 2014/12/15 15:52:41;
+  tstp 1 2014/12/15 15:52:41;
+  cltt 1 2014/12/08 15:52:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:01:f7:bc;
+  client-hostname "aalto0";
+}
+lease 192.168.0.41 {
+  starts 1 2014/12/08 15:52:42;
+  ends 1 2014/12/15 15:52:42;
+  tstp 1 2014/12/15 15:52:42;
+  cltt 1 2014/12/08 15:52:42;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:b9:1d:d4;
+  client-hostname "aalto7";
+}
+lease 192.168.0.37 {
+  starts 1 2014/12/08 15:52:42;
+  ends 1 2014/12/15 15:52:42;
+  tstp 1 2014/12/15 15:52:42;
+  cltt 1 2014/12/08 15:52:42;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:0c:ce:a0;
+  client-hostname "aalto6";
+}
+lease 192.168.0.38 {
+  starts 1 2014/12/08 15:52:42;
+  ends 1 2014/12/15 15:52:42;
+  tstp 1 2014/12/15 15:52:42;
+  cltt 1 2014/12/08 15:52:42;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:45:7b:e4;
+  client-hostname "aalto2";
+}
+lease 192.168.0.19 {
+  starts 1 2014/12/08 15:53:02;
+  ends 1 2014/12/15 15:53:02;
+  tstp 1 2014/12/15 15:53:02;
+  cltt 1 2014/12/08 15:53:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:5a:43:6c;
+  client-hostname "localhost";
+}
+lease 192.168.0.20 {
+  starts 1 2014/12/08 15:53:02;
+  ends 1 2014/12/15 15:53:02;
+  tstp 1 2014/12/15 15:53:02;
+  cltt 1 2014/12/08 15:53:02;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet fc:2f:40:5a:43:6d;
+}

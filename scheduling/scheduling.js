@@ -1,11 +1,4 @@
-var buckets = [
-  {"price":1, "units": 10},
-  {"price":3, "units": 10},
-  {"price":6,  "units": 23},
-  {"price":10, "units": 23}
-]
-
-var sort_buckets = function() {
+var sort_buckets = function(buckets) {
  buckets.sort(
   function(a, b) {
     if(a.price > b.price) return 1
@@ -13,51 +6,55 @@ var sort_buckets = function() {
   }) 
 }
 
-var check_resources = function(workload, nr_series, cb) {
-  cb()
+var check_resources = function(workload, days, buckets, cb) {
+  var possible_workload = 0
+  buckets.forEach(function(bucket){
+    possible_workload += bucket.events      
+  })
+
+  if(possible_workload * days < workload) {
+    cb(false)
+  } else {
+    cb(true)
+  }
 }
 
-var calculate_price = function(bucket, units) {
-  bucket.final_price = bucket.price * units 
+
+var calculate_price = function(bucket, events) {
+  bucket.final_price = bucket.price * events 
 }
 
 
 
-var run = function(workload, nr_series, buckets, cb) {
-
-  check_resources(workload, nr_series, function(res) {
-    if(res) {
-      cb(null, "Machine resources are not enough to meet deadline")
-      return
+var run = function(workload, nr_days, buckets, cb) {
+  check_resources(workload, nr_days, buckets, function(possible) {
+    if(!possible) {
+      cb(false)
     } else {
 
       var workload_left = workload
-      sort_buckets()
+      sort_buckets(buckets)
+  
+      buckets.some(function(bucket) {
+        var workload_left_tmp = workload_left
+        var workload_after = workload_left_tmp -= bucket.events*nr_days
 
-      buckets.forEach(function(bucket) {
-        var units_series = bucket.units * nr_series 
-        
-        if(workload_left -= units_series <= 0) {
-          var final_events = workload_left
-          calculate_price(bucket, workload_left) 
-          //cb(buckets)
-          return
+        if(workload_after <= 0) {
+          //case last bucket
+          calculate_price(bucket, workload_left)
+          return true
+
         } else {
-          calculate_price(bucket, units_series)
+          //not last bucket
+          calculate_price(bucket, bucket.events*nr_days)
+          workload_left = workload_after
         }
       })
-      cb(buckets)
     }
   })
+
+  cb(buckets)
 }
 
 
-
-run(30, 1, buckets, function(final_buckets, err){
-  if(err) console.log(err)
-  else {
-    console.log(final_buckets)   
-  }
-})
-
-
+exports.run = run
