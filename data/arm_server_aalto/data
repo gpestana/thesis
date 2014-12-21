@@ -1,4 +1,64 @@
 
+##MEASUREMENTS:
+#1/4 threads per core [1 thread]
+#1/2 threads per core [2 threads]
+#1 thread per core [4 threads]
+#2 threads per core [8threads]
+
+#1/4 threads per core (1 thread)
+1 thread
+50 events
+
+0. 4.7W
+1. 4.7W
+2. 5W 
+3. 5.1W
+4. 4.7W
+5. 4.9W
+6. 5.2W
+7. 5W
+8. 5.1W
+9. 5.2W
+10. 5.1W
+
+
+G4WT0 > ### Run 0 starts on worker thread 0.
+G4WT0 > Run terminated.
+G4WT0 > Run Summary
+G4WT0 >   Number of events processed : 50
+G4WT0 >   User=618.96s Real=621.29s Sys=0.21s
+
+real  13m29.889s
+user  13m25.220s
+sys 0m1.140s
+
+
+
+#1/2 threads per core (1 thread)
+2 thread
+50 events
+
+0. 5.4W 
+1. 5.5W
+2. 5.6W
+3. 5.6W
+4. 5.6W 
+
+real  8m21.470s
+user  13m29.150s
+sys 0m1.230s
+
+
+G4WT1 > Run Summary
+G4WT1 >   Number of events processed : 25
+G4WT1 >   User=618.07s Real=309.43s Sys=0.16s
+G4WT0 > Run terminated.
+G4WT0 > Run Summary
+G4WT0 >   Number of events processed : 25
+G4WT0 >   User=621.78s Real=313.14s Sys=0.16s
+
+
+
 #4 threads:
 G4WT3 > ### Run 0 starts on worker thread 3.
 G4WT1 > ### Run 0 starts on worker thread 1.
@@ -90,4 +150,24 @@ user  100m51.650s
 sys 0m3.240s
 
 
+#2 threads per core
+8 threads
+150 events
+
+1. 6.1W
+2. 6.1W
+3. 6.2W
+4. 6.3W
+5. 6.4W
+6. 6.3W
+7. 6.3W
+8. 6.3W
+
+real  11m32.044s
+user  35m58.200s
+sys 0m2.590s
+
+G4WT7 > Run Summary
+G4WT7 >   Number of events processed : 20
+G4WT7 >   User=1960.58s Real=496.4s Sys=0.59s
 
