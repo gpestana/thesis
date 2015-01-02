@@ -1,0 +1,45 @@
+##Autonomous Demand Side Management on Game Theoretic Energy Consumption
+Scheduling for the Future Smart Grid
+
+Demand side management are programs implemented by the utility companies to
+control and influence the user-side behavior. For example, electrical companies
+often fluctuate the energy price depending on the user's demand.
+
+There is need to encourage household owners to *shift* high demand energy
+consumptions outside the peak hours, in order to reduce the peak-to-average
+(PAR) in load demand.
+[ - we aim towards shift schedule different machines in depending on the PAR] 
+
+Direct load control (DLC) gives the utility companies the possibility to
+remotely control the household's applications (dim or turn of lights, turn of
+thermal equipment, amongst others). Though, this model arises some problems
+related with household's privacy
+[ - see more  “A direct load control model for virtual power plant management”
+  - what if DLC would be implemented for servers and in a heterogeneous scheduling 
+scenario? Would it bing any advantage or liability ?]
+
+An alternative to DLC is smart pricing, where users are encouraged to
+voluntarily and individually shift their loads out of the peak-hours be
+increasing the energy prices when the load is big.
+
+One problem with this approach is synchronization: when a large number of users
+shift their peak at the same time for a low-peak time, the PAR may not be
+reduced due to the amount of users churning energy at low-peak time.
+[ - this might happen as well with our scheduling strategy. If the amount of
+users running our scheduling system at the same time is the same, it does not
+help to reduce the PAR and the prices might get worst]
+
+The paper suggests that households should synchronize their energy usage and
+schedule their energy applications not only according to the price of the energy
+at a given time, but also taking into consideration what others are consuming as
+well. Thus, by acting in synchronization, the group of users can optimize the
+energy the overall energy consumption and its pricing. 
+
+They propose an incentive-based energy consumption pricing model for the smart
+grid, where the energy source is shared by several users. The meters communicate
+between each other in a distributed network to find the optimal energy
+consumption for each user.
+
+Based on game theory, it is shown that through an incentive-based pricing
+scheme, an optimal scheduling - where users consume less energy and pay less
+money - can be achieved.
