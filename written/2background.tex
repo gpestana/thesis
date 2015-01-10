@@ -85,7 +85,7 @@ energy efficient software.
 
 
 % initial explorations of ARM processors for scientific computing
-In \cite{ACAT13ARM}:
+\textbf{In \cite{ACAT13ARM}:}
 
 - After 2015, processors have hit scaling limits. Two different paths started to be
 taken on the processor industry:  development of multiprocessor architectures that
@@ -97,4 +97,181 @@ Additional cores are parallelized and can run at the same time, which allows the
 system to scale. However, also commodities such memory, I/O streams and energy
 scale proportionally in such architectures.
  
- 
+
+
+
+\section{Architecture scheduling based on dynamic energy pricing}
+
+\textbf{In \cite{FUTURE_SMART_GRID}:}
+
+Demand side management are programs implemented by the utility companies to
+control and influence the user-side behavior. For example, electrical companies
+often fluctuate the energy price depending on the user's demand.
+
+There is need to encourage household owners to *shift* high demand energy
+consumptions outside the peak hours, in order to reduce the peak-to-average
+(PAR) in load demand.
+[ - we aim towards the shifting of schedule different machines  depending on the PAR] 
+
+Direct load control (DLC) gives the utility companies the possibility to
+remotely control the household's applications (dim or turn of lights, turn of
+thermal equipment, amongst others). Though, this model arises some problems
+related with household's privacy
+[ - see more  'A direct load control model for virtual power plant management'
+  - what if DLC would be implemented for servers and in a heterogeneous
+    scheduling scenario? Would it bing any advantage or liability ?]
+
+An alternative to DLC is smart pricing, where users are encouraged to
+voluntarily and individually shift their loads out of the peak-hours be
+increasing the energy prices when the load is big.
+
+One problem with this approach is synchronization: when a large number of users
+shift their peak at the same time for a low-peak time, the PAR may not be
+reduced due to the amount of users churning energy at low-peak time.
+[ - this might happen as well with our scheduling strategy. If the amount of
+users running our scheduling system at the same time is the same, it does not
+help to reduce the PAR and the prices might get worst]
+
+The paper suggests that households should synchronize their energy usage and
+schedule their energy applications not only according to the price of the energy
+at a given time, but also taking into consideration what others are consuming as
+well. Thus, by acting in synchronization, the group of users can optimize the
+energy the overall energy consumption and its pricing. 
+
+They propose an incentive-based energy consumption pricing model for the smart
+grid, where the energy source is shared by several users. The meters communicate
+between each other in a distributed network to find the optimal energy
+consumption for each user.
+
+Based on game theory, it is shown that through an incentive-based pricing
+scheme, an optimal scheduling - where users consume less energy and pay less
+money - can be achieved.
+
+\textbf{In \cite{EFF_JOB_SCHEDULING}:}
+
+Because of the magnitude of energy costs in data centers, it is important to
+lower the energy consumption in data centers. The servers are composed of
+heterogeneous machines from the performance and energy efficiency. In addition,
+the data centers may be disposed in different geographical locations and, thus,
+have different energy tariffs. The authors of \cite{EFF_JOB_SCHEDULING}, claim that
+the key idea to lower the energy bill in data centers is to have energy
+efficiency servers and schedule the jobs to where energy is more affordable at a
+given time.
+
+In the context of servers distributed over different geographical locations, it
+is also important to satisfy fairness and delay constraints. This scenario is
+less critical when the server is not distributed, as in our case.
+
+In \cite{EFF_JOB_SCHEDULING}, the authors present an online scheduler that
+distributes batch workloads across multiple data centers geographically
+distributed. The scheduler aims to minimize the energy consumption of the set of
+servers having into consideration fairness and delay requirements.   
+
+The scheduler is inspired on the technique developed by Lyapunov ['Resource
+allocation and cross-layer control in wireless networks'] that
+optimized time-varying systems. 
+
+The algorithm takes a queue of jobs schedule them to the different servers
+having in consideration the (1) server availability, (2) energy price and (3)
+job fairness distribution. Consequently, the algorithm is tuned to calculate the
+tradeoff between energy pricing, fairness and queueing delay.
+
+- The model:
+
+The data center model takes into consideration the possibility of the energy
+prices to vary over time. The state of the data center can be represented at a
+given time by a tuple of (i) server availability and (2) energy price.
+
+The job model is characterized by a tuple of (1) service demand - job length -
+and (2) the set of data centers the job can be scheduled. 
+
+The scheduler can turn on/off a server when needed. The scheduling is done based
+on the server availability and job queue and thus, what matters is the energy
+consumed by the server when it is 'idle' or 'busy'.
+
+The scheduler also considers he model fairness (which is not important to
+our study, since we focus in a non-distributed server) and queuing delay.
+Queuing delay defines the time a job will take to start to be processed,
+according to relation of the number of jobs scheduled and machine availability.
+
+In \cite{EFF_JOB_SCHEDULING}, the scheduler developed takes into consideration
+the server availability, energy costs, fairness and queuing delay to schedule
+random jobs arrivals. It opportunistically schedules jobs when (and to where) 
+energy prices are low.
+
+Comparing to our study, though, we do not consider geographically distributed 
+servers but rather, we have schedule the jobs based on the heterogeneous set of 
+machines existing on the server.
+
+
+
+\textbf{In \cite{MIGRATION_CLOUD}:}
+
+This study aims to exploit the temporal and geographical variation of
+electricity prices, in the context of data centers. They study algorithms to
+schedule (migrate) jobs in data center based on the energy cost and
+availability.
+
+When the servers are in different geographical location, costs with data
+migration have to be taken into consideration, namely bandwidth costs of moving
+the application state and data between data centers. The bandwidth costs
+increase proportional to the amount of data migrated between servers.
+
+Their study focuses on inter data center optimization, rather than intra data
+center optimization (as our study is aiming for)
+
+The algorithm differs from others in 3 major differences: First, they consider
+migration of batches of jobs. Second, the algorithm has into consideration the
+future influence of the job scheduling, providing robustness against any future
+deviations of the energy price. Finally, they also take into consideration the 
+bandwidth costs associated with job migration across data servers.
+
+The main point is to provide a good tradeoff between the energy pricing and the
+job migration, taking into consideration the bandwidth prices.
+
+Comparing to our study, we do not approach the problem from an inter data center
+perspective, but rather from an intra data center, by scheduling the jobs to
+machines depending on their energy performance and the actual energy prices. One
+interesting idea from this study that can be used, is the usage of an online
+algorithm that takes into consideration the expected prices and also the actual
+prices.
+
+
+
+--
+\textbf{[Notes]}
+
+- Intra data center judicious job scheduling based on the heterogeneous
+architecture of the machines.
+
+- Online computation schedule the jobs. Jobs are in a queue in a serial fashion
+  and are scheduled depending on the decision of the algorithm at a given time
+
+- There are several studies that aim to leverage the potential of geographical 
+  load balancing to provide significant cost savings (see [24, 28, 31, 32, 34,
+  39] in \cite{GREENING})
+
+
+\subsection{Summary}
+
+\begin{comment}
+  Add citation in the summary  
+\end{comment}
+
+There are two branches of researching on energy efficiency that are related 
+with heterogeneous computing and dynamic energy pricing.
+
+In the studies related with the spacial-time dynamic of energy pricing, the 
+emphasis is given to the scheduling of jobs across data centers that are located 
+in different places. The main idea is to exploit the fact that energy prices 
+differ in data centers located in different places. There are concerns with 
+fairness, server availability and queue delays. In addition, there are also
+several research studies related with migration of cloud computing jobs.
+
+On the heterogeneous computing...
+
+Our solution would present different characteristics from the literature
+reviewed so far.
+
+Nevertheless, there are some open points that we might have to consider: whom
+and where there will be such heterogeneous intra data center ?

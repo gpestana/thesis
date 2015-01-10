@@ -17,10 +17,37 @@ Stack overflow.
 \newblock Initial explorations of arm processors for scientific computing.
 \newblock {\em Journal of Physics: Conference Series 523}, 1 (2014), 012009.
 
+\bibitem{MIGRATION_CLOUD}
+{\sc Buchbinder, N., Jain, N., and Menache, I.}
+\newblock Online job-migration for reducing the electricity bill in the cloud.
+\newblock In {\em NETWORKING 2011}. Springer Berlin Heidelberg, 2011,
+  pp.~172--185.
+
+\bibitem{GREENING}
+{\sc Liu, Z., Lin, M., Wierman, A., Low, S.~H., and Andrew, L.~L.}
+\newblock Greening geographical load balancing.
+\newblock In {\em Proceedings of the ACM SIGMETRICS Joint International
+  Conference on Measurement and Modeling of Computer Systems\/} (New York, NY,
+  USA, 2011), SIGMETRICS '11, ACM, pp.~233--244.
+
+\bibitem{FUTURE_SMART_GRID}
+{\sc Mohsenian-Rad, A.-H., Wong, V., Jatskevich, J., Schober, R., and
+  Leon-Garcia, A.}
+\newblock Autonomous demand-side management based on game-theoretic energy
+  consumption scheduling for the future smart grid.
+\newblock {\em Smart Grid, IEEE Transactions on 1}, 3 (Dec 2010), 320--331.
+
 \bibitem{QUESTIONS_ENERGY}
 {\sc Pinto, G., Castor, F., and Liu, Y.~D.}
 \newblock Mining questions about software energy consumption.
 \newblock In {\em Proceedings of the 11th Working Conference on Mining Software
   Repositories\/} (New York, NY, USA, 2014), MSR 2014, ACM, pp.~22--31.
+
+\bibitem{EFF_JOB_SCHEDULING}
+{\sc Ren, S., He, Y., and Xu, F.}
+\newblock Provably-efficient job scheduling for energy and fairness in
+  geographically distributed data centers.
+\newblock In {\em Distributed Computing Systems (ICDCS), 2012 IEEE 32nd
+  International Conference on\/} (2012), IEEE, pp.~22--31.
 
 \end{thebibliography}

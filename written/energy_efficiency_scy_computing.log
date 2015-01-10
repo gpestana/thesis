@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.7.28)  2 JAN 2015 14:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2014.7.28)  10 JAN 2015 18:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -909,7 +909,7 @@ LaTeX Info: Redefining \nameref on input line 335.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<img/aalto-logo-en.pdf, id=151, 302.3837pt x 132.96776pt>
+<img/aalto-logo-en.pdf, id=159, 302.3837pt x 132.96776pt>
 File: img/aalto-logo-en.pdf Graphic file (type pdf)
 
 <use img/aalto-logo-en.pdf>
@@ -937,7 +937,12 @@ Chapter 1.
 Chapter 2.
 [8
 
-] [9]) (./3toolsandtechniques.tex [10]
+] [9]
+Overfull \hbox (6.73578pt too wide) in paragraph at lines 103--103
+ |[]\OT1/cmr/bx/n/17.28 Architecture schedul-ing based on dy-namic
+ []
+
+[10] [11] [12]) (./3toolsandtechniques.tex [13]
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -947,13 +952,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 2.
 
-) (./4experiments.tex [11
+) (./4experiments.tex [14
 
 ]
 Chapter 4.
-[12
+[15
 
-] <"img/aalto/aalto_total_quad".png, id=259, 592.2125pt x 461.725pt>
+] <"img/aalto/aalto_total_quad".png, id=294, 592.2125pt x 461.725pt>
 File: "img/aalto/aalto_total_quad".png Graphic file (type png)
 
 <use "img/aalto/aalto_total_quad".png>
@@ -961,7 +966,7 @@ Package pdftex.def Info: "img/aalto/aalto_total_quad".png used on input line 40
 .
 (pdftex.def)             Requested size: 284.52756pt x 221.83684pt.
 
-<"img/aalto/aalto_total_atom".png, id=261, 592.2125pt x 461.725pt>
+<"img/aalto/aalto_total_atom".png, id=296, 592.2125pt x 461.725pt>
 File: "img/aalto/aalto_total_atom".png Graphic file (type png)
 
 <use "img/aalto/aalto_total_atom".png>
@@ -972,7 +977,7 @@ Package pdftex.def Info: "img/aalto/aalto_total_atom".png used on input line 47
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"img/aalto/aalto_total_arm".png, id=262, 592.2125pt x 461.725pt>
+<"img/aalto/aalto_total_arm".png, id=297, 592.2125pt x 461.725pt>
 File: "img/aalto/aalto_total_arm".png Graphic file (type png)
 
 <use "img/aalto/aalto_total_arm".png>
@@ -983,7 +988,7 @@ Package pdftex.def Info: "img/aalto/aalto_total_arm".png used on input line 54.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"img/aalto/aalto_quadEvents".png, id=263, 796.4154pt x 676.4472pt>
+<"img/aalto/aalto_quadEvents".png, id=298, 796.4154pt x 676.4472pt>
 File: "img/aalto/aalto_quadEvents".png Graphic file (type png)
 
 <use "img/aalto/aalto_quadEvents".png>
@@ -994,7 +999,7 @@ Package pdftex.def Info: "img/aalto/aalto_quadEvents".png used on input line 62
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"img/aalto/aalto_atomEvents".png, id=264, 796.4154pt x 609.9588pt>
+<"img/aalto/aalto_atomEvents".png, id=299, 796.4154pt x 609.9588pt>
 File: "img/aalto/aalto_atomEvents".png Graphic file (type png)
 
 <use "img/aalto/aalto_atomEvents".png>
@@ -1005,7 +1010,7 @@ Package pdftex.def Info: "img/aalto/aalto_atomEvents".png used on input line 70
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"img/aalto/aalto_armEvents".png, id=265, 796.4154pt x 713.3049pt>
+<"img/aalto/aalto_armEvents".png, id=300, 796.4154pt x 713.3049pt>
 File: "img/aalto/aalto_armEvents".png Graphic file (type png)
 
 <use "img/aalto/aalto_armEvents".png>
@@ -1016,7 +1021,7 @@ Package pdftex.def Info: "img/aalto/aalto_armEvents".png used on input line 79.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"img/aalto/aalto_all_time".png, id=266, 794.97pt x 734.9859pt>
+<"img/aalto/aalto_all_time".png, id=301, 794.97pt x 734.9859pt>
 File: "img/aalto/aalto_all_time".png Graphic file (type png)
 
 <use "img/aalto/aalto_all_time".png>
@@ -1026,7 +1031,7 @@ Package pdftex.def Info: "img/aalto/aalto_all_time".png used on input line 88.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"img/aalto/aalto_all".png, id=267, 865.0719pt x 724.1454pt>
+<"img/aalto/aalto_all".png, id=302, 865.0719pt x 724.1454pt>
 File: "img/aalto/aalto_all".png Graphic file (type png)
 
 <use "img/aalto/aalto_all".png>
@@ -1036,7 +1041,7 @@ Package pdftex.def Info: "img/aalto/aalto_all".png used on input line 95.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"img/aalto/aalto_all2".png, id=268, 1156.32pt x 820.2645pt>
+<"img/aalto/aalto_all2".png, id=303, 1156.32pt x 820.2645pt>
 File: "img/aalto/aalto_all2".png Graphic file (type png)
 
 <use "img/aalto/aalto_all2".png>
@@ -1046,7 +1051,7 @@ Package pdftex.def Info: "img/aalto/aalto_all2".png used on input line 104.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"img/acat/results1".png, id=269, 1204.5pt x 501.875pt>
+<"img/acat/results1".png, id=304, 1204.5pt x 501.875pt>
 File: "img/acat/results1".png Graphic file (type png)
 
 <use "img/acat/results1".png>
@@ -1060,7 +1065,7 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 112--114
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"img/cern/rapl".png, id=270, 731.73375pt x 361.35pt>
+<"img/cern/rapl".png, id=305, 731.73375pt x 361.35pt>
 File: "img/cern/rapl".png Graphic file (type png)
 
 <use "img/cern/rapl".png>
@@ -1074,7 +1079,7 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 119--120
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"img/numa/16proc_no_binding".png, id=271, 623.32875pt x 521.95pt>
+<"img/numa/16proc_no_binding".png, id=306, 623.32875pt x 521.95pt>
 File: "img/numa/16proc_no_binding".png Graphic file (type png)
 
 <use "img/numa/16proc_no_binding".png>
@@ -1089,7 +1094,7 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 127--130
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"img/numa/16proc_node2and3".png, id=272, 622.325pt x 518.93875pt>
+<"img/numa/16proc_node2and3".png, id=307, 622.325pt x 518.93875pt>
 File: "img/numa/16proc_node2and3".png Graphic file (type png)
 
 <use "img/numa/16proc_node2and3".png>
@@ -1104,7 +1109,7 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 136--139
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"img/numa/32proc".png, id=273, 622.325pt x 520.94624pt>
+<"img/numa/32proc".png, id=308, 622.325pt x 520.94624pt>
 File: "img/numa/32proc".png Graphic file (type png)
 
 <use "img/numa/32proc".png>
@@ -1119,7 +1124,7 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 145--148
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<"img/numa/32proc_explicitly_distributed".png, id=274, 622.325pt x 520.94624pt>
+<"img/numa/32proc_explicitly_distributed".png, id=309, 622.325pt x 520.94624pt>
 File: "img/numa/32proc_explicitly_distributed".png Graphic file (type png)
 <use "img/numa/32proc_explicitly_distributed".png>
 Package pdftex.def Info: "img/numa/32proc_explicitly_distributed".png used on i
@@ -1133,16 +1138,16 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 154--157
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./5analysis.tex [13 <./img/aalto/aalto_total_quad.png>] [14 <./img/aalto/aal
+) (./5analysis.tex [16 <./img/aalto/aalto_total_quad.png>] [17 <./img/aalto/aal
 to_total_atom.png (PNG copy)> <./img/aalto/aalto_total_arm.png (PNG copy)>]
-[15 <./img/aalto/aalto_quadEvents.png> <./img/aalto/aalto_atomEvents.png>]
-[16 <./img/aalto/aalto_armEvents.png> <./img/aalto/aalto_all_time.png>]
-[17 <./img/aalto/aalto_all.png> <./img/aalto/aalto_all2.png>] [18 <./img/acat/r
-esults1.png> <./img/cern/rapl.png>] [19 <./img/numa/16proc_no_binding.png>]
-[20 <./img/numa/16proc_node2and3.png>] [21 <./img/numa/32proc.png>] [22 <./img/
+[18 <./img/aalto/aalto_quadEvents.png> <./img/aalto/aalto_atomEvents.png>]
+[19 <./img/aalto/aalto_armEvents.png> <./img/aalto/aalto_all_time.png>]
+[20 <./img/aalto/aalto_all.png> <./img/aalto/aalto_all2.png>] [21 <./img/acat/r
+esults1.png> <./img/cern/rapl.png>] [22 <./img/numa/16proc_no_binding.png>]
+[23 <./img/numa/16proc_node2and3.png>] [24 <./img/numa/32proc.png>] [25 <./img/
 numa/32proc_explicitly_distributed.png>]
 Chapter 5.
-[23
+[26
 
 ]
 Overfull \hbox (26.2744pt too wide) in paragraph at lines 39--49
@@ -1155,21 +1160,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--85
 
  []
 
-[24] [25]) (./6futurework.tex [26]
+[27] [28]) (./6futurework.tex [29]
 Chapter 6.
-) (./7conclusions.tex [27
+) (./7conclusions.tex [30
 
 ]
 Chapter 7.
-) (./energy_efficiency_scy_computing.bbl [28
+) (./energy_efficiency_scy_computing.bbl [31
 
-]) (./appendices.tex [29
+] [32
 
-]
+]) (./appendices.tex [33]
 Appendix A.
 ) 
 AED: lastpage setting LastPage
-[30
+[34
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 463.
@@ -1179,20 +1184,20 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 463.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 463.
 Package rerunfilecheck Info: File `energy_efficiency_scy_computing.out' has not
  changed.
-(rerunfilecheck)             Checksum: 33823FBF7EF31B1FE1F84676246221B6;2513.
+(rerunfilecheck)             Checksum: 038E35D58AB6FB28B16C01163C429034;2686.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 22010 strings out of 493104
- 434579 string characters out of 6136932
- 535819 words of memory out of 5000000
- 24912 multiletter control sequences out of 15000+600000
+ 22034 strings out of 493104
+ 435013 string characters out of 6136932
+ 535879 words of memory out of 5000000
+ 24926 multiletter control sequences out of 15000+600000
  11799 words of font info for 42 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 55i,12n,67p,797b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,67p,797b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1202,11 +1207,11 @@ t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb>
-Output written on energy_efficiency_scy_computing.pdf (30 pages, 1063046 bytes)
+Output written on energy_efficiency_scy_computing.pdf (34 pages, 1072939 bytes)
 .
 PDF statistics:
- 448 PDF objects out of 1000 (max. 8388607)
- 372 compressed objects within 4 object streams
- 88 named destinations out of 1000 (max. 500000)
- 365 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 489 PDF objects out of 1000 (max. 8388607)
+ 408 compressed objects within 5 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 381 words of extra memory for PDF output out of 10000 (max. 10000000)
 
