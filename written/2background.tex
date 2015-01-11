@@ -237,12 +237,102 @@ algorithm that takes into consideration the expected prices and also the actual
 prices.
 
 
+\textbf{In \cite{MINIMIZING_DIST}:}
+In \cite{MINIMIZING_DIST}, they try to systematically study the problems of how
+mnimize the electricity cost in data centers while guarateeing minimal quality
+of service. To that end, they take into consideration the local and time diversity 
+of electricity prices.
+
+The constributions are twofold: In one hand, they show that local and time
+dependent electricity pricing can be levearaged to minimize total energy price
+of clusters of data centers. On the other hand, they present a mixed-integer
+optimization formula with linear programming formulation to show that the energy
+pricing of clustered data centers can be improved under such conditions.
+
+To model the total of electricity costs, they assume that all the servers have a
+similar power profile - which means that all the servers, disregarding their
+locations, have the same workload. They calculate the power consumed by the
+server by multying the total of servers at a certain region by the total of
+workload they have. 
+
+Again, the time constraints and delays considered in a inter data center study
+does not need to be considered in out work.
+
+They obtain the most efficient solution, they approximate an optimization
+problem through a linear programming formulation and then, convert the linear
+programming formulation to a minimum cost flow problem. 
+
+This work dates from 2010 and don't take into consideration the bandwidth costs
+of migrating the batches between data centers. Even though that is not an issue
+in our study, this is taken into consideration in other works such as
+\cite{MIGRATION_CLOUD}. Again, it is part of the set of studies on inter
+datacenter and electrical costs optimizations that location and time based 
+pricing allows.
+
+
+
+\textbf{In \cite{CUTTING_BILL}:}
+The authors of \cite{CUTTING_BILL} show that existing systems may be able to
+save milions of dollars by judiciously schedule workload to servers taking into
+consideration the temporal and geographical variation of energy prices. The
+results are based in historical data colleected on Akamai's CDN. 
+
+
+\textbf{In \cite{DYN_PRICING_HPC}:}
+In \cite{DYN_PRICING_HPC}, the authors leverage the fact that parallel jobs have 
+distinct energy profiles. Taking it into consideration, they study the impact of
+scheduling jobs according to the energy prices at a given moment and the job's
+energy profiles. So, the study aims to reduce the electricity bill by scheduling and
+dispatching jobs according to their energy profile. Their solution has a
+negligible impact on the system's utilization and scheduling fairness. 
+
+Their basic idea is to schedule jobs with low energy profile during on-peak
+electricity time and, on the other hand, schedule jobs with high energy profile
+during the off-peak electricity time. In addition, the scheduling is done in
+such a way that it is guaranteed that there is no degradation of the overall
+system performance. 
+
+The authors take an intra data center approach, since it considers a solution
+that can be put into practice at a data center level.
+
+The authors claim that "A key challenge in HPC scheduling is that system 
+utilization should not be impacted. HPC systems require a tremendous capital 
+investment, hence taking full advantage of this expensive resources is of great 
+importance to HPC centers.". This may make impractical and wreck our solution,
+because of the inevitability of turning off (or idle) great amounts of computing 
+resources. Although, internet data centers (cloud data centers)  may be a good 
+match to our solution: usually there are much less resources being used at a given 
+time than in HTC computing [need confirmation, partially mentioned in this article].
+
+The scheduling algorithm used places jobs in a time-window. The jobs are chosen
+to run based on job fairness, job energy profile and energy prices at a given
+time. A greedy algorithm and 0-1 Knapsack based policy are used to minimize the
+electrical costs.
+
+Their results show that gains in the order of 23\% can be obtained without
+impact on the overall system. 
+
+According to the survey carried by \cite{DYN_PRICING_HPC}, the dynamic energy
+pricing has been implemented in the biggest markets in Europe, North America,
+Oceania and China, while Japan was at the time starting to test it on its major
+cities.
+
+They develop two power aware job policies: 1) greedy approach, where jobs are
+allocated based on their energy profiles  and 2) 0-1 Knapsack based policy,
+where both job profile and system utilization are taking into consideration.
+
+
+
+ 
 
 --
 \textbf{[Notes]}
 
 - Intra data center judicious job scheduling based on the heterogeneous
 architecture of the machines.
+
+- Minimize the electricity costs in data centers by leveraging the dynamical 
+  electricity pricing models and heterogeneous computing.
 
 - Online computation schedule the jobs. Jobs are in a queue in a serial fashion
   and are scheduled depending on the decision of the algorithm at a given time
@@ -251,27 +341,59 @@ architecture of the machines.
   load balancing to provide significant cost savings (see [24, 28, 31, 32, 34,
   39] in \cite{GREENING})
 
+- Make a problem specification as in \cite{CUTTING_BILL}
+
+- In our solution, we could also coinsider different stages of functioning such
+  as idling and turning of the machines, depending on the expected workload and
+  the server configuration. The problem might be to understand if we have (or
+  not) knwoledge of the server utilization in the future and its worklaods.
+  Actually, this is an important factor to consider - wether we have or not idea
+  of the future workload.  
+
+- It would be interesting to test and simulate our model and algorithm using,
+  for example, workloads and electricity prices in a Google data center. As many
+  studies do, show the potential of our approach by simulating scnarios based on
+  real case data. 
+
+- As \cite{DYN_PRICING_HPC} briefly mentions, does  Dynamic Voltage and Frequency 
+  Scaling (DVFS) have the same results than our heterogeneous approach in a
+  homogeneous data center ? i.e. are the benefits of a more efficient processor
+  such as ARM surpassed (or the same) as an INTEL working under a DVFS ? The
+  principle seems the same: when energy consumption is smaller (in ARM or INTEL
+  under low DVFS), the jobs take longer to accomplish. This said, is ARM more
+  efficient than INTEL under low DVFS ?   
+
+- Should our work be an extension on \cite{DYN_PRICING_HPC} where, instead of
+  scheduling the workload taking into consideration the job's energy profile,
+  also consider the machine's energy performance ?
+
+
 
 \subsection{Summary}
 
+
 \begin{comment}
-  Add citation in the summary  
+  Add references to the summary  
 \end{comment}
 
-There are two branches of researching on energy efficiency that are related 
-with heterogeneous computing and dynamic energy pricing.
 
-In the studies related with the spacial-time dynamic of energy pricing, the 
-emphasis is given to the scheduling of jobs across data centers that are located 
-in different places. The main idea is to exploit the fact that energy prices 
+There are several studies exploring with inter data center solutions to lower
+the electricity bill by leveraging the spacial-time dynamic of energy pricing. The 
+emphasis is given to job scheduling across data centers that are located in 
+different places. The main idea is to exploit the fact that energy prices 
 differ in data centers located in different places. There are concerns with 
-fairness, server availability and queue delays. In addition, there are also
-several research studies related with migration of cloud computing jobs.
+fairness, server availability, queue delays, bandwidth costs with job migration
+and quality of service, amongst others. There are, also, several 
+research studies related with migration of cloud computing jobs. Studies that in
+one way on another address this perspective are \cite{EFF_JOB_SCHEDULING},
+\cite{MIGRATION_CLOUD}, \cite{MINIMIZING_DIST}, \cite{CUTTING_BILL}, amongst others. 
 
-On the heterogeneous computing...
 
 Our solution would present different characteristics from the literature
 reviewed so far.
 
-Nevertheless, there are some open points that we might have to consider: whom
-and where there will be such heterogeneous intra data center ?
+Nevertheless, there are some open points that we still have might want to
+consider. First, as \cite{DYN_PRICING_HPC} mentions, it is important to insure
+that the hardware existent in the data center is used at its full potential, in
+order to not waste the investment made when it was purchased. Our solution,
+though, does not 

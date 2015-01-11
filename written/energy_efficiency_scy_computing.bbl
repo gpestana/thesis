@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{STACKOVERFLOW}
 Stack overflow.
@@ -43,11 +43,31 @@ Stack overflow.
 \newblock In {\em Proceedings of the 11th Working Conference on Mining Software
   Repositories\/} (New York, NY, USA, 2014), MSR 2014, ACM, pp.~22--31.
 
+\bibitem{CUTTING_BILL}
+{\sc Qureshi, A., Weber, R., Balakrishnan, H., Guttag, J., and Maggs, B.}
+\newblock Cutting the electric bill for internet-scale systems.
+\newblock {\em ACM SIGCOMM Computer Communication Review 39}, 4 (2009),
+  123--134.
+
+\bibitem{MINIMIZING_DIST}
+{\sc Rao, L., Liu, X., Xie, L., and Liu, W.}
+\newblock Minimizing electricity cost: optimization of distributed internet
+  data centers in a multi-electricity-market environment.
+\newblock In {\em INFOCOM, 2010 Proceedings IEEE\/} (2010), IEEE, pp.~1--9.
+
 \bibitem{EFF_JOB_SCHEDULING}
 {\sc Ren, S., He, Y., and Xu, F.}
 \newblock Provably-efficient job scheduling for energy and fairness in
   geographically distributed data centers.
 \newblock In {\em Distributed Computing Systems (ICDCS), 2012 IEEE 32nd
   International Conference on\/} (2012), IEEE, pp.~22--31.
+
+\bibitem{DYN_PRICING_HPC}
+{\sc Yang, X., Zhou, Z., Wallace, S., Lan, Z., Tang, W., Coghlan, S., and
+  Papka, M.}
+\newblock Integrating dynamic pricing of electricity into energy aware
+  scheduling for hpc systems.
+\newblock In {\em High Performance Computing, Networking, Storage and Analysis
+  (SC), 2013 International Conference for\/} (Nov 2013), pp.~1--11.
 
 \end{thebibliography}
