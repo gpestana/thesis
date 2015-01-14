@@ -1,5 +1,3 @@
-\begin{comment}
-
 \chapter{Background}
 
 \section{Energy consumption in Scientific Computing}
@@ -58,11 +56,9 @@ platform for heterogeneous high-density computing.
 
 
 \section{Energy performance and measurement}
-\subsection{Literature review}
+\subsection{Importance of measuring energy consumption}
 
 % mining questions about software energy consumption
-\textbf{on importance of energy consumption for engineers and scientists}
-\\
 The study conducted by \cite{QUESTIONS_ENERGY}, shows that engineers have been
 considering energy consumption as an important factor when developing software.
 It consists on an empirical study that aims to understand the opinions and
@@ -100,13 +96,12 @@ system to scale. However, also commodities such memory, I/O streams and energy
 scale proportionally in such architectures.
  
 
-\end{comment}
 
-\section*{Scheduling based on dynamic energy pricing}
-
+\section{Scheduling based on dynamic energy pricing}
 
 
-\subsection*{Summary}
+
+\subsection{Summary}
 
 There are several studies exploring inter data center solutions to lower
 the electricity bill by leveraging the spacial-time dynamic of energy pricing. The 
@@ -187,7 +182,7 @@ electrical pricing.
 
 
 
-\subsection*{General notes}
+\subsection{General notes}
 
 - Intra data center judicious job scheduling based on the heterogeneous
   architecture of the machines.
@@ -233,7 +228,7 @@ electrical pricing.
 
 
 
-\subsection*{Paper's notes}
+\subsection{Paper's notes}
 \textbf{In \cite{FUTURE_SMART_GRID}:}
 
 Demand side management are programs implemented by the utility companies to
@@ -529,4 +524,14 @@ focused on high performance computing and green computing. They work on
 heuristical algorithms and not in the optimal algorithm, because the optimal
 algorithm is proven to be NP-complete. 
 
+
+\subsubsection{New articles}
+
+In \cite{DYN_GEO}, the authors designed an online algorithm for dynamic pricing
+of VM resources across data centers in different geographical locations. The
+authors claim novelty by considering efficient strategies for joint dynamic
+pricing, job scheduling and resource provisioning.
+
+The authors of \cite{REDUCING_GEO}, \cite{DYN_POWER} also leverage the dynamic 
+electricity pricing models for data centers.
 

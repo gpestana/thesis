@@ -42,7 +42,7 @@ A. Odroid
 
   External:
   - 1/4 tc: 250 ev, 4.1W,   1482s -> 0.0404 ev/s/w
-  - 1/2 tc: 250 ev, 5.86W,  713s  -> 0.5972  ev/s/w
+  - 1/2 tc: 250 ev, 5.86W,  713s  -> 0.0597  ev/s/w
   - 1 tc:   250 ev, 7.48W,  532s  -> 0.0627 ev/s/w
   - 2 tc:   250 ev, 5.84W,  834s  -> 0.0512 ev/s/w
 
