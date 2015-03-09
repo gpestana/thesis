@@ -1,70 +1,120 @@
 \chapter{Introduction}
 
-
+\section{Overview}
 %establishing territory
 %%claiming centrality
+Nowadays, Moore's Law continues to increase the number of transistors per
+chipset and the overall technology development at a geometric rate. However, the energy
+consumption of the systems have begun to halt the usage of the technology at its
+full potential. It is well known that energy efficiency is an important
+research topic in computer science, for energy has become a major growth
+bottleneck for the systems. In addition, the increasing concerns with energy consumption and
+its social, economical and environmental impact in our society has given a
+bigger dimension to the discussion.
 
-%%from ACAT's paper
+
+There are two major approaches to tackle the energy bottleneck in the current
+technology panorama. One, is to develop techniques and technologies to better harvest, 
+transform and store energy to be used by the systems. This approach aims to provide the
+needed energy for technology to reach its full potential. The second path is to improve 
+the energy efficiency of the systems. This Thesis focuses on a specific area of
+the later approach. 
+
+The concerns with energy consumption and its impact in the current
+applications affect industries ranging from mobile devices to big data centers. 
+Given the several layers and complexity of the systems nowadays, there are 
+considerable number of directions to improve the energy efficiency of the
+systems. Throughout this Thesis, we will focus on improving the energy
+consumption in High Performance Computing (HPC) applied to Scientific Research.
+
+
+\subsection{The LHC example}
+In some applications, a single computing unit does not have enough resources to
+accomplish its tasks. A recurrent strategy is to distribute computational tasks
+across a set of computing units that might be spread geographically.
+
 The Large Hadron Collider (LHC) [ref] at the European Laboratory for Particle
-Physics (CERN) in Geneva, Switzerland, is an example of a scientific project whose computing resource requirements are larger that those likely to provided in a single computer
-center. Data processing and storage are distributed across the Worldwide LHC
+Physics (CERN) in Geneva, Switzerland, is an example of a scientific project
+whose computing resource requirements are larger that those likely to be provided 
+in a single computing unit. Thus, data processing and storage are distributed across 
+the Worldwide LHC
 Computing Grid (WLCG) [ref], which uses resources from 160 computer centers in 35
 countries. Such computational resources have enabled the CMS [ref] and ATLAS [ref]
-experiments to discover the Higgs Boson [ref, ref], for example. The WLHC requires a
-massive amount of computational resources (250,000 x86 cores in 2012) and,
+experiments to discover the Higgs Boson [ref, ref], amongst other scientific 
+achievements. 
+The WLHC requires a massive amount of computational resources 
+(250,000 x86 cores in 2012) and,
 proportionally, energy. In the future, with planned increases to the LHC
 luminosity [ref], the dataset size will increase by 2-3 orders of magnitude,
-presenting even more challenges in terms of energy consumption.
+posing even more challenges in terms of energy consumption.
 
-%%making topic generalizations 
-Energy efficiency is not a trend topic only in High Performance Computing (HPC).
-From a  broader perspective, it is known that green computing is an important
-research topic in computer science, for energy has become a major growth
-bottleneck and resources consumer in technologies ranging from mobile devices to
-big datacenters. 
-   
-%%reviewing previous researches
-- Research works that focus on energy consumption and green computing
-- Research works that focus on study and developing more efficient computing 
-architectures, mostly for mobile computing and energy constrained devices.
+The LHC is an example of a massive computational system that needs to improve its
+energy efficiency to reach its full potential in the present and future time.
+Throughout this Thesis, we will focus primarily on the LHC case. When
+appropriate, we will use authentic data and current technology use by the CMS to
+study and to draw conclusions with respect to energy efficiency.  
 
 
+\section{Problem Statement}
 %establishing a niche (2)
 %%counter-claiming and %%indicating a gap 
-A considerable amount of research has been done on leveraging RISC architectures
-to minimize energy consumption on mobile and energy constrained devices. Most
-notably, that fact is supported by the quota of ARM architectures in the mobile
-market.
+A considerable amount of research has been done on leveraging Reduced
+Instruction Set Computing (RISC) architectures to minimize energy consumption on 
+mobile and energy constrained devices. In such cases, energy consumption is a
+priority given the inherent reduced amount of energy available. 
 
-However, even though green computing has been considered a priority for the 
-HPC foreseeable future, studies focusing on viability of reduced instructions set 
-architectures on HPC as a mean to minimize energy consumption has not been widely 
-discussed amongst the research community. 
+The large quota of ARM architectures in the mobile market supports the fact that
+RISC is a good fit for mobile and energy constrained devices.
+
+
+Similarly to mobile devices, the HPC community has being considering energy
+efficiency as a priority in the foreseeable future. However, studies focusing on viability 
+of RISC architectures on HPC as a way to minimize energy consumption are not
+abundant in the research technology. Furthermore, to the knowledge of the
+author, there are no major implementations of such technologies being used in
+HPC systems nor in scientific computing.
+
 
 %%question-raising
 It is still unclear whether RISC architectures are a good match to HPC
 computing or not. There are open points regarding whether the performance 
 constraints of RISC architectures and the high performance requirements of HPC 
 workload are acceptable. In addition, it is still unclear if RISC architectures
-are more energy efficient under HPC workloads than the conventional
-architectures.
+are more energy efficient under HPC workloads than the conventional Complex 
+Instruction Set Computing (CISC) architectures.
 
 %occupying the niche
-Therefore, it is of interest to study the potential impact of RISC architectures in 
-the HPC industry. There is lack of comparisons between RISC and CISC processors
-under workload characteristic of HPC.
+Therefore, it is of our interest to study the potential impact of RISC architectures in 
+the HPC and scientific computing industry. In our opinion, there are two major
+lacks that need to be fulfilled: Firstly, there are lack of comparisons between
+RISC and CISC architectures under authentic scientific workloads. Secondly,
+there are scarce proposal for solutions using RISC in the HPC and scientific
+computing.
+ 
 
+\section{Scope of the Thesis}
 %%outlining purposes
-The purpose of this research work is to study the potential of RISC
-architecture, namely ARM processors, focusing on authentic HPC workload from
-CMS collider at CERN. In order to accomplish the task, we also investigate the best
-and more accurate ways to measure power consumption and compare different
-architectures. Finally, based on our learnings, we frame a methodology for
+The purpose of this Thesis is to answer whether RISC architectures
+are a potential fit to HPC and scientific computing from a energy efficiency
+perspective. We focus mainly on comparing RISC - most notably ARM chipsets - and
+widely used CISC architectures such as Intel processors. For the endeavor, we
+use authentic HPC workload from the CMS collider at CERN. 
+
+In order to accomplish the task, we start by investigating the best
+and most accurate ways to measure power consumption and compare different
+architectures. After, we run several experiments in different chipsets using
+authentic workloads from LHC and software used by the CMS team to process the
+data generated by the collider. We compare the results and
+draw conclusions from them. Finally, based on our learnings, we frame a methodology for
 lowering the electrical bill of data centers running under a multi energy
 pricing policy, by leveraging the scheduling of machines with different
 efficiency profiles.  
+
    
+\section{Contributions}
 %%announcing main findings
 - Our main findings are ..
+
+\section{Structure of the Thesis}
 %%indicating structure of the thesis
 - This document is structures as following. 
