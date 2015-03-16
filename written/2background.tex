@@ -1,58 +1,75 @@
 \chapter{Background}
 
-\section{Energy consumption in Scientific Computing}
-\subsection{Literature review}
-
-% initial explorations of ARM processors for scientific computing
-According to  \cite{ACAT13ARM}, the computing requirements for HPC have 
-increased particularly in recent
-years. Projects of the magnitude and complexity of the Large Hadron Collider are
-overwhelming examples of that fact. To achieve results like the discovering of
-the Higgs boson and other significant scientific advances, it was necessary a 
- to distribute the processing tasks across several partners and institutions
-through the WLCG. The equivalent capacity of such distributed systems was between 
-80,000 and 100,000 x86-64 cores in 2012.
-Further projects and discoveries will demand even more processing capacity from
-the WLCG. For example, as stated by \cite{ACAT13ARM}, to upgrade the LHC 
-detectors luminosity to its full power the datasets will increase sizes by 2-3
-orders of magnitude and processing power will have to increase in proportion.
+\section{Energy efficiency in Scientific Computing}
 
 
-% heterogeneous high throughput scientific computing with APM X-gene and Intel Xeon Phi
-% TODO intel vs ARM pointers
-% 
-In \cite{ACAT14ARMDAVID}, a server-purpose ARM machine is compared with the recent
-Intel architectures, such as the recent Intel Xeon Phi and a dominating Intel product
-intended for HPC workloads (Intel Xeon E5-2650). The workload for comparing
-the architectures was ParfullCMS. They based the results on performance (events per
-second) and scalability over power (watts). In addition to performance and energy
-consumption comparisons, the paper describes the porting endeavors of the CMSSW to
-an ARMv8 64-bits architecture.
-
-%TODO describe better different architectures, side by side. 
-%TODO describe better experiment setup
-In \cite{ACAT14ARMDAVID}, they use an APM X-Gene 1 running on a development board. 
-It consists of a 8 physical core processor running at 2.4GHz with 16GB DDR3 memory.
-As the authors highlight, the firmware for managing processor ACPI power states was
-not yet available when the study was made. Thus, it is expected that the energy 
-performance will improve once the firmware is available \cite{ACAT14ARMDAVID}.
-
-Under the circumstances of the experiment, the overall results show that APM X-Gene 
-is 2.73 slower than Intel Xeon Phi. From the energy consumption performance (events
-per second per watt), the Intel Xeon E-2650 is the most efficient, with APM X-Gene
-presenting similar performances despite the absence of platform specific 
-optimizations. Therefore, \cite{ACAT14ARMDAVID} concludes by stating that the APM
-X-Gene 1 Server-On-Chip ARMv8 64-bit solution is relevant and potentially interesting
-platform for heterogeneous high-density computing. 
-
-\section{High Throughput Computing}
-\subsection{Literature review}
+%TODO: perhaps add more paper references here?
+Power consumption and energy efficiency have become a paramount research topic in 
+computer science, for energy has become a major growth bottleneck in several systems. 
+Moreover, the increasing concerns with energy consumption and its social, economical 
+and environmental impact in our society has given a bigger dimension to the discussion.
+Given its importance, many research studies have looked into energy efficiency
+and power consumption. There is a vast panoply of studies with different
+approaches toward improving energy efficiency. For example, to use GPU for data
+processing \cite{GPU}, \cite{GREENGPU} or improve energy efficiency by using
+RISC architectures \cite{AALTO_ARM} \cite{ACAT13ARM},
+\cite{ACAT14ARMDAVID}, . Several other directions have been taken
+toward energy efficient computing \cite{QUESTIONS_ENERGY} \cite{GREENING},
+\cite{ENERGY_DILEMMA} and the number of related works keeps growing.
+ 
+Scientific computing is often characterized by requiring enormous data storage
+capacity, high processing capabilities and complex configuration
+\cite{SCICOMPUTING_REQS}. High processing capabilities and massive data storage
+are requirements that potentially require massive amounts of energy. Thus, the scientific 
+computing community is looking into energy efficiency with special interest.
 
 
+\subsection{CERN and the LHC experiment}
 
-\section{CERN and the LHC experiment}
-\subsection{Literature review}
+The European Research for Nuclear Research (CERN) \cite{CERN} is a particle physics
+research laboratory sited in the Franco-Swiss border where thousands of
+engineers and physicists from about 21 state members conduct researches about the
+fundamental structures of the Universe. In order to perform experiments that
+support the researcher\'s studies, they have built several particle accelerators and detectors.
+The most outstanding collider is the Large Hadron Collider (LHC). The LHC
+consists of a 27-kilometer ring of superconducting magnets that boost the
+particles while traveling through it. The particles are accelerated in two
+beams, traveling inside the LHC in opposite directions. When the beams are
+traveling close to the speed of light, they are made to collide in the different
+colliders. After each collision, particles and subatomic particles are projected
+due to the collision, which is tracked and recorded by the colliders. The data
+acquired from the collisions is then filtered and the most interesting
+information is stored in the CERN\'s datacenters for posterior reconstruction
+and processing. Given the frequency of the collisions and the massive amount of
+data to store and process from each collision, the LHC is an example of a scientific
+computing endeavor which energy resources are critical to manage efficiently.  
 
+According to  \cite{ACAT13ARM}, the computing requirements for HPC have increased 
+particularly in recent years. Most notably, a project with the magnitude and complexity of the 
+LHC is a sound example of it. To achieve results like the discovery of
+the Higgs boson \cite{HIGGS1} \cite{HIGGS2} and other significant scientific
+advances, a massive amount of computational resources - and thus energy - was
+necessary. Given the enormous amount of resources needed for storing and
+processing the data, it was not viable to concentrate all the tasks in one
+single super-node. Thus, the solution was to distribute the processing tasks across 
+several partners and institutions through a distributed network of nodes, called
+the Worldwide LHC Computing Grid (WLCG). The WLCG \cite{WLCG} is a grid
+computing platform where more than 170 computing centers spread across 40
+countries \cite{WLCG} collaborate to store and process the data coming from the
+LHC experiment. According to \cite{WLCG}, the WLCG alone is responsible for the distribution, 
+storage and processing of more than 30 Petabytes annually. According to
+\cite{ACAT13ARM}, the equivalent capacity of WLCG in 2012 was between 80,000 and 100,000 x86-64 cores.
+In the future, other projects and researches will demand even more processing capacity from
+the WLCG. For example, as stated by \cite{ACAT13ARM}, in order to upgrade the
+luminosity of the LHC detectors to its full potential, the datasets will
+increase size by two to three orders of magnitude, with processing power
+increasing in proportion.
+
+These outstanding numbers, in addition to the price of energy and the increasing
+concerns with green computing, highlight the importance of
+developing more efficient and methods and techniques high performance computing,
+both in the scientific computing in general and in the LHC computing grid in
+particular. 
 
 
 \section{Energy performance and measurement}
@@ -75,12 +92,8 @@ energy efficient software.
 
 
 
-
-
-
 \section{ARM architecture}
 \subsection{Literature review}
-
 
 % initial explorations of ARM processors for scientific computing
 \textbf{In \cite{ACAT13ARM}:}
@@ -96,10 +109,34 @@ system to scale. However, also commodities such memory, I/O streams and energy
 scale proportionally in such architectures.
  
 
+% heterogeneous high throughput scientific computing with APM X-gene and Intel Xeon Phi
+% TODO intel vs ARM pointers
+% 
+In \cite{ACAT14ARMDAVID}, a server-purpose ARM machine is compared with the recent
+Intel architectures, such as the recent Intel Xeon Phi and a dominating Intel product
+intended for HPC workloads (Intel Xeon E5-2650). The workload for comparing
+the architectures was ParfullCMS. They based the results on performance (events per
+second) and scalability over power (watts). In addition to performance and energy
+consumption comparisons, the paper describes the porting endeavors of the CMSSW to
+an ARMv8 64-bits architecture.
+
+
+In \cite{ACAT14ARMDAVID}, they use an APM X-Gene 1 running on a development board. 
+It consists of a 8 physical core processor running at 2.4GHz with 16GB DDR3 memory.
+As the authors highlight, the firmware for managing processor ACPI power states was
+not yet available when the study was made. Thus, it is expected that the energy 
+performance will improve once the firmware is available \cite{ACAT14ARMDAVID}.
+
+Under the circumstances of the experiment, the overall results show that APM X-Gene 
+is 2.73 slower than Intel Xeon Phi. From the energy consumption performance (events
+per second per watt), the Intel Xeon E-2650 is the most efficient, with APM X-Gene
+presenting similar performances despite the absence of platform specific 
+optimizations. Therefore, \cite{ACAT14ARMDAVID} concludes by stating that the APM
+X-Gene 1 Server-On-Chip ARMv8 64-bit solution is relevant and potentially interesting
+platform for heterogeneous high-density computing. 
+
 
 \section{Scheduling based on dynamic energy pricing}
-
-
 
 \subsection{Summary}
 

@@ -9,47 +9,49 @@ Warning--I didn't find a database entry for "INTELMAN"
 Warning--I didn't find a database entry for "RAPL1"
 Warning--I didn't find a database entry for "ABD2014"
 Warning--I didn't find a database entry for "CHEP13ARMPHI"
+Warning--to sort, need author or key in CERN
+Warning--to sort, need author or key in WLCG
 Warning--to sort, need author or key in STACKOVERFLOW
 Warning--empty journal in DYN_GEO
-You've used 17 entries,
+You've used 26 entries,
             2253 wiz_defined-function locations,
-            656 strings with 7983 characters,
-and the built_in function-call counts, 7223 in all, are:
-= -- 690
-> -- 368
+            710 strings with 9579 characters,
+and the built_in function-call counts, 10671 in all, are:
+= -- 1017
+> -- 514
 < -- 0
-+ -- 152
-- -- 134
-* -- 567
-:= -- 1110
-add.period$ -- 51
-call.type$ -- 17
-change.case$ -- 118
++ -- 213
+- -- 186
+* -- 812
+:= -- 1606
+add.period$ -- 78
+call.type$ -- 26
+change.case$ -- 169
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 286
-empty$ -- 563
-format.name$ -- 134
-if$ -- 1554
+cite$ -- 30
+duplicate$ -- 436
+empty$ -- 867
+format.name$ -- 186
+if$ -- 2334
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 16
-newline$ -- 87
-num.names$ -- 32
-pop$ -- 143
+int.to.str$ -- 26
+missing$ -- 23
+newline$ -- 132
+num.names$ -- 46
+pop$ -- 224
 preamble$ -- 1
-purify$ -- 101
+purify$ -- 143
 quote$ -- 0
-skip$ -- 202
+skip$ -- 316
 stack$ -- 0
-substring$ -- 430
-swap$ -- 98
+substring$ -- 640
+swap$ -- 152
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 68
-warning$ -- 2
-while$ -- 65
-width$ -- 19
-write$ -- 179
-(There were 8 warnings)
+type$ -- 104
+warning$ -- 4
+while$ -- 91
+width$ -- 28
+write$ -- 267
+(There were 10 warnings)

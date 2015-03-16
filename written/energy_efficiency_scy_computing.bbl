@@ -1,9 +1,25 @@
 \begin{thebibliography}{10}
 
+\bibitem{CERN}
+Cern website.
+\newblock \url{http://home.web.cern.ch/about}.
+\newblock Accessed: 2015-2-27.
+
 \bibitem{STACKOVERFLOW}
 Stack overflow.
 \newblock \url{http://stackoverflow.com/}.
 \newblock Accessed: 2014-10-27.
+
+\bibitem{WLCG}
+Wlcg website.
+\newblock \url{http://wlcg.web.cern.ch/}.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{HIGGS1}
+{\sc Aad, G., et~al.}
+\newblock {Observation of a new particle in the search for the Standard Model
+  Higgs boson with the ATLAS detector at the LHC}.
+\newblock {\em Phys.Lett. B716\/} (2012), 1--29.
 
 \bibitem{ACAT14ARMDAVID}
 {\sc Abdurachmanov, D., Bockelman, B., Elmer, P., Eulisse, G., Knight, R., and
@@ -23,6 +39,12 @@ Stack overflow.
 \newblock In {\em NETWORKING 2011}. Springer Berlin Heidelberg, 2011,
   pp.~172--185.
 
+\bibitem{HIGGS2}
+{\sc Chatrchyan, S., et~al.}
+\newblock Observation of a new boson at a mass of 125 gev with the \{CMS\}
+  experiment at the \{LHC\}.
+\newblock {\em Physics Letters B 716}, 1 (2012), 30 -- 61.
+
 \bibitem{DYN_POWER}
 {\sc Chen, H., Hankendi, C., Caramanis, M.~C., and Coskun, A.~K.}
 \newblock Dynamic server power capping for enabling data center participation
@@ -30,12 +52,25 @@ Stack overflow.
 \newblock In {\em Proceedings of the International Conference on Computer-Aided
   Design\/} (2013), IEEE Press, pp.~122--129.
 
+\bibitem{GPU}
+{\sc Kim, S., Kim, H.-E., Kim, H., and Lee, J.-A.}
+\newblock Computing energy-efficiency in the mobile gpu.
+\newblock In {\em SoC Design Conference (ISOCC), 2013 International\/} (Nov
+  2013), pp.~219--221.
+
 \bibitem{GREENING}
 {\sc Liu, Z., Lin, M., Wierman, A., Low, S.~H., and Andrew, L.~L.}
 \newblock Greening geographical load balancing.
 \newblock In {\em Proceedings of the ACM SIGMETRICS Joint International
   Conference on Measurement and Modeling of Computer Systems\/} (New York, NY,
   USA, 2011), SIGMETRICS '11, ACM, pp.~233--244.
+
+\bibitem{GREENGPU}
+{\sc Ma, K., Li, X., Chen, W., Zhang, C., and Wang, X.}
+\newblock Greengpu: A holistic approach to energy efficiency in gpu-cpu
+  heterogeneous architectures.
+\newblock In {\em Parallel Processing (ICPP), 2012 41st International
+  Conference on\/} (Sept 2012), pp.~48--57.
 
 \bibitem{SCHED_HETEROGE}
 {\sc Mei, J., and Li, K.}
@@ -51,6 +86,12 @@ Stack overflow.
 \newblock Autonomous demand-side management based on game-theoretic energy
   consumption scheduling for the future smart grid.
 \newblock {\em Smart Grid, IEEE Transactions on 1}, 3 (Dec 2010), 320--331.
+
+\bibitem{AALTO_ARM}
+{\sc Ou, Z., Pang, B., Deng, Y., Nurminen, J., Yla-Jaaski, A., and Hui, P.}
+\newblock Energy- and cost-efficiency analysis of arm-based clusters.
+\newblock In {\em Cluster, Cloud and Grid Computing (CCGrid), 2012 12th
+  IEEE/ACM International Symposium on\/} (May 2012), pp.~115--123.
 
 \bibitem{QUESTIONS_ENERGY}
 {\sc Pinto, G., Castor, F., and Liu, Y.~D.}
@@ -77,12 +118,24 @@ Stack overflow.
 \newblock In {\em Distributed Computing Systems (ICDCS), 2012 IEEE 32nd
   International Conference on\/} (2012), IEEE, pp.~22--31.
 
+\bibitem{ENERGY_DILEMMA}
+{\sc Sharifi, L., Rameshan, N., Freitag, F., and Veiga, L.}
+\newblock Energy efficiency dilemma: P2p-cloud vs. datacenter.
+\newblock In {\em Cloud Computing Technology and Science (CloudCom), 2014 IEEE
+  6th International Conference on\/} (Dec 2014), pp.~611--619.
+
 \bibitem{TASK_SCHED}
 {\sc Wang, Y., Li, K., Chen, H., He, L., and Li, K.}
 \newblock Energy-aware data allocation and task scheduling on heterogeneous
   multiprocessor systems with time constraints.
 \newblock {\em Emerging Topics in Computing, IEEE Transactions on 2}, 2 (June
   2014), 134--148.
+
+\bibitem{SCICOMPUTING_REQS}
+{\sc Yang, C.-L., Hwang, B.-N., and Yuan, B.}
+\newblock Key consideration factors of adopting cloud computing for science.
+\newblock In {\em Cloud Computing Technology and Science (CloudCom), 2012 IEEE
+  4th International Conference on\/} (Dec 2012), pp.~597--600.
 
 \bibitem{DYN_PRICING_HPC}
 {\sc Yang, X., Zhou, Z., Wallace, S., Lan, Z., Tang, W., Coghlan, S., and
