@@ -5,10 +5,22 @@ Cern website.
 \newblock \url{http://home.web.cern.ch/about}.
 \newblock Accessed: 2015-2-27.
 
+\bibitem{ODROID_XU3}
+Odroid xu3 website.
+\newblock
+  \url{http://www.hardkernel.com/main/products/prdt_info.php?g_code=G140448267127}.
+\newblock Accessed: 2015-2-27.
+
 \bibitem{STACKOVERFLOW}
 Stack overflow.
 \newblock \url{http://stackoverflow.com/}.
 \newblock Accessed: 2014-10-27.
+
+\bibitem{VIRIDIS}
+Viridis boston website.
+\newblock
+  \url{http://www.boston.co.uk/solutions/viridis/introducing-the-viridis-2.aspx}.
+\newblock Accessed: 2015-2-27.
 
 \bibitem{WLCG}
 Wlcg website.

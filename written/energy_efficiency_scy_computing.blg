@@ -12,46 +12,48 @@ Warning--I didn't find a database entry for "CHEP13ARMPHI"
 Warning--to sort, need author or key in CERN
 Warning--to sort, need author or key in WLCG
 Warning--to sort, need author or key in STACKOVERFLOW
+Warning--to sort, need author or key in VIRIDIS
+Warning--to sort, need author or key in ODROID_XU3
 Warning--empty journal in DYN_GEO
-You've used 26 entries,
+You've used 28 entries,
             2253 wiz_defined-function locations,
-            710 strings with 9579 characters,
-and the built_in function-call counts, 10671 in all, are:
-= -- 1017
-> -- 514
+            718 strings with 9811 characters,
+and the built_in function-call counts, 11007 in all, are:
+= -- 1051
+> -- 516
 < -- 0
-+ -- 213
++ -- 215
 - -- 186
-* -- 812
-:= -- 1606
-add.period$ -- 78
-call.type$ -- 26
-change.case$ -- 169
+* -- 822
+:= -- 1644
+add.period$ -- 84
+call.type$ -- 28
+change.case$ -- 175
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 436
-empty$ -- 867
+cite$ -- 34
+duplicate$ -- 450
+empty$ -- 913
 format.name$ -- 186
-if$ -- 2334
+if$ -- 2418
 int.to.chr$ -- 0
-int.to.str$ -- 26
+int.to.str$ -- 28
 missing$ -- 23
-newline$ -- 132
+newline$ -- 142
 num.names$ -- 46
-pop$ -- 224
+pop$ -- 244
 preamble$ -- 1
-purify$ -- 143
+purify$ -- 147
 quote$ -- 0
-skip$ -- 316
+skip$ -- 326
 stack$ -- 0
-substring$ -- 640
-swap$ -- 152
+substring$ -- 650
+swap$ -- 154
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 104
-warning$ -- 4
+type$ -- 112
+warning$ -- 6
 while$ -- 91
-width$ -- 28
-write$ -- 267
-(There were 10 warnings)
+width$ -- 30
+write$ -- 285
+(There were 12 warnings)

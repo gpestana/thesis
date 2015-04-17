@@ -21,21 +21,75 @@ consumption measurements were based on the study presented on the previous
 chapter. The setups of the experiments and tools used to perform the energy
 measurements during the experiments are explained and detailed on section W.
 
-The remainder of this chapter is organized as per set of experiment. For each
-setup, we present the hardware and software setups and energy measurement tools
+The remainder of this chapter in two main section. Firstly, we will roughly describe the
+architectures of the hardware used during the experiments and the reason why we
+chose them. Secondly, we describe
+the setup of the experiments. The former section is organized as per set of experiment. 
+For each setup, we present the hardware and software setups and energy measurement tools
 used. We will refer the batch of experiments as first (1SE), second (2SE) and
 third (3SE) set of experiments throughout the rest of the document. 
 
-\section{First set of experiments}
-\section{Second set of experiments}
+
+\section{Hardware}
+The focus of this work is given to the comparison of ARM architectures with x86 based 
+processors. The choice was also conditioned to the machine availability when this
+study was conducted. The ARM architecture based machines we used were a single-board 
+ARM processor developed by Odroid \cite{ODROID_XU3} and a server class ARM processor by Boston 
+Viridis \cite{VIRIDIS}. The x86 machines used were Intel Sandy Bridges and Intel Bonnell
+microarchitecture.
+
+
+\subsection{ARM architecture}
+\subsubsection{Boston Viridis server}
+- ARMv7
+- 
+
+More information in \cite{VIRIDIS}.
+
+\subsubsection{ODROID-XU3 board}
+- ARM v7
+- development board
+
+More information in \cite{ODROID_XU3}.
+
+\subsection{x86 processors}
+\subsubsection{Intel x86 Xeon}
+- Intel Sandy Bridge microarch
+
+\subsubsection{Intel x86 Atom}
+- Intel Sandy Bonnell microarch
+
+
+\section{Experiments setup}
+\subsection{First set of experiments}
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=100mm]{"img/machine_specs"}
-    \caption{Specifications of the machines used in the 3SE}
-    \label{fig:aalto_quad_clamp}
+    \includegraphics[width=150mm]{"img/1se_specs"}
+    \caption{Specifications of the machines used in the 1SE}
+    \label{fig:1se_specs}
 \end{figure}
 
-\section{Third set of experiments}
+
+\subsection{Second set of experiments}
+
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=150mm]{"img/2se_specs"}
+    \caption{Specifications of the machines used in the 2SE}
+    \label{fig:2se_specs}
+\end{figure}
+
+
+\subsection{Third set of experiments}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=150mm]{"img/3se_specs"}
+    \caption{Specifications of the machine used in the 3SE}
+    \label{fig:3se_specs}
+\end{figure}
+
 
 
