@@ -41,23 +41,120 @@ microarchitecture.
 
 \subsection{ARM architecture}
 \subsubsection{Boston Viridis server}
-- ARMv7
-- 
 
-More information in \cite{VIRIDIS}.
+The Boston Viridis server is one of the first ARM architecture based servers
+where the processors, IO and networking are fully integrated in one single chip.
+According to \cite{VIRIDIS}, the server is intended to work in web servers,
+cloud and data analytics environment with outstanding power performance
+\cite{VIRIDIS}.
 
-\subsubsection{ODROID-XU3 board}
-- ARM v7
-- development board
+\vspace{5mm}
 
-More information in \cite{ODROID_XU3}.
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{"img/viridis&SoC"}
+    \caption{A. Viridis Server chassis with 12 energy card in it. B. Energy card
+with 4 nodes. Taken from \cite{VIRIDIS}}
+    \label{fig:viridis&SoC}
+\end{figure}
 
-\subsection{x86 processors}
-\subsubsection{Intel x86 Xeon}
-- Intel Sandy Bridge microarch
+\vspace{5mm}
 
-\subsubsection{Intel x86 Atom}
-- Intel Sandy Bonnell microarch
+
+The Boston Viridis server consists of a chassis with twelve racks for energy
+card and each energy card contains four nodes \ref{fig:viridis&SoC}. The nodes are ARM based cores
+fabricated by Calxeda. The block diagram of a Viridis node shows the
+architectures of the ARM SoC. Each node contains four ARM A9 Cortex core CPU up
+to 1.4Hz. A memory controller and L2 cache can also be found in the SoC. In
+addition, a couple of energy management blocks and IO controllers complete the
+Calxeda EnergyCore processor \ref{fig:calxedaSOC}.
+
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=75mm]{"img/calxedaSOC"}
+    \caption{Block diagram of Calxeda EnergyCore. Taken from \cite{VIRIDIS}}
+    \label{fig:calxedaSOC}
+\end{figure}
+
+According to \cite{CORTEXA9}, the ARM A9 Cortex is a popular and mature general
+purpose core for low-power devices. It was introduced in 2008 and it remains a
+popular choice in smartphones and applications enabling the Internet of Things
+(IoT) \cite{CORTEXA9}. The ARM A9 Cortex supports a widely supports the ARMv7A 
+instruction set architecture. For more detailed specifications, refer to
+\cite{CORTEXA9}.
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=75mm]{"img/cortexA9"}
+    \caption{Block diagram of Cortex A9. Taken from \cite{CORTEXA9}}
+    \label{fig:cortexA9}
+\end{figure}
+
+
+\subsubsection{ODROID-XU3 development board}
+
+The ODROID-XU3 \cite{ODROID_XU3} is an open-source development board produced by
+ODROID. They claim that the ODROID-XU3 is a "new generation of computing device
+with more powerful, more energy efficient hardware and smaller form factor"
+\cite{ODROID_XU3}. It is mostly used for testing and platform development,
+rather than used in production scenarios.
+
+ \begin{figure}[h!]
+  \centering
+    \includegraphics[width=75mm]{"img/odroid"}
+    \caption{ODROID-XU3 development board. Taken from \cite{ODROID_XU3}}
+    \label{fig:odroid}
+\end{figure}
+
+The ODROID-XU3 processor has four Samsung Exynos-5422 Cortex A15 and four Cortex A7 cores,
+with 2GB of LPDDR2 RAM. Only four cores are working at the same time and they are 
+scheduled based on the big.LITTLE technology. The big.LITTLE technology
+\cite{biglittle} automatically schedules workloads across cores based on
+performance and energy needs. The developers claim that it can save from 40\% to 
+75\% of the CPU energy, depending on the performance scenario \cite{biglittle}.
+Even though the CPU contains eight cores, only four of then are working at a
+given point. The block diagram of the ODROID-XU3 can be seen in 
+\ref{fig:odroidxu3-diagram}.
+The ODROID-XU3 has a Texas Instrument power monitor chip (TI INA231) embedded
+from origin. The TI INA231 allows the users to read the energy consumed by the 
+cores and DRMA at a 
+sampling rate of microseconds. These readings can be easily triggered and read
+through software and are a handy and accurate way to make fine-grained energy
+consumption measurements.
+
+
+
+\vspace{5mm}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{"img/odroidxu3-diagram"}
+    \caption{ODROID-XU3 block diagram. Taken from \cite{ODROID_XU3}}
+    \label{fig:odroidxu3-diagram}
+\end{figure}
+
+\vspace{5mm}
+
+
+
+\subsection{Intel x86 architecture}
+
+Across the different experiments, we have used three different machines running
+on top of x86 Intel instruction sets to
+compare with the ARM based machines. The Intel x86 machines are the most wide
+spread for server and workstation applications.
+ 
+
+The Intel Xeon that we used had RAPL enable, which allowed us to measure energy
+consumption accurately at a fine-grained level. Since the ATOM and QUAD machines
+did not have RAPL technology enabled, we used a clamp power meter to measure the
+energy consumed at a given time (see more information about RAPL
+and energy consumption measurements in section X).
+
+
+\subsection{Summary}
+- Intel are more powerful, with energy consumption as a cost.
 
 
 \section{Experiments setup}

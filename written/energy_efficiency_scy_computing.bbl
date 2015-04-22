@@ -1,5 +1,16 @@
 \begin{thebibliography}{10}
 
+\bibitem{biglittle}
+Arm big.little technology.
+\newblock
+  \url{http://www.arm.com/products/processors/technologies/biglittleprocessing.php}.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{CORTEXA9}
+Arm cortex a9 website.
+\newblock \url{http://www.arm.com/cortex-a9.php}.
+\newblock Accessed: 2015-2-27.
+
 \bibitem{CERN}
 Cern website.
 \newblock \url{http://home.web.cern.ch/about}.
