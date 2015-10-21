@@ -1,54 +1,69 @@
 \chapter{Experiments}
 
 
-During our research, we have performed several experiments under different
-settings. The main goal was to understand how the ARM and Intel architectures
-perform under authentic scientific computing workloads from an energy
-consumption standpoint. Furthermore, our goal was to compare the results
+We have performed several experiments under different hardware setups. 
+The main goal was to understand how the ARM and Intel architectures
+perform under similar workloads from an energy
+consumption standpoint. Wwe compared the results
 obtained to evaluate the potential of ARM architectures to perform HPC tasks, in
 comparison to the Intel architectures.
-The software used to run or simulate authentic scientific computing tasks is
-widely used in production and research at the CMS experience. We have used the
-CMSSW framework [ref] (see section Y below) and ParFullCMS [ref] (see section X
-below).  
 
-We organized the experiments in 3 sets. The sets differ from methodology,
-hardware and software used and general experimental conditions. However, the
-main goal of such experiments is always the same: to understand if ARM
-architectures have potential to replace Intel in scientific computing from an
-energetic standpoint. The techniques and tools used to perform the energy
+The software used to run the computing tasks is
+widely used in production and research at the CMS experiment. We have used the
+CMSSW framework [ref] (see section Y below) and ParFullCMS [ref] (see section X
+below). In addition, the workload used for our experiments is a close
+simulation of real scientific workloads processed in the CMS experiment.
+
+We organized the experiments in 3 sets. The conditions under which the
+experiments were conducted are greatly similar. Due to hardware and software
+limitations, it was not possible to completely reproduce the experiment
+conditions across all the sets. However, we believe that the differences will
+affect the final results only to a small degree. This and other considerations
+will be discussed further in the Analysis chapter. 
+
+The tools and techniques used to perform the energy
 consumption measurements were based on the study presented on the previous
 chapter. The setups of the experiments and tools used to perform the energy
-measurements during the experiments are explained and detailed on section W.
+measurements during the experiments are explained and detailed in the following
+sections.
 
-The remainder of this chapter in two main section. Firstly, we will roughly describe the
-architectures of the hardware used during the experiments and the reason why we
-chose them. Secondly, we describe
-the setup of the experiments. The former section is organized as per set of experiment. 
-For each setup, we present the hardware and software setups and energy measurement tools
-used. We will refer the batch of experiments as first (1SE), second (2SE) and
-third (3SE) set of experiments throughout the rest of the document. 
+The remainder of this chapter in two main section. Firstly, we will describe the
+architectures of the hardware used during the experiments.  Secondly, we describe
+the setup of the experiments. The former section is organized by what we will
+call set of experiments (SE). Set of experiments are experiments conducted with
+the same hardware and software configuration. The degrees of freedom of each
+experiment are number of events and number of threads processing the workload.
+ 
+For each setup, we outline the hardware, software setups and the used energy measurement tools. 
+During this chapter and throughout the rest of the thesis, we will describe
+each batch of experiments as first (1-SE), 
+second (2-SE).
 
 
 \section{Hardware}
-The focus of this work is given to the comparison of ARM architectures with x86 based 
-processors. The choice was also conditioned to the machine availability when this
-study was conducted. The ARM architecture based machines we used were a single-board 
-ARM processor developed by Odroid \cite{ODROID_XU3} and a server class ARM processor by Boston 
-Viridis \cite{VIRIDIS}. The x86 machines used were Intel Sandy Bridges and Intel Bonnell
-microarchitecture.
+The focus of this work is to compare energy efficiency of ARM architectures and x86 based 
+processors under similar workload. Our hardware choice  was conditioned to the
+machine availability when the study was conducted. In addition, we also aimed
+at comparing similar conditions and workloads across all the SE. 
 
+
+The ARM machines used were single-board ARM processors developed by Odroid
+\cite{ODROID_XU3} and a server class ARM processor by Boston 
+Viridis \cite{VIRIDIS}. The x86 machines used were manufactured by Intel with
+the microarchitectures Sandy Bridges and Intel Bonnell. In the following
+sections, we will describe the hardware architecture and features of the
+hardware used to run the experiments.
 
 \subsection{ARM architecture}
 \subsubsection{Boston Viridis server}
 
 The Boston Viridis server is one of the first ARM architecture based servers
 where the processors, IO and networking are fully integrated in one single chip.
-According to \cite{VIRIDIS}, the server is intended to work in web servers,
+According to the vendor, the server is intended to work in web servers,
 cloud and data analytics environment with outstanding power performance
 \cite{VIRIDIS}.
 
-\vspace{5mm}
+\vspace{15mm}
 
 \begin{figure}[h!]
   \centering
@@ -58,17 +73,22 @@ with 4 nodes. Taken from \cite{VIRIDIS}}
     \label{fig:viridis&SoC}
 \end{figure}
 
-\vspace{5mm}
+\vspace{15mm}
 
 
-The Boston Viridis server consists of a chassis with twelve racks for energy
-card and each energy card contains four nodes \ref{fig:viridis&SoC}. The nodes are ARM based cores
+The Boston Viridis server consists of a chassis with twelve racks, each for an
+energy. Each energy card contains four nodes \ref{fig:viridis&SoC}. 
+The nodes are ARM based cores
 fabricated by Calxeda. The block diagram of a Viridis node shows the
-architectures of the ARM SoC. Each node contains four ARM A9 Cortex core CPU up
-to 1.4Hz. A memory controller and L2 cache can also be found in the SoC. In
+architectures of the ARM system-on-a-chip. In Viridis server we used in our
+experiments, each node contains four ARM A9 Cortex core with a clock spead up
+to 1.4Hz. A memory controller and L2 cache can also be found on the chip. In
 addition, a couple of energy management blocks and IO controllers complete the
-Calxeda EnergyCore processor \ref{fig:calxedaSOC}.
+Calxeda EnergyCore processor \ref{fig:calxedaSOC}. These energy measurement
+blocks were used to perform part of the energy measurements with this setup.
 
+
+\vspace{15mm}
 
 \begin{figure}[h!]
   \centering
@@ -77,12 +97,19 @@ Calxeda EnergyCore processor \ref{fig:calxedaSOC}.
     \label{fig:calxedaSOC}
 \end{figure}
 
+
+\vspace{15mm}
+
 According to \cite{CORTEXA9}, the ARM A9 Cortex is a popular and mature general
 purpose core for low-power devices. It was introduced in 2008 and it remains a
 popular choice in smartphones and applications enabling the Internet of Things
-(IoT) \cite{CORTEXA9}. The ARM A9 Cortex supports a widely supports the ARMv7A 
-instruction set architecture. For more detailed specifications, refer to
-\cite{CORTEXA9}.
+(IoT) \cite{CORTEXA9}. The ARM A9 Cortex supports the ARMv7A 
+instruction set architecture. A detailed study of the ARMv7A internals is out
+of scope of this work. More detailed specifications about the
+internals of the ARMv7A instructions set can be found in \cite{CORTEXA9}.
+
+
+\vspace{15mm}
 
 \begin{figure}[h!]
   \centering
@@ -91,14 +118,17 @@ instruction set architecture. For more detailed specifications, refer to
     \label{fig:cortexA9}
 \end{figure}
 
+\vspace{15mm}
 
 \subsubsection{ODROID-XU3 development board}
 
 The ODROID-XU3 \cite{ODROID_XU3} is an open-source development board produced by
-ODROID. They claim that the ODROID-XU3 is a "new generation of computing device
+the company ODROID. They claim that the ODROID-XU3 is a "new generation of computing device
 with more powerful, more energy efficient hardware and smaller form factor"
-\cite{ODROID_XU3}. It is mostly used for testing and platform development,
-rather than used in production scenarios.
+\cite{ODROID_XU3}. At the time of these experiments, the ODROID-XU3 was  mostly used for testing and platform development, rather than in production scenarios.
+
+
+\vspace{15mm}
 
  \begin{figure}[h!]
   \centering
@@ -107,25 +137,32 @@ rather than used in production scenarios.
     \label{fig:odroid}
 \end{figure}
 
+
+\vspace{15mm}
+
 The ODROID-XU3 processor has four Samsung Exynos-5422 Cortex A15 and four Cortex A7 cores,
 with 2GB of LPDDR2 RAM. Only four cores are working at the same time and they are 
 scheduled based on the big.LITTLE technology. The big.LITTLE technology
 \cite{biglittle} automatically schedules workloads across cores based on
-performance and energy needs. The developers claim that it can save from 40\% to 
-75\% of the CPU energy, depending on the performance scenario \cite{biglittle}.
-Even though the CPU contains eight cores, only four of then are working at a
-given point. The block diagram of the ODROID-XU3 can be seen in 
+performance and energy needs. The vendor claims that the big.LITTLE technology
+can achieve energy savings from 40\% to 
+75\%, depending on the performance scenario \cite{biglittle}.
+It is important to note that, even though the CPU contains eight cores, only four of then are working at a
+given moment. The block diagram of the ODROID-XU3 can be seen in 
 \ref{fig:odroidxu3-diagram}.
+
+
 The ODROID-XU3 has a Texas Instrument power monitor chip (TI INA231) embedded
 from origin. The TI INA231 allows the users to read the energy consumed by the 
 cores and DRMA at a 
 sampling rate of microseconds. These readings can be easily triggered and read
 through software and are a handy and accurate way to make fine-grained energy
-consumption measurements.
+consumption measurements. We assumed that the measurements made by the TI INA231can 
+be compared to the x86 RAPL technology.
 
 
 
-\vspace{5mm}
+\vspace{15mm}
 
 \begin{figure}[h!]
   \centering
@@ -134,7 +171,7 @@ consumption measurements.
     \label{fig:odroidxu3-diagram}
 \end{figure}
 
-\vspace{5mm}
+\vspace{15mm}
 
 
 
@@ -142,51 +179,144 @@ consumption measurements.
 
 Across the different experiments, we have used three different machines running
 on top of x86 Intel instruction sets to
-compare with the ARM based machines. The Intel x86 machines are the most wide
-spread for server and workstation applications.
- 
+compare with the ARM based machines. The Intel x86 machines are the most widely
+used solutions for server and workstation applications.
 
-The Intel Xeon that we used had RAPL enable, which allowed us to measure energy
+The Intel Xeon that we used had RAPL enable (refer to Chapter X), which allowed us to measure energy
 consumption accurately at a fine-grained level. Since the ATOM and QUAD machines
 did not have RAPL technology enabled, we used a clamp power meter to measure the
-energy consumed at a given time (see more information about RAPL
-and energy consumption measurements in section X).
+energy consumed by the CPU at a given time.
 
+The different types of measurements within the same architecture and
+its possible affect on he final result are discussed in the Analysis section.
 
-\subsection{Summary}
-- Intel are more powerful, with energy consumption as a cost.
+\clearpage
 
 
 \section{Experiments setup}
 \subsection{First set of experiments}
 
-\begin{figure}[h!]
+\subsubsection*{Hardware specifications}
+For the first set of experiments, we used three machines with different hardware setups. The three machines differ in architecture and general purpose. The ARM\_virdis is a server rack with a ARMv7 processor produced by Boston Labs [ref]. We ran the same workloads in a x86 Intel Atom and Quad for comparison. The Intel Atom is a brand name for a line of ultra-low-voltage CPUs by Intel. On the other hand, the x86 Intem Quad is brand name for a high performance family of Intel CPUs.
+
+Below, we outline the most important aspects of the hardware setups we used for the experiments.
+
+\vspace{10mm}
+\textbf{Intel\_ATOM}
+\begin{itemize}
+  \item[] \textbf{kernel \& sys}:  Linux cern\-vm 2.6.32\-431.5.1.el6.x86\_64
+  \item[] \textbf{OS}: Scientific Linux release 6.5 (Carbon)
+  \item[] \textbf{CPU}:   4x Intel\textsuperscript{TM} Atom\textsuperscript{TM} CPU D525 \@ 1.8GHz
+  \item[] \textbf{Memory  (MemTotal)}:        3925084  kB (4GB)
+\end{itemize}
+
+For more detailed specs at http://ark.intel.com/products/49490/Intel-Atom-processor-D525-1M-Cache-1\_80-GHz (transform in reference)
+
+\vspace{10mm}
+\textbf{Intel\_QUAD}
+\begin{itemize}
+  \item[] \textbf{kernel \& sys}:  Linux cern-vm 2.6.32-431.5.1.el6.x86\_64
+  \item[] \textbf{OS}: Scientific Linux release 6.5 (Carbon)
+  \item[] \textbf{CPU}:    4x Intel\textsuperscript{TM} Core\textsuperscript{TM}2 Quad CPU  Q9400  \@ 2.66GHz
+  \item[] \textbf{Memory  (MemTotal)}:        7928892 kB (8GB)
+\end{itemize}
+
+For more detailed specs at http://ark.intel.com/products/35365/Intel-Core2-Quad-Processor-Q9400-6M-Cache-2\_66-GHz-1333-MHz-FSB (transform in reference)
+
+\vspace{10mm}
+\textbf{ARM\_Viridis}
+\begin{itemize}
+  \item[] \textbf{kernel \& sys}:  Linux  3.6.10-8.fc18.armv7hl.highbank
+  \item[] \textbf{OS}: Fedora release 18 (Spherical Cow)
+  \item[] \textbf{CPU}:    4x Quad-Core ARM\textsuperscript{TM} CortexA9\textsuperscript{TM} processor
+  \item[] \textbf{Memory  (MemTotal)}:        4137780 kB (4GB) 
+\end{itemize}
+
+For more detailed specs at http://www.arm.com/products/processors/cortex-a/cortex-a9.php (transform in reference)
+
+
+
+\subsubsection*{Software and workload}
+We used the CMSSW framework in the generation-simulation mode (GEN\-SIM). The workflow performs Monte Carlo simulation of 8 TeV LHC Minimum bias event using Pynthia8 (generation step), followed by Simulation with Geant4 (simulation step). For more information about the CMSSW framework and its limitation on ARM, refer to Chapter X.
+At the time of the experiments, the CMSSW port for ARM had limitations on the multithreading support. We wanted to study the energy consumption of each hardware setup given different core load. Thus, we spinned up different processes instead of threads. The core-load levels used were 1/4, 1/2, 1 and 2 processes per number of cores. 
+
+\subsubsection*{Tools for measuring energy consumption}
+For this set of experiments, we performed physical measurements using the a external clamp meter. The clamp was a Mini AC/DC Clamp meter
+Mastech MS2102 AC/DC (see Figure \ref{fig:clamp}). The clamp meter supports a maximum of 200A current, which was enough for our experiments. In addition, it presents an accuracy of +-2.5\%. For more specifications about the clamp used, refer to [REF].
+
+\begin{figure}[]
   \centering
-    \includegraphics[width=150mm]{"img/1se_specs"}
-    \caption{Specifications of the machines used in the 1SE}
-    \label{fig:1se_specs}
+    \includegraphics[scale=2.5]{"img/clamp"}
+    \caption{Mastech MS2102 clamp meter used to measure energy consumption. Taken from \cite{} - cite Mastech website}
+    \label{fig:clamp}
 \end{figure}
+
+
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Machine \\ codename\end{tabular}} & \textbf{Architecture} & \textbf{CPU} & \textbf{\begin{tabular}[c]{@{}c@{}}N\textsuperscript{o} active \\ cores\end{tabular}}  & \textbf{RAM} & \textbf{Notes} \\ \hline
+\textbf{ARM\_viridis} & \begin{tabular}[c]{@{}c@{}}Quad-Core ARM\textsuperscript{TM} \\ CortexA9\textsuperscript{TM}\end{tabular} & ARMv7 32b (A7) & 4 & 2 GB & \begin{tabular}[c]{@{}c@{}}Server class ARM \\ processor with \\ ipmitools\end{tabular} \\ \hline
+\textbf{Intel\_ATOM} & Intel Bonnell\textsuperscript{TM} & Atom D525 @ 1.8GHz & 4 & 4GB & \begin{tabular}[c]{@{}c@{}}No internal \\ measurement \\ tool\end{tabular} \\ \hline
+\textbf{Intel\_QUAD} & \begin{tabular}[c]{@{}c@{}}Intel Sandy \\ Bridge\textsuperscript{TM} \end{tabular} & \begin{tabular}[c]{@{}c@{}}Quad CPU Q9400 \\ @ 2.66GHz\end{tabular} & 4 & 8GB & \begin{tabular}[c]{@{}c@{}}No internal\\  measurement \\ tool\end{tabular} \\ \hline
+\end{tabular}
+}
+\caption{Summary of the 1-SE specifications}
+\label{my-label}
+\end{table}
 
 
 \subsection{Second set of experiments}
 
-
-\begin{figure}[h!]
-  \centering
-    \includegraphics[width=150mm]{"img/2se_specs"}
-    \caption{Specifications of the machines used in the 2SE}
-    \label{fig:2se_specs}
-\end{figure}
+\subsubsection*{Hardware specifications}
+\subsubsection*{Software and workload}
+\subsubsection*{Tools for measuring energy consumption}
 
 
-\subsection{Third set of experiments}
 
-\begin{figure}[h!]
-  \centering
-    \includegraphics[width=150mm]{"img/3se_specs"}
-    \caption{Specifications of the machine used in the 3SE}
-    \label{fig:3se_specs}
-\end{figure}
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Machine \\ codename\end{tabular}} & \textbf{Architecture} & \textbf{CPU} & \textbf{\begin{tabular}[c]{@{}c@{}}N\textsuperscript{o} active \\ cores\end{tabular}} & \textbf{RAM} & \textbf{Notes} \\ \hline
+\textbf{ARM\_odroid} & \begin{tabular}[c]{@{}c@{}}Quad-Core \\ ARMv7\textsuperscript{TM}\end{tabular} & \begin{tabular}[c]{@{}c@{}}A15 and or A7 \\ cores(big.LITTLE technology)\end{tabular} & 4 & 2 GB & \begin{tabular}[c]{@{}c@{}}Development \\ board with TI \\ INA231 chip\end{tabular} \\ \hline
+\textbf{ARM\_viridis} & \begin{tabular}[c]{@{}c@{}}Quad-Core \\ ARM\textsuperscript{TM} CortexA9\textsuperscript{TM}\end{tabular} & ARMv7 32b (A7) & 4 & 2 GB & \begin{tabular}[c]{@{}c@{}}Server class ARM \\ processor with \\ ipmitools\end{tabular} \\ \hline
+\textbf{Intel\_xeon} & \begin{tabular}[c]{@{}c@{}}Intel Sandy\\ Bridge\textsuperscript{TM}\end{tabular} & CPU E5-2650 & 32 & 252 GB & \begin{tabular}[c]{@{}c@{}}System on \\a rack  with\\ RAPL\end{tabular} \\ \hline
+\end{tabular}
+}
+\caption{Summary of the 2-SE specifications}
+\label{my-label}
+\end{table}
 
+
+
+\clearpage 
+
+\section{Summary}
+- the hardware setups were chosen given their similarity and possibility of
+  a reliable comparison and hardware availability. it is important to note as
+well that both Viridis and Odroid machines are much more recent than the x86
+hardware compared. It is still a technology that is yet to find production
+stability.
+
+- We assume that the RAPL and the internal TI INA231 chip for internal energy
+  consumption measurement are similarly accurate and would produce the same
+results if interchanged. 
+
+- the ARM is low energy hardware and was designed and developed with low energy
+  consumption as one of its  main goals.
+
+- the x86 intel architecture used in this study is widely used in real world
+  HPC applications. It has a bigger throughput (bits processed by second) per
+per bit when compared to the ARM architecture.
 
 

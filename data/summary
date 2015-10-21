@@ -25,7 +25,7 @@ What to show:
 
 a) CMSSW
 
-b) ParfullCMS
+b) ParfullCMS (back to Finland measurements)
   - 1/4 tc: 50 events,  5.47W avg,  620s -> 0.0146 ev/s/w
   - 1/2 tc: 50 events,  5.5W avg,   610s -> 0.0149 ev/s/w
   - 1 tc:   300 events, 6.3W avg,   945s -> 0.050 ev/s/w
@@ -59,6 +59,3 @@ B. Intel
   - 1/2 tc: 15000 ev, 348W, 1823s -> 0.0236 ev/s/w
   - 1 tc:   15000 ev, 368W, 1643s -> 0.0248 ev/s/w
   - 2 tc:   15000 ev, 368W, 1670s -> 0.0244 ev/s/w
-
-
-

@@ -30,21 +30,20 @@
 \BOOKMARK [3][-]{subsubsection.4.1.1.1}{4.1.1.1 Boston Viridis server}{subsection.4.1.1}% 30
 \BOOKMARK [3][-]{subsubsection.4.1.1.2}{4.1.1.2 ODROID-XU3 development board}{subsection.4.1.1}% 31
 \BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Intel x86 architecture}{section.4.1}% 32
-\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Summary}{section.4.1}% 33
-\BOOKMARK [1][-]{section.4.2}{4.2 Experiments setup}{chapter.4}% 34
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 First set of experiments}{section.4.2}% 35
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Second set of experiments}{section.4.2}% 36
-\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Third set of experiments}{section.4.2}% 37
-\BOOKMARK [0][]{chapter.5}{5 Results}{}% 38
-\BOOKMARK [0][]{chapter.6}{6 Analysis}{}% 39
-\BOOKMARK [1][-]{section.6.1}{6.1 First Set of Experiments}{chapter.6}% 40
-\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 Comparison ARM and Intel architecures}{section.6.1}% 41
-\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 Tools and techniques}{section.6.1}% 42
-\BOOKMARK [1][-]{section.6.2}{6.2 Second Set of Experiments}{chapter.6}% 43
-\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Comparison ARM and Intel architecures}{section.6.2}% 44
-\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Tools and techniques}{section.6.2}% 45
-\BOOKMARK [1][-]{section.6.3}{6.3 Third Set of Experiments}{chapter.6}% 46
-\BOOKMARK [0][]{chapter.7}{7 Lowering the energy bill in a multi energy price environment}{}% 47
-\BOOKMARK [0][]{chapter.8}{8 Future Work}{}% 48
-\BOOKMARK [0][]{chapter.9}{9 Conclusions}{}% 49
-\BOOKMARK [0][]{appendix.A}{A First appendix}{}% 50
+\BOOKMARK [1][-]{section.4.2}{4.2 Experiments setup}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 First set of experiments}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Second set of experiments}{section.4.2}% 35
+\BOOKMARK [1][-]{section.4.3}{4.3 Summary}{chapter.4}% 36
+\BOOKMARK [0][]{chapter.5}{5 Results}{}% 37
+\BOOKMARK [0][]{chapter.6}{6 Analysis}{}% 38
+\BOOKMARK [1][-]{section.6.1}{6.1 First Set of Experiments}{chapter.6}% 39
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 Comparison ARM and Intel architecures}{section.6.1}% 40
+\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 Tools and techniques}{section.6.1}% 41
+\BOOKMARK [1][-]{section.6.2}{6.2 Second Set of Experiments}{chapter.6}% 42
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Comparison ARM and Intel architecures}{section.6.2}% 43
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Tools and techniques}{section.6.2}% 44
+\BOOKMARK [1][-]{section.6.3}{6.3 Third Set of Experiments}{chapter.6}% 45
+\BOOKMARK [0][]{chapter.7}{7 Lowering the energy bill in a multi energy price environment}{}% 46
+\BOOKMARK [0][]{chapter.8}{8 Future Work}{}% 47
+\BOOKMARK [0][]{chapter.9}{9 Conclusions}{}% 48
+\BOOKMARK [0][]{appendix.A}{A First appendix}{}% 49
