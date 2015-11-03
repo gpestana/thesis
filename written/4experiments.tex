@@ -4,7 +4,7 @@
 We have performed several experiments under different hardware setups. 
 The main goal was to understand how the ARM and Intel architectures
 perform under similar workloads from an energy
-consumption standpoint. Wwe compared the results
+consumption standpoint. Ww compared the results
 obtained to evaluate the potential of ARM architectures to perform HPC tasks, in
 comparison to the Intel architectures.
 
@@ -197,7 +197,7 @@ its possible affect on he final result are discussed in the Analysis section.
 \subsection{First set of experiments}
 
 \subsubsection*{Hardware specifications}
-For the first set of experiments, we used three machines with different hardware setups. The three machines differ in architecture and general purpose. The ARM\_virdis is a server rack with a ARMv7 processor produced by Boston Labs [ref]. We ran the same workloads in a x86 Intel Atom and Quad for comparison. The Intel Atom is a brand name for a line of ultra-low-voltage CPUs by Intel. On the other hand, the x86 Intem Quad is brand name for a high performance family of Intel CPUs.
+For the first set of experiments, we used three machines with different hardware setups. The three machines differ in architecture and general purpose. The ARM\_virdis is a server rack with CPU consisting of ARMv7 processors produced by Boston Labs [ref]. We ran the same workloads in a x86 Intel Atom and Quad for comparison. The Intel Atom is a brand name for a line of ultra-low-voltage CPUs by Intel. On the other hand, the x86 Intem Quad is brand name for a high performance family of Intel CPUs.
 
 Below, we outline the most important aspects of the hardware setups we used for the experiments.
 
@@ -210,7 +210,7 @@ Below, we outline the most important aspects of the hardware setups we used for 
   \item[] \textbf{Memory  (MemTotal)}:        3925084  kB (4GB)
 \end{itemize}
 
-For more detailed specs at http://ark.intel.com/products/49490/Intel-Atom-processor-D525-1M-Cache-1\_80-GHz (transform in reference)
+For more detailed specs refer to \cite{atom_specs}
 
 \vspace{10mm}
 \textbf{Intel\_QUAD}
@@ -221,7 +221,7 @@ For more detailed specs at http://ark.intel.com/products/49490/Intel-Atom-proces
   \item[] \textbf{Memory  (MemTotal)}:        7928892 kB (8GB)
 \end{itemize}
 
-For more detailed specs at http://ark.intel.com/products/35365/Intel-Core2-Quad-Processor-Q9400-6M-Cache-2\_66-GHz-1333-MHz-FSB (transform in reference)
+For more detailed specs refer to \cite{quad_specs}
 
 \vspace{10mm}
 \textbf{ARM\_Viridis}
@@ -232,13 +232,12 @@ For more detailed specs at http://ark.intel.com/products/35365/Intel-Core2-Quad-
   \item[] \textbf{Memory  (MemTotal)}:        4137780 kB (4GB) 
 \end{itemize}
 
-For more detailed specs at http://www.arm.com/products/processors/cortex-a/cortex-a9.php (transform in reference)
-
+For more detailed specs refer to \cite{viridis_specs}
 
 
 \subsubsection*{Software and workload}
 We used the CMSSW framework in the generation-simulation mode (GEN\-SIM). The workflow performs Monte Carlo simulation of 8 TeV LHC Minimum bias event using Pynthia8 (generation step), followed by Simulation with Geant4 (simulation step). For more information about the CMSSW framework and its limitation on ARM, refer to Chapter X.
-At the time of the experiments, the CMSSW port for ARM had limitations on the multithreading support. We wanted to study the energy consumption of each hardware setup given different core load. Thus, we spinned up different processes instead of threads. The core-load levels used were 1/4, 1/2, 1 and 2 processes per number of cores. 
+At the time of the experiments, the CMSSW port for ARM had limitations on the multithreading support. We wanted to study the energy consumption of each hardware setup given different core load. Thus, we spinned up different processes instead of threads. The core-load levels used were 1/4, 1/2, 1 and 2 processes per number of physical cores. 
 
 \subsubsection*{Tools for measuring energy consumption}
 For this set of experiments, we performed physical measurements using the a external clamp meter. The clamp was a Mini AC/DC Clamp meter
@@ -250,8 +249,6 @@ Mastech MS2102 AC/DC (see Figure \ref{fig:clamp}). The clamp meter supports a ma
     \caption{Mastech MS2102 clamp meter used to measure energy consumption. Taken from \cite{} - cite Mastech website}
     \label{fig:clamp}
 \end{figure}
-
-
 
 
 % Please add the following required packages to your document preamble:
@@ -275,8 +272,65 @@ Mastech MS2102 AC/DC (see Figure \ref{fig:clamp}). The clamp meter supports a ma
 \subsection{Second set of experiments}
 
 \subsubsection*{Hardware specifications}
+
+For the second set of experiements, we again used three machines with different hardware setups. As in the 1SE, the three machines differ in architecture and general purpose. The ARM\_virdis, which was used in the 1SE, was also used during the second set of experiments. In addition to ARM\_viridis, we also resort to another machine powered by an ARM CPU. The ARM\_odroid is a development board manufactured by HardKernel [ref] and it is intended to provide a cheap and easy way to develop hardware and software in a ARM architecture. To represent the Intel architecture we used Intel\_xeon, a machine from the Intel Sandy Bridge family and powered by an Intel R5-2650 CPU. This machine was part of a server rack and it was intended for high performace scientific computation in a production scenario.
+
+Below, we outline the most important aspects of the hardware setups we used for the experiments.
+
+\vspace{10mm}
+\textbf{ARM\_viridis}
+\begin{itemize}
+  \item[] \textbf{kernel \& sys}:  Linux  3.6.10-8.fc18.armv7hl.highbank
+  \item[] \textbf{OS}: Fedora release 18 (Spherical Cow)
+  \item[] \textbf{CPU}:    4x Quad-Core ARM\textsuperscript{TM} CortexA9\textsuperscript{TM} processor
+  \item[] \textbf{Memory  (MemTotal)}:        4137780 kB (4GB) 
+\end{itemize}
+
+For more detailed specs refer to \cite{viridis_specs}
+
+
+\vspace{10mm}
+\textbf{ARM\_odroid}
+\begin{itemize}
+  \item[] \textbf{kernel \& sys}:  Linux 3.10.24 LTS
+  \item[] \textbf{OS}: Ubuntu 14.04.3 LTS (Trusty Tahr)
+  \item[] \textbf{CPU}: 2x A15 and/or A7 cores(big.LITTLE technology) 
+  \item[] \textbf{Memory}:        2GB
+\end{itemize}
+
+For more detailed specs refer to \cite{odroid_specs}
+
+
+\vspace{10mm}
+\textbf{Intel\_xeon}
+\begin{itemize}
+  \item[] \textbf{kernel \& sys}:  Linux cern-vm 2.6.32-431.5.1.el6.x86\_64
+  \item[] \textbf{OS}: Scientific Linux release 6.5 (Carbon)
+  \item[] \textbf{CPU}:    4x Intel\textsuperscript{TM} CPU E5-2650
+  \item[] \textbf{Memory}:        252GB
+\end{itemize}
+
+For more detailed specs refer to \cite{xeon_specs}
+
+
+
+
 \subsubsection*{Software and workload}
+We used the CMSSW's mode ParCullCMS for generating the workload. The ParFullCMS mode is a multi-threaded Geant4 \cite{GEANT4} benchmark. It uses a complex CMS geometry for the event simulation and has the advantage of being multithreaded in both Intel and ARM architectures. As in the first set of experiements, we measured the energy consumed by the machine under different physical core loads. The core-load levels used were 1/4, 1/2, 1 and 2 threads per number of physical cores. 
+
+\subsubsection*{Metrics}
+The energy efficiency metric used in this study is the ratio of performance per power consumed (Watts). Performance consist on the average of events computed per second. Considering this metrics for comparing energy consumption, we consider a system to be as energy efficient as higher the ratio \textit{nr\_of\_events/s/W} is.
+
+Given the hardware disparities of the setups we had in place to run our experiments, we used the performance (averaga od events computed per second) as a way to uniform the results.
+
 \subsubsection*{Tools for measuring energy consumption}
+For the 2SE, we performed both internal and external measurements in the Intel\_xeon and ARM\_odroid. On the ARM\_viridis, we performed only internal measurements given the lack of a tool that would performe with the same degree of accuracy than the tools used for Intel\_xeon and ARM\_odroid. All the tools used to measure energy consumption were embeeded in the hardware setup of the machines.
+
+For the ARM\_odroid, we used a Texas Instrument power monitor chip (TI INA231) for internal measurements. The TI INA231 allowed us to sample the energy consumed by the cores and DRAM at a frequency rate of microseconds. For the extrenal measurements on the ARM\_odroid, we used an external plug-in power monitor with a computer interface for sampling and storing the results.
+
+For the Intel\_xeon machine, we used the Running Average Power Unit (RAPL) technolgy to perform internal measurements. The RAPL allowed us to sample the energy consumed by the CPU's package, DRAM and cores. For the external measurements, we used an API provided by the server rack's PDU. This API provides a measure sampling rate of around 1 second. 
+
+For the ARM\_viridis, we used the capabilities of the Intellegent Platform Management Interface (IPMI) \cite{IPMI} included in the server from origin. The IPMI is a chip that runs as a separate subsystem and is attached to the motherboard. The ARM\_viridis implementation of IPMI provide several capabilities, namely interlal hardware energy monitoring. We leveraged the IPMI tools to perform internal energy consumption of the ARM cores during the experiments
 
 
 
@@ -302,21 +356,17 @@ Mastech MS2102 AC/DC (see Figure \ref{fig:clamp}). The clamp meter supports a ma
 \clearpage 
 
 \section{Summary}
-- the hardware setups were chosen given their similarity and possibility of
-  a reliable comparison and hardware availability. it is important to note as
-well that both Viridis and Odroid machines are much more recent than the x86
-hardware compared. It is still a technology that is yet to find production
-stability.
+In this chapter we outlined the setup of the experiments form both the hardware and software perspectives.
 
-- We assume that the RAPL and the internal TI INA231 chip for internal energy
-  consumption measurement are similarly accurate and would produce the same
-results if interchanged. 
+We have performed several experiments under different hardware setups. 
+Our main goal was to understand how the ARM and Intel architectures
+perform under similar workloads from an energy consumption standpoint.
 
-- the ARM is low energy hardware and was designed and developed with low energy
-  consumption as one of its  main goals.
+The hardware setups were chosen given their similarity and possibility of a reliable comparison and hardware availability. it is important to note as
+well that both ARM\_viridis and ARM\_droid machines are much more recent than the compared Intel
+hardware. All the ARM machines used were still a technology that was yet to find production
+stability at the moment of the experiments. On the other hand, the Intel architecture used in this study was widely used in real HPC applications at the time of this study.
 
-- the x86 intel architecture used in this study is widely used in real world
-  HPC applications. It has a bigger throughput (bits processed by second) per
-per bit when compared to the ARM architecture.
-
+For this study, we assume that the RAPL, the internal TI INA231 chip and the IPMI tools for internal energy
+consumption measurement are similarly accurate and would produce the same results if interchanged. 
 

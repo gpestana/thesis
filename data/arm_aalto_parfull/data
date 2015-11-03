@@ -34,6 +34,7 @@ sys 0m1.140s
 
 
 
+
 #1/2 threads per core (1 thread)
 2 thread
 50 events
@@ -84,6 +85,8 @@ Power status
 gpestana@workstation:~/thesis$ ./ipmitool 192.168.0.16
 
 
+
+
 ##MEASUREMENTS
 
 #resting state:
@@ -119,6 +122,7 @@ user  16m42.540s
 sys 0m1.760s
 
 
+
 ##B. 300 events
 
 0.  Sensor Reading        : 6.200 (+/- 0) Watts
@@ -138,6 +142,8 @@ G4WT1 >   User=3583.17s Real=945.89s Sys=0.71s
 real  18m56.865s
 user  62m54.110s
 sys 0m2.180s
+
+
 
 ##C. 500 events
 ##time

@@ -43,6 +43,13 @@ power = {
 	'arm': []
 }
 
+power_2 = {
+	'atom': [],
+	'quad': [],
+	'arm': []
+}
+
+
 #step = time/(len(power)-1)
 #x = np.arange(start=0, stop=time+1, step=step)
 
@@ -57,6 +64,9 @@ for i, time in enumerate(atom['time']):
 	avgW = np.mean(y)
 	perf = NR_EVENTS/float(time)
 	power['atom'].append(avgW/perf)
+
+	power_2['atom'].append(NR_EVENTS/float(time)/avgW)
+	
 	plot, = plt.plot(x, y, '-', label=labels[i])
 
 
@@ -79,6 +89,9 @@ for i, time in enumerate(quad['time']):
 	avgW = np.mean(y)
 	perf = NR_EVENTS/float(time)
 	power['quad'].append(avgW/perf)
+
+	power_2['quad'].append(NR_EVENTS/float(time)/avgW)
+
 	plot, = plt.plot(x, y, '-', label=labels[i])
 
 plt.legend(loc=4)
@@ -97,6 +110,9 @@ for i, time in enumerate(arm['time']):
 	avgW = np.mean(y)
 	perf = NR_EVENTS/float(time)
 	power['arm'].append(avgW/perf)
+
+	power_2['arm'].append(NR_EVENTS/float(time)/avgW)
+
 	plot, = plt.plot(x, y, '-', label=labels[i])
 
 plt.legend(loc=4)
@@ -104,6 +120,9 @@ plt.title('ARM - Power consumption measured during Event\'s processing (clamp)')
 plt.xlabel('Time (s)')
 plt.ylabel('Power CMSSW consumed (W)')
 plt.show()
+
+
+
 
 
 
@@ -126,3 +145,23 @@ plt.xlabel('Nr processes/Nr cpus')
 #plt.ylabel('Power per second (W/s)')
 plt.ylabel('Power efficiency (watts per Event per second)')
 plt.show()
+
+
+
+# performance for THESIS
+# power performance = (nr_events/ (s/avgPower))
+plt.scatter([.5, 1, 1.5, 2], power_2['atom'],color='blue',edgecolor='none', s=75, label = 'atom')
+plt.scatter([.25, .5, .75, 1, 1.25, 2], power_2['quad'],color='red',edgecolor='none',s=75, label = 'quad')
+plt.scatter([.25, .5, .75, 1, 1.25, 2], power_2['arm'],color='green',edgecolor='none',s=75, label = 'ARM')
+
+plt.xticks((0, .25, .5, .75, 1, 1.25, 1.5, 2))
+plt.yticks(np.arange(0, .02, .01))
+plt.legend(loc=1)
+#plt.title('Watts per second for each arch & process/cpu during Event\'s processing')
+plt.xlabel('Nr processes/Nr cpus')
+#plt.ylabel('Power per second (W/s)')
+plt.ylabel('events/s/W')
+plt.show()
+
+
+	

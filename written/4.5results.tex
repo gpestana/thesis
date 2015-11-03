@@ -1,53 +1,59 @@
 \chapter{Results}
 
+This chapter presents the results of the experiment descibed in the later chapter. The plots and figures in this chapter can be divided into 3 sections. The first section has the results of the first set of experiments. The second section has the results of the second set of experiments. The last section of figures shows results that related with the usage of CMSSW is a Non-Uniform Memory Access (NUMA) environment.
+
+
+In the next chapter, we analyse the results based on the content of this chapter.
+
 %full results
 \begin{figure}[h!]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_total_quad"}
-    \caption{Full single threading CMS experiments on Intel Quad}
+    \caption{All stages of the CMSSW experiments on Intel\_quad}
     \label{fig:aalto_quad_clamp}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_total_atom"}
-    \caption{Full single threading CMS experiments on Intel Atom}
+    \caption{All stages of the CMSSW experiments on Intel\_atom}
     \label{fig:aalto_atom_clamp}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_total_arm"}
-    \caption{Full single threading CMS experiments on ARMv7 server}
+    \caption{All stages of the CMSSW experiments on ARM\_viridis}
     \label{fig:aalto_arm_clamp}
 \end{figure}
 
+
+
+%event processing stage
 \begin{figure}[h!]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_quadEvents"}
-    \caption{Full single threading CMS experiments on Intel Quad - event
+    \caption{CMSSW experiments on Intel\_quad - event processing stage}
     \label{fig:aalto_quad_events}
-processing only}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_atomEvents"}
-    \caption{Full single threading CMS experiments on Intel Atom - event
+    \caption{CMSSW experiments on Intel\_atom - event processing stage}
     \label{fig:aalto_atom_events}
-processing only}
 \end{figure}
-
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_armEvents"}
-    \caption{Full single threading CMS experiments on ARMv7 server - event
-processing only}
+    \caption{CMSSW experiments on ARM\_viridis - event processing stage}
     \label{fig:aalto_arm_events}
 \end{figure}
 
 
+
+%time comparison
 \begin{figure}[h!]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_all_time"}
@@ -55,71 +61,72 @@ processing only}
     \label{fig:aalto_time}
 \end{figure}
 
-
+%final results
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=100mm]{"img/aalto/aalto_all"}
-    \caption{Energy efficiency comparison between architectures}
-    \label{fig:aalto_efficiency_comparison}
+    \includegraphics[width=150mm]{"img/aalto/aalto_all_results"}
+    \caption{Energy efficiency comparison for the first set of experiments - External measurements}
+    \label{fig:aalto_all_results}
 \end{figure}
 
 
-
-\begin{figure}[h!]
-  \centering
-    \includegraphics[width=100mm]{"img/aalto/aalto_all2"}
-    \label{fig:nf_ss}
-    \caption{Processing stage comparison between architecturesi - 2}
-\end{figure}
-
-
+%ParFullCMS
 \begin{figure}[h!]
   \centering
     \includegraphics[width=150mm]{"img/acat/results1"}
-    \label{fig:nf_ss}
-    \caption{Multithreaded ParFullCMS comparison Intel Xeon vs ODROID ARMv7}
+    \caption{Multithreaded ParFullCMS comparison between Intel\_xeon and ARM\_odroid}
+    \label{fig:parfull_results}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=150mm]{"img/cern/rapl"}
-    \caption{RAPL measurements with different load combinations }
-    \label{fig:nf_ss}
+    \includegraphics[width=100mm]{"img/aalto/parfull_results_aalto"}
+    \caption{Multithreaded ParFullCMS comparison between Intel\_xeon, ARM\_viridis and ARM\_odroid}
+    \label{fig:parfull_results_aalto}
 \end{figure}
 
+
+%RAPL measurements example
+%\begin{figure}[h!]
+%  \centering
+%    \includegraphics[width=150mm]{"img/cern/rapl"}
+%    \caption{RAPL measurements with different load combinations }
+%    \label{fig:RAPL table}
+%\end{figure}
+
+
+
+%NUMA and CMSSW
 \begin{figure}[h!]
   \centering
     \includegraphics[width=150mm]{"img/numa/16proc_no_binding"}
-    \label{fig:nf_ss}
     \caption{RAPL measurements of NUMA nodes - 16 processes with no explicit
+    \label{fig:nf_ss}
 binding}
 \end{figure}
-
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=150mm]{"img/numa/16proc_node2and3"}
-    \label{fig:nf_ss}
     \caption{RAPL measurements of NUMA nodes - 16 processes. Explicit binding
+    \label{fig:nf_ss}
 on node \#2 and node \#3 binding}
 \end{figure}
-
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=150mm]{"img/numa/32proc"}
-    \label{fig:nf_ss}
     \caption{RAPL measurements of NUMA nodes - 32 processes with no explicit
+    \label{fig:nf_ss}
 binding}
 \end{figure}
-
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=150mm]{"img/numa/32proc_explicitly_distributed"}
-    \label{fig:nf_ss}
     \caption{RAPL measurements of NUMA nodes - 32 processes. Processes
 distributed evenly explicitly - 8 processes per node. }
+    \label{fig:nf_ss}
 \end{figure}
 
 

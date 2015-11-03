@@ -3,60 +3,59 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: energy_efficiency_scy_computing.aux
 The style file: acm.bst
 Database file #1: sources.bib
-Warning--I didn't find a database entry for "EFF_DSP"
-Warning--I didn't find a database entry for "TIINA231"
-Warning--I didn't find a database entry for "INTELMAN"
-Warning--I didn't find a database entry for "RAPL1"
-Warning--I didn't find a database entry for "ABD2014"
-Warning--I didn't find a database entry for "CHEP13ARMPHI"
 Warning--I didn't find a database entry for ""
-Warning--to sort, need author or key in CERN
-Warning--to sort, need author or key in WLCG
-Warning--to sort, need author or key in STACKOVERFLOW
 Warning--to sort, need author or key in ODROID_XU3
 Warning--to sort, need author or key in VIRIDIS
 Warning--to sort, need author or key in CORTEXA9
 Warning--to sort, need author or key in biglittle
-Warning--empty journal in DYN_GEO
-You've used 30 entries,
+Warning--to sort, need author or key in atom_specs
+Warning--to sort, need author or key in quad_specs
+Warning--to sort, need author or key in viridis_specs
+Warning--to sort, need author or key in odroid_specs
+Warning--to sort, need author or key in xeon_specs
+Warning--to sort, need author or key in IPMI
+Warning--to sort, need author or key in HTT
+Warning--to sort, need author or key in IPMI_resolution
+Warning--empty year in GEANT4
+You've used 13 entries,
             2253 wiz_defined-function locations,
-            725 strings with 10001 characters,
-and the built_in function-call counts, 11343 in all, are:
-= -- 1085
-> -- 518
+            576 strings with 5574 characters,
+and the built_in function-call counts, 2445 in all, are:
+= -- 247
+> -- 19
 < -- 0
-+ -- 217
-- -- 186
-* -- 832
-:= -- 1682
-add.period$ -- 90
-call.type$ -- 30
-change.case$ -- 181
++ -- 15
+- -- 2
+* -- 83
+:= -- 292
+add.period$ -- 39
+call.type$ -- 13
+change.case$ -- 40
 chr.to.int$ -- 0
-cite$ -- 38
-duplicate$ -- 464
-empty$ -- 959
-format.name$ -- 186
-if$ -- 2502
+cite$ -- 26
+duplicate$ -- 108
+empty$ -- 317
+format.name$ -- 2
+if$ -- 601
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 23
-newline$ -- 152
-num.names$ -- 46
-pop$ -- 264
+int.to.str$ -- 13
+missing$ -- 1
+newline$ -- 68
+num.names$ -- 2
+pop$ -- 129
 preamble$ -- 1
-purify$ -- 151
+purify$ -- 27
 quote$ -- 0
-skip$ -- 336
+skip$ -- 76
 stack$ -- 0
-substring$ -- 660
-swap$ -- 156
+substring$ -- 97
+swap$ -- 22
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 120
-warning$ -- 8
-while$ -- 91
-width$ -- 32
-write$ -- 303
-(There were 15 warnings)
+type$ -- 52
+warning$ -- 13
+while$ -- 5
+width$ -- 15
+write$ -- 120
+(There were 14 warnings)
