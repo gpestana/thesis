@@ -8,7 +8,7 @@ platforms from an energy efficiency perspective and analyze the tools and techni
 Whereas the first two sections analyze the energy efficiency of the platforms
 studied and the particularities of the tools and techniques used, the last 
 section covers the results and issues which arose when using RAPL to measure 
-the energy consumption in a NUMA environment.
+the energy consumption in a NUMA environment and how the CMSSW framework performs in such conditions.
 
 In the final of this section, we outline the highlights of the analysis for
 each set of experiments.
@@ -16,22 +16,22 @@ each set of experiments.
 \section{First Set of Experiments}
 
 In figures~\ref{fig:aalto_quad_clamp}, ~\ref{fig:aalto_atom_clamp} 
-and~\ref{fig:aalto_arm_clamp} it is plotted the energy measurements from the beginning until the end of the generation-simulation CMSSW workflow. The energy measurements were done using a meter clamp. The energy measured is represented in the Y-axis and the X-axis represents the time of the experiment in samplings. For each experiment, a sample corresponds to the same time.
+and~\ref{fig:aalto_arm_clamp} it is plotted the energy measurements from the beginning until the end of the event generation-simulation by the CMSSW. The energy measurements were done using a meter clamp. The energy measured is represented in the Y-axis and the X-axis represents the time of the experiment in samplings. For each experiment, a sample corresponds to the same time.
 
-The figures ~\ref{fig:aalto_quad_events}, ~\ref{fig:aalto_atom_events} and ~\ref{fig:aalto_arm_events} we trimmed out the initialization stage and connection stage of the workload and only show the event processing stage. Whereas the Y-axi represents the energy measured in Watts, the X-axis represents the time spent until the correspondent energy sampling.
+In the figures ~\ref{fig:aalto_quad_events}, ~\ref{fig:aalto_atom_events} and ~\ref{fig:aalto_arm_events}, we trimmed out the initialization stage and connection stage of the workload and only show the event processing stage. Whereas the Y-axi represents the energy measured in Watts, the X-axis represents the time spent until the correspondent energy sampling.
 
-Finally, the figures ~\ref{fig:aalto_time} and ~\ref{fig:aalto_efficiency_comparison} compare the time spent by each of the hardware setups and the power consumption efficiency of the different setups.
+Finally, the figures ~\ref{fig:aalto_time} and ~\ref{fig:aalto_efficiency_comparison} compare the time spent by each of the hardware setups to process the workflow and the power consumption efficiency of the different setups, respectively.
 
 \subsubsection*{CMSSW stages}
 Based on the figures~\ref{fig:aalto_quad_clamp}, ~\ref{fig:aalto_atom_clamp} 
 and~\ref{fig:aalto_arm_clamp}, we can distinguish three different patterns of energy consumption during the expriement. 
 We refer to each pattern as being part of a different CMSSW stage. The stages can be better identified 
-when plotting the memory workload and the CPU usage(see Figures in GDrive-Add?).
+when plotting the memory workload and the CPU usage(see Figures of memory usage in GDrive - Add them or our of scope??).
 
-The first stage consists is the initialization process. During this stage, the memory is the main module being used and thus, it is not an interesting stage to be analysed. 
+The first stage consists is the initialization process. During this stage, the memory is the main module being used and thus, it is out od the scope of this work to analyse this stage in depth. 
 
 The second stage is the connection phase. The goal of this stage is to fetch the metadata from
-the CERN servers. The metadata is needed to perform the reconstruction of the events. Once again, 
+the CERN servers that allow the event generation-simulation. The metadata is needed to perform the reconstruction of the events. Once again, 
 during this stage the CPU load is low when compared to the memory workload. 
 
 The third stage corresponds to the event processing. This last stage is CPU intensive and it has the most relevant data to to our study, since we our goal is to compare the energy efficiency of the different CPUs. The event processing stage alone is represented by 
@@ -44,7 +44,7 @@ the figures ~\ref{fig:aalto_quad_events}, ~\ref{fig:aalto_atom_events} and ~\ref
 
 \subsubsection*{Relative importance of the stages}
 The most important stage when studying the energy efficiency of
-workload with the CMSSW is the last stage. There are three main reasons for that: Firstly, the CMSSW configuration at either CERN has caches that speed up considerably the second stage [refs], thus reducing the energy consumed in the connection stage.
+workload with the CMSSW is the last stage. There are three main reasons for that: Firstly, the CMSSW configuration at CERN has caches that speed up considerably the second stage [refs], thus reducing the energy consumed in the connection stage.
 Secondly, the first and second stages are not CPU intensive.
 Lastly, the processing stage is the only one that the energy consumption is directly porpotional o the amount of events. Therefore, given any large amount of
 data to be processed, the last stage will consume so much more energy than the former stages that the first two stages will become irrelevant in terms of overall energy consumption. Therefore, we focus our energy consumption analysis on the event processing stage only. The event processing stage alone is represented by the figures ~\ref{fig:aalto_quad_events}, ~\ref{fig:aalto_atom_events} and ~\ref{fig:aalto_arm_events}
@@ -75,10 +75,10 @@ This fact is due to the architectures characteristics and its specifications, mo
 
 
 \subsubsection*{Energy efficiency comparison}
-Given the metrics used in this stufy (see Metrics section in the Experiments chapter), it is clear that  
+Given the metrics used in this study (see Metrics section in the Experiments chapter), it is clear that  
 systems are  proportionally energy efficient with its ratio performance per 
 watts. Therefore, by analyzing the Figure~\ref{fig:aalto_all_results}, it is evident that given the architectures and its configurations, ARM architecture outperforms in terms of energy efficiency its concurrence in all considered 
-scenarios. In addition, we conclude that between Intel architectures, ATOM is more energy efficient than QUAD architecture. 
+scenarios. In addition, we conclude that between Intel architectures, Intel\_atom is more energy efficient than the Intel\_quad. 
 
 
 %% tools and techniques
@@ -91,7 +91,7 @@ Therefore, we conclude that it is more effective to use digital and automated wa
 log the data acquired during the measurements.
 
 \subsubsection*{Measuring tools: software-based monitoring}
-In this particular set of experiments, the software monitoring tools used were
+We used software mesaurement tools to get an estimated energy consumption by the memory and other system components. In this particular set of experiments, the memory energy measurements done with software were
 of particular help to distinguish the different stages, which existence was
 unknown before the experiment. The software-based tools can be used as a 
 decision support and for learning about unknown and unexpected system behaviours. Thus, even if the output
@@ -100,8 +100,6 @@ can be important to support and explain expected - and unexpected - behaviors.
   
 
 \section{Second Set of Experiments}
-ARM board and Intel Xeon, using on chip and external measurements
-
 \subsubsection*{Energy efficiency comparison between Intel\_xeon and ARM\_odroid}
 
 In the Figure~\ref{fig:parfull_results}, we can see the energy efficiency comparison of Intel\_xeon and ARM\_odroid. The righmost plot represents the internal energy measurements, whereas the leftmost plot represents the external energy measurements. As in other energy efficiency comparisons in this study, we used the metrics \textit{nr\_of\_events/s/W} to represent the energy performance of the measured systems. 
@@ -116,13 +114,15 @@ On the other hand, the energy performance of Intel\_xeon does not seem to be sig
 
 We believe that the different results between ARM\_odroid and Intel\_xeon discussed below are due to the fact that ARM\_odroid is a development board and it does not implement sophisticated techniques such as Hyper Threading Technology (HTT) by Intel \cite{HTT}. According to Intel, HTT delivers two processing threads per physical core, which allows highly threaded applications to be processed faster. It is expected that if the ratio of  \textit{nr\_of\_threads/core} would be larger than 2, energy efficiency of Intel\_xeon would start to decline.  
 
+We believe that if we would overcommit Intel\_xeon with more than 4 threads per core, the time to process the workload would increase, which would be followed by a degradation of energy performance.
+
 \subsubsection*{Measurement tools and techniques}
 
 The internal measurement tools used in ARM\_odroid and Intel\_xeon provide a fine grained resolution to the core level. The TI INA231 and RAPL chips can isolate the pp0, which consists of ALU, FPU, L1 cache and L2 cache when performing energy measurements. 
 
 On the other hand, as stated in \cite{IPMI_resolution}, the lower resolution that IPMI tools offers for internal measurements include energy consumed by the 0P9V, 1P8V, VDD and Vcore rails, which includes the system on the chip, DRAM, Temperature Sensors, and ComboPHY Clock. The components that are measured by the IPMI tools at each energy sample are shown in the Figure \ref{fig:power_node_ipmitool}.
 
-As a result of this measurement discrepancy, ~\ref{fig:parfull_results_aalto} shows that ARM\_viridis has worse energy efficiency than any of the other machines. We believe that this result can be misleading, due to the fact that the tools used to measure the energy consumed by each of the setups measure different components in the CPU. We believe that if the energy measured in the ARM\_viridis is correspondent to many more components compared to the ARM\_odroid and Intel\_xeon measurements, we can not scientifically compare the results.
+As a result of this measurement discrepancy, ~\ref{fig:parfull_results_aalto} shows that ARM\_viridis performs worse than any other machine. We believe that this result can be misleading, due to the fact that the tools used to measure the energy consumed by each of the setups measure different components in the CPU. We believe that if components measured in the ARM\_viridis would be same as the components measured on the ARM\_odroid and Intel\_xeon measurements, we would obtain a different result. Namely that ARM\_viridis would, at least, perform better that Intel\_xeon from an energy consumption perspective. Given the actual setup, we can not scientifically directly compare the results.
 
 \begin{figure}[h!]
   \centering
@@ -138,9 +138,17 @@ When we compare the main results of the 1SE (Figure ~\ref{fig:parfull_results_aa
 In the 1SE, we only performed external measurements. Thus, we discard the possibility to compare the 1SE results with the results of the internal measurements of the 2SE. 
 As for the external measurements performed in both set of experiments, the tools for measuring the energy consumption of both experiments have disctinct resolution and grain. In the 1SE, we used the clamp meter for measurements in all setups. As for the 2SE, we used embeeded and computer-assisted tools to perform the external measurements. This discrepancy of tools, its resolutions and errors, make it difficult to compare the results of the 1SE and 2SE.
 
-However, we can conclude that ARM architecture outperforms the Intel architectures in each experiment, regardless the measurement tools and methodologies used.
+However, we can conclude that ARM architecture outperforms the Intel architectures in each and every experiment, regardless the measurement tools and methodologies used.
 
 \section{RAPL in a NUMA environment}
 Intel Xeon, using RAPL to measure energy consumed by the different nodes, with different types of binding
 
 \textbf{Should I include this in the thesis? I worked briefly on this at CERN and couldnt conclude anything because RAPL in the Intel\_xeon was not 100 per cent compatible with the NUMA architeture used. Also, it goes a bit out of scope of the thesis. Maybe I should drop this part?}
+
+
+\section{Conclusions}
+The main conclusion of our experiments is that given the setups used in our study, ARM architecture outperforms Intel in terms of energy efficiency.
+
+We learned that the gen-sim mode of CMSSW has different stages and the most relevant from an energy consumption point of view is the latest one, when the events are processed.
+
+In addition, we leanerd that the tools used to make the experiments play a crucial role in the whole experiment. It is important to assure that the measurement tools and methodologies in use are compatible and suitable to produce results that can be compared. This aspect can be hindered based on the availability of hardware and measurement tools. 
