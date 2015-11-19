@@ -143,9 +143,11 @@ X-Gene 1 Server-On-Chip ARMv8 64-bit solution is relevant and potentially intere
 platform for heterogeneous high-density computing. 
 
 
-\section{Scheduling based on dynamic energy pricing}
+\section{Workload scheduling based on dynamic energy pricing}
 
-\subsection{Summary}
+The workload scheduling based on dynamic energy pricing can be a good approach when certain conditions are in place. Firstly, in situations when the energy price changes according to the overall power grid energy usage. Secondly, when there are machines with different energy efficiency and computing performance available. Given these conditions, the main concept is to schedule the workload to more energy efficient machines when the energy price is higher. On the other hand, when the energy price is lower, the more performant machines can be used without huge degradation of the overal price budget.
+
+\subsection*{Literature review}
 
 There are several studies exploring inter data center solutions to lower
 the electricity bill by leveraging the spacial-time dynamic of energy pricing. The 
@@ -192,38 +194,7 @@ based on efficiency and energy consumption. They develop heuristic algorithms
 due to the fact that an optimal solution for the needed scheduling is
 NP-complete.  
 
-Our solution takes a different perspective when compared with the inter data center 
-solutions. Studies like  \cite{TASK_SCHED} and \cite{EXE_METHOD} do not take the
-dynamics of electrical pricing into consideration. However, their algorithm is
-already quite complex and proved NP-complete, to the point they have to come up
-with heuristic algorithms to apply it in the real world.
-
-Therefore, our approach may have some novelty in a really narrow and still
-unexplored idea: to develop a scheduling algorithm for heterogeneous HPC that
-takes into consideration the nodes' energy profile, the dynamic electricity
-price and also, eventually, the tasks' energy profiling. The algorithm would
-schedule the jobs in order to minimize the energy consumption and energy bill
-(note: energy consumption and energy bill are not the same thing), while the
-deadline is met. 
-
-However, there are some open points that we still have might want to
-consider. First, as \cite{DYN_PRICING_HPC} mentions, it is important to insure
-that the hardware existent in the data center is used at its full potential, in
-order to not waste the investment made when it was purchased. Our solution,
-though, does not insure that since the idea is to power down/idle machines that 
-are less power efficient in high-peak times. Secondly, from a practical
-perspective, if we consider only the scheduling between ARM and Intel architectures, 
-it seems not likely that the data center will haver the same software running
-over both architectures at the same time, give the expertise and investment
-needed to have the application stack running properly in both architectures (as
-we witness with CERN's efforts). If we decide to abstract from that point and
-see the machine's architectures as a black box, then that's not a problem. Thirdly, 
-comparing with other recent research works
-such as \cite{TASK_SCHED}, our algorithm model seems to be over simplifying the
-problem to an extent that might hinder our purposes of creating a practical and
-energy efficient scheduling algorithm for heterogeneous HPC under dynamic
-electrical pricing.
-
+Our study on the scheduling based on synamic eletricity pricing is discussed in the Chapter X.
 
 
 \subsection{General notes}

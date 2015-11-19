@@ -1,4 +1,111 @@
-\chapter{Lowering the energy bill in a multi energy price environment}
+\chapter{HTC in a dynamic energy price market}
+
+One of the ways to utilize the conclusions from the experiments conducted in this study is to actively lower the energy bill in HTC. One approach could be to schedule jobs between more energy efficient but slower ARM architectures and the less energy efficient but faster Intel machines. This approach makes sense in a multi energy price ecosystem. A multi energy price ecosystem is an energy market where the prices float accorading to the overall power grid usage.
+
+In this chapter, we present a study about the potential of an algorithm that schedules workload to machines with different energy and computation performance, based on the the daily dynamics of energy price. The main goal is to leverage computing heterogeneity to achieve the optimal ratio between work produced and price paid.  
+
+\section{Dynamic eletricity pricing model}
+
+\begin{figure}[hours]
+  \centering
+    \includegraphics[width=100mm]{"img/pricing_model_table"}
+    \caption{Examples of dynamic power energy pricing in different markets}
+    \label{fig:pricing_model_table}
+\end{figure}
+
+We will use a simplified dynamic pricing model based on the empirical research of such models in real power grids. Based on some examples obtained, we can conclude that not all the countries adopt a dynamic eletricity pricing model ~\ref{fig:pricing_model_table}. For the sake of this study, we will consider a hypothetical case where the dynamic pricing model works as in ~\ref{fig:pricing_model}. The red line in ~\ref{fig:pricing_model} represents the eletricity price along the day. For the sake of simplicity, during this study we define that the price of eletricity can is  60 euros/Mwh during 12 hours per day and 20 euros/Mwh during the remaining 12 hours of the day.  
+	
+As we can see based on the ~\ref{fig:pricing_model} and ~\ref{fig:pricing_model_table}, our simplified energy model presents a similar pattern to the energy prices of some countries.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=150mm]{"img/pricing_model"}
+    \caption{Simplified pricing model based on the Germany energy market}
+    \label{fig:pricing_model}
+\end{figure}
+
+\section{Scheduling algorithm}
+
+\subsection*{Problem formulation}
+
+The main goal of the algorithm is to lower the electric bill in dynamic eletricity markets. The algorithm schedules HPC workload among nodes with different energy profiles, depending the energy price at the time. In addition, the algorithm should ensure that a certain minimum amount of workload is processed. Thus, the algorithm input can be defined as (see also ~\ref{fig:input}): 
+
+\vspace{10mm}
+
+\textbf{Energy profile of the machines:}
+\begin{itemize}
+  \item[] Energy efficiency of the machines (ev/s/W);
+  \item[] Time performance (ev/s);
+\end{itemize}
+
+\vspace{5mm}
+
+\textbf{Computing requirements:}
+\begin{itemize}
+  \item[] Time deadline (s);
+  \item[] Nr. events to be processed (ev);
+\end{itemize}
+
+\vspace{10mm}
+
+Therefore, given a set of machines with different energy profiles; the computing requirements (how many events must be processed in how much time); and the energy pricing dynamics during 24h, \textit{what is the optimal machine scheduling that ensure the computing requirements and achieve the lowest price budget at the end of 24 hours} ?
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=150mm]{"img/input"}
+    \caption{Example input for the scheduling algorithm}
+    \label{fig:input}
+\end{figure}
+
+\subsection*{The scheduling algorithm}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=150mm]{"img/scheduler_code"}
+    \caption{Proposed scheduler algorithm written in Python}
+    \label{fig:sheduler_code}
+\end{figure}
+
+
+\section{Further developments}
+
+Well known algorithms such as job shop and others can be applied using the same rational. We expect that different algorithms present different results and that the nearly-optimal scheduling algorithm can be achieved with one well studied existing algorithm. We believe that to explore the potential of the heterogeneous HTC in a dynamic energy pricing market further on can show big savings in the future.
+
+\section{Conclusions}
+
+Our solution takes a different perspective when compared with related research. Studies like  \cite{TASK_SCHED} and \cite{EXE_METHOD} do not take the
+dynamics of electrical pricing into consideration. However, their algorithm is
+already quite complex and proved NP-complete, to the point they have to come up
+with heuristic algorithms to apply it in the real world.
+
+Therefore, our approach may have some novelty in a really narrow and still
+unexplored idea: to develop a scheduling algorithm for heterogeneous HPC that
+takes into consideration the nodes' energy profile, the dynamic electricity
+price and also, eventually, the tasks' energy profiling. The algorithm would
+schedule the jobs in order to minimize the energy consumption and energy bill
+(note: energy consumption and energy bill are not the same thing), while the
+deadline is met. 
+
+However, there are some open points that we still have might want to
+consider. First, as \cite{DYN_PRICING_HPC} mentions, it is important to insure
+that the hardware existent in the data center is used at its full potential, in
+order to not waste the investment made when it was purchased. Our solution,
+though, does not insure that since the idea is to power down/idle machines that 
+are less power efficient in high-peak times. Secondly, from a practical
+perspective, if we consider only the scheduling between ARM and Intel architectures, 
+it seems not likely that the data center will haver the same software running
+over both architectures at the same time, give the expertise and investment
+needed to have the application stack running properly in both architectures (as
+we witness with CERN's efforts). If we decide to abstract from that point and
+see the machine's architectures as a black box, then that's not a problem. Thirdly, 
+comparing with other recent research works
+such as \cite{TASK_SCHED}, our algorithm model seems to be over simplifying the
+problem to an extent that might hinder our purposes of creating a practical and
+energy efficient scheduling algorithm for heterogeneous HPC under dynamic
+electrical pricing.
+
+
+
 
 
 - Use the greedy and jobshop models to schedule works across different energy

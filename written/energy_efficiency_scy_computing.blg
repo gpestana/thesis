@@ -3,6 +3,9 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: energy_efficiency_scy_computing.aux
 The style file: acm.bst
 Database file #1: sources.bib
+Warning--I didn't find a database entry for "TIINA231"
+Warning--I didn't find a database entry for "INTELMAN"
+Warning--I didn't find a database entry for "RAPL1"
 Warning--I didn't find a database entry for ""
 Warning--to sort, need author or key in ODROID_XU3
 Warning--to sort, need author or key in VIRIDIS
@@ -17,45 +20,45 @@ Warning--to sort, need author or key in IPMI
 Warning--to sort, need author or key in HTT
 Warning--to sort, need author or key in IPMI_resolution
 Warning--empty year in GEANT4
-You've used 13 entries,
+You've used 17 entries,
             2253 wiz_defined-function locations,
-            576 strings with 5574 characters,
-and the built_in function-call counts, 2445 in all, are:
-= -- 247
-> -- 19
+            611 strings with 6734 characters,
+and the built_in function-call counts, 4297 in all, are:
+= -- 406
+> -- 152
 < -- 0
-+ -- 15
-- -- 2
-* -- 83
-:= -- 292
-add.period$ -- 39
-call.type$ -- 13
-change.case$ -- 40
++ -- 70
+- -- 52
+* -- 250
+:= -- 595
+add.period$ -- 51
+call.type$ -- 17
+change.case$ -- 77
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 108
-empty$ -- 317
-format.name$ -- 2
-if$ -- 601
+cite$ -- 30
+duplicate$ -- 168
+empty$ -- 439
+format.name$ -- 52
+if$ -- 980
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 1
-newline$ -- 68
-num.names$ -- 2
-pop$ -- 129
+int.to.str$ -- 17
+missing$ -- 5
+newline$ -- 88
+num.names$ -- 10
+pop$ -- 171
 preamble$ -- 1
-purify$ -- 27
+purify$ -- 60
 quote$ -- 0
-skip$ -- 76
+skip$ -- 115
 stack$ -- 0
-substring$ -- 97
-swap$ -- 22
+substring$ -- 174
+swap$ -- 40
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 52
+type$ -- 68
 warning$ -- 13
-while$ -- 5
-width$ -- 15
-write$ -- 120
-(There were 14 warnings)
+while$ -- 18
+width$ -- 19
+write$ -- 159
+(There were 17 warnings)

@@ -71,11 +71,40 @@ Viridis boston website.
   \url{http://www.boston.co.uk/solutions/viridis/introducing-the-viridis-2.aspx}.
 \newblock Accessed: 2015-2-27.
 
+\bibitem{ACAT}
+{\sc Abdurachmanov, D., Elmer, P., Eulisse, G., Knight, R., Niemi, T.,
+  Nurminen, J.~K., Nyback, F., Pestana, G., Ou, Z., and Khan, K.~N.}
+\newblock Techniques and tools for measuring energy efficiency of scientific
+  software applications.
+\newblock {\em CoRR abs/1410.3440\/} (2014).
+
 \bibitem{GEANT4}
 {\sc et~al, S.~A.}
 \newblock Geant4 a simulation toolkit.
 \newblock In {\em Nuclear Instruments and Methods in Physics Research Section
   A: Accelerators, Spectrometers, Detectors and Associated Equipment},
   pp.~250--303.
+
+\bibitem{TASK_SCHED}
+{\sc Wang, Y., Li, K., Chen, H., He, L., and Li, K.}
+\newblock Energy-aware data allocation and task scheduling on heterogeneous
+  multiprocessor systems with time constraints.
+\newblock {\em Emerging Topics in Computing, IEEE Transactions on 2}, 2 (June
+  2014), 134--148.
+
+\bibitem{DYN_PRICING_HPC}
+{\sc Yang, X., Zhou, Z., Wallace, S., Lan, Z., Tang, W., Coghlan, S., and
+  Papka, M.}
+\newblock Integrating dynamic pricing of electricity into energy aware
+  scheduling for hpc systems.
+\newblock In {\em High Performance Computing, Networking, Storage and Analysis
+  (SC), 2013 International Conference for\/} (Nov 2013), pp.~1--11.
+
+\bibitem{EXE_METHOD}
+{\sc Zeng, G., Yu, L., and Ding, C.}
+\newblock An executing method for time and energy optimization in heterogeneous
+  computing.
+\newblock In {\em Green Computing and Communications (GreenCom), 2011 IEEE/ACM
+  International Conference on\/} (Aug 2011), pp.~69--74.
 
 \end{thebibliography}
