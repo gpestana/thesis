@@ -3,34 +3,30 @@
 \section{Overview}
 %establishing territory
 %%claiming centrality
-Nowadays, Moore's Law continues to increase the number of transistors per
-chipset and the overall technology development at a geometric rate. However, the energy
+Nowadays, computing technology is still developing according to Moore's Law. The number of transistors per
+chipset and the overall technology development is still increasing at a geometric rate. However, the energy
 consumption of the systems have begun to halt the usage of the technology at its
-full potential. It is well known that energy efficiency is an important
+full potential. Therefore, energy efficiency has became an important
 research topic in computer science, for energy has become a major growth
-bottleneck for the systems. In addition, the increasing concerns with energy consumption and
+bottleneck in computing systems. In addition, the increasing concerns with energy consumption and
 its social, economical and environmental impact in our society has given a
 bigger dimension to the discussion.
 
 
 There are two major approaches to tackle the energy bottleneck in the current
 technology panorama. One, is to develop techniques and technologies to better harvest, 
-transform and store energy to be used by the systems. This approach aims to provide the
-needed energy for technology to reach its full potential. The second path is to improve 
-the energy efficiency of the systems. This Thesis focuses on a specific area of
-the later approach. 
+transform and store energy to be used by computing systems. The second approach to the problem is to improve the energy efficiency of the existent computing systems. This thesis focuses primarly on the later approach. 
 
 The concerns with energy consumption and its impact in the current
-applications affect industries ranging from mobile devices to big data centers. 
-Given the several layers and complexity of the systems nowadays, there are 
-considerable number of directions to improve the energy efficiency of the
-systems. Throughout this Thesis, we will focus on improving the energy
-consumption in High Performance Computing (HPC) applied to Scientific Research.
+applications affect several industries, from mobile device industries to big data centers. 
+Given the several layers and complexity of the systems used nowadays, there are 
+considerable number of directions that can be take to improve the overall energy efficiency. Throughout this thesis, we will focus on measuring and improving the energy
+consumption in High Performance Computing (HTC) applied to Scientific Research.
 
 
-\subsection{The LHC example}
+\subsection*{The Large Handron Collider example}
 In some applications, a single computing unit does not have enough resources to
-accomplish its tasks. A recurrent strategy is to distribute computational tasks
+accomplish the required tasks. A recurrent strategy is to distribute computational tasks
 across a set of computing units that might be spread geographically.
 
 The Large Hadron Collider (LHC) [ref] at the European Laboratory for Particle
@@ -50,9 +46,8 @@ posing even more challenges in terms of energy consumption.
 
 The LHC is an example of a massive computational system that needs to improve its
 energy efficiency to reach its full potential in the present and future time.
-Throughout this Thesis, we will focus primarily on the LHC case. When
-appropriate, we will use authentic data and current technology use by the CMS to
-study and to draw conclusions with respect to energy efficiency.  
+Throughout this thesis, we will focus primarily on the LHC case. When
+appropriate, we will use authentic data and current technology used by the CMS.  
 
 
 \section{Problem Statement}
@@ -60,51 +55,52 @@ study and to draw conclusions with respect to energy efficiency.
 %%counter-claiming and %%indicating a gap 
 A considerable amount of research has been done on leveraging Reduced
 Instruction Set Computing (RISC) architectures to minimize energy consumption on 
-mobile and energy constrained devices. In such cases, energy consumption is a
-priority given the inherent reduced amount of energy available. 
+mobile and energy constrained devices. In the mobile and energy constrained devices case, energy consumption is a
+priority given the inherent reduced amount of energy available that affects the mobility of the devices. 
 
 The large quota of ARM architectures in the mobile market supports the fact that
 RISC is a good fit for mobile and energy constrained devices.
 
 
-Similarly to mobile devices, the HPC community has being considering energy
-efficiency as a priority in the foreseeable future. However, studies focusing on viability 
-of RISC architectures on HPC as a way to minimize energy consumption are not
+Similarly to mobile devices, the High Troughtput computing (HTC) community major concerns with energy efficiency. However, studies focusing on the viability 
+of RISC architectures in HTC as a way to minimize energy consumption are not
 abundant in the research technology. Furthermore, to the knowledge of the
-author, there are no major implementations of such technologies being used in
-HPC systems nor in scientific computing.
+author at the time of this research, there are no real world implementation of such technologies in 
+HTC data centers.
 
 
 %%question-raising
-It is still unclear whether RISC architectures are a good match to HPC
+It is still unclear whether RISC architectures are a good match to HTC
 computing or not. There are open points regarding whether the performance 
-constraints of RISC architectures and the high performance requirements of HPC 
+constraints of RISC architectures and the high performance requirements of HTC 
 workload are acceptable. In addition, it is still unclear if RISC architectures
-are more energy efficient under HPC workloads than the conventional Complex 
+are more energy efficient under HTC workloads than the conventional Complex 
 Instruction Set Computing (CISC) architectures.
 
 %occupying the niche
 Therefore, it is of our interest to study the potential impact of RISC architectures in 
-the HPC and scientific computing industry. In our opinion, there are two major
-lacks that need to be fulfilled: Firstly, there are lack of comparisons between
+the HTC and scientific computing industry. In our opinion, there are two major
+gaps that need to be fulfilled: Firstly, a comparisons between
 RISC and CISC architectures under authentic scientific workloads. Secondly,
-there are scarce proposal for solutions using RISC in the HPC and scientific
+there is scarce solutions that leverage RISC architectures on HTC and scientific
 computing.
  
 
 \section{Scope of the Thesis}
 %%outlining purposes
-The purpose of this Thesis is to answer whether RISC architectures
-are a potential fit to HPC and scientific computing from a energy efficiency
-perspective. We focus mainly on comparing RISC - most notably ARM chipsets - and
-widely used CISC architectures such as Intel processors. For the endeavor, we
-use authentic HPC workload from the CMS collider at CERN. 
+The purpose of this Thesis is to help filling the gaps above mentioned. Firstly, We aim at answering whether RISC architectures
+are a potential fit to HTC and scientific computing from a energy efficiency
+perspective. We focus mainly on comparing the ARM architecture and Intel, which is a widely used CISC architecture in HTC. During this research, we
+use authentic HTC workload and computing frameworks as the CMS collider. 
 
-In order to accomplish the task, we start by investigating the best
+Secondly, we use the results of the comparison between ARM and Intel architectures to study how to lower down the electrical bill of HTC data centers running under a dynamic energy
+pricing ecosystem.
+
+
+In order to accomplish the tasks in hand, we start by investigating the best
 and most accurate ways to measure power consumption and compare different
-architectures. After, we run several experiments in different chipsets using
-authentic workloads from LHC and software used by the CMS team to process the
-data generated by the collider. We compare the results and
+architectures. After, we run several experiments in machines with different chipsets using
+authentic workloads and software from the CMS collider. We compare the results and
 draw conclusions from them. Finally, based on our learnings, we frame a methodology for
 lowering the electrical bill of data centers running under a multi energy
 pricing policy, by leveraging the scheduling of machines with different
@@ -113,17 +109,23 @@ efficiency profiles.
    
 \section{Contributions}
 %%announcing main findings
-- Our main findings are ..
+Our main findings are: 
+
+\begin{itemize}
+  \item Accurate techniques and tools for measuring power consumption are important to develop more efficient systems. We researched and outlined best practives for different system levels in the Chapter 3. The results of this research were published in the conference proceedings of the 16th International workshop on Advanced Computing and Analysis Techniques in physics research (ACAT'2014). The article was called \textit{Techniques and tools for measuring energy efficiency of scientific software applications}
+
+  \item The ARM architecture shows potential for an energy savings in HTC when compared to the x86 systems widely used nowadays. We performed experiments with real world workloads (Chapter 4) and analysed the results (Chapter 5). 
+
+  \item Heterogeneous computing can be leveraged in HTC in markets where the price of the eletricity is dynamic. We shown how to achieve savings in such environment and developed a scheaduling algorithm that accomplishes that (Chapter 6);
+\end{itemize}
+
+
 
 \section{Structure of the Thesis}
 %%indicating structure of the thesis
-This thesis is structured as following. Firstly, we define the context and scope
-of the thesis by reviewing relevant and up to date research work. Secondly, we
-outline measurements tools and best techniques for energy measurement and
-performance in the scientific computing context. Thirdly, we outline the
-experiments methodology for comparing the performances of the architectures and 
-respective results. In the Chapter 5, we analyze and draw conclusions based on
-the results obtained in the experiments. In the Chapter 6, we present some
-thoughts on how to lower the energy bill by implementing our learnings thus
-far. Finally, we wrap up by outlining possible future work and presenting the
+This thesis is structured as following. In the next chapter, we define the context and scope
+of the thesis by synthesizing relevant literature work. In the third chapter, we
+outline measurement tools and best techniques for measuring power consumption. The fouth chapter outlines the
+experiments methodology used during the different experiment sets. The fifth chapter outlines and analyzes the results based on
+the data obtained from the experiments. In the sixth chapter, we present a scheduling algorithm that aims at lower the energy bill of HTC by using both ARM and Intel architectures, based on the results obtained in our experiments. Finally, we wrap up by outlining possible future work and presenting the
 conclusions of this thesis.

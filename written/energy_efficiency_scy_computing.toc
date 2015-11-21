@@ -3,29 +3,41 @@
 \select@language {english}
 \select@language {english}
 \select@language {english}
-\contentsline {chapter}{Abbreviations and Acronyms}{4}{chapter*.1}
-\contentsline {chapter}{\numberline {1}Tools and techniques for energy measurement}{7}{chapter.1}
-\contentsline {subsection}{\numberline {1.0.1}Internal tools}{10}{subsection.1.0.1}
-\contentsline {subsection}{\numberline {1.0.2}External tools}{11}{subsection.1.0.2}
-\contentsline {chapter}{\numberline {2}Experiments}{12}{chapter.2}
-\contentsline {section}{\numberline {2.1}Hardware}{13}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}ARM architecture}{13}{subsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.1.1}Boston Viridis server}{13}{subsubsection.2.1.1.1}
-\contentsline {subsubsection}{\numberline {2.1.1.2}ODROID-XU3 development board}{15}{subsubsection.2.1.1.2}
-\contentsline {subsection}{\numberline {2.1.2}Intel x86 architecture}{16}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Experiments setup}{18}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}First set of experiments}{18}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Second set of experiments}{21}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Summary}{24}{section.2.3}
-\contentsline {chapter}{\numberline {3}Results}{25}{chapter.3}
-\contentsline {chapter}{\numberline {4}Analysis}{35}{chapter.4}
-\contentsline {section}{\numberline {4.1}First Set of Experiments}{35}{section.4.1}
-\contentsline {section}{\numberline {4.2}Second Set of Experiments}{38}{section.4.2}
-\contentsline {section}{\numberline {4.3}RAPL in a NUMA environment}{40}{section.4.3}
-\contentsline {section}{\numberline {4.4}Conclusions}{41}{section.4.4}
-\contentsline {chapter}{\numberline {5}HTC in a dynamic energy price market}{42}{chapter.5}
-\contentsline {section}{\numberline {5.1}Dynamic eletricity pricing model}{42}{section.5.1}
-\contentsline {section}{\numberline {5.2}Scheduling algorithm}{43}{section.5.2}
-\contentsline {section}{\numberline {5.3}Further developments}{44}{section.5.3}
-\contentsline {section}{\numberline {5.4}Conclusions}{45}{section.5.4}
-\contentsline {chapter}{\numberline {A}Techniques and tools for measuring energy efficiency of scientific software applications}{49}{appendix.A}
+\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}
+\contentsline {section}{\numberline {1.1}Overview}{6}{section.1.1}
+\contentsline {section}{\numberline {1.2}Problem Statement}{7}{section.1.2}
+\contentsline {section}{\numberline {1.3}Scope of the Thesis}{8}{section.1.3}
+\contentsline {section}{\numberline {1.4}Contributions}{8}{section.1.4}
+\contentsline {section}{\numberline {1.5}Structure of the Thesis}{9}{section.1.5}
+\contentsline {chapter}{\numberline {2}Background}{10}{chapter.2}
+\contentsline {section}{\numberline {2.1}Energy consumption awareness in Scientific Computing}{10}{section.2.1}
+\contentsline {section}{\numberline {2.2}The European Organization for Nuclear Research and the LHC}{10}{section.2.2}
+\contentsline {section}{\numberline {2.3}Tools and techniques for measuring energy consumption}{12}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Importance of measuring energy consumption}{12}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}ARM architecture}{12}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}ARM architecture in scientific computation}{12}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Literature review}{12}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Workload scheduling based on dynamic energy pricing}{13}{section.2.5}
+\contentsline {chapter}{\numberline {3}Tools and techniques for energy measurement}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}The big picture}{20}{section.3.1}
+\contentsline {section}{\numberline {3.2}Tools for measuring energy consumption}{22}{section.3.2}
+\contentsline {chapter}{\numberline {4}Experiments}{24}{chapter.4}
+\contentsline {section}{\numberline {4.1}Hardware}{25}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}ARM architecture}{25}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Intel x86 architecture}{28}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Experiments setup}{30}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}First set of experiments}{30}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Second set of experiments}{33}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Summary}{36}{section.4.3}
+\contentsline {chapter}{\numberline {5}Analysis}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}First Set of Experiments}{37}{section.5.1}
+\contentsline {section}{\numberline {5.2}Second Set of Experiments}{42}{section.5.2}
+\contentsline {section}{\numberline {5.3}Conclusions}{46}{section.5.3}
+\contentsline {chapter}{\numberline {6}HTC in a dynamic energy pricing market}{49}{chapter.6}
+\contentsline {section}{\numberline {6.1}Dynamic eletricity pricing model}{49}{section.6.1}
+\contentsline {section}{\numberline {6.2}Scheduling algorithm}{50}{section.6.2}
+\contentsline {section}{\numberline {6.3}Further developments}{55}{section.6.3}
+\contentsline {section}{\numberline {6.4}Conclusions}{55}{section.6.4}
+\contentsline {chapter}{\numberline {7}Future Work}{57}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusions}{58}{chapter.8}
+\contentsline {chapter}{\numberline {A}Techniques and tools for measuring energy efficiency of scientific software applications}{64}{appendix.A}

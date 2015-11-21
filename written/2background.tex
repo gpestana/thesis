@@ -1,7 +1,7 @@
 \chapter{Background}
 
 
-\section{Energy efficiency in Scientific Computing}
+\section{Energy consumption awareness in Scientific Computing}
 
 
 - current state of HPC systems and energy efficiency (p10)
@@ -28,7 +28,7 @@ are requirements that potentially require massive amounts of energy. Thus, the s
 computing community is looking into energy efficiency with special interest.
 
 
-\subsection{CERN and the LHC experiment}
+\section{The European Organization for Nuclear Research and the LHC}
 
 The European Research for Nuclear Research (CERN) \cite{CERN} is a particle physics
 research laboratory sited in the Franco-Swiss border where thousands of
@@ -76,7 +76,7 @@ both in the scientific computing in general and in the LHC computing grid in
 particular. 
 
 
-\section{Energy performance and measurement}
+\section{Tools and techniques for measuring energy consumption}
 \subsection{Importance of measuring energy consumption}
 
 % mining questions about software energy consumption
@@ -97,6 +97,9 @@ energy efficient software.
 
 
 \section{ARM architecture}
+\subsection{ARM architecture in scientific computation}
+
+
 
 - more on (p7)
 
@@ -147,8 +150,6 @@ platform for heterogeneous high-density computing.
 
 The workload scheduling based on dynamic energy pricing can be a good approach when certain conditions are in place. Firstly, in situations when the energy price changes according to the overall power grid energy usage. Secondly, when there are machines with different energy efficiency and computing performance available. Given these conditions, the main concept is to schedule the workload to more energy efficient machines when the energy price is higher. On the other hand, when the energy price is lower, the more performant machines can be used without huge degradation of the overal price budget.
 
-\subsection*{Literature review}
-
 There are several studies exploring inter data center solutions to lower
 the electricity bill by leveraging the spacial-time dynamic of energy pricing. The 
 emphasis is given to job scheduling across data centers that are located in 
@@ -194,104 +195,8 @@ based on efficiency and energy consumption. They develop heuristic algorithms
 due to the fact that an optimal solution for the needed scheduling is
 NP-complete.  
 
-Our study on the scheduling based on synamic eletricity pricing is discussed in the Chapter X.
 
-
-\subsection{General notes}
-
-- Intra data center judicious job scheduling based on the heterogeneous
-  architecture of the machines.
-
-- Minimize the electricity costs in data centers by leveraging the dynamical 
-  electricity pricing models and heterogeneous computing.
-
- - Online computation schedule the jobs. Jobs are in a queue in a serial fashion
-  and are scheduled depending on the decision of the algorithm at a given time.
-  On the other hand, there are the static scheduling algorithms. These
-  algorithms know all the data they need beforehand and map the jobs to the
-  machines taking that into consideration.
-
-- There are several studies that aim to leverage the potential of geographical 
-  load balancing to provide significant cost savings (see [24, 28, 31, 32, 34,
-  39] in \cite{GREENING})
-
-- Make a problem specification as in \cite{CUTTING_BILL}
-
-- In our solution, we could also coinsider different stages of functioning such
-  as idling and turning of the machines, depending on the expected workload and
-  the server configuration. The problem might be to understand if we have (or
-  not) knwoledge of the server utilization in the future and its worklaods.
-  Actually, this is an important factor to consider - wether we have or not idea
-  of the future workload.  
-
-- It would be interesting to test and simulate our model and algorithm using,
-  for example, workloads and electricity prices in a Google data center. As many
-  studies do, show the potential of our approach by simulating scnarios based on
-  real case data. 
-
-- As \cite{DYN_PRICING_HPC} briefly mentions, does  Dynamic Voltage and Frequency 
-  Scaling (DVFS) have the same results than our heterogeneous approach in a
-  homogeneous data center ? i.e. are the benefits of a more efficient processor
-  such as ARM surpassed (or the same) as an INTEL working under a DVFS ? The
-  principle seems the same: when energy consumption is smaller (in ARM or INTEL
-  under low DVFS), the jobs take longer to accomplish. This said, is ARM more
-  efficient than INTEL under low DVFS ?   
-
-- Should our work be an extension on \cite{DYN_PRICING_HPC} where, instead of
-  scheduling the workload taking into consideration the job's energy profile,
-  also consider the machine's energy performance ?
-
-
-
-\subsection{Paper's notes}
-\textbf{In \cite{FUTURE_SMART_GRID}:}
-
-Demand side management are programs implemented by the utility companies to
-control and influence the user-side behavior. For example, electrical companies
-often fluctuate the energy price depending on the user's demand.
-
-There is need to encourage household owners to *shift* high demand energy
-consumptions outside the peak hours, in order to reduce the peak-to-average
-(PAR) in load demand.
-[ - we aim towards the shifting of schedule different machines  depending on the PAR] 
-
-Direct load control (DLC) gives the utility companies the possibility to
-remotely control the household's applications (dim or turn of lights, turn of
-thermal equipment, amongst others). Though, this model arises some problems
-related with household's privacy
-[ - see more  'A direct load control model for virtual power plant management'
-  - what if DLC would be implemented for servers and in a heterogeneous
-    scheduling scenario? Would it bing any advantage or liability ?]
-
-An alternative to DLC is smart pricing, where users are encouraged to
-voluntarily and individually shift their loads out of the peak-hours be
-increasing the energy prices when the load is big.
-
-One problem with this approach is synchronization: when a large number of users
-shift their peak at the same time for a low-peak time, the PAR may not be
-reduced due to the amount of users churning energy at low-peak time.
-[ - this might happen as well with our scheduling strategy. If the amount of
-users running our scheduling system at the same time is the same, it does not
-help to reduce the PAR and the prices might get worst]
-
-The paper suggests that households should synchronize their energy usage and
-schedule their energy applications not only according to the price of the energy
-at a given time, but also taking into consideration what others are consuming as
-well. Thus, by acting in synchronization, the group of users can optimize the
-energy the overall energy consumption and its pricing. 
-
-They propose an incentive-based energy consumption pricing model for the smart
-grid, where the energy source is shared by several users. The meters communicate
-between each other in a distributed network to find the optimal energy
-consumption for each user.
-
-Based on game theory, it is shown that through an incentive-based pricing
-scheme, an optimal scheduling - where users consume less energy and pay less
-money - can be achieved.
-
-\textbf{In \cite{EFF_JOB_SCHEDULING}:}
-
-Because of the magnitude of energy costs in data centers, it is important to
+According to \cite{EFF_JOB_SCHEDULING}, because of the magnitude of energy costs in data centers, it is important to
 lower the energy consumption in data centers. The servers are composed of
 heterogeneous machines from the performance and energy efficiency. In addition,
 the data centers may be disposed in different geographical locations and, thus,
@@ -318,24 +223,6 @@ having in consideration the (1) server availability, (2) energy price and (3)
 job fairness distribution. Consequently, the algorithm is tuned to calculate the
 tradeoff between energy pricing, fairness and queueing delay.
 
-- The model:
-
-The data center model takes into consideration the possibility of the energy
-prices to vary over time. The state of the data center can be represented at a
-given time by a tuple of (i) server availability and (2) energy price.
-
-The job model is characterized by a tuple of (1) service demand - job length -
-and (2) the set of data centers the job can be scheduled. 
-
-The scheduler can turn on/off a server when needed. The scheduling is done based
-on the server availability and job queue and thus, what matters is the energy
-consumed by the server when it is 'idle' or 'busy'.
-
-The scheduler also considers he model fairness (which is not important to
-our study, since we focus in a non-distributed server) and queuing delay.
-Queuing delay defines the time a job will take to start to be processed,
-according to relation of the number of jobs scheduled and machine availability.
-
 In \cite{EFF_JOB_SCHEDULING}, the scheduler developed takes into consideration
 the server availability, energy costs, fairness and queuing delay to schedule
 random jobs arrivals. It opportunistically schedules jobs when (and to where) 
@@ -346,10 +233,7 @@ servers but rather, we have schedule the jobs based on the heterogeneous set of
 machines existing on the server.
 
 
-
-\textbf{In \cite{MIGRATION_CLOUD}:}
-
-This study aims to exploit the temporal and geographical variation of
+The \cite{MIGRATION_CLOUD} study aims to exploit the temporal and geographical variation of
 electricity prices, in the context of data centers. They study algorithms to
 schedule (migrate) jobs in data center based on the energy cost and
 availability.
@@ -379,8 +263,7 @@ algorithm that takes into consideration the expected prices and also the actual
 prices.
 
 
-\textbf{In \cite{MINIMIZING_DIST}:}
-In \cite{MINIMIZING_DIST}, they try to systematically study the problems of how
+In \cite{MINIMIZING_DIST}, the researchers try to systematically study the problems of how
 minimize the electricity cost in data centers while guaranteeing minimal quality
 of service. To that end, they take into consideration the local and time diversity 
 of electricity prices.
@@ -412,15 +295,11 @@ datacenter and electrical costs optimizations that location and time based
 pricing allows.
 
 
-
-\textbf{In \cite{CUTTING_BILL}:}
 The authors of \cite{CUTTING_BILL} show that existing systems may be able to
 save millions of dollars by judiciously schedule workload to servers taking into
 consideration the temporal and geographical variation of energy prices. The
 results are based in historical data collected on Akamai's CDN. 
 
-
-\textbf{In \cite{DYN_PRICING_HPC}:}
 In \cite{DYN_PRICING_HPC}, the authors leverage the fact that parallel jobs have 
 distinct energy profiles. Taking it into consideration, they study the impact of
 scheduling jobs according to the energy prices at a given moment and the job's
@@ -465,8 +344,6 @@ where both job profile and system utilization are taking into consideration.
 
 
 
-\textbf{In \cite{SCHED_HETEROGE}:}
-
 The authors of \cite{SCHED_HETEROGE} present a novel task scheduling algorithm
 for HPC systems which considers two main points: reducing the energy consuption
 of the overall system and minimize the schedule length. An HP system is defined
@@ -491,8 +368,6 @@ systems at a distributed level and do not focus, as our approach, on inter data
 center solutions.
 
  
-\textbf{In \cite{TASK_SCHED}:}
-
 In \cite{TASK_SCHED}, the authors address the problem of an energy aware
 scheduling for heteregenous data allocation and task scheduling. The problem
 consists in finding the best taks scheduling in a heterogeneous system that meet
@@ -513,24 +388,7 @@ HDATS problem, since the optimal algorithm takes too long to solve problems
 until 100 nodes. The optimal solution has two phases: First is uses the
 DFG\_Assign\_CP algorithm to better map each task to node. Secondly, it choses the
 data assignment to whose total energy consumed is reduced and the deadlines met.
-\\
-They consider:
-\begin{itemize}
-  \item Heteregenous processors 
-  \item Heteregenous memories
-  \item Precedence constrained inputs
-  \item Input/output of each task 
-  \item Processor execution times
-  \item Data access times
-  \item Time constraints 
-  \item and Energy consumption
-\end{itemize}
 
-When solving the data allocation and task scheduling problem, which is an
-approach much more solid and complete than ours.
-
-
-\textbf{In \cite{EXE_METHOD}}
 
 The authors of \cite{EXE_METHOD} claim that, unfortunatelly, there are not many
 studies of processor scheduling algorithms that take into consideration both
@@ -538,15 +396,3 @@ time and energy. In this study, they explore heuristical scheduling algorithms
 focused on high performance computing and green computing. They work on
 heuristical algorithms and not in the optimal algorithm, because the optimal
 algorithm is proven to be NP-complete. 
-
-
-\subsubsection{New articles}
-
-In \cite{DYN_GEO}, the authors designed an online algorithm for dynamic pricing
-of VM resources across data centers in different geographical locations. The
-authors claim novelty by considering efficient strategies for joint dynamic
-pricing, job scheduling and resource provisioning.
-
-The authors of \cite{REDUCING_GEO}, \cite{DYN_POWER} also leverage the dynamic 
-electricity pricing models for data centers.
-

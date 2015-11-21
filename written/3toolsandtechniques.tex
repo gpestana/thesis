@@ -15,7 +15,7 @@ This chapter outlines and describes tools and techniques for measuring energy co
 
 The results of this section were publish in the conference proceedings of the 16th International workshop on Advanced Computing and Analysis Techniques in physics research (ACAT'2014). The article was called \textit{Techniques and tools for measuring energy efficiency of scientific software applications} \cite{ACAT} and can be found on Appendix A, at the end of this document. 
 
-\section*{The big picture}
+\section{The big picture}
 
 %granularities
 During this study, we will consider two different granularities at which is possible to measure the energy consumption of a computing system. The two granularities are coarse and fine granularity and they differ on the type of system components that are taken into consideration when measuring energy consumption.
@@ -63,9 +63,9 @@ level).
 \label{fig:power-consumption-model}
 \end{figure}
 
-\section*{Tools for measuring energy consumption}
+\section{Tools for measuring energy consumption}
 
-\subsection{Internal tools}
+\subsection*{Internal tools}
 
 \subsubsection*{Running Average Power Limit}
 %internal tools
@@ -98,7 +98,7 @@ There are chips that provide similar power monitoring capabilities than RAPL, bu
 Similarly to RAPL, the sampling resolution is high (at the sampling rate of microseconds) and the error is relatively low. On the other hand, the TI INA231 does not have capping capanilities.
 
 
-\subsection{External tools}
+\subsection*{External tools}
 
 There are different techniques and tools to measure the power consumed by the whole system ~\ref{fig:power-consumption-model}. Usually when the system is part of a server rack, the rack itself offers an API to sample the power consumed by each of the systems and overall rack power consumed. For simpler systems, it is recommended to use either power sockets with power meters or an external power meter. 
 

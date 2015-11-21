@@ -3,10 +3,14 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: energy_efficiency_scy_computing.aux
 The style file: acm.bst
 Database file #1: sources.bib
+Warning--I didn't find a database entry for "EFF_DSP"
 Warning--I didn't find a database entry for "TIINA231"
 Warning--I didn't find a database entry for "INTELMAN"
 Warning--I didn't find a database entry for "RAPL1"
 Warning--I didn't find a database entry for ""
+Warning--to sort, need author or key in CERN
+Warning--to sort, need author or key in WLCG
+Warning--to sort, need author or key in STACKOVERFLOW
 Warning--to sort, need author or key in ODROID_XU3
 Warning--to sort, need author or key in VIRIDIS
 Warning--to sort, need author or key in CORTEXA9
@@ -20,45 +24,45 @@ Warning--to sort, need author or key in IPMI
 Warning--to sort, need author or key in HTT
 Warning--to sort, need author or key in IPMI_resolution
 Warning--empty year in GEANT4
-You've used 17 entries,
+You've used 36 entries,
             2253 wiz_defined-function locations,
-            611 strings with 6734 characters,
-and the built_in function-call counts, 4297 in all, are:
-= -- 406
-> -- 152
+            738 strings with 10576 characters,
+and the built_in function-call counts, 11876 in all, are:
+= -- 1139
+> -- 492
 < -- 0
-+ -- 70
-- -- 52
-* -- 250
-:= -- 595
-add.period$ -- 51
-call.type$ -- 17
-change.case$ -- 77
++ -- 211
+- -- 174
+* -- 809
+:= -- 1712
+add.period$ -- 109
+call.type$ -- 36
+change.case$ -- 193
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 168
-empty$ -- 439
-format.name$ -- 52
-if$ -- 980
+cite$ -- 52
+duplicate$ -- 488
+empty$ -- 1078
+format.name$ -- 174
+if$ -- 2661
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 5
-newline$ -- 88
-num.names$ -- 10
-pop$ -- 171
+int.to.str$ -- 36
+missing$ -- 21
+newline$ -- 183
+num.names$ -- 42
+pop$ -- 331
 preamble$ -- 1
-purify$ -- 60
+purify$ -- 157
 quote$ -- 0
-skip$ -- 115
+skip$ -- 351
 stack$ -- 0
-substring$ -- 174
-swap$ -- 40
+substring$ -- 637
+swap$ -- 153
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 68
-warning$ -- 13
-while$ -- 18
-width$ -- 19
-write$ -- 159
-(There were 17 warnings)
+type$ -- 144
+warning$ -- 16
+while$ -- 83
+width$ -- 38
+write$ -- 355
+(There were 21 warnings)

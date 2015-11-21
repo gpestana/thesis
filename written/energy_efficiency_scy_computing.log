@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.6.30)  19 NOV 2015 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.6.30)  21 NOV 2015 12:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -815,15 +815,6 @@ Package hyperref Info: Option `bookmarksopen' set `true' on input line 240.
 
 LaTeX Warning: Label `my-label' multiply defined.
 
-
-LaTeX Warning: Label `fig:nf_ss' multiply defined.
-
-
-LaTeX Warning: Label `fig:nf_ss' multiply defined.
-
-
-LaTeX Warning: Label `fig:nf_ss' multiply defined.
-
 )
 \openout1 = `energy_efficiency_scy_computing.aux'.
 
@@ -903,7 +894,7 @@ LaTeX Info: Redefining \nameref on input line 335.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<img/aalto-logo-en.pdf, id=127, 302.3837pt x 132.96776pt>
+<img/aalto-logo-en.pdf, id=175, 302.3837pt x 132.96776pt>
 File: img/aalto-logo-en.pdf Graphic file (type pdf)
 
 <use img/aalto-logo-en.pdf>
@@ -912,82 +903,103 @@ Package pdftex.def Info: img/aalto-logo-en.pdf used on input line 360.
  [2 <./img/aalto-logo-en.pdf>] [3
 
 ] (./acronyms.tex)
-[4
+(./energy_efficiency_scy_computing.toc [4
 
-
-] (./energy_efficiency_scy_computing.toc [5
 
 
 ])
 \tf@toc=\write5
 \openout5 = `energy_efficiency_scy_computing.toc'.
 
- [6] (./3toolsandtechniques.tex
+ [5] (./1introduction.tex
 Chapter 1.
-[7
+[6
 
+
+] [7]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 115.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 115.
+ [8])
+(./2background.tex [9]
+Chapter 2.
+[10
+
+] [11] [12] [13]
+Overfull \hbox (0.31354pt too wide) in paragraph at lines 212--216
+\OT1/cmr/m/n/12 work-loads across mul-ti-ple data cen-ters ge-o-graph-i-cally d
+is-tributed. The sched-
+ []
+
+[14] [15] [16] [17]
+
+Package natbib Warning: Citation `EFF_DSP' on page 18 undefined on input line 3
+84.
+
+) (./3toolsandtechniques.tex [18]
+Chapter 3.
+[19
 
 ]
 
-Package natbib Warning: Citation `TIINA231' on page 8 undefined on input line 5
-2.
+Package natbib Warning: Citation `TIINA231' on page 20 undefined on input line 
+52.
 
-<img/energy_model.png, id=199, 341.275pt x 470.75874pt>
+<img/energy_model.png, id=378, 341.275pt x 470.75874pt>
 File: img/energy_model.png Graphic file (type png)
 
 <use img/energy_model.png>
 Package pdftex.def Info: img/energy_model.png used on input line 61.
 (pdftex.def)             Requested size: 213.39566pt x 294.36716pt.
 
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 68.
-
-
-Overfull \hbox (25.68472pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CHAPTER 1.  TOOLS AND TECHNIQUES FOR ENERGY MEASUREMENT \OT1/c
-mr/m/n/12 8
+Overfull \hbox (31.55966pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 3.  TOOLS AND TECHNIQUES FOR ENERGY MEASUREMENT \OT1/c
+mr/m/n/12 20
  []
 
-[8]
-Overfull \hbox (25.68472pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CHAPTER 1.  TOOLS AND TECHNIQUES FOR ENERGY MEASUREMENT \OT1/c
-mr/m/n/12 9
+[20]
+Overfull \hbox (31.55966pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 3.  TOOLS AND TECHNIQUES FOR ENERGY MEASUREMENT \OT1/c
+mr/m/n/12 21
  []
 
-[9 <./img/energy_model.png>]
+[21 <./img/energy_model.png>]
 
-Package natbib Warning: Citation `INTELMAN' on page 10 undefined on input line 
+Package natbib Warning: Citation `INTELMAN' on page 22 undefined on input line 
 83.
 
 
-Package natbib Warning: Citation `RAPL1' on page 10 undefined on input line 84.
+Package natbib Warning: Citation `RAPL1' on page 22 undefined on input line 84.
 
 
 
-LaTeX Warning: Reference `sec:sampling' on page 10 undefined on input line 87.
+LaTeX Warning: Reference `sec:sampling' on page 22 undefined on input line 87.
 
 
-Package natbib Warning: Citation `TIINA231' on page 10 undefined on input line 
+Package natbib Warning: Citation `TIINA231' on page 22 undefined on input line 
 96.
 
 
 Overfull \hbox (31.55966pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CHAPTER 1.  TOOLS AND TECHNIQUES FOR ENERGY MEASUREMENT \OT1/c
-mr/m/n/12 10
+\OT1/cmr/m/sl/12 CHAPTER 3.  TOOLS AND TECHNIQUES FOR ENERGY MEASUREMENT \OT1/c
+mr/m/n/12 22
  []
 
-[10]) (./4experiments.tex
+[22]) (./4experiments.tex
 Overfull \hbox (31.55966pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CHAPTER 1.  TOOLS AND TECHNIQUES FOR ENERGY MEASUREMENT \OT1/c
-mr/m/n/12 11
+\OT1/cmr/m/sl/12 CHAPTER 3.  TOOLS AND TECHNIQUES FOR ENERGY MEASUREMENT \OT1/c
+mr/m/n/12 23
  []
 
-[11]
-Chapter 2.
-[12
+[23]
+Chapter 4.
+[24
 
-] <"img/viridis&SoC".png, id=230, 761.84625pt x 194.7275pt>
+] <"img/viridis&SoC".png, id=408, 761.84625pt x 194.7275pt>
 File: "img/viridis&SoC".png Graphic file (type png)
 
 <use "img/viridis&SoC".png>
@@ -997,14 +1009,14 @@ Package pdftex.def Info: "img/viridis&SoC".png used on input line 56.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13] <"img/calxedaSOC".png, id=245, 421.575pt x 337.26pt>
+[25] <"img/calxedaSOC".png, id=423, 421.575pt x 337.26pt>
 File: "img/calxedaSOC".png Graphic file (type png)
 
 <use "img/calxedaSOC".png>
 Package pdftex.def Info: "img/calxedaSOC".png used on input line 76.
 (pdftex.def)             Requested size: 213.39566pt x 170.71892pt.
 
-<"img/cortexA9".png, id=251, 608.2725pt x 508.90125pt>
+<"img/cortexA9".png, id=429, 608.2725pt x 508.90125pt>
 File: "img/cortexA9".png Graphic file (type png)
 
 <use "img/cortexA9".png>
@@ -1014,15 +1026,15 @@ Package pdftex.def Info: "img/cortexA9".png used on input line 93.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14 <./img/viridis&SoC.png> <./img/calxedaSOC.png>]
-<"img/odroid".jpg, id=263, 451.6875pt x 261.97874pt>
+[26 <./img/viridis&SoC.png> <./img/calxedaSOC.png>]
+<"img/odroid".jpg, id=441, 451.6875pt x 261.97874pt>
 File: "img/odroid".jpg Graphic file (type jpg)
  <use "img/odroid".jpg>
 Package pdftex.def Info: "img/odroid".jpg used on input line 109.
 (pdftex.def)             Requested size: 213.39566pt x 123.76962pt.
 
-[15 <./img/cortexA9.png> <./img/odroid.jpg>]
-<"img/odroidxu3-diagram".jpg, id=277, 983.675pt x 380.42125pt>
+[27 <./img/cortexA9.png> <./img/odroid.jpg>]
+<"img/odroidxu3-diagram".jpg, id=456, 983.675pt x 380.42125pt>
 File: "img/odroidxu3-diagram".jpg Graphic file (type jpg)
 
 <use "img/odroidxu3-diagram".jpg>
@@ -1034,14 +1046,14 @@ Overfull \hbox (10.58478pt too wide) in paragraph at lines 158--159
 s and where/how
  []
 
-[16 <./img/odroidxu3-diagram.jpg>] [17] [18
+[28 <./img/odroidxu3-diagram.jpg>] [29] [30
 
 ]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 220.
 
-<"img/clamp".jpg, id=299, 45.771pt x 72.27pt>
+<"img/clamp".jpg, id=479, 45.771pt x 72.27pt>
 File: "img/clamp".jpg Graphic file (type jpg)
  <use "img/clamp".jpg>
 Package pdftex.def Info: "img/clamp".jpg used on input line 222.
@@ -1051,251 +1063,201 @@ Package pdftex.def Info: "img/clamp".jpg used on input line 222.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 230.
 
-[19] [20 <./img/clamp.jpg>]
+[31] [32 <./img/clamp.jpg>]
 Overfull \hbox (0.2839pt too wide) in paragraph at lines 271--272
 []\OT1/cmr/bx/n/12 CPU\OT1/cmr/m/n/12 : 2x A15 and/or A7 cores(big.LITTLE tech-
 nol-ogy) - A7 at 1.4GHz
  []
 
-[21] [22]
+[33] [34]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 309.
 
-[23]) (./4.5results.tex [24
+[35]) (./5analysis.tex [36
 
 ]
-Chapter 3.
-<"img/aalto/aalto_total_quad".png, id=340, 592.2125pt x 461.725pt>
+Chapter 5.
+<"img/aalto/aalto_total_quad".png, id=519, 592.2125pt x 461.725pt>
 File: "img/aalto/aalto_total_quad".png Graphic file (type png)
 
 <use "img/aalto/aalto_total_quad".png>
-Package pdftex.def Info: "img/aalto/aalto_total_quad".png used on input line 10
+Package pdftex.def Info: "img/aalto/aalto_total_quad".png used on input line 19
 .
 (pdftex.def)             Requested size: 284.52756pt x 221.83684pt.
 
-<"img/aalto/aalto_total_atom".png, id=341, 592.2125pt x 461.725pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:aalto_efficiency_comparison' on page 37 undefined
+ on input line 31.
+
+[37
+
+] <"img/aalto/aalto_total_atom".png, id=539, 592.2125pt x 461.725pt>
 File: "img/aalto/aalto_total_atom".png Graphic file (type png)
 
 <use "img/aalto/aalto_total_atom".png>
-Package pdftex.def Info: "img/aalto/aalto_total_atom".png used on input line 17
+Package pdftex.def Info: "img/aalto/aalto_total_atom".png used on input line 35
 .
 (pdftex.def)             Requested size: 284.52756pt x 221.83684pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<"img/aalto/aalto_total_arm".png, id=342, 592.2125pt x 461.725pt>
+<"img/aalto/aalto_total_arm".png, id=540, 592.2125pt x 461.725pt>
 File: "img/aalto/aalto_total_arm".png Graphic file (type png)
 
 <use "img/aalto/aalto_total_arm".png>
-Package pdftex.def Info: "img/aalto/aalto_total_arm".png used on input line 24.
+Package pdftex.def Info: "img/aalto/aalto_total_arm".png used on input line 46.
 
 (pdftex.def)             Requested size: 284.52756pt x 221.83684pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<"img/aalto/aalto_quadEvents".png, id=343, 796.4154pt x 676.4472pt>
+<"img/aalto/memory_stages".png, id=545, 1097.09875pt x 751.80875pt>
+File: "img/aalto/memory_stages".png Graphic file (type png)
+
+<use "img/aalto/memory_stages".png>
+Package pdftex.def Info: "img/aalto/memory_stages".png used on input line 58.
+(pdftex.def)             Requested size: 284.52756pt x 194.97238pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<"img/aalto/aalto_quadEvents".png, id=549, 796.4154pt x 676.4472pt>
 File: "img/aalto/aalto_quadEvents".png Graphic file (type png)
 
 <use "img/aalto/aalto_quadEvents".png>
-Package pdftex.def Info: "img/aalto/aalto_quadEvents".png used on input line 34
+Package pdftex.def Info: "img/aalto/aalto_quadEvents".png used on input line 79
 .
 (pdftex.def)             Requested size: 284.52756pt x 241.66289pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<"img/aalto/aalto_atomEvents".png, id=344, 796.4154pt x 609.9588pt>
+<"img/aalto/aalto_atomEvents".png, id=550, 796.4154pt x 609.9588pt>
 File: "img/aalto/aalto_atomEvents".png Graphic file (type png)
 
 <use "img/aalto/aalto_atomEvents".png>
-Package pdftex.def Info: "img/aalto/aalto_atomEvents".png used on input line 41
+Package pdftex.def Info: "img/aalto/aalto_atomEvents".png used on input line 86
 .
 (pdftex.def)             Requested size: 284.52756pt x 217.9097pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<"img/aalto/aalto_armEvents".png, id=345, 796.4154pt x 713.3049pt>
+<"img/aalto/aalto_armEvents".png, id=551, 796.4154pt x 713.3049pt>
 File: "img/aalto/aalto_armEvents".png Graphic file (type png)
 
 <use "img/aalto/aalto_armEvents".png>
-Package pdftex.def Info: "img/aalto/aalto_armEvents".png used on input line 48.
+Package pdftex.def Info: "img/aalto/aalto_armEvents".png used on input line 93.
 
 (pdftex.def)             Requested size: 284.52756pt x 254.83041pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<"img/aalto/aalto_all_time".png, id=346, 794.97pt x 734.9859pt>
+[38 <./img/aalto/aalto_total_quad.png>] [39 <./img/aalto/aalto_total_atom.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--128
+
+ []
+
+<"img/aalto/aalto_all_time".png, id=569, 794.97pt x 734.9859pt>
 File: "img/aalto/aalto_all_time".png Graphic file (type png)
 
 <use "img/aalto/aalto_all_time".png>
-Package pdftex.def Info: "img/aalto/aalto_all_time".png used on input line 58.
+Package pdftex.def Info: "img/aalto/aalto_all_time".png used on input line 132.
+
 (pdftex.def)             Requested size: 284.52756pt x 263.05827pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<"img/aalto/aalto_all_results".png, id=347, 575.2692pt x 276.7941pt>
+[40 <./img/aalto/aalto_total_arm.png>]
+<"img/aalto/aalto_all_results".png, id=577, 575.2692pt x 276.7941pt>
 File: "img/aalto/aalto_all_results".png Graphic file (type png)
 
 <use "img/aalto/aalto_all_results".png>
-Package pdftex.def Info: "img/aalto/aalto_all_results".png used on input line 6
-6.
+Package pdftex.def Info: "img/aalto/aalto_all_results".png used on input line 1
+47.
 (pdftex.def)             Requested size: 426.79134pt x 205.35658pt.
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 66--67
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 147--148
  [][] 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<"img/acat/results1".png, id=348, 1204.5pt x 501.875pt>
+[41 <./img/aalto/memory_stages.png>]
+<"img/acat/results1".png, id=583, 1204.5pt x 501.875pt>
 File: "img/acat/results1".png Graphic file (type png)
 
 <use "img/acat/results1".png>
-Package pdftex.def Info: "img/acat/results1".png used on input line 75.
+Package pdftex.def Info: "img/acat/results1".png used on input line 176.
 (pdftex.def)             Requested size: 426.79134pt x 177.83374pt.
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 75--76
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 176--177
  [][] 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<"img/aalto/parfull_results_aalto".png, id=349, 586.8324pt x 442.2924pt>
+<"img/aalto/parfull_results_aalto".png, id=585, 586.8324pt x 442.2924pt>
 File: "img/aalto/parfull_results_aalto".png Graphic file (type png)
 
 <use "img/aalto/parfull_results_aalto".png>
 Package pdftex.def Info: "img/aalto/parfull_results_aalto".png used on input li
-ne 82.
+ne 186.
 (pdftex.def)             Requested size: 284.52756pt x 214.45082pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<"img/numa/16proc_no_binding".png, id=350, 623.32875pt x 521.95pt>
-File: "img/numa/16proc_no_binding".png Graphic file (type png)
+[42 <./img/aalto/aalto_quadEvents.png>] [43 <./img/aalto/aalto_atomEvents.png>]
 
-<use "img/numa/16proc_no_binding".png>
-Package pdftex.def Info: "img/numa/16proc_no_binding".png used on input line 10
-1.
-(pdftex.def)             Requested size: 426.79134pt x 357.38226pt.
-
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 101--104
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<"img/numa/16proc_node2and3".png, id=351, 622.325pt x 518.93875pt>
-File: "img/numa/16proc_node2and3".png Graphic file (type png)
-
-<use "img/numa/16proc_node2and3".png>
-Package pdftex.def Info: "img/numa/16proc_node2and3".png used on input line 109
-.
-(pdftex.def)             Requested size: 426.79134pt x 355.89058pt.
-
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 109--112
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<"img/numa/32proc".png, id=352, 622.325pt x 520.94624pt>
-File: "img/numa/32proc".png Graphic file (type png)
-
-<use "img/numa/32proc".png>
-Package pdftex.def Info: "img/numa/32proc".png used on input line 117.
-(pdftex.def)             Requested size: 426.79134pt x 357.26732pt.
-
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 117--120
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-<"img/numa/32proc_explicitly_distributed".png, id=353, 622.325pt x 520.94624pt>
-File: "img/numa/32proc_explicitly_distributed".png Graphic file (type png)
-<use "img/numa/32proc_explicitly_distributed".png>
-Package pdftex.def Info: "img/numa/32proc_explicitly_distributed".png used on i
-nput line 125.
-(pdftex.def)             Requested size: 426.79134pt x 357.26732pt.
-
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 125--127
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./5analysis.tex [25
-
- <./img/aalto/aalto_total_quad.png>] [26 <./img/aalto/aalto_total_atom.png> <./
-img/aalto/aalto_total_arm.png>] [27 <./img/aalto/aalto_quadEvents.png> <./img/a
-alto/aalto_atomEvents.png>] [28 <./img/aalto/aalto_armEvents.png> <./img/aalto/
-aalto_all_time.png>] [29 <./img/aalto/aalto_all_results.png> <./img/acat/result
-s1.png>] [30 <./img/aalto/parfull_results_aalto.png>]
-[31 <./img/numa/16proc_no_binding.png>] [32 <./img/numa/16proc_node2and3.png>]
-[33 <./img/numa/32proc.png>] [34 <./img/numa/32proc_explicitly_distributed.png>
-]
-Chapter 4.
-
-LaTeX Warning: Reference `fig:aalto_efficiency_comparison' on page 35 undefined
- on input line 23.
-
-[35
-
-] [36]
-Underfull \hbox (badness 10000) in paragraph at lines 70--75
-
- []
-
-[37] [38]
-
-Package caption Warning: \label without proper \caption on input line 130.
+Package caption Warning: \label without proper \caption on input line 214.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:power_node_ipmitool' on page 39 undefined on inpu
-t line 123.
+LaTeX Warning: Reference `fig:power_node_ipmitool' on page 44 undefined on inpu
+t line 207.
 
-<"img/aalto/power_node_ipmitool".png, id=468, 706.13812pt x 398.99063pt>
+[44 <./img/aalto/aalto_armEvents.png>]
+<"img/aalto/power_node_ipmitool".png, id=613, 706.13812pt x 398.99063pt>
 File: "img/aalto/power_node_ipmitool".png Graphic file (type png)
 
 <use "img/aalto/power_node_ipmitool".png>
 Package pdftex.def Info: "img/aalto/power_node_ipmitool".png used on input line
- 129.
+ 213.
 (pdftex.def)             Requested size: 426.79134pt x 241.1496pt.
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 129--131
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 213--215
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[39] [40 <./img/aalto/power_node_ipmitool.png>]) (./6multienergy.tex [41]
-Chapter 5.
-<"img/pricing_model_table".png, id=487, 1156.32pt x 410.53375pt>
+[45 <./img/aalto/aalto_all_time.png>]) (./6multienergy.tex [46 <./img/aalto/aal
+to_all_results.png>] [47 <./img/acat/results1.png> <./img/aalto/parfull_results
+_aalto.png>] [48 <./img/aalto/power_node_ipmitool.png>]
+Chapter 6.
+<"img/pricing_model_table".png, id=637, 1156.32pt x 410.53375pt>
 File: "img/pricing_model_table".png Graphic file (type png)
 
 <use "img/pricing_model_table".png>
 Package pdftex.def Info: "img/pricing_model_table".png used on input line 11.
 (pdftex.def)             Requested size: 284.52756pt x 101.01701pt.
- [42
+ [49
 
  <./img/pricing_model_table.png>]
-<"img/pricing_model".png, id=499, 1365.1pt x 770.88pt>
+<"img/pricing_model".png, id=650, 1365.1pt x 770.88pt>
 File: "img/pricing_model".png Graphic file (type png)
 
 <use "img/pricing_model".png>
@@ -1306,8 +1268,8 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 22--23
  [][] 
  []
 
-[43 <./img/pricing_model.png>]
-<"img/input".png, id=507, 1331.97626pt x 459.7175pt>
+[50 <./img/pricing_model.png>]
+<"img/input".png, id=657, 1331.97626pt x 459.7175pt>
 File: "img/input".png Graphic file (type png)
  <use "img/input".png>
 Package pdftex.def Info: "img/input".png used on input line 55.
@@ -1317,24 +1279,74 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 55--56
  [][] 
  []
 
-<"img/scheduler_code".png, id=508, 692.5875pt x 566.115pt>
+<"img/scheduler_code".png, id=658, 798.985pt x 348.30125pt>
 File: "img/scheduler_code".png Graphic file (type png)
 
 <use "img/scheduler_code".png>
-Package pdftex.def Info: "img/scheduler_code".png used on input line 64.
-(pdftex.def)             Requested size: 426.79134pt x 348.86267pt.
+Package pdftex.def Info: "img/scheduler_code".png used on input line 65.
+(pdftex.def)             Requested size: 426.79134pt x 186.04968pt.
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 64--65
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 65--66
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[44 <./img/input.png>] [45 <./img/scheduler_code.png>])
-(./energy_efficiency_scy_computing.bbl [46] [47
+[51 <./img/input.png>] [52 <./img/scheduler_code.png>]
+<"img/input_table".png, id=676, 968.61874pt x 337.26pt>
+File: "img/input_table".png Graphic file (type png)
 
-]) (./appendices.tex [48]
+<use "img/input_table".png>
+Package pdftex.def Info: "img/input_table".png used on input line 103.
+(pdftex.def)             Requested size: 426.79134pt x 148.60585pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 103--104
+ [][] 
+ []
+
+<"img/scheduler_code_init".png, id=679, 689.57625pt x 451.6875pt>
+File: "img/scheduler_code_init".png Graphic file (type png)
+
+<use "img/scheduler_code_init".png>
+Package pdftex.def Info: "img/scheduler_code_init".png used on input line 112.
+(pdftex.def)             Requested size: 426.79134pt x 279.5609pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 112--113
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[53 <./img/input_table.png>]
+<"img/prices_final_table".png, id=689, 1128.215pt x 657.45625pt>
+File: "img/prices_final_table".png Graphic file (type png)
+
+<use "img/prices_final_table".png>
+Package pdftex.def Info: "img/prices_final_table".png used on input line 128.
+(pdftex.def)             Requested size: 426.79134pt x 248.71239pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 128--129
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[54 <./img/scheduler_code_init.png>] [55 <./img/prices_final_table.png>])
+(./7futurework.tex [56]
+Chapter 7.
+) (./8conclusions.tex [57
+
+]
+Chapter 8.
+[58
+
+]) (./energy_efficiency_scy_computing.bbl [59] [60
+
+] [61] [62])
+(./appendices.tex [63]
 Appendix A.
 )
 
@@ -1342,17 +1354,17 @@ Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[49
+[64
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 465.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 465.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 463.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 463.
  (./energy_efficiency_scy_computing.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 465.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 465.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 463.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 463.
 Package rerunfilecheck Info: File `energy_efficiency_scy_computing.out' has not
  changed.
-(rerunfilecheck)             Checksum: 5D1231D76FBA4E504F70B17BB9203BD3;2011.
+(rerunfilecheck)             Checksum: 43F4D418E06E55A6EDB65254C44AA1BD;2934.
 
 
 LaTeX Warning: There were undefined references.
@@ -1362,13 +1374,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 22162 strings out of 493105
- 437446 string characters out of 6137072
- 538618 words of memory out of 5000000
- 25020 multiletter control sequences out of 15000+600000
+ 22304 strings out of 493105
+ 439554 string characters out of 6137072
+ 539044 words of memory out of 5000000
+ 25106 multiletter control sequences out of 15000+600000
  12108 words of font info for 43 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 55i,19n,67p,885b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,19n,67p,897b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
@@ -1377,13 +1389,14 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmtt10.pfb>
-Output written on energy_efficiency_scy_computing.pdf (49 pages, 2174856 bytes)
+amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmtt10.pfb>
+Output written on energy_efficiency_scy_computing.pdf (64 pages, 2024401 bytes)
 .
 PDF statistics:
- 638 PDF objects out of 1000 (max. 8388607)
- 514 compressed objects within 6 object streams
- 128 named destinations out of 1000 (max. 500000)
- 372 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 852 PDF objects out of 1000 (max. 8388607)
+ 710 compressed objects within 8 object streams
+ 173 named destinations out of 1000 (max. 500000)
+ 468 words of extra memory for PDF output out of 10000 (max. 10000000)
 

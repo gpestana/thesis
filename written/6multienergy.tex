@@ -1,4 +1,4 @@
-\chapter{HTC in a dynamic energy price market}
+\chapter{HTC in a dynamic energy pricing market}
 
 One of the ways to utilize the conclusions from the experiments conducted in this study is to actively lower the energy bill in HTC. One approach could be to schedule jobs between more energy efficient but slower ARM architectures and the less energy efficient but faster Intel machines. This approach makes sense in a multi energy price ecosystem. A multi energy price ecosystem is an energy market where the prices float accorading to the overall power grid usage.
 
@@ -57,19 +57,87 @@ Therefore, given a set of machines with different energy profiles; the computing
     \label{fig:input}
 \end{figure}
 
+
 \subsection*{The scheduling algorithm}
 
 \begin{figure}[h]
   \centering
     \includegraphics[width=150mm]{"img/scheduler_code"}
     \caption{Proposed scheduler algorithm written in Python}
-    \label{fig:sheduler_code}
+    \label{fig:scheduler_code}
 \end{figure}
+
+The scheduling algorithm is presented in ~\ref{fig:scheduler_code}. For simplicity sake, the algorithm is written in Python.
+
+The main idea behind the construction of the algorithm is that it should assign the maximum number of events to be processed to the lowest priced configuration possible, given the existent constrains (deadline). For example, if it is possible to process all the data only using the ARM architecture in the lowest and highest energy pricing times, then there is no need to use the Intel machines to process the data. This way it is possible to reach the optimal scheduling of processing power given a deadline and several machines with diferent configurations.
+
+\subsubsection*{Algorithm walkthrough}
+The input of the algorithm are the number of days that we have to process the data (deadline); the number of events to process; and a set of buckets. We define a bucket as a tuple of \textit{ (machine, energy\_price\_level) }. The table ~\ref{fig:input_table} shows an example of what buckets can be.
+The expected output os the final price of the scheduled processing. If the processing power of the data center is not enough to complete the task before the set deadline, the output will be an error.
+
+
+\vspace{10mm}
+Based on the code in ~\ref{fig:scheduler_code}: 
+\begin{itemize}
+  \item[\textbf{Line 5}] Sorts the buckets from lowest to highest price per event. The goal is to use the as much processing power of the cheaper buckets as possible.
+  
+  \item[\textbf{Line 7}] The algorithm goes through all the available buckets. It starts by considering the cheapest options and only uses the mroe expensive if needed.
+  
+  \item[\textbf{Line 11}] Ensures that the money spent by the last bucket will only take into consideration the events left. 
+  
+  \item[\textbf{Lines 14-15}] The money spent by a given bucket is the number of events processed times the price per event.
+  
+  \item[\textbf{Lines 18-20}] When there are no events left to process, finish the algorithm and calculates the final price (the sum of the money spent by all the buckets to compute the tasks)
+  
+  \item[\textbf{Lines 22}] After the buckets had all the events processed given the deadline, if there is still events left the algorithm throws an errors. In this case, more buckets have to be added of the deadline should be increased.
+
+  \end{itemize}
+
+
+\subsection*{Use case}
+
+Let us consider the values presented in ~\ref{fig:input_table} as a case scenario to use the scheduling algorithm. The values presented show the energy profile of a hypothetical mini data center set up. The data center has only two machines: a ARMv7 and a Intel x86 server. The energy profile (number of events processed by day and enregy consumed) is based on the values from the experiments analysed in the previous chapters. The prices are based on the simplified dynamic energy pricing model of 60 euros/Mwh in the high pricing hours (comprised of 12h/day) and 20 euros/Mhw in the low pricing hours (comprised on 12h/day)
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=150mm]{"img/input_table"}
+    \caption{Example input for the scheduling algorithm}
+    \label{fig:input_table}
+\end{figure}
+
+Given the data in ~\ref{fig:input_table}, the algorithm should be started as in ~\ref{fig:scheduler_code_init}.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=150mm]{"img/scheduler_code_init"}
+    \caption{Start the algorithm programatically}
+    \label{fig:scheduler_code_init}
+\end{figure}
+
+\vspace{10mm}
+
+Given the input ~\ref{fig:scheduler_code_init} and the algorithm in ~\ref{fig:scheduler_code}, the result is that the optimal final price for computing 1200000 events in 2 days is 1.97125776 euros, where the ARM machine processed 204120 events in the low pricing window and 204120 in the high pricing window during the 2 days. As for the Intel machine, it had to process only 791760 events during the low pricing window. The Intel machine does not need to be working during the high pricing windows in order for the data center to meet the deadline.
+
+\vspace{10mm}
+
+
+We ran the scheduler algorithm with different deadlines to compare the final prices and how much work do the different machines have to perform in the different energy pricing window. The results are condensed in the  ~\ref{fig:prices_final_table}.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=150mm]{"img/prices_final_table"}
+    \caption{Algorithm results for different deadlines}
+    \label{fig:prices_final_table}
+\end{figure}
+
+
+Based on the information of the table ~\ref{fig:prices_final_table}, if we the deadline is stricter, the price to pay will be bigger as expected. We can also conclude that the machines we have access to are not able to process the 1200000 events in 1 day only. As expected, the more time there is to process the events, the less the algorithm uses the most expensive buckets to process the data. When the deadline is 75 and 100 days, all the events are processed by the ARM machine during the time when the energy price is lower. Thus, this is the cheapest possible case given the data center setups and energy price model used in this use case.
+
 
 
 \section{Further developments}
 
-Well known algorithms such as job shop and others can be applied using the same rational. We expect that different algorithms present different results and that the nearly-optimal scheduling algorithm can be achieved with one well studied existing algorithm. We believe that to explore the potential of the heterogeneous HTC in a dynamic energy pricing market further on can show big savings in the future.
+Well known algorithms such as job shop scheduling algorithm and others can be applied using the same rational. We expect that different algorithms present different results and that the nearly-optimal scheduling algorithm can be achieved with one well studied existing algorithm. We believe that to research heterogeneous HTC in a dynamic energy pricing market further on may present potential to unlock savings in energy budget for data centers. It would be interesting to apply several other scheduling algorithms to this scenario and compare the obtained results.
 
 \section{Conclusions}
 
@@ -87,7 +155,7 @@ schedule the jobs in order to minimize the energy consumption and energy bill
 deadline is met. 
 
 However, there are some open points that we still have might want to
-consider. First, as \cite{DYN_PRICING_HPC} mentions, it is important to insure
+consider. First, as \cite{DYN_PRICING_HPC} mentions, it is important to ensure
 that the hardware existent in the data center is used at its full potential, in
 order to not waste the investment made when it was purchased. Our solution,
 though, does not insure that since the idea is to power down/idle machines that 
@@ -104,14 +172,4 @@ problem to an extent that might hinder our purposes of creating a practical and
 energy efficient scheduling algorithm for heterogeneous HPC under dynamic
 electrical pricing.
 
-
-
-
-
-- Use the greedy and jobshop models to schedule works across different energy
-  profile machines. 
-
-- Use experiments done to characterize the machines 
-
-- Code scheduling algorithm
-
+Our solution is a starting point for a deeper study of heterogeneous computing applied to HTC in a dynamic energy pricing market. We used the data and experiments obtained in the previous chapters of this study to test our algorithm in a scenario as closest to the reality as possible. Based on the budget savings shown in the results, our approach shows potential to be used in a production scenario.
