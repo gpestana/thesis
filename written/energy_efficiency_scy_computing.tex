@@ -124,6 +124,11 @@
 
 
 
+\usepackage{graphicx}
+\usepackage{lineno}
+\usepackage{float}
+
+
 % Optional packages
 % ------------------------------------------------------------------
 % Select those packages that you need for your thesis. You may delete
@@ -355,8 +360,7 @@
 % Abstract in English
 % ------------------------------------------------------------------
 \thesisabstract{english}{
- abstract
-
+The volume of data to process and store in high throughput computing (HTC) and scientific computing continues increasing many-fold every year. Consequently, the energy consumption of data centers and similar facilities is raising economical and environmental concerns. In particular, scientific and high throughput computing are sensible to this problem, due to the high magnitude of data volume to process and store. Therefore, it is of paramount importance to improve energy efficiency in such environments. This thesis focus on understanding how to improve energy efficiency in scientific and HTC. For this purpose, we conducted research on tools and techniques to measure power consumption. In addition, we conducted experiments to understand if low-energy processing architectures are suitable for HTC. To achieve that, we compared the energy efficiency of ARM and Intel architectures under authentic scientific workloads. Finally, we used the results obtained to develop an algorithm that schedules tasks among ARM and Intel machines in a dynamic electricity pricing market, in order to optimally lower the overall electricity bill. Our contributions are threefold: The results of the study indicate that ARM presents potential for being used in scientific and HTC from an energy efficiency perspective; We also outlined a set of tools and techniques to accurately measure energy consumption at the different levels of the computing systems; Finally, the developed scheduling algorithm showed potential savings in the electrical bill when applied to heterogeneous data centers working under a dynamic electricity pricing market.
 }
 
 % Acknowledgements
@@ -437,8 +441,10 @@ Acknowledgements!
  %%%%%\input{4.5results.tex}
  \input{5analysis.tex}
  \input{6multienergy.tex} %done draft
- \input{7futurework.tex}
+ \input{7futurework.tex} %done draft
  \input{8conclusions.tex} %done draft
+ %\input{9acat.tex} %done draft
+
 
 % Load the bibliographic references
 % ------------------------------------------------------------------

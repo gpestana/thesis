@@ -13,7 +13,7 @@ We organized the experiments in 2 sets. The conditions under which the
 experiments were conducted were similar. Due to hardware and software
 limitations and availability, it was not possible to completely reproduce the experiment
 conditions across all the sets. However, we believe that the differences will
-affect the final results only to a resonable degree, making it possible to scientifically compare the results. This and other considerations will be discussed further in the Analysis chapter. 
+affect the final results only to a reasonable degree, making it possible to scientifically compare the results. This and other considerations will be discussed further in the Analysis chapter. 
 
 The tools and techniques used to perform the energy
 consumption measurements were based on the study presented on the previous
@@ -21,7 +21,7 @@ chapter. The setups of the experiments, methodology and tools used to perform th
 measurements during the experiments are explained and detailed in the following
 sections.
 
-Thoughout this chapter, we will label \textit{set of experiments} as experiments conducted with
+Throughout this chapter, we will label \textit{set of experiments} as experiments conducted with
 the same hardware and software configuration. The degrees of freedom of each
 experiment are the number of events and number of threads processing the workload.
  
@@ -41,7 +41,7 @@ at comparing similar conditions and workloads across all the set of experiments.
 
 The ARM machines used were a single-board ARM processor developed by Odroid
 \cite{ODROID_XU3} and a server class ARM processor by Boston 
-Viridis \cite{VIRIDIS}. The Intel machines used were part of the microarchitectures family Sandy Bridges and Intel Bonnell. In the following sections, we will describe the hardware architecture, features of the hardware used to run the experiments and where the hardware is commonly used outside the scope of this study. 
+Viridis \cite{VIRIDIS}. The Intel machines used were part of the micro-architectures family Sandy Bridges and Intel Bonnell. In the following sections, we will describe the hardware architecture, features of the hardware used to run the experiments and where the hardware is commonly used outside the scope of this study. 
 
 \subsection{ARM architecture}
 \subsubsection*{Boston Viridis server}
@@ -65,7 +65,7 @@ energy card. Each energy card contains four nodes \ref{fig:viridis&SoC}.
 A node is an ARM based CPU fabricated by Calxeda. The block diagram of a ARM\_viridis node is represented on \ref{fig:calxedaSOC}shows the architectures of the EnergyCore used. We can notice that the SoC has an energy management engine that will further on allow us to sample the energy consumed by the node.  
 
 Each ARM\_viridis node contains four ARM A9 Cortex core with a clock speed up
-to 1.4MHz. A memory controller and L2 cache is includede on the chip. In
+to 1.4MHz. A memory controller and L2 cache is included on the chip. In
 addition, a couple of energy management blocks and IO controllers complete the
 Calxeda EnergyCore processor \ref{fig:calxedaSOC}. These energy measurement
 blocks were used to perform part of the energy measurements with this setup.
@@ -81,7 +81,7 @@ blocks were used to perform part of the energy measurements with this setup.
 
 According to \cite{CORTEXA9}, the ARM A9 Cortex is a popular and mature general
 purpose core for low-power devices. It was introduced in 2008 and it remains a
-popular choice in smartphones and applications enabling the Internet of Things
+popular choice in smart-phones and applications enabling the Internet of Things
 (IoT) \cite{CORTEXA9}. The ARM A9 Cortex supports the ARMv7A 
 instruction set architecture. A detailed study of the ARMv7A internals is out
 of scope of this work. More detailed specifications about the
@@ -147,17 +147,13 @@ on top of x86 Intel instruction sets to
 compare with the ARM based machines. The Intel x86 machines are the most widely
 used solutions for server and workstation applications.
 
-The Intel Xeon that we used had RAPL enable (refer to Chapter X), which allowed us to measure energy
+The Intel Xeon that we used had RAPL enable (refer to Chapter 3), which allowed us to measure energy
 consumption accurately at a fine-grained level. Since the ATOM and QUAD machines
 did not have RAPL technology enabled, we used a clamp power meter to measure the
 energy consumed by the CPU at a given time.
 
 The different types of measurements within the same architecture and
 its possible affect on he final result are discussed in the Analysis section.
-
-\textbf{describe more about Intel, its features (hyper threading, wich affects the results for example), its microarch families and where/how have them been used in production}
-
-ex: "The Intel Atom is a brand name for a line of ultra-low-voltage CPUs by Intel. On the other hand, the x86 Intem Quad is brand name for a high performance family of Intel CPUs"
 
 \clearpage
 
@@ -166,7 +162,7 @@ ex: "The Intel Atom is a brand name for a line of ultra-low-voltage CPUs by Inte
 \subsection{First set of experiments}
 
 \subsubsection*{Hardware specifications}
-For the first set of experiments, we used three machines with different hardware setups. The three machines differ in architecture and general purpose. The ARM\_virdis is a server rack with CPU consisting of ARMv7 processors produced by Boston Labs [ref]. We ran the same workloads in a x86 Intel Atom (Intel\_atom) and Intel Quad (Intel\_quad) for comparison. The Intel Atom is a brand name for a line of ultra-low-voltage CPUs by Intel. On the other hand, the x86 Intem Quad is brand name for a high performance family of Intel CPUs.
+For the first set of experiments, we used three machines with different hardware setups. The three machines differ in architecture and general purpose. The ARM\_virdis is a server rack with CPU consisting of ARMv7 processors produced by Boston Labs [ref]. We ran the same workloads in a x86 Intel Atom (Intel\_atom) and Intel Quad (Intel\_quad) for comparison. The Intel Atom is a brand name for a line of ultra-low-voltage CPUs by Intel. On the other hand, the x86 Intel Quad is brand name for a high performance family of Intel CPUs.
 
 Below, we outline the most important specifications of the hardware setups we used for the experiments.
 
@@ -205,13 +201,13 @@ For more detailed specs refer to \cite{viridis_specs}
 
 
 \subsubsection*{Software and workload}
-We used the CMSSW framework in the generation-simulation mode (GEN\-SIM). The workflow performs a Monte Carlo simulation of 8 TeV LHC Minimum bias event using Pynthia8 (generation step), followed by Simulation with Geant4 (simulation step). For more information about the CMSSW framework and its limitation on ARM, refer to Chapter X.
-At the time of the experiments, the CMSSW port for ARM had limitations on the multithreading support. We wanted to study the energy consumption of each hardware setup given different core load. Thus, we spinned up different processes instead of threads. The core-load levels used were 1/4, 1/2, 1 and 2 processes per number of physical cores. 
+We used the CMSSW framework in the generation-simulation mode (GEN\-SIM). The work-flow performs a Monte Carlo simulation of 8 TeV LHC Minimum bias event using Pynthia8 (generation step), followed by Simulation with Geant4 (simulation step).
+At the time of the experiments, the CMSSW port for ARM had limitations on the multi-threading support. We wanted to study the energy consumption of each hardware setup given different core load. Thus, we spin up different processes instead of threads. The core-load levels used were 1/4, 1/2, 1 and 2 processes per number of physical cores. 
 
 \subsubsection*{Metrics}
 The energy efficiency metric used in this study is the ratio of performance per power consumed (in Watts). Performance consist on the average of events computed per second. Considering this metrics for comparing energy consumption, we consider a system to be as energy efficient as higher the ratio \textit{nr\_of\_events/s/W} is.
 
-Given the hardware disparities of the setups we had in place to run our experiments, we used the performance (average fd events computed per second) as a way to uniform the results.
+Given the hardware disparities of the setups we had in place to run our experiments, we used the performance (average events computed per second) as a way to uniform the results.
 
 \subsubsection*{Tools for measuring energy consumption}
 For this set of experiments, we performed physical measurements using an external clamp meter. The clamp was a Mini AC/DC Clamp meter
@@ -247,7 +243,7 @@ Mastech MS2102 AC/DC (see Figure \ref{fig:clamp}). The clamp meter supports a ma
 
 \subsubsection*{Hardware specifications}
 
-For the second set of experiements, we again used three machines with different hardware setups. As in the 1SE, the three machines differ in architecture and general purpose. The ARM\_virdis, which was used in the 1SE, was also used during the second set of experiments. In addition to ARM\_viridis, we also resort to another machine powered by an ARM CPU. The ARM\_odroid is a development board manufactured by HardKernel [ref] and it is intended to provide a cheap and easy way to develop hardware and software in a ARM architecture. To represent the Intel architecture we used Intel\_xeon, a machine from the Intel Sandy Bridge family and powered by an Intel R5-2650 CPU. This machine was part of a server rack and it was intended for high performace scientific computation in a production scenario.
+For the second set of experiments, we again used three machines with different hardware setups. As in the 1SE, the three machines differ in architecture and general purpose. The ARM\_virdis, which was used in the 1SE, was also used during the second set of experiments. In addition to ARM\_viridis, we also resort to another machine powered by an ARM CPU. The ARM\_odroid is a development board manufactured by HardKernel [ref] and it is intended to provide a cheap and easy way to develop hardware and software in a ARM architecture. To represent the Intel architecture we used Intel\_xeon, a machine from the Intel Sandy Bridge family and powered by an Intel R5-2650 CPU. This machine was part of a server rack and it was intended for high performance scientific computation in a production scenario.
 
 Below, we outline the most important aspects of the hardware setups we used for the experiments.
 
@@ -288,19 +284,19 @@ For more detailed specs refer to \cite{xeon_specs}
 
 
 \subsubsection*{Software and workload}
-We used the CMSSW's mode ParCullCMS for generating the workload. The ParFullCMS mode is a multi-threaded Geant4 \cite{GEANT4} benchmark. It uses a complex CMS geometry for the event simulation and has the advantage of being multithreaded in both Intel and ARM architectures. As in the first set of experiements, we measured the energy consumed by the machine under different physical core loads. The core-load levels used were 1/4, 1/2, 1 and 2 threads per number of physical cores. 
+We used the CMSSW's mode ParCullCMS for generating the workload. The ParFullCMS mode is a multi-threaded Geant4 \cite{GEANT4} benchmark. It uses a complex CMS geometry for the event simulation and has the advantage of being multi-threaded in both Intel and ARM architectures. As in the first set of experiments, we measured the energy consumed by the machine under different physical core loads. The core-load levels used were 1/4, 1/2, 1 and 2 threads per number of physical cores. 
 
 \subsubsection*{Metrics}
 As in the 1SE, the energy efficiency metric used in this study is the ratio of performance per power consumed (Watts). The hardware setups used in the 2SE differ in specs and features. Therefore, we used the this metric as a way to uniform the results.
 
 \subsubsection*{Tools for measuring energy consumption}
-For the 2SE, we performed both internal and external measurements in the Intel\_xeon and ARM\_odroid. On the ARM\_viridis, we performed only internal measurements given the lack of a tool that would performe with the same degree of accuracy than the tools used for Intel\_xeon and ARM\_odroid. All the tools used to measure energy consumption were embeeded in the hardware setup of the machines.
+For the 2SE, we performed both internal and external measurements in the Intel\_xeon and ARM\_odroid. On the ARM\_viridis, we performed only internal measurements given the lack of a tool that would perform with the same degree of accuracy than the tools used for Intel\_xeon and ARM\_odroid. All the tools used to measure energy consumption were embedded in the hardware setup of the machines.
 
 For the ARM\_odroid, we used a Texas Instrument power monitor chip (TI INA231) for internal measurements. The TI INA231 allowed us to sample the energy consumed by the cores and DRAM at a frequency rate of microseconds. For the extrenal measurements on the ARM\_odroid, we used an external plug-in power monitor with a computer interface for sampling and storing the results.
 
-For the Intel\_xeon machine, we used the Running Average Power Unit (RAPL) technolgy to perform internal measurements. The RAPL allowed us to sample the energy consumed by the CPU's package, DRAM and cores. For the external measurements, we used an API provided by the server rack's PDU. This API provides a measure sampling rate of around 1 second. 
+For the Intel\_xeon machine, we used the Running Average Power Unit (RAPL) technology to perform internal measurements. The RAPL allowed us to sample the energy consumed by the CPU's package, DRAM and cores. For the external measurements, we used an API provided by the server rack's PDU. This API provides a measure sampling rate of around 1 second. 
 
-For the ARM\_viridis, we used the capabilities of the Intellegent Platform Management Interface (IPMI) \cite{IPMI} included in the server from origin. The IPMI is a chip that runs as a separate subsystem and is attached to the motherboard. The ARM\_viridis implementation of IPMI provide several capabilities, namely interlal hardware energy monitoring. We leveraged the IPMI tools to perform internal energy consumption of the ARM cores during the experiments
+For the ARM\_viridis, we used the capabilities of the Intelligent Platform Management Interface (IPMI) \cite{IPMI} included in the server from origin. The IPMI is a chip that runs as a separate subsystem and is attached to the motherboard. The ARM\_viridis implementation of IPMI provide several capabilities, namely internal hardware energy monitoring. We leveraged the IPMI tools to perform internal energy consumption of the ARM cores during the experiments
 
 
 

@@ -1,10 +1,10 @@
 \chapter{HTC in a dynamic energy pricing market}
 
-One of the ways to utilize the conclusions from the experiments conducted in this study is to actively lower the energy bill in HTC. One approach could be to schedule jobs between more energy efficient but slower ARM architectures and the less energy efficient but faster Intel machines. This approach makes sense in a multi energy price ecosystem. A multi energy price ecosystem is an energy market where the prices float accorading to the overall power grid usage.
+One of the ways to utilize the conclusions from the experiments conducted in this study is to actively lower the energy bill in HTC. One approach could be to schedule jobs between more energy efficient but slower ARM architectures and the less energy efficient but faster Intel machines. This approach makes sense in a multi energy price ecosystem. A multi energy price ecosystem is an energy market where the prices float according to the overall power grid usage.
 
 In this chapter, we present a study about the potential of an algorithm that schedules workload to machines with different energy and computation performance, based on the the daily dynamics of energy price. The main goal is to leverage computing heterogeneity to achieve the optimal ratio between work produced and price paid.  
 
-\section{Dynamic eletricity pricing model}
+\section{Dynamic electricity pricing model}
 
 \begin{figure}[hours]
   \centering
@@ -13,7 +13,7 @@ In this chapter, we present a study about the potential of an algorithm that sch
     \label{fig:pricing_model_table}
 \end{figure}
 
-We will use a simplified dynamic pricing model based on the empirical research of such models in real power grids. Based on some examples obtained, we can conclude that not all the countries adopt a dynamic eletricity pricing model ~\ref{fig:pricing_model_table}. For the sake of this study, we will consider a hypothetical case where the dynamic pricing model works as in ~\ref{fig:pricing_model}. The red line in ~\ref{fig:pricing_model} represents the eletricity price along the day. For the sake of simplicity, during this study we define that the price of eletricity can is  60 euros/Mwh during 12 hours per day and 20 euros/Mwh during the remaining 12 hours of the day.  
+We will use a simplified dynamic pricing model based on the empirical research of such models in real power grids. Based on some examples obtained, we can conclude that not all the countries adopt a dynamic electricity pricing model ~\ref{fig:pricing_model_table}. For the sake of this study, we will consider a hypothetical case where the dynamic pricing model works as in ~\ref{fig:pricing_model}. The red line in ~\ref{fig:pricing_model} represents the electricity price along the day. For the sake of simplicity, during this study we define that the price of electricity can is  60 euros/Mwh during 12 hours per day and 20 euros/Mwh during the remaining 12 hours of the day.  
 	
 As we can see based on the ~\ref{fig:pricing_model} and ~\ref{fig:pricing_model_table}, our simplified energy model presents a similar pattern to the energy prices of some countries.
 
@@ -28,7 +28,7 @@ As we can see based on the ~\ref{fig:pricing_model} and ~\ref{fig:pricing_model_
 
 \subsection*{Problem formulation}
 
-The main goal of the algorithm is to lower the electric bill in dynamic eletricity markets. The algorithm schedules HPC workload among nodes with different energy profiles, depending the energy price at the time. In addition, the algorithm should ensure that a certain minimum amount of workload is processed. Thus, the algorithm input can be defined as (see also ~\ref{fig:input}): 
+The main goal of the algorithm is to lower the electric bill in dynamic electricity markets. The algorithm schedules HPC workload among nodes with different energy profiles, depending the energy price at the time. In addition, the algorithm should ensure that a certain minimum amount of workload is processed. Thus, the algorithm input can be defined as (see also ~\ref{fig:input}): 
 
 \vspace{10mm}
 
@@ -69,9 +69,9 @@ Therefore, given a set of machines with different energy profiles; the computing
 
 The scheduling algorithm is presented in ~\ref{fig:scheduler_code}. For simplicity sake, the algorithm is written in Python.
 
-The main idea behind the construction of the algorithm is that it should assign the maximum number of events to be processed to the lowest priced configuration possible, given the existent constrains (deadline). For example, if it is possible to process all the data only using the ARM architecture in the lowest and highest energy pricing times, then there is no need to use the Intel machines to process the data. This way it is possible to reach the optimal scheduling of processing power given a deadline and several machines with diferent configurations.
+The main idea behind the construction of the algorithm is that it should assign the maximum number of events to be processed to the lowest priced configuration possible, given the existent constrains (deadline). For example, if it is possible to process all the data only using the ARM architecture in the lowest and highest energy pricing times, then there is no need to use the Intel machines to process the data. This way it is possible to reach the optimal scheduling of processing power given a deadline and several machines with different configurations.
 
-\subsubsection*{Algorithm walkthrough}
+\subsubsection*{Algorithm walk-through}
 The input of the algorithm are the number of days that we have to process the data (deadline); the number of events to process; and a set of buckets. We define a bucket as a tuple of \textit{ (machine, energy\_price\_level) }. The table ~\ref{fig:input_table} shows an example of what buckets can be.
 The expected output os the final price of the scheduled processing. If the processing power of the data center is not enough to complete the task before the set deadline, the output will be an error.
 
@@ -81,7 +81,7 @@ Based on the code in ~\ref{fig:scheduler_code}:
 \begin{itemize}
   \item[\textbf{Line 5}] Sorts the buckets from lowest to highest price per event. The goal is to use the as much processing power of the cheaper buckets as possible.
   
-  \item[\textbf{Line 7}] The algorithm goes through all the available buckets. It starts by considering the cheapest options and only uses the mroe expensive if needed.
+  \item[\textbf{Line 7}] The algorithm goes through all the available buckets. It starts by considering the cheapest options and only uses the more expensive if needed.
   
   \item[\textbf{Line 11}] Ensures that the money spent by the last bucket will only take into consideration the events left. 
   
@@ -96,7 +96,7 @@ Based on the code in ~\ref{fig:scheduler_code}:
 
 \subsection*{Use case}
 
-Let us consider the values presented in ~\ref{fig:input_table} as a case scenario to use the scheduling algorithm. The values presented show the energy profile of a hypothetical mini data center set up. The data center has only two machines: a ARMv7 and a Intel x86 server. The energy profile (number of events processed by day and enregy consumed) is based on the values from the experiments analysed in the previous chapters. The prices are based on the simplified dynamic energy pricing model of 60 euros/Mwh in the high pricing hours (comprised of 12h/day) and 20 euros/Mhw in the low pricing hours (comprised on 12h/day)
+Let us consider the values presented in ~\ref{fig:input_table} as a case scenario to use the scheduling algorithm. The values presented show the energy profile of a hypothetical mini data center set up. The data center has only two machines: a ARMv7 and a Intel x86 server. The energy profile (number of events processed by day and energy consumed) is based on the values from the experiments analyzed in the previous chapters. The prices are based on the simplified dynamic energy pricing model of 60 euros/Mwh in the high pricing hours (comprised of 12h/day) and 20 euros/Mhw in the low pricing hours (comprised on 12h/day)
 
 \begin{figure}[h]
   \centering

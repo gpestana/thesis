@@ -4,7 +4,7 @@
 %establishing territory
 %%claiming centrality
 Nowadays, computing technology is still developing according to Moore's Law. The number of transistors per
-chipset and the overall technology development is still increasing at a geometric rate. However, the energy
+chip-set and the overall technology development is still increasing at a geometric rate. However, the energy
 consumption of the systems have begun to halt the usage of the technology at its
 full potential. Therefore, energy efficiency has became an important
 research topic in computer science, for energy has become a major growth
@@ -15,7 +15,7 @@ bigger dimension to the discussion.
 
 There are two major approaches to tackle the energy bottleneck in the current
 technology panorama. One, is to develop techniques and technologies to better harvest, 
-transform and store energy to be used by computing systems. The second approach to the problem is to improve the energy efficiency of the existent computing systems. This thesis focuses primarly on the later approach. 
+transform and store energy to be used by computing systems. The second approach to the problem is to improve the energy efficiency of the existent computing systems. This thesis focuses primarily on the later approach. 
 
 The concerns with energy consumption and its impact in the current
 applications affect several industries, from mobile device industries to big data centers. 
@@ -24,19 +24,19 @@ considerable number of directions that can be take to improve the overall energy
 consumption in High Performance Computing (HTC) applied to Scientific Research.
 
 
-\subsection*{The Large Handron Collider example}
+\subsection*{The Large Hadron Collider example}
 In some applications, a single computing unit does not have enough resources to
 accomplish the required tasks. A recurrent strategy is to distribute computational tasks
 across a set of computing units that might be spread geographically.
 
-The Large Hadron Collider (LHC) [ref] at the European Laboratory for Particle
+The Large Hadron Collider (LHC) \cite{LHC} at the European Laboratory for Particle
 Physics (CERN) in Geneva, Switzerland, is an example of a scientific project
 whose computing resource requirements are larger that those likely to be provided 
 in a single computing unit. Thus, data processing and storage are distributed across 
 the Worldwide LHC
-Computing Grid (WLCG) [ref], which uses resources from 160 computer centers in 35
-countries. Such computational resources have enabled the CMS [ref] and ATLAS [ref]
-experiments to discover the Higgs Boson [ref, ref], amongst other scientific 
+Computing Grid (WLCG) \cite{WLCG}, which uses resources from 160 computer centers in 35
+countries. Such computational resources have enabled the CMS \cite{CMS} and ATLAS \cite{ATLAS}
+experiments to discover the Higgs Boson \cite{HIGGS2} \cite{HIGGS1}, amongst other scientific 
 achievements. 
 The WLHC requires a massive amount of computational resources 
 (250,000 x86 cores in 2012) and,
@@ -62,7 +62,7 @@ The large quota of ARM architectures in the mobile market supports the fact that
 RISC is a good fit for mobile and energy constrained devices.
 
 
-Similarly to mobile devices, the High Troughtput computing (HTC) community major concerns with energy efficiency. However, studies focusing on the viability 
+Similarly to mobile devices, the High Throughput computing (HTC) community major concerns with energy efficiency. However, studies focusing on the viability 
 of RISC architectures in HTC as a way to minimize energy consumption are not
 abundant in the research technology. Furthermore, to the knowledge of the
 author at the time of this research, there are no real world implementation of such technologies in 
@@ -99,7 +99,7 @@ pricing ecosystem.
 
 In order to accomplish the tasks in hand, we start by investigating the best
 and most accurate ways to measure power consumption and compare different
-architectures. After, we run several experiments in machines with different chipsets using
+architectures. After, we run several experiments in machines with different chip-sets using
 authentic workloads and software from the CMS collider. We compare the results and
 draw conclusions from them. Finally, based on our learnings, we frame a methodology for
 lowering the electrical bill of data centers running under a multi energy
@@ -112,11 +112,11 @@ efficiency profiles.
 Our main findings are: 
 
 \begin{itemize}
-  \item Accurate techniques and tools for measuring power consumption are important to develop more efficient systems. We researched and outlined best practives for different system levels in the Chapter 3. The results of this research were published in the conference proceedings of the 16th International workshop on Advanced Computing and Analysis Techniques in physics research (ACAT'2014). The article was called \textit{Techniques and tools for measuring energy efficiency of scientific software applications}
+  \item Accurate techniques and tools for measuring power consumption are important to develop more efficient systems. We researched and outlined best practices for different system levels in the Chapter 3. The results of this research were published in the conference proceedings of the 16th International workshop on Advanced Computing and Analysis Techniques in physics research (ACAT'2014). The article was called \textit{Techniques and tools for measuring energy efficiency of scientific software applications}
 
-  \item The ARM architecture shows potential for an energy savings in HTC when compared to the x86 systems widely used nowadays. We performed experiments with real world workloads (Chapter 4) and analysed the results (Chapter 5). 
+  \item The ARM architecture shows potential for an energy savings in HTC when compared to the x86 systems widely used nowadays. We performed experiments with real world workloads (Chapter 4) and analyzed the results (Chapter 5). 
 
-  \item Heterogeneous computing can be leveraged in HTC in markets where the price of the eletricity is dynamic. We shown how to achieve savings in such environment and developed a scheaduling algorithm that accomplishes that (Chapter 6);
+  \item Heterogeneous computing can be leveraged in HTC in markets where the price of the electricity is dynamic. We shown how to achieve savings in such environment and developed a scheduling algorithm that accomplishes that (Chapter 6);
 \end{itemize}
 
 
@@ -125,7 +125,7 @@ Our main findings are:
 %%indicating structure of the thesis
 This thesis is structured as following. In the next chapter, we define the context and scope
 of the thesis by synthesizing relevant literature work. In the third chapter, we
-outline measurement tools and best techniques for measuring power consumption. The fouth chapter outlines the
+outline measurement tools and best techniques for measuring power consumption. The fourth chapter outlines the
 experiments methodology used during the different experiment sets. The fifth chapter outlines and analyzes the results based on
 the data obtained from the experiments. In the sixth chapter, we present a scheduling algorithm that aims at lower the energy bill of HTC by using both ARM and Intel architectures, based on the results obtained in our experiments. Finally, we wrap up by outlining possible future work and presenting the
 conclusions of this thesis.

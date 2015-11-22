@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2014/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: acat2014-energy-efficiency.aux
+The style file: unsrt.bst
+Database file #1: acat2014-energy-efficiency.bib
+Warning--empty year in GEANT4
+You've used 18 entries,
+            1791 wiz_defined-function locations,
+            547 strings with 6528 characters,
+and the built_in function-call counts, 3505 in all, are:
+= -- 297
+> -- 171
+< -- 3
++ -- 65
+- -- 47
+* -- 197
+:= -- 575
+add.period$ -- 54
+call.type$ -- 18
+change.case$ -- 17
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 158
+empty$ -- 340
+format.name$ -- 47
+if$ -- 782
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 13
+newline$ -- 93
+num.names$ -- 15
+pop$ -- 48
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 88
+stack$ -- 0
+substring$ -- 163
+swap$ -- 36
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 27
+width$ -- 20
+write$ -- 189
+(There was 1 warning)

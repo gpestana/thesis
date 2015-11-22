@@ -11,6 +11,16 @@ Arm cortex a9 website.
 \newblock \url{http://www.arm.com/cortex-a9.php}.
 \newblock Accessed: 2015-2-27.
 
+\bibitem{ARM}
+Arm holding website.
+\newblock \url{http://www.arm.com/}.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{ARMv8}
+Armv8 official website.
+\newblock \url{http://www.arm.com/products/processors/armv8-architecture.php }.
+\newblock Accessed: 2015-2-27.
+
 \bibitem{CERN}
 Cern website.
 \newblock \url{http://home.web.cern.ch/about}.
@@ -33,6 +43,11 @@ Hyper threading technology.
 \newblock
   \url{http://wiki.bostonlabs.co.uk/w/index.php?title=Calxeda:Get_node_power_using_ipmitool}.
 \newblock Accessed: 2015-2-27.
+
+\bibitem{INTELMAN}
+{\em Intel 64 and IA-32 Software Developer Manuals - Volume 3}.
+\newblock www.intel.com/content/www/us/en/processors/
+  architectures-software-developer-manuals.html.
 
 \bibitem{atom_specs}
 Intel atom processor d525 specs.
@@ -58,6 +73,11 @@ Ipmi tools.
   \url{http://www.boston.co.uk/technical/2012/03/supermicro-ipmi-what-can-it-do-for-you.aspx}.
 \newblock Accessed: 2015-10-27.
 
+\bibitem{LHC}
+Lhc website.
+\newblock \url{http://home.cern/topics/large-hadron-collider}.
+\newblock Accessed: 2015-2-27.
+
 \bibitem{odroid_specs}
 Odroid-xu3 specs.
 \newblock
@@ -75,6 +95,11 @@ Stack overflow.
 \newblock \url{http://stackoverflow.com/}.
 \newblock Accessed: 2014-10-27.
 
+\bibitem{TIINA231}
+{Texas Instruments (TI) INA 231}.
+\newblock \url{http://www.ti.com/product/ina231}.
+\newblock Last time accessed: 17-09-2014.
+
 \bibitem{VIRIDIS}
 Viridis boston website.
 \newblock
@@ -85,6 +110,9 @@ Viridis boston website.
 Wlcg website.
 \newblock \url{http://wlcg.web.cern.ch/}.
 \newblock Accessed: 2015-2-27.
+
+\bibitem{INTEL_WP}
+Reducing data center energy consumption.
 
 \bibitem{HIGGS1}
 {\sc Aad, G., et~al.}
@@ -99,6 +127,17 @@ Wlcg website.
   and intel xeon phi.
 \newblock {\em CoRR abs/1410.3441\/} (2014).
 
+\bibitem{POWER_AWAR_CERN}
+{\sc Abdurachmanov, D., Elmer, P., Eulisse, G., Grosso, P., Hillegas, C.,
+  Holzman, B., Klous, S., Knight, R., and Muzaffar, S.}
+\newblock {Power-aware Applications for Scientific Cluster and Distributed}.
+\newblock {\em PoS ISGC2014\/} (2014), 018.
+
+\bibitem{FUTURE_CERN}
+{\sc Abdurachmanov, D., Elmer, P., Eulisse, G., and Knight, R.}
+\newblock Future computing platforms for science in a power constrained era.
+\newblock {\em CoRR abs/1510.03676\/} (2015).
+
 \bibitem{ACAT}
 {\sc Abdurachmanov, D., Elmer, P., Eulisse, G., Knight, R., Niemi, T.,
   Nurminen, J.~K., Nyback, F., Pestana, G., Ou, Z., and Khan, K.~N.}
@@ -108,8 +147,21 @@ Wlcg website.
 
 \bibitem{ACAT13ARM}
 {\sc Abdurachmanov, D., Elmer, P., Eulisse, G., and Muzaffar, S.}
-\newblock Initial explorations of arm processors for scientific computing.
-\newblock {\em Journal of Physics: Conference Series 523}, 1 (2014), 012009.
+\newblock {Initial explorations of ARM processors for scientific computing}.
+\newblock {\em J. Phys. Conf. Ser. 523\/} (2014), 012009.
+
+\bibitem{EXPLORATIONS_CERN}
+{\sc Abdurachmanov, D., et~al.}
+\newblock {Explorations of the viability of ARM and Xeon Phi for physics
+  processing}.
+\newblock {\em J. Phys. Conf. Ser. 513\/} (2014), 052008.
+
+\bibitem{CISC_RISC_2}
+{\sc Blem, E., Menon, J., and Sankaralingam, K.}
+\newblock Power struggles: Revisiting the risc vs. cisc debate on contemporary
+  arm and x86 architectures.
+\newblock In {\em High Performance Computer Architecture (HPCA2013), 2013 IEEE
+  19th International Symposium on\/} (Feb 2013), pp.~1--12.
 
 \bibitem{MIGRATION_CLOUD}
 {\sc Buchbinder, N., Jain, N., and Menache, I.}
@@ -117,11 +169,30 @@ Wlcg website.
 \newblock In {\em NETWORKING 2011}. Springer Berlin Heidelberg, 2011,
   pp.~172--185.
 
+\bibitem{CYCLE_ENERGY}
+{\sc Chang, N., Kim, K., and Lee, H.~G.}
+\newblock Cycle-accurate energy measurement and characterization with a case
+  study of the arm7tdmi [microprocessors].
+\newblock {\em Very Large Scale Integration (VLSI) Systems, IEEE Transactions
+  on 10}, 2 (April 2002), 146--154.
+
 \bibitem{HIGGS2}
 {\sc Chatrchyan, S., et~al.}
 \newblock Observation of a new boson at a mass of 125 gev with the \{CMS\}
   experiment at the \{LHC\}.
 \newblock {\em Physics Letters B 716}, 1 (2012), 30 -- 61.
+
+\bibitem{MODEL2}
+{\sc Dayarathna, M., Wen, Y., and Fan, R.}
+\newblock Data center energy consumption modeling : A survey.
+\newblock {\em Communications Surveys Tutorials, IEEE PP}, 99 (2015), 1--1.
+
+\bibitem{CMS}
+{\sc Drouhin, F., Gross, L., Vintache, D., Marchioro, A., Paillard, C.,
+  Ljuslin, C., Mirabito, L., and Verdini, P.}
+\newblock The cern cms tracker control system.
+\newblock In {\em Nuclear Science Symposium Conference Record, 2004 IEEE\/}
+  (Oct 2004), vol.~2, pp.~1196--1200 Vol. 2.
 
 \bibitem{GEANT4}
 {\sc et~al, S.~A.}
@@ -129,6 +200,31 @@ Wlcg website.
 \newblock In {\em Nuclear Instruments and Methods in Physics Research Section
   A: Accelerators, Spectrometers, Detectors and Associated Equipment},
   pp.~250--303.
+
+\bibitem{ENERGY_ALGORITHMS}
+{\sc Gorlatova, M., Wallwater, A., and Zussman, G.}
+\newblock Networking low-power energy harvesting devices: Measurements and
+  algorithms.
+\newblock {\em Mobile Computing, IEEE Transactions on 12}, 9 (Sept 2013),
+  1853--1865.
+
+\bibitem{WIRELESS_ENERGY}
+{\sc Hergenroder, A., and Furthmuller, J.}
+\newblock On energy measurement methods in wireless networks.
+\newblock In {\em Communications (ICC), 2012 IEEE International Conference
+  on\/} (June 2012), pp.~6268--6272.
+
+\bibitem{CR_TALE}
+{\sc Isen, C., John, L., and John, E.}
+\newblock A tale of two processors: Revisiting the risc-cisc debate.
+\newblock In {\em In 2009 SPEC Benchmark Workshop}.
+
+\bibitem{IGPROF}
+{\sc Khan, K., Nyback, F., Ou, Z., Nurminen, J., Niemi, T., Eulisse, G., Elmer,
+  P., and Abdurachmanov, D.}
+\newblock Energy profiling using igprof.
+\newblock In {\em Cluster, Cloud and Grid Computing (CCGrid), 2015 15th
+  IEEE/ACM International Symposium on\/} (May 2015), pp.~1115--1118.
 
 \bibitem{GPU}
 {\sc Kim, S., Kim, H.-E., Kim, H., and Lee, J.-A.}
@@ -142,6 +238,13 @@ Wlcg website.
 \newblock In {\em Proceedings of the ACM SIGMETRICS Joint International
   Conference on Measurement and Modeling of Computer Systems\/} (New York, NY,
   USA, 2011), SIGMETRICS '11, ACM, pp.~233--244.
+
+\bibitem{RISC_PERF}
+{\sc Lozano, H., and Ito, M.}
+\newblock A reduced complexity instruction set architecture for low cost
+  embedded processors.
+\newblock In {\em High Performance Computing Simulation (HPCS), 2015
+  International Conference on\/} (July 2015), pp.~400--407.
 
 \bibitem{GREENGPU}
 {\sc Ma, K., Li, X., Chen, W., Zhang, C., and Wang, X.}
@@ -163,6 +266,24 @@ Wlcg website.
 \newblock Energy- and cost-efficiency analysis of arm-based clusters.
 \newblock In {\em Cluster, Cloud and Grid Computing (CCGrid), 2012 12th
   IEEE/ACM International Symposium on\/} (May 2012), pp.~115--123.
+
+\bibitem{CISC_RISC}
+{\sc Ou, Z., Pang, B., Deng, Y., Nurminen, J., Ylaa-Jaaski, A., and Hui, P.}
+\newblock Energy- and cost-efficiency analysis of arm-based clusters.
+\newblock In {\em Cluster, Cloud and Grid Computing (CCGrid), 2012 12th
+  IEEE/ACM International Symposium on\/} (May 2012), pp.~115--123.
+
+\bibitem{EVAL_ARM}
+{\sc Padoin, E., de~Oliveira, D., Velho, P., and Navaux, P.}
+\newblock Evaluating performance and energy on arm-based clusters for high
+  performance computing.
+\newblock In {\em Parallel Processing Workshops (ICPPW), 2012 41st
+  International Conference on\/} (Sept 2012), pp.~165--172.
+
+\bibitem{RISC_CASE}
+{\sc Patterson, D.~A., and Ditzel, D.~R.}
+\newblock The case for the reduced instruction set computer.
+\newblock {\em SIGARCH Comput. Archit. News 8}, 6 (Oct. 1980), 25--33.
 
 \bibitem{QUESTIONS_ENERGY}
 {\sc Pinto, G., Castor, F., and Liu, Y.~D.}
@@ -195,6 +316,19 @@ Wlcg website.
 \newblock In {\em Cloud Computing Technology and Science (CloudCom), 2014 IEEE
   6th International Conference on\/} (Dec 2014), pp.~611--619.
 
+\bibitem{RAPL1}
+{\sc Subramaniam, B., and chun Feng, W.}
+\newblock Towards energy-proportional computing for enterprise-class server
+  workloads.
+\newblock {\em CPE '13 Proceedings of the 4th ACM/SPEC International Conference
+  on Performance Engineering\/} (2012).
+
+\bibitem{ATLAS}
+{\sc ten Kate, H.}
+\newblock Superconducting magnet system for the atlas detector at cern.
+\newblock {\em Applied Superconductivity, IEEE Transactions on 9}, 2 (June
+  1999), 841--846.
+
 \bibitem{TASK_SCHED}
 {\sc Wang, Y., Li, K., Chen, H., He, L., and Li, K.}
 \newblock Energy-aware data allocation and task scheduling on heterogeneous
@@ -222,5 +356,11 @@ Wlcg website.
   computing.
 \newblock In {\em Green Computing and Communications (GreenCom), 2011 IEEE/ACM
   International Conference on\/} (Aug 2011), pp.~69--74.
+
+\bibitem{MODEL1}
+{\sc Zhu, J., Qiao, C., and Wang, X.}
+\newblock On accurate energy consumption models for wireless ad hoc networks.
+\newblock {\em Wireless Communications, IEEE Transactions on 5}, 11 (November
+  2006), 3077--3086.
 
 \end{thebibliography}

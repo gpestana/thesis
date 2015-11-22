@@ -1,0 +1,185 @@
+\documentclass[a4paper]{jpconf}
+\usepackage{graphicx}
+\usepackage{lineno}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{lineno}
+\linenumbers
+
+\begin{document}
+%\linenumbers
+
+
+
+\title{Techniques and tools for measuring energy efficiency of scientific software applications}
+
+\author{David Abdurachmanov$^1$, Peter Elmer$^2$, Giulio Eulisse$^3$, Robert Knight$^4$, Tapio Petteri Niemi$^5$, Jukka Nurminen$^6$, Filip Nyback$^6$, Goncalo Marques Pestana$^6$, Zhonghong Ou$^6$}
+
+\address{$^1$ Digital Science and Computing Center, Faculty of Mathematics and Informatics, Vilnius University, Vilnius, Lithuania}
+\address{$^2$ Department of Physics, Princeton University, Princeton, NJ 08540, USA}
+\address{$^3$ Fermilab, Batavia, IL 60510, USA}
+\address{$^4$ Research Computing, Office of Information Technology, Princeton University, Princeton, New Jersey 08540, USA}
+\address{$^5$ Helsinki Institute of Physics, PO Box 64, FI-00014, Helsinki, Finland }
+\address{$^6$ Aalto University, PO Box 11100, 00076 Aalto, Finland}
+
+\ead{Peter.Elmer@cern.ch}
+
+\begin{abstract}
+As both High Performance Computing (HPC) and High Throughput Computing
+(HTC) are sensitive to the rise of energy costs, energy-efficiency
+has become a primary concern in scientific fields such as High
+Energy Physics (HEP). There has been a growing interest in utilizing
+low power architectures, such as ARM processors, to replace traditional
+Intel x86 architectures. Nevertheless, even though such solutions
+have been successfully used in mobile applications with low I/O and
+memory demands, it is still unclear if they are suitable and more
+energy-efficient in the scientific computing environment. Furthermore,
+there is still lack of tools to derive and compare power consumption
+for these types of workloads, and eventually to support software
+optimizations for energy efficiency.
+
+To that end, we have performed several physical and software-based
+measurements of workloads from CERN running on ARM and Intel
+architectures, to compare their power consumption and performance.
+We leverage several profiling tools to extract different aspects
+of the experiments, including hardware usage and software
+characteristics. We report the results of these measurements and
+the experience gained in developing a set of measurement techniques
+and profiling tools to accurately assess the power consumption for
+scientific workloads. [Version of~\today]
+\end{abstract}
+
+\section{Introduction}
+
+The most recent scientific applications have to process and store considerable
+volume of data. It is foreseeable that the volume of data will increase
+considerably in the future, as technology and requirements enhance. In addition
+to the physical limitations in terms of power density, this phenomenon also
+increase considerably the costs with energy in a HTC system. Thus, energy
+consumption has become a major concern amongst the scientific community.
+
+The Large Hadron Collider (LHC)~\cite{LHCPAPER} at the European Laboratory for
+Particle Physics (CERN) in Geneva, Switzerland, is one of the scientific
+projects which computational requirements are too massive for resources to be
+processed and held in one single infrastructure. Hence, data processing and
+storage are distributed across the Worldwide LHC Computing Grid (WLCG)
+~\cite{WLHC}, which uses resources from 160 computer centers in 35 countries.
+The access to such computational resources have made possible CMS~\cite{CMSDET}
+and ATLAS~\cite{ATLAS} experiments to achieve important results, such as the
+discover of the Higgs Boson~\cite{CMSHIGGS, ATLASHIGGS}. While enabling this
+and other discoveries, the WLHC consumes massive amount of computational
+resources and, proportionally, energy. Only CMS experiment used approximately
+80,000 to 100,000 x86-64 cores of capacity in 2012~\cite{ACAT13ARM, CHEP13ARMPHI}. In the future, with the improvement of the
+detector's luminosity, the dataset size will increase by 2-3 orders of magnitude~\cite{ACAT13ARM, CHEP13ARMPHI}, presenting even more challenges from the energy
+consumption point of view.
+
+In order to find and develop better solutions to improve energy efficiency in
+High Energy Physics (HEP), it is important to understand how energy is used by
+the HEP systems themselves. We outline a few tools and techniques that facilitate researchers to reach that goal.
+
+As energy efficiency becomes a concern, new solutions have been considered to
+develop energy efficient systems. One potential solution is to replace the
+traditional Intel x86 architectures by low power architectures such as ARM. A
+comparison of the energy efficiency between ARMv7 and x86 Intel architecture is
+conducted in this article. The experiments use CMS workloads and rely on the
+techniques and tools described earlier to perform the measurements. 
+
+This article is structured as following. Firstly, we describe where is energy
+consumed in a HTC system. Secondly, we outline some of the tools and techniques
+available to measure and monitor energy consumption on HTC systems. Finally, we
+present the results of a comparison between ARMv7 and Intel Xeon architecture
+using CMS workloads.
+
+\section{Tools and techniques for energy measurement}
+
+When optimizing power usage, there are two level of details at which a computing system can be looked at. The first one is a more coarse level, which takes into account the behavior of the whole node (or some of its passive parts, e.g. the transformer) as part of a rack in a datacenter, and it's usually investigated and optimized when engineering and optimizing computing centers. The second level is looking into the components which make up the active parts of a node and in particular the CPU and its memory subsystem since these are responsible for a sizeable fraction of the consumed power and they are the where largest gains in terms of efficiency can be done by simply acting on the software.
+
+In case the interest is to look into the first level, one can rely on various kinds of external probing devices: monitoring interfaces of the rack power distribution units, plugin meters and non-invasive clamp meters. The latter being probes allowing to measure electrical current pulled by the system by induction without making physical contact with it. They differ mostly in terms of flexibility and their accuracy is of a few percent for power, whereas their time resolution is in the order of seconds, which is more than enough to optimize electrical layout of the datacenters or to provide a baseline for more detailed studies. 
+
+The second level takes into account the internal structure of a computing element of an HTC system, as described in Figure \ref{fig:power-consumption-model}. Nowadays, every board manufacturer provides on-board chip monitors performing energy monitoring of different components of the system directly on the board. These allows energy measurements of fine grained detail, being possible to individually monitor energy consumption of components such as the CPU, its memory subsystem, and others. An example of this chip monitors is the Texas Instrumens TI INA231~\cite{TIINA231} current-churn and power monitor which is found on the ARMv7 developer board which we used for our studies and it's quite common in the industry. Compared to external methods, these on-board components provide high accuracy and reasonably high precision measurements (millisecond level).
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=70mm]{img/energy_model.png}
+\caption{Components that contribute for power consumption in HPC}
+\label{fig:power-consumption-model}
+\end{figure}
+
+A special and slightly different case of these on-board monitors is a new
+technology called Running Average Power Limit (RAPL), developed by Intel
+starting from their Sandy Bridge processors.
+
+Contrary to other solutions, which are implemented as discrete chips, RAPL is embeeded as part of the CPU package itself and provides information on CPU own subsystems. In particular RAPL provides data for three different domains: \textbf{package} (pck), which measures energy consumed by the system's sockets, \textbf{power plane 0} (pp0), which measures energy consumed by the CPU core(s), and \textbf{dram}, which accounts for the sum of energy consumed by memory in a given socket, therefore excluding the on-core caches~\cite{INTELMAN}. As for the discrete components case, the precision of measurements is in the millisecond range~\cite{RAPL1} which is enough to think about exploiting such data for an energy consumpion sampling profiler which works similarly to how performance sampling profilers (like IgProf) do. Finally, in addition to power monitoring of the sockets, RAPL can limit the power consumed by the different domains. This feature, usually referred as power capping, allows the user to define the average power consumption limit of a domain in a defined time window and allows more accurate independent measurements of the non limited components.
+
+\section{Power efficiency measures with x86-64 and ARMv7}
+
+In this section, we demonstrate the potentialities of some of the tools presented in the previous section. To that end, we perform several measurements of workloads from CERN, running in different architectures. The workloads used in the experiment run on top of Intel x86-64 architecture, traditionally used in HTC and data centers and 32 bit ARMv7 architectures (for similar studies for 64bit ARMv8 and Xeon Phi, please refer to~\cite{ABD2014}). ARM architecture, initially developed for mobile devices, has been considered~\cite{ACAT13ARM, CHEP13ARMPHI} as a potential alternative to Intel in HTC, given its energy efficient computing. We also present brief comparison between ARM and Intel architectures from the energy consumption perspective, based on the results obtained. 
+
+\subsection{Tools and techniques}
+
+On Intel architecture, we used RAPL technology to perform measurements of the energy consumed by the package, dram and cores (see Figure 1).
+
+The external measurements for the baseline were performed using a rack PDU, which provides an online API to gather the energy consumed by the system on the rack at a sampling rate of 1s.
+
+As for the ARM machine, we used the Texas Instrument power monitor chip TI INA231 which allows reading of the energy consumed by the cores and dram at a sampling rate of microseconds. The chip was embedded in the board from the vendor. For the external measurements, we used an external plug-in power monitor with a computer interface for gathering and storing the results.
+
+In both cases we read the data as it was exposed to the system via the sysfs / devfs knobs.
+
+The machines specifications can be seen in the Figure \ref{table:machine-specs}.
+
+\subsection{Experiment setup}
+
+The workload used for the experiments was ParfullCMS a multi-threaded Geant4~\cite{GEANT4} benchmark application which uses a complex CMS geometry for its simulation. Using ParfulCMS, we ran CMS simulation tasks on both Intel and ARM machines (see Figure \ref{fig:parfull-cms-benchmark}). The workflow was run several times for different number of threads in each machine. The number of threads running in each experiment is according to the number of the cores of the machines.
+
+\subsection{Analysis}
+
+As expected, the ARMv7 architecture shows encouraging results from the energy efficiency perspective than Intel in all the experiments performed. Also as expected, both architectures do not performs better when overcommitted (more threads than the physical number of cores). An interesting feature of the ARM results when overcommitted (8 threads) is the deterioration of the energy performance. It would be expected a behaviour similar to Intel in same circumstances. However, due to the relatively modest amount of available DRAM (see Figure \ref{table:machine-specs}), the machine started swapping, greatly affecting performance. While this was expected, since the ARM system used is just a development board for mobile applications, this is a clear indication that when doing a final assessment of power efficiency for an architecture, one needs to have a full blown server grade system in order to be able to compare apple to apples.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=170mm]{img/results1.png}
+\caption{Chip monitor and external measurements results}
+\label{fig:parfull-cms-benchmark}
+\end{figure}
+
+\section{Profiling for power efficiency}
+
+The hardware components described so far only provide raw measurement which would be relatively interesting for anything but coarse grained (box level) optimizations. The next step is to try to see if there is a way to map the energy consumption measurements to single processes or even functions and methods within a process. These kind of mapping can be done in two different ways, which we call instrumentation and sampling profiling.
+
+In the instrumentation is case, effective readings of profiled quantities (e.g. energy consumption), or quantities correlated with them (e.g. CPU power state transitions) are done at the beginning and the end of a profiled task and the difference between the two is used to estimate average power consumption over that period of time. By bookkeeping starting and stop values for monitored tasks one can get a fairly complete picture of what is happening to the system,  provided the measured interval is large compared to the temporal precision of the measure being done. This is both to avoid a large error on the average estimatation and to reduce performance overhead due to the measure itself.
+
+Sampling profiling on the other hand has a different approach where a given quantity is sampled regularly and at each sample the measured quantity is accumulated until it overflows a user provided limit. When this happens the profiler counts an hit for the process / function being done in that precise moment. Assuming the fact that the distribution of where time is spent in a system is constant over time (which is typically true for large data processing tasks), such process converges to the actual distribution of the measured quantity. The advantage of this approach is that the fidelity of the measure so done to a first approximation only depends from the amount of samples done, regardless of the error on the profiled quantity.
+
+IgProf is an application profiler, developed in house by CMS but generic enough to be useful for other HEP and non HEP applications. The profiler has been available on the x86 and x86-64 platforms since many years and it was recently ported to ARMv7 and ARMv8 as the interest in them grew~\cite{igprof-web, tuura08, fowler02}. Moreover we have started to add a statistical sampling energy profiling module which provides function level energy cost distribution~\cite{weaver12}. Such a module uses the PAPI library to read energy measurements from the RAPL interface previously described.
+
+\begin{figure}[htb]
+  \begin{center}
+    \includegraphics{img/stream-pp-np.pdf}
+  \end{center}
+  \vspace{-20pt}
+  \caption{The results of performance and energy profiling of the stream tool.}
+  \label{fig:stream-pp-np}
+\end{figure}
+
+To illustrate the new module, we use it to profile the memory benchmark \emph{stream}~\cite{stream-web}. Figure \ref{fig:stream-pp-np} compares the results from performance and energy profiling of the  benchmarking tool. The X-axis describes the four main functions contributing to the execution time and energy consumption of the stream tool: Add, Copy, Triad and Scale. The left scale of the Y-axis and the perf\_ticks series describe the execution time spent in each function, whereas the right scale of the Y-axis and the nrg\_pkg, nrg\_pp0 and nrg\_pp1 series describe the amount of energy spent in each function. The energy consumption of the processor package domain and the power plane 0 (describing the CPU cores) seem to follow the time spent in the functions, whereas the energy consumption of power plane 1 seems to be fairly constant to zero (describing the unused GPU) .
+
+As we would expect in a simple benchmark, the profiling results of a simple single-threaded application shows a correlation between the execution time and the energy spent in a function.
+
+While already functioning, the energy profiling module is, however, still rather limited and further work to tune measurements needs to be done.
+
+\section{Conclusions}
+
+Energy efficiency has become a major concern on HTC, given the large amount of resources - and thus energy - that recent experiments require. The LHC is a relevant example of the need for energy efficiency facilities, given its present requirements and costs constrains. The urgency for energy efficiency brings up the need for accurately measure the different components of a HTC system. The goal is, thus, to understand how and where energy is consumed and improve the overall efficiency. However, HTC systems are complex and composed of different
+components. Therefore, we presented examples of techniques and tools that provide knowledge of how and where energy is consumed from different perspectives and granularities. In addition, IgProf, an open source profiling tool, was developed to run on 64-bit ARM and include energy profiler capabilities. On the endeavor to achieve better energy performance on HTC, ARM architecture has been considered to replace the traditional Intel machines. Therefore, and in order to apply some energy measurement techniques studied in this article, we performed a simple comparison between ARMv7 and Intel architectures. The results confirm the potential of ARMv7 for efficient HTC systems.
+
+
+\section*{Acknowledgements}
+This work was partially supported by the National Science Foundation, under
+Cooperative Agreement PHY-1120138, and by the U.S. Department of Energy.
+
+\section*{References}
+
+\bibliographystyle{unsrt}
+\bibliography{acat2014-energy-efficiency}
+
+\end{document}

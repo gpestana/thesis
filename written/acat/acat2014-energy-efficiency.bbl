@@ -1,0 +1,110 @@
+\begin{thebibliography}{10}
+
+\bibitem{LHCPAPER}
+Lyndon Evans and Philip Bryant.
+\newblock {LHC Machine}.
+\newblock {\em JINST}, 3:S08001, 2008.
+
+\bibitem{WLHC}
+Bird I.
+\newblock {Computing for the Large Hadron Collider}.
+\newblock {\em Annual Review of Nuclear and Particle Science}, 61, 2011.
+
+\bibitem{CMSDET}
+S.~Chatrchyan et~al.
+\newblock {The CMS experiment at the CERN LHC}.
+\newblock {\em JINST}, 3:S08004, 2008.
+
+\bibitem{ATLAS}
+Aad~G et~al (Atlas~Collaboration).
+\newblock {The Atlas Experiment at the CERN Large Hadron Collider}.
+\newblock {\em JINST}, 3, S08003.
+
+\bibitem{CMSHIGGS}
+S.~Chatrchyan et~al.
+\newblock {Observation of a new boson at a mass of 125 GeV with the CMS
+  experiment at the LHC}.
+\newblock {\em Phys.Lett.}, B716:30--61, 2012.
+
+\bibitem{ATLASHIGGS}
+G.~Aad et~al.
+\newblock {Observation of a new particle in the search for the Standard Model
+  Higgs boson with the ATLAS detector at the LHC}.
+\newblock {\em Phys.Lett.}, B716:1--29, 2012.
+
+\bibitem{HLLHC}
+L~Rossi and O~Bruning.
+\newblock {High Luminosity Large Hadron Collider A description for the European
+  Strategy Preparatory Group}.
+\newblock Technical Report CERN-ATS-2012-236, CERN, Geneva, Aug 2012.
+
+\bibitem{TIINA231}
+{Texas Instruments (TI) INA 231}.
+\newblock \url{http://www.ti.com/product/ina231}.
+\newblock Last time accessed: 17-09-2014.
+
+\bibitem{INTELMAN}
+{\em Intel 64 and IA-32 Software Developer Manuals - Volume 3}.
+\newblock www.intel.com/content/www/us/en/processors/
+  architectures-software-developer-manuals.html.
+
+\bibitem{RAPL1}
+Balaji Subramaniam and Wu~chun Feng.
+\newblock Towards energy-proportional computing for enterprise-class server
+  workloads.
+\newblock {\em CPE '13 Proceedings of the 4th ACM/SPEC International Conference
+  on Performance Engineering}, 2012.
+
+\bibitem{ABD2014}
+David Abdurachmanov, Brian Bockelman, Peter Elmer, Giulio Eulisse, and Robert
+  Knight.
+\newblock {Heterogeneous High Throughput Scientific Computing with APM X-Gene
+  and Intel Xeon Phi}.
+\newblock {\em to be published in ACAT 2014 proceedings}, 2014.
+
+\bibitem{ACAT13ARM}
+David Abdurachmanov, Peter Elmer, Giulio Eulisse, and Shahzad Muzaffar.
+\newblock Initial explorations of arm processors for scientific computing.
+\newblock {\em Journal of Physics: Conference Series}, 523(1):012009, 2014.
+
+\bibitem{CHEP13ARMPHI}
+David Abdurachmanov, Kapil Arya, Josh Bendavid, Tommaso Boccali, Gene
+  Cooperman, Andrea Dotti, Peter Elmer, Giulio Eulisse, Francesco Giacomini,
+  Christopher~D Jones, Matteo Manzali, and Shahzad Muzaffar.
+\newblock Explorations of the viability of arm and xeon phi for physics
+  processing.
+\newblock {\em Journal of Physics: Conference Series}, 513(5):052008, 2014.
+
+\bibitem{GEANT4}
+S.~Agostinelli et~al.
+\newblock Geant4 — a simulation toolkit.
+\newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment}, pages
+  250--303.
+\newblock DOI: 10.1016/S0168-9002(03)01368-8.
+
+\bibitem{igprofchep04}
+Giulio Eulisse and Lassi Tuura.
+\newblock {IgProf Profiling Tool}.
+\newblock {\em Proc. Computing In High Energy Physics (CHEP04) (Interlaken)},
+  2004.
+
+\bibitem{igprof-web}
+Ig{P}rof, the {I}gnominous {P}rofiler.
+\newblock \url{http://igprof.org/}. Accessed 2014-09-30.
+
+\bibitem{weaver12}
+Vincent~M. Weaver, Matt Johnson, Kiran Kasichayanula, James Ralph, Piotr
+  Luszczek, Dan Terpstra, and Shirley Moore.
+\newblock Measuring energy and power with {PAPI}.
+\newblock {\em Proceedings of the International Conference on Parallel
+  Processing Workshops}, pages 262--268, 2012.
+\newblock DOI: 10.1109/ICPPW.2012.39.
+
+\bibitem{stream-web}
+John~D. McCalpin.
+\newblock {STREAM}: Sustainable memory bandwidth in high performance computers.
+\newblock Web page. \url{http://www.cs.virginia.edu/stream/}. Accessed
+  2014-09-30.
+
+\end{thebibliography}

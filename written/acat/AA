@@ -1,0 +1,26 @@
+\title{Techniques and tools for measuring energy efficiency of scientific software applications}
+
+\author{David Abdurachmanov$^1$, Peter Elmer$^2$, Giulio Eulisse$^3$, Robert Knight$^4$, Tapio Niemi$^5$, Jukka K. Nurminen$^6$, Filip Nyback$^6$, Gon\c{c}alo Pestana$^5$ $^6$, Zhonghong Ou$^6$, Kashif Khan $^5$ $^6$}
+
+\address{$^1$ Digital Science and Computing Center, Faculty of Mathematics and Informatics, Vilnius University, Vilnius, Lithuania}
+\address{$^2$ Department of Physics, Princeton University, Princeton, NJ 08540, USA}
+\address{$^3$ Fermilab, Batavia, IL 60510, USA}
+\address{$^4$ Research Computing, Office of Information Technology, Princeton University, Princeton, New Jersey 08540, USA}
+\address{$^5$ Helsinki Institute of Physics, PO Box 64, FI-00014, Helsinki, Finland }
+\address{$^6$ Aalto University, PO Box 11100, 00076 Aalto, Finland}
+
+\ead{goncalo.pestana@aalto.fi}
+
+
+
+
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=170mm]{img/results1.png}
+\caption{Chip monitor and external measurements results. The results are shown
+according to the relation events per number of cores of each machine and their
+absolute number of cores. }
+\label{fig:parfull-cms-benchmark}
+\end{figure}
+

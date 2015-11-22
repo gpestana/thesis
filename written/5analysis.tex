@@ -6,8 +6,8 @@ In this chapter, we present our analysis based on the results shown in the last 
 platforms from an energy efficiency perspective and analyze the tools and techniques used on the different experiment sets. 
 
 
-The first section and second section of this chapter analyse the different tools and techniques used
-to perform the experiments, as well as the results itself. The first section analyses the 1SE, whereas the second section is dedicated to analyse the 2SE. As stated before, the difference between 1SE and 2SE has to do with the machine setups and the tools used to measure the energy consumed. The data and results of the experiments are shown along the analysis.
+The first section and second section of this chapter analyze the different tools and techniques used
+to perform the experiments, as well as the results itself. The first section analyses the 1SE, whereas the second section is dedicated to analyses the 2SE. As stated before, the difference between 1SE and 2SE has to do with the machine setups and the tools used to measure the energy consumed. The data and results of the experiments are shown along the analysis.
 
 In the final of this section, we outline the highlights of the analysis for
 each set of experiments.
@@ -28,7 +28,7 @@ and~\ref{fig:aalto_arm_clamp} it is plotted the energy measurements from the beg
 
 In the figures ~\ref{fig:aalto_quad_events}, ~\ref{fig:aalto_atom_events} and ~\ref{fig:aalto_arm_events}, we trimmed out the initialization stage and connection stage of the workload and only show the event processing stage. Whereas the Y-axi represents the energy measured in Watts, the X-axis represents the time spent until the correspondent energy sampling.
 
-Finally, the figures ~\ref{fig:aalto_time} and ~\ref{fig:aalto_efficiency_comparison} compare the time spent by each of the hardware setups to process the workflow and the power consumption efficiency of the different setups, respectively.
+Finally, the figures ~\ref{fig:aalto_time} and ~\ref{fig:aalto_efficiency_comparison} compare the time spent by each of the hardware setups to process the work-flow and the power consumption efficiency of the different setups, respectively.
 
 \begin{figure}[h]
   \centering
@@ -60,10 +60,10 @@ when plotting the memory workload and the CPU usage (see ~\ref{fig:memory_stages
     \label{fig:memory_stages}
 \end{figure}
 
-The first stage consists is the initialization process. During this stage, the memory is the main module being used and thus, it is out od the scope of this work to analyse this stage in depth. 
+The first stage consists is the initialization process. During this stage, the memory is the main module being used and thus, it is out of the scope of this work to analyze this stage in depth. 
 
-The second stage is the connection phase. The goal of this stage is to fetch the metadata from
-the CERN servers that allow the event generation-simulation. The metadata is needed to perform the reconstruction of the events. Once again, 
+The second stage is the connection phase. The goal of this stage is to fetch the meta-data from
+the CERN servers that allow the event generation-simulation. The meta-data is needed to perform the reconstruction of the events. Once again, 
 during this stage the CPU load is low when compared to the memory workload. 
 
 The third stage corresponds to the event processing. This last stage is CPU intensive and it has the most relevant data to to our study, since we our goal is to compare the energy efficiency of the different CPUs. The event processing stage alone is represented by 
@@ -99,24 +99,24 @@ the figures ~\ref{fig:aalto_quad_events}, ~\ref{fig:aalto_atom_events} and ~\ref
 The most important stage when studying the energy efficiency of
 workload with the CMSSW is the last stage. There are three main reasons for that: Firstly, the CMSSW configuration at CERN has caches that speed up considerably the second stage [refs], thus reducing the energy consumed in the connection stage.
 Secondly, the first and second stages are not CPU intensive.
-Lastly, the processing stage is the only one that the energy consumption is directly porpotional o the amount of events. Therefore, given any large amount of
+Lastly, the processing stage is the only one that the energy consumption is directly proportional o the amount of events. Therefore, given any large amount of
 data to be processed, the last stage will consume so much more energy than the former stages that the first two stages will become irrelevant in terms of overall energy consumption. Therefore, we focus our energy consumption analysis on the event processing stage only. The event processing stage alone is represented by the figures ~\ref{fig:aalto_quad_events}, ~\ref{fig:aalto_atom_events} and ~\ref{fig:aalto_arm_events}
 
 
-\subsubsection*{Overcommiting CPU and energy efficiency}
-We consider a CPU to be overcommited when it has to process more threads or processes than the physical cores available.
+\subsubsection*{Over-committing CPU and energy efficiency}
+We consider a CPU to be over-committed when it has to process more threads or processes than the physical cores available.
 
-If we consider each hardware setup individually, the time needed for running the three stages of the experiment is roughly the same, if the CPU is not overcommitted. When
+If we consider each hardware setup individually, the time needed for running the three stages of the experiment is roughly the same, if the CPU is not over-committed. When
 the number of processes exceed the number of available cores, the time to 
 process the events increases since there are no available cores to process the
-events concurrently. In the overcommitted situation, the time increase follows
+events concurrently. In the over-committed situation, the time increase follows
 the ratio \textit{nr\_of\_processes/nr\_of\_cores\_available}. 
 For example, if the
 number of processes running is 6 and the number of cores available is 4, the
 time needed to process the events increases roughly 2/3 compared to when the
-CPU is not overcommitted.
+CPU is not over-committed.
 
-In terms of energy consumed by the CPU, we do not find any outstanding difference in terms of overall energy efficiency by comparing CPUs that are overcommited vs non overcommited, as we can seen in the Figure ~\ref{fig:aalto_all_results}. However, we expect that if the ratio \textit{nr\_of\_processes/nr\_of\_cores\_available} is large enough, it can affect negatively the energy performance given the energy overhead spent when the jobs are being swapped.
+In terms of energy consumed by the CPU, we do not find any outstanding difference in terms of overall energy efficiency by comparing CPUs that are over-committed vs non over-committed, as we can seen in the Figure ~\ref{fig:aalto_all_results}. However, we expect that if the ratio \textit{nr\_of\_processes/nr\_of\_cores\_available} is large enough, it can affect negatively the energy performance given the energy overhead spent when the jobs are being swapped.
 
 
 \subsubsection*{Time comparison}
@@ -159,10 +159,10 @@ Therefore, we conclude that it is more effective to use digital and automated wa
 log the data acquired during the measurements.
 
 \subsubsection*{Measuring tools: software-based monitoring}
-We used software mesaurement tools to get an estimated energy consumption by the memory and other system components. In this particular set of experiments, the memory energy measurements done with software were
+We used software measurement tools to get an estimated energy consumption by the memory and other system components. In this particular set of experiments, the memory energy measurements done with software were
 of particular help to distinguish the different stages, which existence was
 unknown before the experiment. The software-based tools can be used as a 
-decision support and for learning about unknown and unexpected system behaviours. Thus, even if the output
+decision support and for learning about unknown and unexpected system behaviors. Thus, even if the output
 does not directly show information about energy consumption of the system, it
 can be important to support and explain expected - and unexpected - behaviors.
   
@@ -190,15 +190,15 @@ In the Figure~\ref{fig:parfull_results}, we can see the energy efficiency compar
 
 The main conclusion from ~\ref{fig:parfull_results} is that ARM\_odroid outperforms Intel\_xeon in both internal energy efficiency and external energy efficiency.
 
-\subsubsection*{Energy performance and overcommited CPUs}
+\subsubsection*{Energy performance and over-committed CPUs}
 
-It is noticeable that ARM\_odroid has a significant energy performance decline when its cores are overcommited. It is also interesting to see that the energy performance decline in the ARM\_odroid is relatively larger on the internal energy measurements. One of the reasons we found in our raw results to explain this phenomenona is the large increase of time taken to process the events when the cores are overcommited. Thus, even if the cores are consuming the same Watts per second during the event processing stage, the energy efficiency will decrease with the time taken to process the events.  
+It is noticeable that ARM\_odroid has a significant energy performance decline when its cores are over-committed. It is also interesting to see that the energy performance decline in the ARM\_odroid is relatively larger on the internal energy measurements. One of the reasons we found in our raw results to explain this phenomenon is the large increase of time taken to process the events when the cores are over-committed. Thus, even if the cores are consuming the same Watts per second during the event processing stage, the energy efficiency will decrease with the time taken to process the events.  
 
-On the other hand, the energy performance of Intel\_xeon does not seem to be significantly affected when overcommited. This phenomenon is explain by the fact that Intel\_xeon took roughly the same time to process the events when using one core per event and half a core per event.
+On the other hand, the energy performance of Intel\_xeon does not seem to be significantly affected when over-committed. This phenomenon is explain by the fact that Intel\_xeon took roughly the same time to process the events when using one core per event and half a core per event.
 
 We believe that the different results between ARM\_odroid and Intel\_xeon discussed below are due to the fact that ARM\_odroid is a development board and it does not implement sophisticated techniques such as Hyper Threading Technology (HTT) by Intel \cite{HTT}. According to Intel, HTT delivers two processing threads per physical core, which allows highly threaded applications to be processed faster. It is expected that if the ratio of  \textit{nr\_of\_threads/core} would be larger than 2, energy efficiency of Intel\_xeon would start to decline.  
 
-We believe that if we would overcommit Intel\_xeon with more than 4 threads per core, the time to process the workload would increase, which would be followed by a degradation of energy performance.
+We believe that if we would over-commit Intel\_xeon with more than 4 threads per core, the time to process the workload would increase, which would be followed by a degradation of energy performance.
 
 \subsubsection*{Measurement tools and techniques}
 
@@ -218,16 +218,16 @@ As a result of this measurement discrepancy, ~\ref{fig:parfull_results_aalto} sh
 
 \subsection*{Comparison between First set of experiments and Second set of experiments}
 
-When we compare the main results of the 1SE (Figure ~\ref{fig:parfull_results_aalto}) and 2SE (Figure ~\ref{fig:parfull_results}) we may be inclined to conclude that the setups in the 2SE presented an overall more efficiency than the setups the 1SE. Again, the used measurement tools play an important role and should not be disregarded when analysing the results. 
+When we compare the main results of the 1SE (Figure ~\ref{fig:parfull_results_aalto}) and 2SE (Figure ~\ref{fig:parfull_results}) we may be inclined to conclude that the setups in the 2SE presented an overall more efficiency than the setups the 1SE. Again, the used measurement tools play an important role and should not be disregarded when analyzing the results. 
 In the 1SE, we only performed external measurements. Thus, we discard the possibility to compare the 1SE results with the results of the internal measurements of the 2SE. 
-As for the external measurements performed in both set of experiments, the tools for measuring the energy consumption of both experiments have disctinct resolution and grain. In the 1SE, we used the clamp meter for measurements in all setups. As for the 2SE, we used embeeded and computer-assisted tools to perform the external measurements. This discrepancy of tools, its resolutions and errors, make it difficult to compare the results of the 1SE and 2SE.
+As for the external measurements performed in both set of experiments, the tools for measuring the energy consumption of both experiments have distinct resolution and grain. In the 1SE, we used the clamp meter for measurements in all setups. As for the 2SE, we used embedded and computer-assisted tools to perform the external measurements. This discrepancy of tools, its resolutions and errors, make it difficult to compare the results of the 1SE and 2SE.
 
 However, we can conclude that ARM architecture outperforms the Intel architectures in each and every experiment, regardless the measurement tools and methodologies used.
 
 \section{Conclusions}
-The main conclusion of our experiments is that given the setups used in our study, the ARM chipset Intel in terms of energy efficiency in every experiment.
+The main conclusion of our experiments is that given the setups used in our study, the ARM chip-set Intel in terms of energy efficiency in every experiment.
 
 We learned that the gen-sim mode of CMSSW has different stages and the most relevant from an energy consumption point of view is the latest one, when the events are processed.
 
 
-In addition, we leanerd that the tools used to make the experiments play a crucial role in the whole experiment. It is important to assure that the measurement tools and methodologies in use are compatible and suitable to produce results that can be compared. This aspect can be hindered based on the availability of hardware and measurement tools. 
+In addition, we learned that the tools used to make the experiments play a crucial role in the whole experiment. It is important to assure that the measurement tools and methodologies in use are compatible and suitable to produce results that can be compared. This aspect can be hindered based on the availability of hardware and measurement tools. 

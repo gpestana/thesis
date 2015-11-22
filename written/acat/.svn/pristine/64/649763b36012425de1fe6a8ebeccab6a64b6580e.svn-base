@@ -1,0 +1,243 @@
+
+@book{GAMEOVER,
+  title={The Future of Computing Performance:  Game Over or Next Level?},
+  author={Samuel H. Fuller and Lynette I. Millett, Editors; Committee on Sustaining Growth in Computing Performance; National Research Council},
+  isbn={9780309159517},
+  url={http://www.nap.edu/openbook.php?record_id=12980},
+  year={2011},
+  publisher={The National Academies Press}
+}
+
+@article{CHEP2010PERF,
+  author={M J Kortelainen and P Elmer and G Eulisse and V Innocente and C D Jones and L Tuura},
+  title={The evolution of CMS software performance studies},
+  journal={Journal of Physics: Conference Series},
+  volume={331},
+  number={4},
+  pages={042013},
+  url={http://stacks.iop.org/1742-6596/331/i=4/a=042013},
+  year={2011},
+}
+
+@article{CHEP2009PERF,
+  author={P Elmer and G Eulisse and L Tuura and V Innocente},
+  title={{CMS} software performance strategies},
+  journal={Proceedings of Computing in High Energy Physics (Prague, 2009)},
+  year={2009},
+}
+
+
+@article{ACAT13ARM,
+  author={David Abdurachmanov and Peter Elmer and Giulio Eulisse and Shahzad Muzaffar},
+  title={Initial explorations of ARM processors for scientific computing},
+  journal={Journal of Physics: Conference Series},
+  volume={523},
+  number={1},
+  pages={012009},
+  url={http://stacks.iop.org/1742-6596/523/i=1/a=012009},
+  year={2014},
+}
+
+@article{CHEP13ARMPHI,
+  author={David Abdurachmanov and Kapil Arya and Josh Bendavid and Tommaso Boccali and Gene Cooperman and Andrea Dotti and Peter
+Elmer and Giulio Eulisse and Francesco Giacomini and Christopher D Jones and Matteo Manzali and Shahzad Muzaffar},
+  title={Explorations of the viability of ARM and Xeon Phi for physics processing},
+  journal={Journal of Physics: Conference Series},
+  volume={513},
+  number={5},
+  pages={052008},
+  url={http://stacks.iop.org/1742-6596/513/i=5/a=052008},
+  year={2014},
+}
+
+@article{RAPL1,
+  author  = "Balaji Subramaniam and Wu-chun Feng",
+  title   = "Towards Energy-Proportional Computing for Enterprise-Class Server Workloads",
+  year    = "2012",
+  journal = "CPE '13 Proceedings of the 4th ACM/SPEC International Conference on Performance Engineering"
+
+}
+
+@manual{INTELMAN,
+  title   =  "Intel 64 and IA-32 Software Developer Manuals -
+Volume 3",
+  address = "www.intel.com/content/www/us/en/processors/
+architectures-software-developer-manuals.html"
+}
+
+@misc{MSRTOOLS,
+  title         = "MSR tools",
+  howpublished  = "\url{https://01.org/msr-tools}",
+  note          = {Last time accessed: 28-07-2014}
+
+}
+
+@article{CMSHIGGS,
+      author         = "Chatrchyan, S. and others",
+      title          = "{Observation of a new boson at a mass of 125 GeV with the
+                        CMS experiment at the LHC}",
+      collaboration  = "CMS Collaboration",
+      journal        = "Phys.Lett.",
+      volume         = "B716",
+      pages          = "30-61",
+      doi            = "10.1016/j.physletb.2012.08.021",
+      year           = "2012",
+      eprint         = "1207.7235",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CMS-HIG-12-028, CERN-PH-EP-2012-220",
+      SLACcitation   = "%%CITATION = ARXIV:1207.7235;%%",
+}
+
+
+@article{ATLASHIGGS,
+      author         = "Aad, G. and others",
+      title          = "{Observation of a new particle in the search for the
+                        Standard Model Higgs boson with the ATLAS detector at the
+                        LHC}",
+      collaboration  = "ATLAS Collaboration",
+      journal        = "Phys.Lett.",
+      volume         = "B716",
+      pages          = "1-29",
+      doi            = "10.1016/j.physletb.2012.08.020",
+      year           = "2012",
+      eprint         = "1207.7214",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2012-218",
+      SLACcitation   = "%%CITATION = ARXIV:1207.7214;%%",
+}
+
+@techreport{CMSCTDR,
+  author = "G. L. Bayatyan et al.",
+  title = "CMS Computing Technical Design Report",
+  institution = "CERN",
+  number = "CERN-LHCC-2005-023",
+  year = "2005"
+}
+
+@article{CMSDET,
+      author         = "Chatrchyan, S. and others",
+      title          = "{The CMS experiment at the CERN LHC}",
+      collaboration  = "CMS Collaboration",
+      journal        = "JINST",
+      volume         = "3",
+      pages          = "S08004",
+      doi            = "10.1088/1748-0221/3/08/S08004",
+      year           = "2008",
+      SLACcitation   = "%%CITATION = JINST,3,S08004;%%",
+}
+
+@article{LHCPAPER,
+      author         = "Evans, Lyndon and Bryant, Philip",
+      title          = "{LHC Machine}",
+      journal        = "JINST",
+      volume         = "3",
+      pages          = "S08001",
+      doi            = "10.1088/1748-0221/3/08/S08001",
+      year           = "2008",
+      SLACcitation   = "%%CITATION = JINST,3,S08001;%%",
+}
+
+@article{ATLAS,
+  author = "Aad G et al (Atlas Collaboration)",
+  title = "{The Atlas Experiment at the CERN Large Hadron Collider}",
+  journal = "JINST",
+  volume = "3",
+  year = "S08003"
+}
+
+@article{WLHC,
+  author = "Bird I",
+  title = "{Computing for the Large Hadron Collider}",
+  journal = "Annual Review of Nuclear and Particle Science",
+  volume = "61",
+  year = "2011"
+}
+
+@misc{igprof-web,
+  title = {Ig{P}rof, The {I}gnominous {P}rofiler},
+  howpublished = {\url{http://igprof.org/}. Accessed 2014-09-30.}
+}
+
+@article{igprofchep04,
+  author = {Giulio Eulisse and Lassi Tuura},
+  title = {{IgProf Profiling Tool}},
+  year = {2004},
+  journal = {Proc. Computing In High Energy Physics (CHEP04) (Interlaken)},
+}
+
+
+@article{tuura08,
+  author = {Lassi Tuura and Vincenzo Innocente and Giulio Eulisse},
+  title = {Analysing {CMS} software performance using {IgProf}, {OProfile} and callgrind},
+  year = {2008},
+  journal = {Journal of Physics: Conference Series 119},
+  note = {DOI 10.1088/1742-6596/119/4/042030},
+}
+
+@article{fowler02,
+  author = {Martin Fowler},
+  title = {Yet Another Optimization Article},
+  year = {2002},
+  journal = {{IEEE} Software},
+  number = {May/June},
+  volume = {1},
+  pages = {20--21},
+  note = {ISSN 0740-7459}
+}
+
+@article{weaver12,
+  author = {Vincent M. Weaver and Matt Johnson and Kiran Kasichayanula and James Ralph and Piotr Luszczek and Dan Terpstra and Shirley Moore},  title = {Measuring Energy and Power with {PAPI}},
+  year = {2012},
+  journal = {Proceedings of the International Conference on Parallel Processing Workshops},
+  pages = {262--268},
+  note = {DOI: 10.1109/ICPPW.2012.39}
+}
+
+@misc{stream-web,
+  author = {John D. McCalpin},
+  title = {{STREAM}: Sustainable Memory Bandwidth in High Performance Computers},
+  note = {Web page. \url{http://www.cs.virginia.edu/stream/}. Accessed 2014-09-30.}
+}
+
+@misc{POWERTOP,
+  title = {PowerTOP},
+  howpublished = {\url{https://01.org/powertop}},
+  note = {Last time accessed: 17-09-2014}
+}
+
+@misc{TIINA231,
+  title = {{Texas Instruments (TI) INA 231}},
+  howpublished = {\url{http://www.ti.com/product/ina231}},
+  note = {Last time accessed: 17-09-2014}
+}
+
+@article{ABD2014,
+  author = {David Abdurachmanov and Brian Bockelman and Peter Elmer and Giulio Eulisse and Robert Knight},
+  year = {2014},
+  title = {{Heterogeneous High Throughput Scientific Computing with APM X-Gene and Intel Xeon Phi}},
+  journal = { to be published in ACAT 2014 proceedings }
+}
+
+@article{GEANT4,
+  title = {Geant4 — a simulation toolkit},
+  author = {S. Agostinelli and others},
+  journal = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+  pages = {250--303},
+  note = {DOI: 10.1016/S0168-9002(03)01368-8}
+}
+
+@techreport{HLLHC,
+      author        = "Rossi, L and Bruning, O",
+      title         = "{High Luminosity Large Hadron Collider  A description for
+                       the European Strategy Preparatory Group}",
+      institution   = "CERN",
+      collaboration = "The project is partially supported by the EC as FP7 HiLumi
+                       LHC Design Study under grant no. 284404 Collaboration",
+      address       = "Geneva",
+      number        = "CERN-ATS-2012-236",
+      month         = "Aug",
+      year          = "2012",
+}
+}
