@@ -1,4 +1,4 @@
-\chapter{HTC in a dynamic energy pricing market}
+cite\chapter{HTC in a dynamic energy pricing market}
 
 One of the ways to utilize the conclusions from the experiments conducted in this study is to actively lower the energy bill in HTC. One approach could be to schedule jobs between more energy efficient but slower ARM architectures and the less energy efficient but faster Intel machines. This approach makes sense in a multi energy price ecosystem. A multi energy price ecosystem is an energy market where the prices float according to the overall power grid usage.
 
@@ -141,7 +141,7 @@ Well known algorithms such as job shop scheduling algorithm and others can be ap
 
 \section{Conclusions}
 
-Our solution takes a different perspective when compared with related research. Studies like  \cite{TASK_SCHED} and \cite{EXE_METHOD} do not take the
+Our solution takes a different perspective when compared with related research. Studies conducted by Yan Wang, et al.  \cite{TASK_SCHED} and Guosun Zeng, et al. \cite{EXE_METHOD} do not take the
 dynamics of electrical pricing into consideration. However, their algorithm is
 already quite complex and proved NP-complete, to the point they have to come up
 with heuristic algorithms to apply it in the real world.
@@ -155,7 +155,7 @@ schedule the jobs in order to minimize the energy consumption and energy bill
 deadline is met. 
 
 However, there are some open points that we still have might want to
-consider. First, as \cite{DYN_PRICING_HPC} mentions, it is important to ensure
+consider. First, as Xu Yang, et al. \cite{DYN_PRICING_HPC} state, it is important to ensure
 that the hardware existent in the data center is used at its full potential, in
 order to not waste the investment made when it was purchased. Our solution,
 though, does not insure that since the idea is to power down/idle machines that 
@@ -167,7 +167,7 @@ needed to have the application stack running properly in both architectures (as
 we witness with CERN's efforts). If we decide to abstract from that point and
 see the machine's architectures as a black box, then that's not a problem. Thirdly, 
 comparing with other recent research works
-such as \cite{TASK_SCHED}, our algorithm model seems to be over simplifying the
+such as the one conducted by Yan Wang, et al. \cite{TASK_SCHED}, our algorithm model seems to be over simplifying the
 problem to an extent that might hinder our purposes of creating a practical and
 energy efficient scheduling algorithm for heterogeneous HPC under dynamic
 electrical pricing.

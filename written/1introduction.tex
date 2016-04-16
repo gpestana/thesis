@@ -4,7 +4,7 @@
 %establishing territory
 %%claiming centrality
 Nowadays, computing technology is still developing according to Moore's Law. The number of transistors per
-chip-set and the overall technology development is still increasing at a geometric rate. However, the energy
+chip-set is still increasing at a geometric rate. However, the energy
 consumption of the systems have begun to halt the usage of the technology at its
 full potential. Therefore, energy efficiency has became an important
 research topic in computer science, for energy has become a major growth
@@ -15,19 +15,19 @@ bigger dimension to the discussion.
 
 There are two major approaches to tackle the energy bottleneck in the current
 technology panorama. One, is to develop techniques and technologies to better harvest, 
-transform and store energy to be used by computing systems. The second approach to the problem is to improve the energy efficiency of the existent computing systems. This thesis focuses primarily on the latter approach. 
+transform and store energy to be used by computing systems. The second approach to the problem is to improve the energy efficiency of the existing computing systems. This thesis focuses primarily on the latter approach. 
 
 The concerns with energy consumption and its impact in the current
 applications affect several industries, from mobile device industries to big data centers. 
 Given the several layers and complexity of the systems used nowadays, there are 
 considerable number of directions that can be taken to improve the overall energy efficiency. Throughout this thesis, we will focus on measuring and improving the energy
-consumption in High Performance Computing (HTC) applied to Scientific Research.
+consumption in High Throughput Computing (HTC) applied to Scientific Research.
 
 
 \subsection*{The Large Hadron Collider example}
 In some applications, a single computing unit does not have enough resources to
 accomplish the required tasks. A recurrent strategy is to distribute computational tasks
-across a set of computing units that might be spread geographically.
+across a set of computing centers that might be spread geographically.
 
 The Large Hadron Collider (LHC) \cite{LHC} at the European Laboratory for Particle
 Physics (CERN) in Geneva, Switzerland, is an example of a scientific project
@@ -36,10 +36,10 @@ in a single computing unit. Thus, data processing and storage are distributed ac
 the Worldwide LHC
 Computing Grid (WLCG) \cite{WLCG}, which uses resources from 160 computer centers in 35
 countries. Such computational resources have enabled the CMS \cite{CMS} and ATLAS \cite{ATLAS}
-experiments to discover the Higgs Boson \cite{HIGGS2} \cite{HIGGS1}, amongst other scientific 
+experiments to discover the Higgs Boson by S. Chatrchyan, et al. \cite{HIGGS2} and Aad, Georges, et al. \cite{HIGGS1}, amongst other scientific 
 achievements. 
 The WLHC requires a massive amount of computational resources 
-(250,000 x86 cores in 2012) and,
+(between 80.00 - 100.00 x86 cores in 2012) and,
 proportionally, energy. In the future, with planned increases to the LHC
 luminosity, the dataset size will increase by 2-3 orders of magnitude,
 posing even more challenges in terms of energy consumption.
@@ -49,39 +49,43 @@ energy efficiency to reach its full potential in the present and future time.
 Throughout this thesis, we will focus primarily on the LHC case. When
 appropriate, we will use authentic data and current technology used by the CMS.  
 
+\section{Reduced Instruction Set Computing and ARM}
+Reduced Instruction Set Computing (RISC) and Complex Instruction Set Computing (CISC) are computing architectures with different computing designs. RISC architectures are designed to operate smaller number of computer instructions than CISC. RISC aims at performing more instructions per second, resulting on more energy performance than CISC the architectures.
+
+The most well known and widely used commercial implementation of CISC architecture are chipsets produced by Intel. On the other hand, ARM has been focusing on the development of RISC based architectures chipsets. Traditionally, ARM chipsets have been used in the energy constrained devices market.
+
+Given the maturity and availability of ARM compared to other RISC computing chipsets, we used ARM chipsets to conduct our research.
 
 \section{Problem Statement}
 %establishing a niche (2)
 %%counter-claiming and %%indicating a gap 
-A considerable amount of research has been done on leveraging Reduced
-Instruction Set Computing (RISC) architectures to minimize energy consumption on 
-mobile and energy constrained devices. In the mobile and energy constrained devices case, energy consumption is a
-priority given the inherent reduced amount of energy available that affects the mobility of the devices. 
+A considerable amount of research has been done on leveraging RISC architectures to minimize energy consumption on 
+mobile and energy constrained devices. In the mobile and energy constrained devices case, it is important to build systems with low energy consumption due to constrains of available power.
 
-The large quota of ARM architectures in the mobile market supports the fact that
+The large share of ARM architectures in the mobile market supports the fact that
 RISC is a good fit for mobile and energy constrained devices.
 
 
-Similarly to mobile devices, the High Throughput computing (HTC) community major concerns with energy efficiency. However, studies focusing on the viability 
+Similarly to mobile devices, the High Throughput Computing (HTC) community major concerns with energy efficiency. However, studies focusing on the viability 
 of RISC architectures in HTC as a way to minimize energy consumption are not
 abundant in the research technology. Furthermore, to the knowledge of the
 authors at the time of this research, there are no real world implementation of such technologies in 
 HTC data centers.
 
 
+
 %%question-raising
-It is still unclear whether RISC architectures are a good match to HTC
-computing or not. There are open points regarding whether the performance 
-constraints of RISC architectures and the high performance requirements of HTC 
-workload are acceptable. In addition, it is still unclear if RISC architectures
-are more energy efficient under HTC workloads than the conventional Complex 
-Instruction Set Computing (CISC) architectures.
+It is still unclear whether RISC architectures - and notably ARM chipsets - are a good match to HTC
+computing. There are open points regarding whether the performance 
+constraints of ARM architecture and the high performance requirements of HTC 
+workload are acceptable. In addition, it is still unclear if ARM architecture
+is more energy efficient under HTC workloads than the conventional Intel CISC-based architectures.
 
 %occupying the niche
-Therefore, it is of our interest to study the potential impact of RISC architectures in 
+Therefore, it is of our interest to study the potential impact of ARM architectures in 
 the HTC and scientific computing industry. In our opinion, there are two major
 gaps that need to be filled: Firstly, a comparison between
-RISC and CISC architectures under authentic scientific workloads. Secondly,
+ARM and Intel architectures under authentic scientific workloads. Secondly,
 a solution that leverages RISC architectures under HTC and scientific
 computing.
  
@@ -91,7 +95,7 @@ computing.
 The purpose of this thesis is to help filling the gaps above mentioned. Firstly, we aim at answering whether RISC architectures
 are a potential fit to HTC and scientific computing from a energy efficiency
 perspective. We focus mainly on comparing the ARM architecture and Intel, which is a widely used CISC architecture in HTC. During this research, we
-use authentic HTC workload and computing frameworks as the CMS collider. 
+use authentic HTC workload and computing frameworks as the CMS experiment. 
 
 Secondly, we use the results of the comparison between ARM and Intel architectures to study how to lower down the electrical bill of HTC data centers running under a dynamic energy
 pricing ecosystem.
@@ -112,7 +116,7 @@ efficiency profiles.
 Our main findings are: 
 
 \begin{itemize}
-  \item Accurate techniques and tools for measuring power consumption are important to develop more efficient systems. We researched and outlined best practices for different system levels in the Chapter 3. The results of this research were published in the conference proceedings of the 16th International workshop on Advanced Computing and Analysis Techniques in physics research (ACAT'2014). The article was called \textit{Techniques and tools for measuring energy efficiency of scientific software applications};
+  \item Accurate techniques and tools for measuring power consumption are important to develop more efficient systems. We researched and outlined best practices for different system levels in the Chapter 3. The results of this research were published in the conference proceedings of the 16th International workshop on Advanced Computing and Analysis Techniques in physics research (ACAT'2014) \cite{ACAT}.
 
   \item The ARM architecture shows potential for an energy savings in HTC when compared to the x86 systems widely used nowadays. We performed experiments with real world workloads (Chapter 4) and analyzed the results (Chapter 5); 
 

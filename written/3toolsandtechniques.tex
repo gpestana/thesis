@@ -13,7 +13,7 @@ It is critical to understand how energy is used by the HTC systems and its compo
 This chapter outlines and describes tools and techniques for measuring energy consumption in any machine. Our main goal is to use these tools and techniques to study energy efficiency of HTC systems, more specifically systems running on top of x86 and ARM architectures. The tools and techniques described in this chapter were used widely during the study of energy efficiency comparison described in the following chapters. 
 
 
-The results of this section were publish in the conference proceedings of the 16th International workshop on Advanced Computing and Analysis Techniques in physics research (ACAT'2014). The article was called \textit{Techniques and tools for measuring energy efficiency of scientific software applications} \cite{ACAT} and can be found on Appendix A, at the end of this document. 
+The results of this section were publish in the conference proceedings of the 16th International workshop on Advanced Computing and Analysis Techniques in physics research (ACAT'2014). The article was called \textit{Techniques and tools for measuring energy efficiency of scientific software applications} \cite{ACAT}.
 
 \section{The big picture}
 
@@ -25,11 +25,11 @@ engineering and optimizing computing centers. Alternatively, a more detailed app
 look into the components which make up the active parts of a
 node, in particular the CPU and its memory subsystem since these
 are responsible for a sizable fraction of the consumed power.
-They are also the place where the largest gains in terms of efficiency 
-can be obtained through optimizations in the software \cite{ACAT}.
+According to Abdurachmanov, et al. \cite{ACAT}, those are the components where the largest gains in terms of efficiency 
+can be obtained through optimizations in the software.
 
 \subsection*{Coarse grain or external measurements}
-As stated by \cite{ACAT}, If one is simply interested in the coarse power consumption by node,
+As stated by Abdurachmanov, et al. \cite{ACAT}, If one is simply interested in the coarse power consumption by node,
 external probing devices can be used: monitoring interfaces
 of the rack power distribution units, plug-in meters and non-invasive
 clamp meters (allowing measurement of the
@@ -81,7 +81,7 @@ plane 0} (pp0), which measures energy consumed by the CPU core(s),
 and \textbf{dram}, which accounts for the sum of energy consumed
 by memory in a given socket, therefore excluding the on-core
 caches~\cite{INTELMAN}. As for the discrete components case, the
-timing resolution of measurements is in the millisecond range~\cite{RAPL1}.
+timing resolution of measurements is in the millisecond range, according to Balaji Subramaniam, et al. \cite{RAPL1}.
 This is fine enough to allow exploiting such data to build an energy
 consumption sampling profiler for applications, similar to how performance
 sampling profilers work.

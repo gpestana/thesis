@@ -3,31 +3,31 @@
 
 \section{Energy consumption awareness in Scientific Computing}
 Power consumption and energy efficiency have become of paramount important topic in 
-computer science, due to the major growth bottleneck that energy has imposing to systems. This bottleneck has been hindering the further development and usage of technology such as mobile devices and low energy devices. In addition, high throughput and scientific computing have also been affected by energy consumption increase. In these fields, the large amount of data that has to be stored and processed have been increasing with the time. 
+computer science, due to the major growth bottleneck that energy imposes to systems. This bottleneck has been hindering the further development and usage of technology such as mobile devices and low energy devices. In addition, high throughput and scientific computing have also been affected by energy consumption increase. In these fields, the large amount of data that has to be stored and processed have been increasing with the time. 
 
 Moreover, the increasing concerns with energy consumption and its social, economical 
-and environmental impact in our society has given a bigger dimension to the discussion.
+and environmental impact in our society have given a bigger dimension to the discussion.
 
 The importance given to energy consumption among the research community is visible in the amount of research done in this field.
 
 \subsection*{Literature review} %10/10
-As stated by \cite{SCICOMPUTING_REQS}, scientific computing is often characterized by requiring enormous data storage capacity, high processing capabilities and complex configuration. High processing capabilities and massive data storage are requirements that potentially require massive amounts of energy. Thus, the scientific 
+As stated by Chia-Lee Yang, et al. \cite{SCICOMPUTING_REQS}, scientific computing is often characterized by requiring enormous data storage capacity, high processing capabilities and complex configuration. High processing capabilities and massive data storage are requirements that potentially require massive amounts of energy. Thus, the scientific 
 computing community is looking into energy efficiency with special interest.
 
 Given its importance, many research studies have worked on technologies to increase energy efficiency and lower power consumption of computing systems. There is a vast panoply of studies with different
-approaches toward improving energy efficiency. For example, to use graphic processing units (GPU) for data processing \cite{GPU}, \cite{GREENGPU}. The GPU is a specialized circuit developed to manipulate and process visuals and responsible for a fast display of complex animations based on mathematical renderings. According to \cite{GPU}, the benefits from using GPU to process data is due to its parallel architecture. The parallel architecture of GPU is well suited for intensive multimedia applications and it does the task in a low energy manner. Consequently, \cite{GPU} states the high-performance GPU achieves better results in terms of energy efficiency that any combination of CPU and GPU. They tested their results with a compute-intensive workloads. Given the rise of GPU processing in compute-intensive workloads, \cite{GREENGPU} takes an holistic approach and studies energy efficiency taking into consideration how GPU and CPU work together. They state that with the correct scheduling between both GPU and CPU, the system can save up to 20\% energy.  
+approaches toward improving energy efficiency. For example, to use graphic processing units (GPU) for data processing as in Sangduk Kim, et al. \cite{GPU} and Kai Ma, et al. \cite{GREENGPU}. The GPU is a specialized circuit developed to manipulate and process visuals and responsible for a fast display of complex animations based on mathematical renderings. According to Sangduk Kim, et al. \cite{GPU}, the benefits from using GPU to process data is due to its parallel architecture. The parallel architecture of GPU is well suited for intensive multimedia applications and it does the task in a low energy manner. Consequently, Sangduk Kim, et al. \cite{GPU} concludes that the high-performance GPU achieves better results in terms of energy efficiency that any combination of CPU and GPU. They tested their results with a compute-intensive workloads. On the other hand, Kai Ma, et al. \cite{GREENGPU} state that with the correct scheduling between both GPU and CPU, the system can save up to 20\% energy. Although Kai Ma, et al. \cite{GREENGPU} and Sangduk K. et al \cite{GPU} reach contradictory conclusions, it shows that the research community has been actively seeing GPU as a potential processing unit to reduce energy efficiency.
 
-Apart from using GPU for low energy data processing, there have been some attempts to leverage RISC architectures in scientific and high throughput environments. Some examples are \cite{AALTO_ARM} \cite{ACAT13ARM},
-\cite{ACAT14ARMDAVID}. In \cite{AALTO_ARM}, the authors show that ARM architectures present a potential energy saving alternative when compared to Intel x86 architectures. Although, in some use cases, the an ARM based data center can become more costly than the widespread solutions using Intel. Based on the study conducted by \cite{AALTO_ARM}, the ARM clusters are financially fit when performing lightweight computational applications. On the other hand, when it comes to computation-intensive applications, the amount of ARM nodes needed to perform the tasks increases substantially. This makes the solution less interesting from a financial perspective. However, if one is only concerned with the overall energy efficiency of the cluster, ARM-based clusters show a better energy efficiency factor than Intel. In \cite{ACAT13ARM} and \cite{ACAT14ARMDAVID}, present their initials results on using ARM architecture for computing intensive applications in a scientific environment. They report how a ARMv7 based development board performs under scientific computing workloads. Their conclusions show that ARM based architectures show great potential for use of the typical scientific workload with HTC.
+Apart from using GPU for low energy data processing, there have been some attempts to leverage RISC architectures in scientific and high throughput environments. Some examples are Zhonghong Ou, et al. \cite{AALTO_ARM} and Abdurachmanov, et al. \cite{ACAT13ARM},
+\cite{ACAT14ARMDAVID}. In Zhonghong Ou, et al. \cite{AALTO_ARM}, the authors show that ARM architectures present a potential energy saving alternative when compared to Intel x86 architectures. Although, in some use cases, the an ARM based data center can become more costly than the widespread solutions using Intel. Based on the study conducted by Abdurachmanov, et al. \cite{AALTO_ARM}, the ARM clusters are financially viable when performing lightweight computational applications. On the other hand, when it comes to computation-intensive applications, the amount of ARM nodes needed to perform the tasks increases substantially. This makes the solution less interesting from a financial perspective. However, if one is only concerned with the overall energy efficiency of the cluster, ARM-based clusters show a better energy efficiency factor than Intel. Abdurachmanov, et al. \cite{ACAT13ARM}, \cite{ACAT14ARMDAVID}, present their initials results on using ARM architecture for computing intensive applications in a scientific environment. They report how a ARMv7 based development board performs under scientific computing workloads. Their conclusions show that ARM based architectures show great potential for use of the typical scientific workload with HTC.
 
-Several other directions have been taken toward energy efficient computing \cite{QUESTIONS_ENERGY} \cite{GREENING},
-\cite{ENERGY_DILEMMA} and the number of related works keeps growing. In \cite{QUESTIONS_ENERGY}, the authors mine well-known on-line forums, such as StackOverflow \cite{STACKOVERFLOW}, to understand what are the main concerns of developers regarding application level energy efficiency. An interesting conclusion then drawn from the study is that even though the questions asked are generally interesting and relevant from a scientific point of view and correctness, the answers are generally poorly addressed. The answers have been shown to be either vague of flawed. They also contributed with a summary of software energy consumption problems that developers and end users focus the most. In \cite{GREENING}, they authors explore the potential of geographically distributed in Internet-scale systems. Finally, the authors of \cite{ENERGY_DILEMMA} compare how massive data centers compare to distributed data centers in terms of energy consumption. They conclude that distributed cloud platforms outperform the classic data center model. They also show how the MapReduce technique can be leveraged to save energy in a distributed data center model. 
+Several other directions have been taken toward energy efficient computing, such as Gustavo Pinto, et al. \cite{QUESTIONS_ENERGY}, Zhenhua Liu, et al. \cite{GREENING}, Sharifi, et al.
+\cite{ENERGY_DILEMMA} and the number of related works keeps growing. Gustavo Pinto, et al. \cite{QUESTIONS_ENERGY} mined well-known on-line forums, such as StackOverflow \cite{STACKOVERFLOW}, to understand what are the main concerns of developers regarding application level energy efficiency. An interesting conclusion then drawn from the study is that even though the questions asked are generally interesting and relevant from a scientific point of view and correctness, the answers are generally poorly addressed. The answers have been shown to be either vague or flawed. They also contributed with a summary of software energy consumption problems that developers and end users focus the most. Zhenhua Liu, et al. \cite{GREENING} explore the potential of geographically distributed in Internet-scale systems. Finally, Sharifi, et al. \cite{ENERGY_DILEMMA} compare how massive data centers compare to distributed data centers in terms of energy consumption. They conclude that distributed cloud platforms outperform the classic data center model. They also show how the MapReduce technique can be leveraged to save energy in a distributed data center model. 
 
 \section{The European Organization for Nuclear Research and the LHC}
 
 The European Research for Nuclear Research (CERN) \cite{CERN} is a particle physics
 research laboratory sited in the Franco-Swiss border. At CERN, thousands of
-engineers and physicists from about 21 state members conduct researches about the
+engineers and physicists from about 21 state members conduct research about the
 fundamental structures of the Universe. In order to perform experiments that
 support scientific research, CERN has built several particle accelerators and detectors.
 The most outstanding collider is the Large Hadron Collider (LHC). The LHC
@@ -38,32 +38,33 @@ traveling close to the speed of light, they are made to collide in the different
 colliders. After each collision, particles and subatomic particles are projected
 due to the collision, which is tracked and recorded by the colliders. The data
 acquired from the collisions is then filtered and the most interesting
-information is stored into the CERN data-centers for posterior reconstruction
-and processing. Given the frequency of the collisions and the massive amount of
+information is stored into the CERN data-centers for posterior analysis. The analysis consists in two stages: First, the data is reconstructed. This stage consists on re-arranging and decompressing the stored data. The second phase consists processing the raw data in order to be used by the researcher community.
+
+Given the frequency of the collisions and the massive amount of
 data to store and process from each collision, the LHC is an example of a scientific
 computing endeavor which energy management is critical.  
 
 
 \subsection*{Literature review}
 
-According to \cite{ACAT13ARM}, the computing requirements for HPC have increased 
+According to Abdurachmanov, et al. \cite{ACAT13ARM}, the computing requirements for HTC have increased 
 particularly in recent years. Most notably, a project with the magnitude and complexity of the 
-LHC is a sound example of it. To achieve results like the discovery of
-the Higgs boson \cite{HIGGS1} \cite{HIGGS2} and other significant scientific
+LHC is a sound example of it. In order to achieve results like the discovery of
+the Higgs boson by Georges Aad, et al. \cite{HIGGS1}, \cite{HIGGS2} and other significant scientific
 advances, a massive amount of computational resources - and thus energy - was
 necessary. Given the enormous amount of resources needed for storing and
 processing the data, it was not viable to concentrate all the tasks in one
-single super-node. Thus, the solution was to distribute the processing tasks across 
+single data center. Thus, the solution was to distribute the processing tasks across 
 several partners and institutions through a distributed network of nodes, called
-the Worldwide LHC Computing Grid (WLCG) (the same approach as studies in \cite{ENERGY_DILEMMA}). The WLCG \cite{WLCG} is a grid
+the Worldwide LHC Computing Grid (WLCG) (the same approach taken by Sharifi, et al. \cite{ENERGY_DILEMMA}). The WLCG is a grid
 computing platform where more than 170 computing centers spread across 40
-countries \cite{WLCG} collaborate to store and process the data coming from the
-LHC experiment. According to \cite{WLCG}, the WLCG alone is responsible for the distribution, 
-storage and processing of more than 30 Peta-bytes annually. According to
+countries collaborate to store and process the data coming from the
+LHC experiment \cite{WLCG}. The WLCG alone is responsible for the distribution, 
+storage and processing of more than 30 petabytes annually. According to Abdurachmanov, et al. 
 \cite{ACAT13ARM}, the equivalent capacity of WLCG in 2012 was between 80,000 and 100,000 x86-64 cores, which would be difficult to build and maintain in a single super data center.
 
 In the future, other projects and researches will demand even more processing capacity from
-the WLCG. For example, as stated by \cite{ACAT13ARM}, in order to upgrade the
+the WLCG. For example, as according to Abdurachmanov, et al. \cite{ACAT13ARM}, in order to upgrade the
 luminosity of the LHC detectors to its full potential, the datasets will
 increase size by two to three orders of magnitude, with processing power
 increasing in proportion.
@@ -74,17 +75,17 @@ developing more efficient and methods and techniques high performance computing,
 both in the scientific computing in general and in the LHC computing grid in
 particular. 
 
-There are several studies concerning computational energy efficiency at CERN. In \cite{INTEL_WP}, Intel researchers present methods to better use Intel hardware for energy efficient computing at CERN. The white paper also presents some future solutions based on the x86 technology developed by Intel that will eventually perform better from an energy point of view than the current solutions. In \cite{IGPROF}, the authors describe how they developed a energy profiling module on top of IgProf to better understand how energy is consumed by the system. The authors focused primarily on running the energy profiling on IgProf with tasks used by the software of LHC. The starting point of \cite{IGPROF} is marked by stating that high throughput computing in general - and scientific computing at CERN in particular - has to rely on tools that provide a deep understanding of how power is used in order to develop energy efficient solutions.
+There are several studies concerning computational energy efficiency at CERN. Intel researchers \cite{INTEL_WP} present methods to better use Intel hardware for energy efficient computing at CERN. The white paper also presents some future solutions based on the x86 technology developed by Intel that will eventually perform better from an energy point of view than the current solutions. Khan, et al. \cite{IGPROF} describe how they developed a energy profiling module on top of IgProf to better understand how energy is consumed by the system. The authors focused primarily on running the energy profiling on IgProf with tasks used by the software of LHC. The starting point is marked by stating that high throughput computing in general - and scientific computing at CERN in particular - has to rely on tools that provide a deep understanding of how power is used in order to develop energy efficient solutions.
 
-In \cite{FUTURE_CERN}, the authors conducted a survey on the potential advantages of using x86-64 variants, ARMv7 32-bit, ARMv8 64-bit, Many-Core and GPU solutions in the LHC context. The main focus was to evaluate whether the solutions surveyed would present advantages from an energy efficiency perspective. In \cite{POWER_AWAR_CERN}, the authors conducted a research on how both power-aware software applications and scheduling algorithms could improve energy efficiency in both distributed and centralized data center models. The authors use the LHC as a powerful distributed processing data center to access the results. In \cite{EXPLORATIONS_CERN}, the authors conducted a research on the viability of ARM processor and the Intel Xeon Phi co-processor for scientific computing in the CERN context.
+According to Abdurachmanov, et al. \cite{FUTURE_CERN}, the authors conducted a survey on the potential advantages of using x86-64 variants, ARMv7 32-bit, ARMv8 64-bit, Many-Core and GPU solutions in the LHC context. The main focus was to evaluate whether the solutions surveyed would present advantages from an energy efficiency perspective. According to Abdurachmanov, et al. \cite{POWER_AWAR_CERN}, the authors conducted a research on how both power-aware software applications and scheduling algorithms could improve energy efficiency in both distributed and centralized data center models. They used the LHC as a powerful distributed processing data center to access the results and outlined a set of steps toward a distributed computational model using heterogeneous computing units. In Abdurachmanov, et al. \cite{EXPLORATIONS_CERN}, the authors conducted a research on the viability of ARM processor and the Intel Xeon Phi co-processor for scientific computing in the CERN context. The results show that single core processing performance is much lower for ARMv7 than Intel architectures. However, from an power consumption perspective, the performance per watt is better for ARMv7 architectures. This research shows the potential of ARMv7 to be used in scientific computing.
 
 \section{Tools and techniques for measuring energy consumption} %5 (new articles)
 
-Many research works have discussed the importance of the right tools and techniques for measuring the energy consumption of computing systems. As \cite{CYCLE_ENERGY}, \cite{QUESTIONS_ENERGY}, \cite{ACAT14ARMDAVID}, \cite{ACAT13ARM},\cite{ACAT}, \cite{WIRELESS_ENERGY} and other studies mention, accurate techniques and tools for measuring power consumption are of paramount importance to understand the bottleneck components that need to be improved from a energy consumption point of views. Without accurate measurements and feedback from the computing systems, it becomes difficult to improve the energy performance in a larger scale. As stated by  \cite{QUESTIONS_ENERGY}, \cite{CYCLE_ENERGY} and \cite{ACAT}, there is few research studies on tools and techniques for energy measurement of computing systems at the different levels.   
+Many research works have discussed the importance of the right tools and techniques for measuring the energy consumption of computing systems. Naehyuck Chang, et al. \cite{CYCLE_ENERGY}, Gustavo Pinto, et al. \cite{QUESTIONS_ENERGY}, Abdurachmanov, et al. \cite{ACAT14ARMDAVID}, \cite{ACAT13ARM}, \cite{ACAT}, Hergenroder, A., et al. \cite{WIRELESS_ENERGY} and other studies mention, accurate techniques and tools for measuring power consumption are of paramount importance to understand the bottleneck components that need to be improved from a energy consumption point of views. Without accurate measurements and feedback from the computing systems, it becomes difficult to improve the energy performance in a larger scale. As stated by  Gustavo Pinto, et al. \cite{QUESTIONS_ENERGY}, Naehyuck Chang, et al. \cite{CYCLE_ENERGY} and Abdurachmanov, et al. \cite{ACAT}, there are only few research studies on tools and techniques for energy measurement of computing systems at the different levels.   
 
 
 \subsection*{Literature review}
-The study conducted by \cite{QUESTIONS_ENERGY}, shows that engineers have been
+The study conducted by Gustavo Pinto, et al. \cite{QUESTIONS_ENERGY}, show that engineers have been
 considering energy consumption as an important factor when developing software.
 The research consists of an empirical study that aims to understand the opinions and
 problems of software developers about energy efficiency. The data that sustains
@@ -98,92 +99,87 @@ asked questions by developers. In addition, the study ascertains that the
 \textit{"lack of tool support"} is an important handicap for the development of 
 energy efficient software.
 
-The authors of \cite{CYCLE_ENERGY}, recognize that the accurate understanding of how energy is measured in computing systems is the basis for any high level decision on how to improve the energy efficiency. In addition, the study states that conventional measurement techniques have serious limitations. Therefore, they introduce a new methodology to measure energy consumed by the system on the chip, which is capable of sampling energy consumption in real time. They used a ARMv7 processor to test their measurement technique, which is shown to be accurate and of interesting applicability when measuring energy consumed by computational systems.
+Naehyuck Chang et al. \cite{CYCLE_ENERGY} recognize that the accurate understanding of how energy is measured in computing systems is the basis for any high level decision on how to improve the energy efficiency. In addition, the study states that conventional measurement techniques have serious limitations. Therefore, they introduce a new methodology to measure energy consumed by the system on the chip, which is capable of sampling energy consumption in real time. They used a ARMv7 processor to test their measurement technique, which is shown to be accurate and applicable for measuring energy consumed by computational systems.
 
-Other research works such as \cite{ENERGY_ALGORITHMS}, \cite{MODEL1} and \cite{MODEL2} leverage mathematical models and algorithms to represent the energy consumption of complex computing systems and data centers. Even though we do not undertake this approach in our study, these studies highlight the necessity of proper understanding how the computing systems spend energy in order for researchers to be able improve energy efficiency. In \cite{MODEL1}, the authors claim that energy models are pivotal in design and optimization of energy efficient data centers. They surveyed the state of the art models for prediction of energy efficiency in data centers. One interesting finding of this study is that many of the models existing to date take into consideration only the CPU related energy consumption, rather than the overall system power consumption of the data centers. This fact, the authors claim, leads to less accurate energy consumption mathematical models of data centers. 
+Other research works such as Gorlatova, et al. \cite{ENERGY_ALGORITHMS}, Jinhua Zhu, et al. \cite{MODEL1} and Dayarathna, M, et al. \cite{MODEL2} leverage mathematical models and algorithms to represent the energy consumption of complex computing systems and data centers. Even though we do not undertake this approach in our study, these studies highlight the necessity of proper understanding how the computing systems spend energy in order for researchers to be able improve energy efficiency. Jinhua Zhu, et al. \cite{MODEL1} claim that energy models are pivotal in design and optimization of energy efficient data centers. They surveyed the state of the art models for prediction of energy efficiency in data centers. One interesting finding of this study is that many of the models existing to date take into consideration only the CPU related energy consumption, rather than the overall system power consumption of the data centers. The authors claim that this leads to less accurate energy consumption models of data centers. 
 
 
 
 \section{RISC in scientific computing} %6 (new articles)
 
-One possible approach to increase the energy performance of HTC and scientific computing data centers is by using low energy processing units. The Reduced Instruction Set Computing (RISC) architectures have been developed and used to minimize energy consumption on mobile and energy constrained devices. An open question among the research community is whether RISC architectures are capable of performing well under the computing-intensive workload that HTC and scientific computing require. One concrete example of a widely used RISC architectures are developed and produced by ARM \cite{ARM}.
+One possible approach to increase the energy performance of HTC and scientific computing data centers is by reducing power consumption of the computing chipsets. RISC architectures have been developed and design to perform minimal number of types of instructions. This leads to outstanding performance with less power consumption when compared to CISC architectures. Thus, RISC architectures - most notably ARM chipsets - have been widely used to minimize energy consumption on mobile and energy constrained devices. An open question among the research community is whether RISC architectures are capable of performing well under the computing-intensive workload that HTC and scientific computing require. Accoriding to Abdurachmanov, et al. \cite{ARM}, ARM chipsets are an example of widely used RISC architectures.
 
-The ARM architecture \cite{ARM} is a RISC architecture developed by the company ARM Holdings. As a RISC-based chip, the ARM processors require less transistors than the typical CISC solutions. According to \cite{CISC_RISC}, this approach reduces the overall power consumption of the RISC architectures when compared to CISC architectures. For this reason, ARM units have been widely used in low-energy power devices such as embedded systems, laptops and smart-phones. These applications are responsible for the rise of ARM processors in the market in the last decade. The 32 bit ARM architecture, mostly known for ARMv7, is one of the most popular architectures in the mobile devices. While ARMv7 has been taking over the low-energy processor market, the ARMv8 architecture \cite{ARMv8} introduces the a RISC 64-bit with focus on power efficient devices. 
-Given the fact that ARM architecture were developed from the ground up with energy efficiency as main priority, studies such as \cite{ACAT14ARMDAVID}, \cite{ACAT13ARM} and this thesis have delved around the idea of using the ARM architectures to improve the energy efficiency of HTC data centers. 
+According to Abdurachmanov, et al. \cite{ARM} , the ARM architecture is a RISC architecture developed by the company ARM Holdings. As a RISC-based chip, the ARM processors require less transistors than the typical CISC solutions. According to Zhonghong Ou, et al. \cite{CISC_RISC}, this approach reduces the overall power consumption of the RISC architectures when compared to CISC architectures. For this reason, ARM units have been widely used in energy constrained devices such as embedded systems, laptops and smart-phones. These applications are responsible for the rise of ARM processor in the market in the last decade. The 32 bit ARM architecture, mostly known for ARMv7, is one of the most popular architectures in the mobile devices. While ARMv7 has been taking over the low-energy processor market, the ARMv8 architecture \cite{ARMv8} introduces the a RISC 64-bit with focus on power efficient devices. 
+Given the fact that ARM architecture were developed from the ground up with energy efficiency as main priority, studies such as Abdurachmanov, et al. \cite{ACAT14ARMDAVID}, \cite{ACAT13ARM} and this thesis have delved around the idea of using the ARM architectures to improve the energy efficiency of HTC data centers. 
 
 \subsection*{Literature review}
 
-Several studies have been researching on how can RISC architectures in general - and ARM in particular - be used to improve energy efficiency. In \cite{CISC_RISC}, the authors compare ARM-processor based clusters with Intel clusters from a energy efficiency and cost efficiency perspective. They analyzed and compared ARM Cortex-A8 and Cortex-A9 with Intel Atom and Intel Sandy bridge microprocessors and concluded that there is no fundamental difference in the design of CISC and RISC microprocessors that could make one more energy efficient than the other. There is, instead, different design considerations when Intel and ARM developed their processors and that is what makes the difference in terms of energy efficiency. Another study on the comparison between RISC and CISC architectures in terms of power consumption is \cite{CISC_RISC_2}. In \cite{CISC_RISC_2}, the authors acknowledge that the once marginally used RISC architectures are blooming, due to its use in low energy devices such as mobile devices and embedded systems. Furthermore, they also state that the traditionally low power ARM architecture is entering in the high-performance server market. As in \cite{CISC_RISC}, \cite{CISC_RISC_2} conclude that the energy performance edge of RISC over CISC architectures exists because of design points, rather than intrinsic characteristics of either RISC or CISC. The authors conclude, thus, that the size of the instructions set in the CPU does not account for the energy performance of the cores. Indeed, the discussion among the research community about the differences between CISC and RISC architectures in performance has been happening for a while. In 2009, the authors of \cite{CR_TALE} yet again compared CISC and RISC from a performance perspective.  
+Several studies have been researching on how can RISC architectures in general - and ARM in particular - be used to improve energy efficiency. Zhonghong Ou, et al.\cite{CISC_RISC} compare ARM-processor based clusters with Intel clusters from a energy efficiency and cost efficiency perspective. They analyzed and compared ARM Cortex-A8 and Cortex-A9 with Intel Atom and Intel Sandy Bridge microprocessors and concluded that there is no fundamental difference in the design of CISC and RISC microprocessors that could make one more energy efficient than the other. There is, instead, different design considerations when Intel and ARM developed their processors and that is what makes the difference in terms of energy efficiency. Another study on the comparison between RISC and CISC architectures in terms of power consumption was conducted by Blem, E, et al. \cite{CISC_RISC_2}. The study acknowledges that today, the once marginally used RISC architectures are blooming, due to their use in low energy devices such as mobile devices and embedded systems. Furthermore, they also state that the traditionally low power ARM architecture is entering in the high-performance server market. Zhonghong Ou, et al. \cite{CISC_RISC}, \cite{CISC_RISC_2} conclude that the energy performance edge of RISC over CISC architectures exists because of design points, rather than intrinsic characteristics of either RISC or CISC. The authors conclude, thus, that the size of the instructions set in the CPU does not account for the energy performance of the cores. Indeed, the discussion among the research community about the differences between CISC and RISC architectures in performance has been happening for a while. Already in 2009, Ciji I. et al. \cite{CR_TALE} discuss about the community debate between CISC and RISC from a performance perspective.  
 
-In \cite{RISC_PERF}, the authors acknowledge that to process HTC tasks in RISC architectures is a challenging task due to its design particularities that inhibits performance. The research conducted by \cite{EVAL_ARM} aims at studying several characteristics of ARM processors such as energy efficiency, execution time and power consumption. Their main goal was to verify whether clusters using RISC architectures - and thus with low power consumption - would be feasible. The experiments conducted during the study used an ARM development board, as in our study. The authors of \cite{EVAL_ARM} concluded that ARM clusters show potential as an alternative to the widely used Intel x86 architectures.
+Lozano, H, et. al. \cite{RISC_PERF} acknowledge that to process HTC tasks in RISC architectures is a challenging task due to its design particularities that inhibits performance. The research conducted by Padoin, E.L., et al.\cite{EVAL_ARM} aims at studying several characteristics of ARM processors such as energy efficiency, execution time and power consumption. Their main goal was to verify whether clusters using RISC architectures - and thus with low power consumption - would be feasible. The experiments conducted during the study used an ARM development board, as in our study. Padoin, E.L., et al. \cite{EVAL_ARM} concluded that ARM clusters show potential as an alternative to the widely used Intel x86 architectures.
 
-Even from a broader point of view, RISC architectures are been seen as an alternative for the widely used CISC architectures. In \cite{RISC_CASE}, the authors claim that the future generation of very large scale integration (VLSI) computers might be more effectively implemented as RISC than as a CISC architecture.
+Even from a broader point of view, RISC architectures are been seen as an alternative for the widely used CISC architectures. Patterson, David A., et al. \cite{RISC_CASE}, the authors claim that the future generation of very large scale integration (VLSI) computers might be more effectively implemented as RISC than as a CISC architecture.
 
-In \cite{ACAT14ARMDAVID}, a server-purpose ARM machine is compared with the recent
+In Abdurachmanov, et al. \cite{ACAT14ARMDAVID}, a server-purpose ARM machine is compared with the recent
 Intel architectures, such as the recent Intel Xeon Phi and a dominating Intel product
-intended for HPC workloads (Intel Xeon E5-2650). The workload for comparing
+intended for HTC workloads (Intel Xeon E5-2650). The workload for comparing
 the architectures was ParfullCMS. They based the results on performance (events per
 second) and scalability over power (watts). In addition to performance and energy
 consumption comparisons, the paper describes the porting endeavors of the CMSSW to
-an ARMv8 64-bits architecture.
+ARMv8 64-bits architecture.
 
-In \cite{ACAT14ARMDAVID}, they use an APM X-Gene 1 running on a development board. 
+Abdurachmanov, et al. \cite{ACAT14ARMDAVID} used an APM X-Gene 1 running on a development board. 
 It consists of a 8 physical core processor running at 2.4GHz with 16GB DDR3 memory.
-As the authors highlight, the firmware for managing processor ACPI power states was
-not yet available when the study was made. Thus, it is expected that the energy 
-performance will improve once the firmware is available \cite{ACAT14ARMDAVID}.
+The authors highlight that the firmware for managing processor ACPI power states was
+not available when the study was made. It is expected that the energy 
+performance will improve once the firmware will be available.
 
 Under the circumstances of the experiment, the overall results show that APM X-Gene 
-is 2.73 slower than Intel Xeon Phi. From the energy consumption performance (events
+is 2.73 times slower than Intel Xeon Phi. From the energy consumption performance (events
 per second per watt), the Intel Xeon E-2650 is the most efficient, with APM X-Gene
-presenting similar performances despite the absence of platform specific 
-optimizations. Therefore, \cite{ACAT14ARMDAVID} concludes by stating that the APM
+presenting similar performance despite the absence of platform specific 
+optimizations. Therefore, they conclude that the APM
 X-Gene 1 Server-On-Chip ARMv8 64-bit solution is relevant and potentially interesting
 platform for heterogeneous high-density computing. 
-
-According to \cite{ACAT13ARM}, processors have hit scaling limits after the year of 2015. There has been a development of multiprocessor architectures that
-allow to run parallel tasks and the time clock frequency has stabilized. Most High Physics Computing systems run in clusters of several cores. According to \cite{ACAT13ARM}, additional cores are parallelized and can run at the same time, which allows the system to scale. However, also commodities such memory, I/O streams and energy
-scale proportionally in such architectures.
-
+ 
+According to Abdurachmanov, et al. \cite{ACAT13ARM}, processors have hit scaling limits after the year of 2015. There has been development of multiprocessor architectures that
+allow to run parallel tasks. However, also commodities such memory, I/O streams and energy need to scale proportionally in such architectures.
 
 
 
 \section{Workload scheduling based on dynamic energy pricing}
 
-The workload scheduling based on dynamic energy pricing can be a good approach when certain conditions are in place. Firstly, in situations when the energy price changes according to the overall power grid energy usage. Secondly, when there are machines with different energy efficiency and computing performance available. Given these conditions, the main concept is to schedule the workload to more energy efficient machines when the energy price is higher. On the other hand, when the energy price is lower, the more performing machines can be used without huge degradation of the overall price budget.
+The workload scheduling based on dynamic energy pricing can be a good approach when certain conditions are in place. Firstly, in situations when the energy price changes according to the overall power grid energy usage. Secondly, when there are machines with different energy efficiency and computing performance available. Given these conditions, the main concept is to schedule the workload to more energy efficient machines when the energy price is higher. On the other hand, when the energy price is lower, faster machines can be without major increase in electricity bill.
 
 
 \subsection*{Literature review}
 
 There are several studies exploring inter data center solutions to lower
-the electricity bill by leveraging the spacial-time dynamic of energy pricing. The 
+the electricity bill by leveraging both location and price dynamics of energy pricing. The 
 emphasis is given to job scheduling across data centers that are located in 
-different places. The main idea is to exploit the fact that energy prices 
-are change based on location and time. The research community is mostly concerned 
+different places. The main idea is to exploit the fact that energy prices change based on location and time. The research community is mostly concerned 
 with fairness, server availability, queue delays, bandwidth costs with job migration
-and quality of service.. In addition there are several research studies related with 
+and quality of service. In addition there are several research studies related with 
 migration of cloud computing jobs. Studies that in one way on another address this 
-perspective are \cite{EFF_JOB_SCHEDULING}, \cite{MIGRATION_CLOUD}, 
-\cite{MINIMIZING_DIST}, \cite{CUTTING_BILL}, \cite{SCHED_HETEROGE}, amongst others. 
+perspective are Ren, Shaolei, et al. \cite{EFF_JOB_SCHEDULING}, Buchbinder, Niv, et al. \cite{MIGRATION_CLOUD}, Rao, Lei, et al.
+\cite{MINIMIZING_DIST}, Qureshi, Asfandyar, et al. \cite{CUTTING_BILL}, Mei, Jing, et al. \cite{SCHED_HETEROGE}.
 
 Besides inter center solutions, the research community has been addressing the power 
 consumption of the computing nodes specifically from a data center perspective.
 This perspective is closer to what we are trying to achieve with our solution.
-For example, one work that seems closer to our solution is \cite{DYN_PRICING_HPC}.
-In this study, the authors achieve better energy performance in a dynamic
-pricing environment with HPC systems by judiciously scheduling parallel jobs -
-which have different energy profiles - depending on the energy pricing of the
-moment. The main difference to out solution is that the performance of the machines 
-are not taken into consideration when scheduling the jobs, but rather the job energy 
-profiling.
+For example,  Xu Yang, et al. \cite{DYN_PRICING_HPC} achieve better energy performance in a dynamic
+pricing environment with HTC systems by judiciously scheduling parallel jobs -
+with different energy profiles - depending on the energy pricing of the
+moment. The main difference to our solution is that the performance of the machines 
+are not taken into consideration when scheduling the jobs, but rather the energy 
+profile of each job.
 
-Another research study that related to our solution is \cite{TASK_SCHED}. They
-came up with an optimal algorithm and two heuristic algorithms to schedule tasks
-to heterogeneous processors. In addition, they also take into consideration the 
+Another related study was conducted by Yan Wang, et al. \cite{TASK_SCHED}, in which
+the authors came up with an optimal algorithm and two heuristic algorithms to schedule tasks
+to heterogeneous processors. The study also takes into consideration the 
 memory allocation in heterogeneous memory in order
-to minimize energy consumption while meeting the assumed deadlines. Their work,
-though, seems to go further than our solution since it considers heterogeneous
-memory allocation as well. They consider is a
+to minimize energy consumption while meeting the assumed deadlines. Their work also considers heterogeneous
+memory allocation as well. They consider a
 computing process executing several tasks in a parallel computing environment. The
 system consists in a variety of different computational node, each of one with a
 given number of processors. All computational nodes are connected by a
@@ -191,28 +187,27 @@ high-speed network. Thus, all  the processors can cooperate and realize compleme
 and parallel tasks. From the energy point of view, the processors of each 
 computational node have an energy profile assigned and have a certain frequency, 
 which will be taken into consideration when scheduling the task. The work dates 
-from end of 2014, which indicates that this is a trendy and hot subject, but it 
-seems that our approach is been used already. 
+from end of 2014, which indicates that this is a trendy and hot subject. 
 
-A similar idea has been explored in \cite{EXE_METHOD}. They present only
+A similar idea has been explored by Guosun Zeng, et al. \cite{EXE_METHOD}. They present only
 heuristic algorithms to schedule tasks on heterogeneous computing systems,
 based on efficiency and energy consumption. They develop heuristic algorithms
 due to the fact that an optimal solution for the needed scheduling is
 NP-complete.  
 
 
-According to \cite{EFF_JOB_SCHEDULING}, because of the magnitude of energy costs in data centers, it is important to
+According to Ren, Shaolei, et al. \cite{EFF_JOB_SCHEDULING}, because of the magnitude of energy costs in data centers, it is important to
 lower the energy consumption in data centers. The servers are composed of
-heterogeneous machines from the performance and energy efficiency. In addition,
-the data centers may be disposed in different geographical locations and, thus,
-have different energy tariffs. The authors of \cite{EFF_JOB_SCHEDULING}, claim that
+heterogeneous machines. In addition,
+the data centers may be located in different geographical locations and, thus,
+have different energy tariffs. Ren, Shaolei, et al. \cite{EFF_JOB_SCHEDULING}, claim that
 the key idea to lower the energy bill in data centers is to have energy
 efficiency servers and schedule the jobs to where energy is more affordable at a
 given time. In the context of servers distributed over different geographical locations, it
 is also important to satisfy fairness and delay constraints. This scenario is
 less critical when the server is not distributed, as in our case.
 
-In \cite{EFF_JOB_SCHEDULING}, the authors present an on-line scheduler that
+Ren, Shaolei, et al. \cite{EFF_JOB_SCHEDULING} present an on-line scheduler that
 distributes batch workloads across multiple data centers geographically
 distributed. The scheduler aims to minimize the energy consumption of the set of
 servers having into consideration fairness and delay requirements.  The scheduler is inspired on the technique that
@@ -221,7 +216,7 @@ having in consideration the (1) server availability, (2) energy price and (3)
 job fairness distribution. Consequently, the algorithm is tuned to calculate the
 trade-off between energy pricing, fairness and queuing delay.
 
-In \cite{EFF_JOB_SCHEDULING}, the scheduler developed takes into consideration
+In Ren, Shaolei, et al. \cite{EFF_JOB_SCHEDULING}, the scheduler developed takes into consideration
 the server availability, energy costs, fairness and queuing delay to schedule
 random jobs arrivals. It opportunistically schedules jobs when (and to where) 
 energy prices are low. Comparing to our study, though, we do not consider geographically distributed 
@@ -229,7 +224,7 @@ servers but rather, we have schedule the jobs based on the heterogeneous set of
 machines existing on the server.
 
 
-The \cite{MIGRATION_CLOUD} study aims to exploit the temporal and geographical variation of
+Buchbinder, Niv, et al. \cite{MIGRATION_CLOUD} aim to leverage the temporal and geographical variation of
 electricity prices, in the context of data centers. They study algorithms to
 schedule (migrate) jobs in data center based on the energy cost and
 availability. When the servers are in different geographical location, costs with data
@@ -249,7 +244,7 @@ algorithm that takes into consideration the expected prices and also the actual
 prices.
 
 
-In \cite{MINIMIZING_DIST}, the researchers try to systematically study the problems of how
+Rao, Lei, et al. \cite{MINIMIZING_DIST} try to systematically study the problems of how
 minimize the electricity cost in data centers while guaranteeing minimal quality
 of service. To that end, they take into consideration the local and time diversity 
 of electricity prices. The contributions are twofold: In one hand, they show that local and time
@@ -266,18 +261,18 @@ programming formulation to a minimum cost flow problem.
 
 This work dates from 2010 and don't take into consideration the bandwidth costs
 of migrating the batches between data centers. Even though that is not an issue
-in our study, this is taken into consideration in other works such as
+in our study, this is taken into consideration in other works such as conducted by Buchbinder, Niv, et al.
 \cite{MIGRATION_CLOUD}. Again, it is part of the set of studies on inter
 data-center and electrical costs optimizations that location and time based 
 pricing allows.
 
 
-The authors of \cite{CUTTING_BILL} show that existing systems may be able to
+Qureshi, Asfandyar, et al. \cite{CUTTING_BILL} show that existing systems may be able to
 save millions of dollars by judiciously schedule workload to servers taking into
 consideration the temporal and geographical variation of energy prices. The
 results are based in historical data collected on Akamai's CDN. 
 
-In \cite{DYN_PRICING_HPC}, the authors leverage the fact that parallel jobs have 
+Xu Yang, et al. \cite{DYN_PRICING_HPC} leverage the fact that parallel jobs have 
 distinct energy profiles. Taking it into consideration, they study the impact of
 scheduling jobs according to the energy prices at a given moment and the job's
 energy profiles. So, the study aims to reduce the electricity bill by scheduling and
@@ -290,10 +285,10 @@ during the off-peak electricity time. In addition, the scheduling is done in
 such a way that it is guaranteed that there is no degradation of the overall
 system performance. 
 
-The authors claim that "A key challenge in HPC scheduling is that system 
-utilization should not be impacted. HPC systems require a tremendous capital 
+The authors claim that "A key challenge in HTC scheduling is that system 
+utilization should not be impacted. HTC systems require a tremendous capital 
 investment, hence taking full advantage of this expensive resources is of great 
-importance to HPC centers.". This may make impractical and wreck our solution,
+importance to HTC centers.". This may make impractical and wreck our solution,
 because of the inevitability of turning off (or idle) great amounts of computing 
 resources. Although, Internet data centers (cloud data centers)  may be a good 
 match to our solution: usually there are much less resources being used at a given 
@@ -303,15 +298,15 @@ time. A greedy algorithm and 0-1 Knapsack based policy are used to minimize the
 electrical costs. Their results show that gains in the order of 23\% can be obtained without
 impact on the overall system. 
 
-According to the survey carried by \cite{DYN_PRICING_HPC}, the dynamic energy
+According to the survey carried by Xu Yang, et al. \cite{DYN_PRICING_HPC}, the dynamic energy
 pricing has been implemented in the biggest markets in Europe, North America,
 Oceania and China, while Japan was at the time starting to test it on its major
 cities. They develop two power aware job policies: 1) greedy approach, where jobs are
 allocated based on their energy profiles  and 2) 0-1 Knapsack based policy,
 where both job profile and system utilization are taking into consideration.
 
-The authors of \cite{SCHED_HETEROGE} present a novel task scheduling algorithm
-for HPC systems which considers two main points: reducing the energy consumption
+TMei, Jing, et al. \cite{SCHED_HETEROGE} present a novel task scheduling algorithm
+for HTC systems which considers two main points: reducing the energy consumption
 of the overall system and minimize the schedule length. An HP system is defined
 by the authors as set of distributed computing machines with different
 configurations connected through a high speed link to compute parallel
@@ -325,16 +320,16 @@ duplication-based algorithms. The duplication-based algorithms schedule jobs
 across machines redundantly, in order to maximize performance by eliminating
 intercommunication between tasks. However, from the energy consumption point of
 view, it is not th ideal situation since more than one processor are performing
-the same job. Once again, this research work aims at improve the energy efficiency of HPC
+the same job. Once again, this research work aims at improve the energy efficiency of HTC
 systems at a distributed level and do not focus, as our approach, on inter data
 center solutions.
 
- In \cite{TASK_SCHED}, the authors address the problem of an energy aware
+ Yan Wang, et al. \cite{TASK_SCHED}, the authors address the problem of an energy aware
 scheduling for heterogeneous data allocation and task scheduling. The problem
 consists in finding the best tasks scheduling in a heterogeneous system that meet
 the deadlines while minimizing the energy consumption.
 
-The processors and memories come in different flavors nowadays in HPC
+The processors and memories come in different flavors nowadays in HTC
 systems, making complex the task of efficiently schedule processor power and 
 memory space in an energy efficient way. The problem of finding an optimal
 processor and data scheduling becomes critical when trying to minimize energy 
@@ -346,7 +341,7 @@ until 100 nodes. The optimal solution has two phases: First is uses the
 DFG\_Assign\_CP algorithm to better map each task to node. Secondly, it choses the
 data assignment to whose total energy consumed is reduced and the deadlines met.
 
-The authors of \cite{EXE_METHOD} claim that, unfortunately, there are not many
+Guosun Zeng, et al. \cite{EXE_METHOD} claim that, unfortunately, there are not many
 studies of processor scheduling algorithms that take into consideration both
 time and energy. In this study, they explore heuristic scheduling algorithms
 focused on high performance computing and green computing. They work on
