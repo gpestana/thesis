@@ -15,12 +15,12 @@ bigger dimension to the discussion.
 
 There are two major approaches to tackle the energy bottleneck in the current
 technology panorama. One, is to develop techniques and technologies to better harvest, 
-transform and store energy to be used by computing systems. The second approach to the problem is to improve the energy efficiency of the existent computing systems. This thesis focuses primarily on the later approach. 
+transform and store energy to be used by computing systems. The second approach to the problem is to improve the energy efficiency of the existent computing systems. This thesis focuses primarily on the latter approach. 
 
 The concerns with energy consumption and its impact in the current
 applications affect several industries, from mobile device industries to big data centers. 
 Given the several layers and complexity of the systems used nowadays, there are 
-considerable number of directions that can be take to improve the overall energy efficiency. Throughout this thesis, we will focus on measuring and improving the energy
+considerable number of directions that can be taken to improve the overall energy efficiency. Throughout this thesis, we will focus on measuring and improving the energy
 consumption in High Performance Computing (HTC) applied to Scientific Research.
 
 
@@ -41,7 +41,7 @@ achievements.
 The WLHC requires a massive amount of computational resources 
 (250,000 x86 cores in 2012) and,
 proportionally, energy. In the future, with planned increases to the LHC
-luminosity [ref], the dataset size will increase by 2-3 orders of magnitude,
+luminosity, the dataset size will increase by 2-3 orders of magnitude,
 posing even more challenges in terms of energy consumption.
 
 The LHC is an example of a massive computational system that needs to improve its
@@ -65,7 +65,7 @@ RISC is a good fit for mobile and energy constrained devices.
 Similarly to mobile devices, the High Throughput computing (HTC) community major concerns with energy efficiency. However, studies focusing on the viability 
 of RISC architectures in HTC as a way to minimize energy consumption are not
 abundant in the research technology. Furthermore, to the knowledge of the
-author at the time of this research, there are no real world implementation of such technologies in 
+authors at the time of this research, there are no real world implementation of such technologies in 
 HTC data centers.
 
 
@@ -80,15 +80,15 @@ Instruction Set Computing (CISC) architectures.
 %occupying the niche
 Therefore, it is of our interest to study the potential impact of RISC architectures in 
 the HTC and scientific computing industry. In our opinion, there are two major
-gaps that need to be fulfilled: Firstly, a comparisons between
+gaps that need to be filled: Firstly, a comparison between
 RISC and CISC architectures under authentic scientific workloads. Secondly,
-there is scarce solutions that leverage RISC architectures on HTC and scientific
+a solution that leverages RISC architectures under HTC and scientific
 computing.
  
 
 \section{Scope of the Thesis}
 %%outlining purposes
-The purpose of this Thesis is to help filling the gaps above mentioned. Firstly, We aim at answering whether RISC architectures
+The purpose of this thesis is to help filling the gaps above mentioned. Firstly, we aim at answering whether RISC architectures
 are a potential fit to HTC and scientific computing from a energy efficiency
 perspective. We focus mainly on comparing the ARM architecture and Intel, which is a widely used CISC architecture in HTC. During this research, we
 use authentic HTC workload and computing frameworks as the CMS collider. 
@@ -112,11 +112,11 @@ efficiency profiles.
 Our main findings are: 
 
 \begin{itemize}
-  \item Accurate techniques and tools for measuring power consumption are important to develop more efficient systems. We researched and outlined best practices for different system levels in the Chapter 3. The results of this research were published in the conference proceedings of the 16th International workshop on Advanced Computing and Analysis Techniques in physics research (ACAT'2014). The article was called \textit{Techniques and tools for measuring energy efficiency of scientific software applications}
+  \item Accurate techniques and tools for measuring power consumption are important to develop more efficient systems. We researched and outlined best practices for different system levels in the Chapter 3. The results of this research were published in the conference proceedings of the 16th International workshop on Advanced Computing and Analysis Techniques in physics research (ACAT'2014). The article was called \textit{Techniques and tools for measuring energy efficiency of scientific software applications};
 
-  \item The ARM architecture shows potential for an energy savings in HTC when compared to the x86 systems widely used nowadays. We performed experiments with real world workloads (Chapter 4) and analyzed the results (Chapter 5). 
+  \item The ARM architecture shows potential for an energy savings in HTC when compared to the x86 systems widely used nowadays. We performed experiments with real world workloads (Chapter 4) and analyzed the results (Chapter 5); 
 
-  \item Heterogeneous computing can be leveraged in HTC in markets where the price of the electricity is dynamic. We shown how to achieve savings in such environment and developed a scheduling algorithm that accomplishes that (Chapter 6);
+  \item Heterogeneous computing can be leveraged in HTC in markets where the price of the electricity is dynamic. We have shown how to achieve savings in such environment and developed a scheduling algorithm that accomplishes that (Chapter 6);
 \end{itemize}
 
 
@@ -127,5 +127,5 @@ This thesis is structured as following. In the next chapter, we define the conte
 of the thesis by synthesizing relevant literature work. In the third chapter, we
 outline measurement tools and best techniques for measuring power consumption. The fourth chapter outlines the
 experiments methodology used during the different experiment sets. The fifth chapter outlines and analyzes the results based on
-the data obtained from the experiments. In the sixth chapter, we present a scheduling algorithm that aims at lower the energy bill of HTC by using both ARM and Intel architectures, based on the results obtained in our experiments. Finally, we wrap up by outlining possible future work and presenting the
+the data obtained from the experiments. In the sixth chapter, based on the results of our experiments we present a scheduling algorithm that aims at lowering the energy bill of HTC by using both ARM and Intel architectures. Finally, conclude by outlining possible future work and presenting the
 conclusions of this thesis.
