@@ -35,8 +35,7 @@
 \contentsline {chapter}{\numberline {6}HTC in a dynamic energy pricing market}{54}{chapter.6}
 \contentsline {section}{\numberline {6.1}Dynamic electricity pricing model}{54}{section.6.1}
 \contentsline {section}{\numberline {6.2}Scheduling algorithm}{55}{section.6.2}
-\contentsline {section}{\numberline {6.3}Further developments}{60}{section.6.3}
+\contentsline {section}{\numberline {6.3}Further developments}{59}{section.6.3}
 \contentsline {section}{\numberline {6.4}Conclusions}{60}{section.6.4}
 \contentsline {chapter}{\numberline {7}Future Work}{62}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusions}{63}{chapter.8}
-\contentsline {chapter}{\numberline {A}Techniques and tools for measuring energy efficiency of scientific software applications}{72}{appendix.A}
+\contentsline {chapter}{\numberline {8}Conclusions}{64}{chapter.8}

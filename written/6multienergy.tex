@@ -94,9 +94,14 @@ Based on the code in ~\ref{fig:scheduler_code}:
   \end{itemize}
 
 
+\subsection*{Knapsack problem}
+From a theoretical perspective, we use a greedy algorithm to solve an instance of the Knapsack problem. The Knapsack is a well known problem in combinatorial optimization. According to Wikipedia \cite{KNAPSACK_WIKI}, the problem can be explained as following: "Given a set of items with different values and weights, determine e number of items to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible"
+
 \subsection*{Use case}
 
 Let us consider the values presented in ~\ref{fig:input_table} as a case scenario to use the scheduling algorithm. The values presented show the energy profile of a hypothetical mini data center set up. The data center has only two machines: a ARMv7 and a Intel x86 server. The energy profile (number of events processed by day and energy consumed) is based on the values from the experiments analyzed in the previous chapters. The prices are based on the simplified dynamic energy pricing model of 60 euros/Mwh in the high pricing hours (comprised of 12h/day) and 20 euros/Mhw in the low pricing hours (comprised on 12h/day)
+
+Given the data in the table ~\ref{fig:input_table}, the algorithm should be started as shown in the code in Fig. ~\ref{fig:scheduler_code_init}.
 
 \begin{figure}[h]
   \centering
@@ -105,18 +110,16 @@ Let us consider the values presented in ~\ref{fig:input_table} as a case scenari
     \label{fig:input_table}
 \end{figure}
 
-Given the data in ~\ref{fig:input_table}, the algorithm should be started as in ~\ref{fig:scheduler_code_init}.
-
 \begin{figure}[h]
   \centering
-    \includegraphics[width=150mm]{"img/scheduler_code_init"}
+    \includegraphics[width=150mm]{"img/scheduler_code_init2"}
     \caption{Start the algorithm programatically}
     \label{fig:scheduler_code_init}
 \end{figure}
 
 \vspace{10mm}
 
-Given the input ~\ref{fig:scheduler_code_init} and the algorithm in ~\ref{fig:scheduler_code}, the result is that the optimal final price for computing 1200000 events in 2 days is 1.97125776 euros, where the ARM machine processed 204120 events in the low pricing window and 204120 in the high pricing window during the 2 days. As for the Intel machine, it had to process only 791760 events during the low pricing window. The Intel machine does not need to be working during the high pricing windows in order for the data center to meet the deadline.
+With the input ~\ref{fig:scheduler_code_init} and the algorithm in ~\ref{fig:scheduler_code}, the result is that the optimal final price for computing 1200000 events in 2 days is 1.97125776 euros, where the ARM machine processed 204120 events in the low pricing window and 204120 in the high pricing window during the 2 days. As for the Intel machine, it had to process only 791760 events during the low pricing window. The Intel machine does not need to be working during the high pricing windows in order for the data center to meet the deadline.
 
 \vspace{10mm}
 
@@ -142,12 +145,12 @@ Well known algorithms such as job shop scheduling algorithm and others can be ap
 \section{Conclusions}
 
 Our solution takes a different perspective when compared with related research. Studies conducted by Yan Wang, et al.  \cite{TASK_SCHED} and Guosun Zeng, et al. \cite{EXE_METHOD} do not take the
-dynamics of electrical pricing into consideration. However, their algorithm is
+dynamics of electrical pricing into consideration. Their problem is
 already quite complex and proved NP-complete, to the point they have to come up
 with heuristic algorithms to apply it in the real world.
 
-Therefore, our approach may have some novelty in a really narrow and still
-unexplored idea: to develop a scheduling algorithm for heterogeneous HPC that
+Therefore, our approach is novel in narrow and still
+unexplored approach: to develop a scheduling algorithm for heterogeneous HPC that
 takes into consideration the nodes' energy profile, the dynamic electricity
 price and also, eventually, the tasks' energy profiling. The algorithm would
 schedule the jobs in order to minimize the energy consumption and energy bill
@@ -161,8 +164,8 @@ order to not waste the investment made when it was purchased. Our solution,
 though, does not insure that since the idea is to power down/idle machines that 
 are less power efficient in high-peak times. Secondly, from a practical
 perspective, if we consider only the scheduling between ARM and Intel architectures, 
-it seems not likely that the data center will haver the same software running
-over both architectures at the same time, give the expertise and investment
+it seems not likely that the data center will have the same software running
+over both architectures at the same time, given the expertise and investment
 needed to have the application stack running properly in both architectures (as
 we witness with CERN's efforts). If we decide to abstract from that point and
 see the machine's architectures as a black box, then that's not a problem. Thirdly, 

@@ -29,49 +29,50 @@ Warning--to sort, need author or key in xeon_specs
 Warning--to sort, need author or key in IPMI
 Warning--to sort, need author or key in HTT
 Warning--to sort, need author or key in IPMI_resolution
+Warning--to sort, need author or key in KNAPSACK_WIKI
 Warning--empty author in INTEL_WP
 Warning--empty journal in INTEL_WP
 Warning--empty year in GEANT4
 Warning--empty year in CR_TALE
-You've used 64 entries,
+You've used 65 entries,
             2253 wiz_defined-function locations,
-            893 strings with 15457 characters,
-and the built_in function-call counts, 20850 in all, are:
-= -- 1987
-> -- 878
+            898 strings with 15570 characters,
+and the built_in function-call counts, 21018 in all, are:
+= -- 2004
+> -- 879
 < -- 0
-+ -- 379
++ -- 380
 - -- 310
-* -- 1473
-:= -- 3037
-add.period$ -- 189
-call.type$ -- 64
-change.case$ -- 342
+* -- 1478
+:= -- 3056
+add.period$ -- 192
+call.type$ -- 65
+change.case$ -- 345
 chr.to.int$ -- 0
-cite$ -- 93
-duplicate$ -- 839
-empty$ -- 1869
+cite$ -- 95
+duplicate$ -- 846
+empty$ -- 1892
 format.name$ -- 310
-if$ -- 4629
+if$ -- 4671
 int.to.chr$ -- 0
-int.to.str$ -- 64
+int.to.str$ -- 65
 missing$ -- 40
-newline$ -- 319
+newline$ -- 324
 num.names$ -- 78
-pop$ -- 553
+pop$ -- 563
 preamble$ -- 1
-purify$ -- 280
+purify$ -- 282
 quote$ -- 0
-skip$ -- 592
+skip$ -- 597
 stack$ -- 0
-substring$ -- 1160
-swap$ -- 256
+substring$ -- 1165
+swap$ -- 257
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 256
-warning$ -- 29
+type$ -- 260
+warning$ -- 30
 while$ -- 142
-width$ -- 66
-write$ -- 615
-(There were 30 warnings)
+width$ -- 67
+write$ -- 624
+(There were 31 warnings)
