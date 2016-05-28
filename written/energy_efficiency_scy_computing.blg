@@ -1,9 +1,8 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: energy_efficiency_scy_computing.aux
 The style file: acm.bst
 Database file #1: sources.bib
-Warning--I didn't find a database entry for "EFF_DSP"
 Warning--I didn't find a database entry for ""
 Warning--to sort, need author or key in LHC
 Warning--to sort, need author or key in WLCG
@@ -14,12 +13,16 @@ Warning--to sort, need author or key in ARM
 Warning--to sort, need author or key in ARMv8
 Warning--to sort, need author or key in TIINA231
 Warning--to sort, need author, organization, or key in INTELMAN
+Warning--to sort, need author, organization, or key in CMSSW_WORKBOOK
 Warning--to sort, need author or key in ODROID_XU3
 Warning--to sort, need author or key in VIRIDIS
 Warning--to sort, need author or key in CORTEXA9
 Warning--to sort, need author or key in biglittle
-Warning--to sort, need author or key in atom_specs
+Warning--to sort, need author or key in INTEL_DOMINANCE
+Warning--to sort, need author or key in xeon_intro
 Warning--to sort, need author or key in quad_specs
+Warning--to sort, need author or key in atom_page
+Warning--to sort, need author or key in atom_specs
 Warning--to sort, need author or key in viridis_specs
 Warning--to sort, need author or key in odroid_specs
 Warning--to sort, need author or key in xeon_specs
@@ -30,45 +33,45 @@ Warning--empty author in INTEL_WP
 Warning--empty journal in INTEL_WP
 Warning--empty year in GEANT4
 Warning--empty year in CR_TALE
-You've used 60 entries,
+You've used 64 entries,
             2253 wiz_defined-function locations,
-            881 strings with 14935 characters,
-and the built_in function-call counts, 20197 in all, are:
-= -- 1921
-> -- 874
+            893 strings with 15457 characters,
+and the built_in function-call counts, 20850 in all, are:
+= -- 1987
+> -- 878
 < -- 0
-+ -- 375
++ -- 379
 - -- 310
-* -- 1451
-:= -- 2962
-add.period$ -- 178
-call.type$ -- 60
-change.case$ -- 331
+* -- 1473
+:= -- 3037
+add.period$ -- 189
+call.type$ -- 64
+change.case$ -- 342
 chr.to.int$ -- 0
-cite$ -- 85
-duplicate$ -- 808
-empty$ -- 1781
+cite$ -- 93
+duplicate$ -- 839
+empty$ -- 1869
 format.name$ -- 310
-if$ -- 4468
+if$ -- 4629
 int.to.chr$ -- 0
-int.to.str$ -- 60
+int.to.str$ -- 64
 missing$ -- 40
-newline$ -- 300
+newline$ -- 319
 num.names$ -- 78
-pop$ -- 517
+pop$ -- 553
 preamble$ -- 1
-purify$ -- 272
+purify$ -- 280
 quote$ -- 0
-skip$ -- 573
+skip$ -- 592
 stack$ -- 0
-substring$ -- 1140
-swap$ -- 252
+substring$ -- 1160
+swap$ -- 256
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 240
-warning$ -- 25
+type$ -- 256
+warning$ -- 29
 while$ -- 142
-width$ -- 62
-write$ -- 581
-(There were 27 warnings)
+width$ -- 66
+write$ -- 615
+(There were 30 warnings)

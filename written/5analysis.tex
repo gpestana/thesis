@@ -2,12 +2,12 @@
 
 
 
-In this chapter, we present our analysis based on the results shown in the last chapter. The scope of the analysis presented in this section is twofold: to compare the
+In this chapter, we present our analysis based on the experiments outlined in the last chapter. The scope of the analysis presented in this section is twofold: to compare the
 platforms from an energy efficiency perspective and analyze the tools and techniques used on the different experiment sets. 
 
 
 The first section and second section of this chapter analyze the different tools and techniques used
-to perform the experiments, as well as the results itself. The first section analyses the 1SE, whereas the second section is dedicated to analyses the 2SE. As stated before, the difference between 1SE and 2SE has to do with the machine setups and the tools used to measure the energy consumed. The data and results of the experiments are shown along the analysis.
+to perform the experiments, as well as the results. The first section analyses the first set of experiments, whereas the second section is dedicated to analyses the second set of experiments. As stated before, the difference between first set of experiments and second set of experiments has to do with the machine setups and the tools used to measure the energy consumed. The data and results of the experiments are shown along the analysis.
 
 In the final of this section, we outline the highlights of the analysis for
 each set of experiments.
@@ -17,26 +17,25 @@ each set of experiments.
 \begin{figure}[h]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_total_quad"}
-    \caption{All stages of the CMSSW experiments on Intel\_quad}
+    \caption{All stages of the CMSSW experiments on Intel Quad}
     \label{fig:aalto_quad_clamp}
 \end{figure}
 
 
 
-In figures~\ref{fig:aalto_quad_clamp}, ~\ref{fig:aalto_atom_clamp} 
+In figures~\ref{fig:aalto_quad_clamp},~\ref{fig:aalto_atom_clamp} 
 and~\ref{fig:aalto_arm_clamp} it is plotted the energy measurements from the beginning until the end of the event generation-simulation by the CMSSW. The energy measurements were done using a meter clamp. The energy measured is represented in the Y-axis and the X-axis represents the time of the experiment in samplings. For each experiment, a sample corresponds to the same time.
 
 In the figures ~\ref{fig:aalto_quad_events}, ~\ref{fig:aalto_atom_events} and ~\ref{fig:aalto_arm_events}, we trimmed out the initialization stage and connection stage of the workload and only show the event processing stage. Whereas the Y-axi represents the energy measured in Watts, the X-axis represents the time spent until the correspondent energy sampling.
 
-Finally, the figures ~\ref{fig:aalto_time} and ~\ref{fig:aalto_efficiency_comparison} compare the time spent by each of the hardware setups to process the work-flow and the power consumption efficiency of the different setups, respectively.
+Finally, the figures ~\ref{fig:aalto_time} compare the time spent by each of the hardware setups to process the tasks.
 
 \begin{figure}[h]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_total_atom"}
-    \caption{All stages of the CMSSW experiments on Intel\_atom}
+    \caption{All stages of the CMSSW experiments on Intel Atom}
     \label{fig:aalto_atom_clamp}
 \end{figure}
-
 
 
 \subsubsection*{CMSSW stages}
@@ -44,7 +43,7 @@ Finally, the figures ~\ref{fig:aalto_time} and ~\ref{fig:aalto_efficiency_compar
 \begin{figure}[h]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_total_arm"}
-    \caption{All stages of the CMSSW experiments on ARM\_viridis}
+    \caption{All stages of the CMSSW experiments on ARM Viridis}
     \label{fig:aalto_arm_clamp}
 \end{figure}
 
@@ -69,37 +68,34 @@ during this stage the CPU load is low when compared to the memory workload.
 The third stage corresponds to the event processing. This last stage is CPU intensive and it has the most relevant data to to our study, since we our goal is to compare the energy efficiency of the different CPUs. The event processing stage alone is represented by 
 the figures ~\ref{fig:aalto_quad_events}, ~\ref{fig:aalto_atom_events} and ~\ref{fig:aalto_arm_events}.
 
-\begin{enumerate}
-\item Add memory plots? -- easier to identify the 3 stages but out of scope
-\end{enumerate}
 
 %event processing stage
 \begin{figure}[h]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_quadEvents"}
-    \caption{CMSSW experiments on Intel\_quad - event processing stage}
+    \caption{CMSSW experiments on Intel Quad - event processing stage}
     \label{fig:aalto_quad_events}
 \end{figure}
 
 \begin{figure}[h]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_atomEvents"}
-    \caption{CMSSW experiments on Intel\_atom - event processing stage}
+    \caption{CMSSW experiments on Intel Atom - event processing stage}
     \label{fig:aalto_atom_events}
 \end{figure}
 
 \begin{figure}[h]
   \centering
     \includegraphics[width=100mm]{"img/aalto/aalto_armEvents"}
-    \caption{CMSSW experiments on ARM\_viridis - event processing stage}
+    \caption{CMSSW experiments on ARM Viridis - event processing stage}
     \label{fig:aalto_arm_events}
 \end{figure}
 
 \subsubsection*{Relative importance of the stages}
 The most important stage when studying the energy efficiency of
-workload with the CMSSW is the last stage. There are three main reasons for that: Firstly, the CMSSW configuration at CERN has caches that speed up considerably the second stage [refs], thus reducing the energy consumed in the connection stage.
+workload with the CMSSW is the last stage. There are three main reasons for that: Firstly, the CMSSW configuration at CERN has caches that speed up considerably the second stage, thus reducing the energy consumed in the connection stage.
 Secondly, the first and second stages are not CPU intensive.
-Lastly, the processing stage is the only one that the energy consumption is directly proportional o the amount of events. Therefore, given any large amount of
+Lastly, the processing stage is the only one that the energy consumption is dependent on the amount of events. Therefore, given any large amount of
 data to be processed, the last stage will consume so much more energy than the former stages that the first two stages will become irrelevant in terms of overall energy consumption. Therefore, we focus our energy consumption analysis on the event processing stage only. The event processing stage alone is represented by the figures ~\ref{fig:aalto_quad_events}, ~\ref{fig:aalto_atom_events} and ~\ref{fig:aalto_arm_events}
 
 
@@ -123,7 +119,7 @@ In terms of energy consumed by the CPU, we do not find any outstanding differenc
 When comparing the time taken by the different architectures to process the same
 task (Figure ~\ref{fig:aalto_time}), the pattern is evident. 
 Regardless the number of processes, the 
-Intel\_quad architecture is faster than Intel\_atom and ARM\_viridis and ARM\_viridis is faster than Intel\_atom.
+Intel Quad architecture is faster than Intel Atom. In addition, ARM Viridis is faster than Intel Atom.
 This fact is due to the architectures characteristics and its specifications, most notably the CPU clock speed.\\
 
 %time comparison
@@ -139,7 +135,7 @@ This fact is due to the architectures characteristics and its specifications, mo
 Given the metrics used in this study (see Metrics section in the Experiments chapter), it is clear that  
 systems are  proportionally energy efficient with its ratio performance per 
 watts. Therefore, by analyzing the Figure~\ref{fig:aalto_all_results}, it is evident that given the architectures and its configurations, ARM architecture outperforms in terms of energy efficiency its concurrence in all considered 
-scenarios. In addition, we conclude that between Intel architectures, Intel\_atom is more energy efficient than the Intel\_quad. 
+scenarios. In addition, we conclude that between Intel architectures, Intel Atom is more energy efficient than the Intel Quad. 
 
 %final results
 \begin{figure}[h]
@@ -152,8 +148,7 @@ scenarios. In addition, we conclude that between Intel architectures, Intel\_ato
 %% tools and techniques
 \subsubsection*{Measuring tools: external monitoring}
 For this set of experiments, the external samples were acquired and recorded 
-manually. This factor had a visible impact on the resolution of the measurements. Clearly,
-the all the plot show spikes and rough transitions between samples. Moreover, the error
+manually. This factor had a visible impact on the resolution of the measurements. It is clear that the plots show spikes and rough transitions between samples. Moreover, the error
 tends to increase proportional to the human interaction with the experiment. 
 Therefore, we conclude that it is more effective to use digital and automated ways to sample and
 log the data acquired during the measurements.
@@ -168,64 +163,56 @@ can be important to support and explain expected - and unexpected - behaviors.
   
 
 \section{Second Set of Experiments}
-\subsubsection*{Energy efficiency comparison between Intel\_xeon and ARM\_odroid}
+\subsubsection*{Energy efficiency comparison between Intel Xeon and ARM Odroid}
 
 %ParFullCMS
 \begin{figure}[h]
   \centering
     \includegraphics[width=150mm]{"img/acat/results1"}
-    \caption{Multithreaded ParFullCMS comparison between Intel\_xeon and ARM\_odroid}
+    \caption{Multithreaded ParFullCMS comparison between Intel Xeon and ARM Odroid}
     \label{fig:parfull_results}
 \end{figure}
 
-In the Figure~\ref{fig:parfull_results}, we can see the energy efficiency comparison of Intel\_xeon and ARM\_odroid. The righmost plot represents the internal energy measurements, whereas the leftmost plot represents the external energy measurements. As in other energy efficiency comparisons in this study, we used the metrics \textit{nr\_of\_events/s/W} to represent the energy performance of the measured systems. 
+In the Figure~\ref{fig:parfull_results}, we can see the energy efficiency comparison of Intel Xeon and ARM Odroid. The righmost plot represents the internal energy measurements, whereas the leftmost plot represents the external energy measurements. As in other energy efficiency comparisons in this study, we used the metrics \textit{nr\_of\_events/s/W} to represent the energy performance of the measured systems. 
 
 
 \begin{figure}[h]
   \centering
     \includegraphics[width=100mm]{"img/aalto/parfull_results_aalto"}
-    \caption{Multithreaded ParFullCMS comparison between Intel\_xeon, ARM\_viridis and ARM\_odroid}
+    \caption{Multithreaded ParFullCMS comparison between Intel Xeon, ARM Viridis and ARM Odroid}
     \label{fig:parfull_results_aalto}
 \end{figure}
 
-The main conclusion from ~\ref{fig:parfull_results} is that ARM\_odroid outperforms Intel\_xeon in both internal energy efficiency and external energy efficiency.
+The main conclusion from ~\ref{fig:parfull_results} is that ARM Odroid outperforms Intel Xeon in both internal energy efficiency and external energy efficiency.
 
 \subsubsection*{Energy performance and over-committed CPUs}
 
-It is noticeable that ARM\_odroid has a significant energy performance decline when its cores are over-committed. It is also interesting to see that the energy performance decline in the ARM\_odroid is relatively larger on the internal energy measurements. One of the reasons we found in our raw results to explain this phenomenon is the large increase of time taken to process the events when the cores are over-committed. Thus, even if the cores are consuming the same Watts per second during the event processing stage, the energy efficiency will decrease with the time taken to process the events.  
+It is noticeable that ARM Odroid has a significant energy performance decline when its cores are over-committed. It is also interesting to see that the energy performance decline in the ARM Odroid is relatively larger on the internal energy measurements. One of the reasons we found in our raw results to explain this phenomenon is the large increase of time taken to process the events when the cores are over-committed. Thus, even if the cores are consuming the same power during the event processing stage, the energy efficiency will decrease with the time taken to process the events.  
 
-On the other hand, the energy performance of Intel\_xeon does not seem to be significantly affected when over-committed. This phenomenon is explain by the fact that Intel\_xeon took roughly the same time to process the events when using one core per event and half a core per event.
+On the other hand, the energy performance of Intel Xeon does not seem to be significantly affected when over-committed. This can be explained by the fact that Intel Xeon took roughly the same time to process the events when using one core per event and half a core per event.
 
-We believe that the different results between ARM\_odroid and Intel\_xeon discussed below are due to the fact that ARM\_odroid is a development board and it does not implement sophisticated techniques such as Hyper Threading Technology (HTT) by Intel \cite{HTT}. According to Intel, HTT delivers two processing threads per physical core, which allows highly threaded applications to be processed faster. It is expected that if the ratio of  \textit{nr\_of\_threads/core} would be larger than 2, energy efficiency of Intel\_xeon would start to decline.  
+We believe that the different results between ARM Odroid and Intel Xeon discussed below are due to the fact that ARM Odroid is a development board and it does not implement sophisticated techniques such as Hyper Threading Technology (HTT) by Intel \cite{HTT}. According to Intel, HTT delivers two processing threads per physical core, which allows highly threaded applications to be processed faster. It is expected that if the ratio of  \textit{nr\_of\_threads/core} would be larger than 2, energy efficiency of Intel Xeon would start to decline.  
 
-We believe that if we would over-commit Intel\_xeon with more than 4 threads per core, the time to process the workload would increase, which would be followed by a degradation of energy performance.
+We believe that if we would over-commit Intel Xeon with more than 4 threads per core, the time to process the workload would increase, which would be followed by a degradation of energy performance.
 
 \subsubsection*{Measurement tools and techniques}
 
-The internal measurement tools used in ARM\_odroid and Intel\_xeon provide a fine grained resolution to the core level. The TI INA231 and RAPL chips can isolate the pp0, which consists of ALU, FPU, L1 cache and L2 cache when performing energy measurements. 
+The internal measurement tools used in ARM Odroid and Intel Xeon provide a fine grained resolution to the core level. The TI INA231 and RAPL chips can isolate the pp0, which consists of ALU, FPU, L1 cache and L2 cache when performing energy measurements. 
 
-On the other hand, as stated in \cite{IPMI_resolution}, the lower resolution that IPMI tools offers for internal measurements include energy consumed by the 0P9V, 1P8V, VDD and Vcore rails, which includes the system on the chip, DRAM, Temperature Sensors, and ComboPHY Clock. The components that are measured by the IPMI tools at each energy sample are shown in the Figure \ref{fig:power_node_ipmitool}.
+On the other hand, as stated in \cite{IPMI_resolution}, the lower resolution that IPMI tools offers for internal measurements include energy consumed by the 0P9V, 1P8V, VDD and Vcore rails, which includes the system on the chip, DRAM, Temperature Sensors, and ComboPHY Clock.
 
-As a result of this measurement discrepancy, ~\ref{fig:parfull_results_aalto} shows that ARM\_viridis performs worse than any other machine. We believe that this result can be misleading, due to the fact that the tools used to measure the energy consumed by each of the setups measure different components in the CPU. We believe that if components measured in the ARM\_viridis would be same as the components measured on the ARM\_odroid and Intel\_xeon measurements, we would obtain a different result. Namely that ARM\_viridis would, at least, perform better that Intel\_xeon from an energy consumption perspective. Given the actual setup, we can not scientifically directly compare the results.
-
-\begin{figure}[h!]
-  \centering
-    \includegraphics[width=150mm]{"img/aalto/power_node_ipmitool"}
-    \label{fig:power_node_ipmitool}
-    \caption{Representation of the Power Node measured by IPMI tools [make one myselfd and change!]}
-\end{figure}
-
+As a result of this measurement discrepancy, ~\ref{fig:parfull_results_aalto} shows that ARM Viridis performs worse than any other machine. We believe that this result can be misleading, due to the fact that the tools used to measure the energy consumed by each of the setups measure different components in the CPU. We believe that if components measured in the ARM Viridis would be same as the components measured on the ARM Odroid and Intel Xeon measurements, we would obtain a different result. Namely that ARM Viridis would, at least, perform better that Intel Xeon from an energy consumption perspective. Given the actual setup, we can not scientifically directly compare the results.
 
 \subsection*{Comparison between First set of experiments and Second set of experiments}
 
-When we compare the main results of the 1SE (Figure ~\ref{fig:parfull_results_aalto}) and 2SE (Figure ~\ref{fig:parfull_results}) we may be inclined to conclude that the setups in the 2SE presented an overall more efficiency than the setups the 1SE. Again, the used measurement tools play an important role and should not be disregarded when analyzing the results. 
-In the 1SE, we only performed external measurements. Thus, we discard the possibility to compare the 1SE results with the results of the internal measurements of the 2SE. 
-As for the external measurements performed in both set of experiments, the tools for measuring the energy consumption of both experiments have distinct resolution and grain. In the 1SE, we used the clamp meter for measurements in all setups. As for the 2SE, we used embedded and computer-assisted tools to perform the external measurements. This discrepancy of tools, its resolutions and errors, make it difficult to compare the results of the 1SE and 2SE.
+When we compare the main results of the first set of experiments (Figure ~\ref{fig:parfull_results_aalto}) and second set of experiments (Figure ~\ref{fig:parfull_results}) we may be inclined to conclude that the setups in the second set of experiments presented an overall more efficiency than the setups the first set of experiments. Again, the used measurement tools play an important role and should not be disregarded when analyzing the results. 
+In the first set of experiments, we only performed external measurements. Thus, we discard the possibility to compare the first set of experiments results with the results of the internal measurements of the second set of experiments. 
+As for the external measurements performed in both set of experiments, the tools for measuring the energy consumption of both experiments have distinct resolution and grain. In the first set of experiments, we used the clamp meter for measurements in all setups. As for the second set of experiments, we used embedded and computer-assisted tools to perform the external measurements. This discrepancy of tools, its resolutions and errors, make it difficult to compare the results of the first set of experiments and second set of experiments.
 
 However, we can conclude that ARM architecture outperforms the Intel architectures in each and every experiment, regardless the measurement tools and methodologies used.
 
 \section{Conclusions}
-The main conclusion of our experiments is that given the setups used in our study, the ARM chip-set Intel in terms of energy efficiency in every experiment.
+The main conclusion of our experiments is that given the setups used in our study, the ARM chip-sets outperform Intel in terms of power efficiency in every experiment.
 
 We learned that the gen-sim mode of CMSSW has different stages and the most relevant from an energy consumption point of view is the latest one, when the events are processed.
 

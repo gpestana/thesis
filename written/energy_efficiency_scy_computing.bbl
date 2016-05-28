@@ -1,0 +1,389 @@
+\begin{thebibliography}{10}
+
+\bibitem{biglittle}
+Arm big.little technology.
+\newblock
+  \url{http://www.arm.com/products/processors/technologies/biglittleprocessing.php}.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{CORTEXA9}
+Arm cortex a9 website.
+\newblock \url{http://www.arm.com/cortex-a9.php}.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{ARM}
+Arm holding website.
+\newblock \url{http://www.arm.com/}.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{ARMv8}
+Armv8 official website.
+\newblock \url{http://www.arm.com/products/processors/armv8-architecture.php }.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{INTEL_DOMINANCE}
+Can amd, arm, or ibm dent intel's server dominance?
+\newblock
+  \url{http://uk.pcmag.com/opinion/32218/can-amd-arm-or-ibm-dent-intels-server-dominance}.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{CERN}
+Cern website.
+\newblock \url{http://home.web.cern.ch/about}.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{CMSSW_WORKBOOK}
+{\em CMSSW Framework Workbook}.
+\newblock
+  https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookCMSSWFramework.
+
+\bibitem{viridis_specs}
+Cortexa9 specs.
+\newblock \url{http://www.arm.com/products/processors/cortex-a/cortex-a9.php}.
+\newblock Accessed: 2015-10-27.
+
+\bibitem{HTT}
+Hyper threading technology.
+\newblock
+  \url{http://www.intel.com/content/www/us/en/architecture-and-technology/hyper-threading/hyper-threading-technology.html
+  }.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{IPMI_resolution}
+Hyper threading technology.
+\newblock
+  \url{http://wiki.bostonlabs.co.uk/w/index.php?title=Calxeda:Get_node_power_using_ipmitool}.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{INTELMAN}
+{\em Intel 64 and IA-32 Software Developer Manuals - Volume 3}.
+\newblock www.intel.com/content/www/us/en/processors/
+  architectures-software-developer-manuals.html.
+
+\bibitem{atom_specs}
+Intel atom processor d525 specs.
+\newblock
+  \url{http://ark.intel.com/products/49490/Intel-Atom-processor-D525-1M-Cache-1}.
+\newblock Accessed: 2015-10-27.
+
+\bibitem{atom_page}
+Intel atom processor presentation page.
+\newblock
+  \url{http://www.intel.com/content/www/us/en/processors/atom/atom-processor.html}.
+\newblock Accessed: 2015-10-27.
+
+\bibitem{quad_specs}
+Intel core2 quad processor q9400 specs.
+\newblock
+  \url{http://ark.intel.com/products/35365/Intel-Core2-Quad-Processor-Q9400-6M-Cache-2}.
+\newblock Accessed: 2015-10-27.
+
+\bibitem{xeon_intro}
+Intel xeon processor.
+\newblock
+  \url{http://www.intel.com/content/www/us/en/processors/xeon/xeon-processor-e7-family.html}.
+\newblock Accessed: 2015-10-27.
+
+\bibitem{xeon_specs}
+Intel xeon processor e5-2650.
+\newblock
+  \url{http://ark.intel.com/products/64590/Intel-Xeon-Processor-E5-2650-20M-Cache-2_00-GHz-8_00-GTs-Intel-QPI}.
+\newblock Accessed: 2015-10-27.
+
+\bibitem{IPMI}
+Ipmi tools.
+\newblock
+  \url{http://www.boston.co.uk/technical/2012/03/supermicro-ipmi-what-can-it-do-for-you.aspx}.
+\newblock Accessed: 2015-10-27.
+
+\bibitem{LHC}
+Lhc website.
+\newblock \url{http://home.cern/topics/large-hadron-collider}.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{odroid_specs}
+Odroid-xu3 specs.
+\newblock
+  \url{http://www.hardkernel.com/main/products/prdt_info.php?g_code=G140448267127&tab_idx=1}.
+\newblock Accessed: 2015-10-27.
+
+\bibitem{ODROID_XU3}
+Odroid xu3 website.
+\newblock
+  \url{http://www.hardkernel.com/main/products/prdt_info.php?g_code=G140448267127}.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{STACKOVERFLOW}
+Stack overflow.
+\newblock \url{http://stackoverflow.com/}.
+\newblock Accessed: 2014-10-27.
+
+\bibitem{TIINA231}
+{Texas Instruments (TI) INA 231}.
+\newblock \url{http://www.ti.com/product/ina231}.
+\newblock Last time accessed: 17-09-2014.
+
+\bibitem{VIRIDIS}
+Viridis boston website.
+\newblock
+  \url{http://www.boston.co.uk/solutions/viridis/introducing-the-viridis-2.aspx}.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{WLCG}
+Wlcg website.
+\newblock \url{http://wlcg.web.cern.ch/}.
+\newblock Accessed: 2015-2-27.
+
+\bibitem{INTEL_WP}
+Reducing data center energy consumption.
+
+\bibitem{HIGGS1}
+{\sc Aad, G., et~al.}
+\newblock {Observation of a new particle in the search for the Standard Model
+  Higgs boson with the ATLAS detector at the LHC}.
+\newblock {\em Phys.Lett. B716\/} (2012), 1--29.
+
+\bibitem{ACAT14ARMDAVID}
+{\sc Abdurachmanov, D., Bockelman, B., Elmer, P., Eulisse, G., Knight, R., and
+  Muzaffar, S.}
+\newblock Heterogeneous high throughput scientific computing with {APM} x-gene
+  and intel xeon phi.
+\newblock {\em CoRR abs/1410.3441\/} (2014).
+
+\bibitem{POWER_AWAR_CERN}
+{\sc Abdurachmanov, D., Elmer, P., Eulisse, G., Grosso, P., Hillegas, C.,
+  Holzman, B., Klous, S., Knight, R., and Muzaffar, S.}
+\newblock {Power-aware Applications for Scientific Cluster and Distributed}.
+\newblock {\em PoS ISGC2014\/} (2014), 018.
+
+\bibitem{FUTURE_CERN}
+{\sc Abdurachmanov, D., Elmer, P., Eulisse, G., and Knight, R.}
+\newblock Future computing platforms for science in a power constrained era.
+\newblock {\em CoRR abs/1510.03676\/} (2015).
+
+\bibitem{ACAT}
+{\sc Abdurachmanov, D., Elmer, P., Eulisse, G., Knight, R., Niemi, T.,
+  Nurminen, J.~K., Nyback, F., Pestana, G., Ou, Z., and Khan, K.~N.}
+\newblock Techniques and tools for measuring energy efficiency of scientific
+  software applications.
+\newblock {\em CoRR abs/1410.3440\/} (2014).
+
+\bibitem{ACAT13ARM}
+{\sc Abdurachmanov, D., Elmer, P., Eulisse, G., and Muzaffar, S.}
+\newblock {Initial explorations of ARM processors for scientific computing}.
+\newblock {\em J. Phys. Conf. Ser. 523\/} (2014), 012009.
+
+\bibitem{EXPLORATIONS_CERN}
+{\sc Abdurachmanov, D., et~al.}
+\newblock {Explorations of the viability of ARM and Xeon Phi for physics
+  processing}.
+\newblock {\em J. Phys. Conf. Ser. 513\/} (2014), 052008.
+
+\bibitem{CISC_RISC_2}
+{\sc Blem, E., Menon, J., and Sankaralingam, K.}
+\newblock Power struggles: Revisiting the risc vs. cisc debate on contemporary
+  arm and x86 architectures.
+\newblock In {\em High Performance Computer Architecture (HPCA2013), 2013 IEEE
+  19th International Symposium on\/} (Feb 2013), pp.~1--12.
+
+\bibitem{MIGRATION_CLOUD}
+{\sc Buchbinder, N., Jain, N., and Menache, I.}
+\newblock Online job-migration for reducing the electricity bill in the cloud.
+\newblock In {\em NETWORKING 2011}. Springer Berlin Heidelberg, 2011,
+  pp.~172--185.
+
+\bibitem{CYCLE_ENERGY}
+{\sc Chang, N., Kim, K., and Lee, H.~G.}
+\newblock Cycle-accurate energy measurement and characterization with a case
+  study of the arm7tdmi [microprocessors].
+\newblock {\em Very Large Scale Integration (VLSI) Systems, IEEE Transactions
+  on 10}, 2 (April 2002), 146--154.
+
+\bibitem{HIGGS2}
+{\sc Chatrchyan, S., et~al.}
+\newblock Observation of a new boson at a mass of 125 gev with the \{CMS\}
+  experiment at the \{LHC\}.
+\newblock {\em Physics Letters B 716}, 1 (2012), 30 -- 61.
+
+\bibitem{MODEL2}
+{\sc Dayarathna, M., Wen, Y., and Fan, R.}
+\newblock Data center energy consumption modeling : A survey.
+\newblock {\em Communications Surveys Tutorials, IEEE PP}, 99 (2015), 1--1.
+
+\bibitem{CMS}
+{\sc Drouhin, F., Gross, L., Vintache, D., Marchioro, A., Paillard, C.,
+  Ljuslin, C., Mirabito, L., and Verdini, P.}
+\newblock The cern cms tracker control system.
+\newblock In {\em Nuclear Science Symposium Conference Record, 2004 IEEE\/}
+  (Oct 2004), vol.~2, pp.~1196--1200 Vol. 2.
+
+\bibitem{GEANT4}
+{\sc et~al, S.~A.}
+\newblock Geant4 a simulation toolkit.
+\newblock In {\em Nuclear Instruments and Methods in Physics Research Section
+  A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+  pp.~250--303.
+
+\bibitem{ENERGY_ALGORITHMS}
+{\sc Gorlatova, M., Wallwater, A., and Zussman, G.}
+\newblock Networking low-power energy harvesting devices: Measurements and
+  algorithms.
+\newblock {\em Mobile Computing, IEEE Transactions on 12}, 9 (Sept 2013),
+  1853--1865.
+
+\bibitem{WIRELESS_ENERGY}
+{\sc Hergenroder, A., and Furthmuller, J.}
+\newblock On energy measurement methods in wireless networks.
+\newblock In {\em Communications (ICC), 2012 IEEE International Conference
+  on\/} (June 2012), pp.~6268--6272.
+
+\bibitem{CR_TALE}
+{\sc Isen, C., John, L., and John, E.}
+\newblock A tale of two processors: Revisiting the risc-cisc debate.
+\newblock In {\em In 2009 SPEC Benchmark Workshop}.
+
+\bibitem{IGPROF}
+{\sc Khan, K., Nyback, F., Ou, Z., Nurminen, J., Niemi, T., Eulisse, G., Elmer,
+  P., and Abdurachmanov, D.}
+\newblock Energy profiling using igprof.
+\newblock In {\em Cluster, Cloud and Grid Computing (CCGrid), 2015 15th
+  IEEE/ACM International Symposium on\/} (May 2015), pp.~1115--1118.
+
+\bibitem{GPU}
+{\sc Kim, S., Kim, H.-E., Kim, H., and Lee, J.-A.}
+\newblock Computing energy-efficiency in the mobile gpu.
+\newblock In {\em SoC Design Conference (ISOCC), 2013 International\/} (Nov
+  2013), pp.~219--221.
+
+\bibitem{GREENING}
+{\sc Liu, Z., Lin, M., Wierman, A., Low, S.~H., and Andrew, L.~L.}
+\newblock Greening geographical load balancing.
+\newblock In {\em Proceedings of the ACM SIGMETRICS Joint International
+  Conference on Measurement and Modeling of Computer Systems\/} (New York, NY,
+  USA, 2011), SIGMETRICS '11, ACM, pp.~233--244.
+
+\bibitem{RISC_PERF}
+{\sc Lozano, H., and Ito, M.}
+\newblock A reduced complexity instruction set architecture for low cost
+  embedded processors.
+\newblock In {\em High Performance Computing Simulation (HPCS), 2015
+  International Conference on\/} (July 2015), pp.~400--407.
+
+\bibitem{GREENGPU}
+{\sc Ma, K., Li, X., Chen, W., Zhang, C., and Wang, X.}
+\newblock Greengpu: A holistic approach to energy efficiency in gpu-cpu
+  heterogeneous architectures.
+\newblock In {\em Parallel Processing (ICPP), 2012 41st International
+  Conference on\/} (Sept 2012), pp.~48--57.
+
+\bibitem{SCHED_HETEROGE}
+{\sc Mei, J., and Li, K.}
+\newblock Energy-aware scheduling algorithm with duplication on heterogeneous
+  computing systems.
+\newblock In {\em Proceedings of the 2012 ACM/IEEE 13th International
+  Conference on Grid Computing\/} (Washington, DC, USA, 2012), GRID '12, IEEE
+  Computer Society, pp.~122--129.
+
+\bibitem{AALTO_ARM}
+{\sc Ou, Z., Pang, B., Deng, Y., Nurminen, J., Yla-Jaaski, A., and Hui, P.}
+\newblock Energy- and cost-efficiency analysis of arm-based clusters.
+\newblock In {\em Cluster, Cloud and Grid Computing (CCGrid), 2012 12th
+  IEEE/ACM International Symposium on\/} (May 2012), pp.~115--123.
+
+\bibitem{CISC_RISC}
+{\sc Ou, Z., Pang, B., Deng, Y., Nurminen, J., Ylaa-Jaaski, A., and Hui, P.}
+\newblock Energy- and cost-efficiency analysis of arm-based clusters.
+\newblock In {\em Cluster, Cloud and Grid Computing (CCGrid), 2012 12th
+  IEEE/ACM International Symposium on\/} (May 2012), pp.~115--123.
+
+\bibitem{EVAL_ARM}
+{\sc Padoin, E., de~Oliveira, D., Velho, P., and Navaux, P.}
+\newblock Evaluating performance and energy on arm-based clusters for high
+  performance computing.
+\newblock In {\em Parallel Processing Workshops (ICPPW), 2012 41st
+  International Conference on\/} (Sept 2012), pp.~165--172.
+
+\bibitem{RISC_CASE}
+{\sc Patterson, D.~A., and Ditzel, D.~R.}
+\newblock The case for the reduced instruction set computer.
+\newblock {\em SIGARCH Comput. Archit. News 8}, 6 (Oct. 1980), 25--33.
+
+\bibitem{QUESTIONS_ENERGY}
+{\sc Pinto, G., Castor, F., and Liu, Y.~D.}
+\newblock Mining questions about software energy consumption.
+\newblock In {\em Proceedings of the 11th Working Conference on Mining Software
+  Repositories\/} (New York, NY, USA, 2014), MSR 2014, ACM, pp.~22--31.
+
+\bibitem{CUTTING_BILL}
+{\sc Qureshi, A., Weber, R., Balakrishnan, H., Guttag, J., and Maggs, B.}
+\newblock Cutting the electric bill for internet-scale systems.
+\newblock {\em ACM SIGCOMM Computer Communication Review 39}, 4 (2009),
+  123--134.
+
+\bibitem{MINIMIZING_DIST}
+{\sc Rao, L., Liu, X., Xie, L., and Liu, W.}
+\newblock Minimizing electricity cost: optimization of distributed internet
+  data centers in a multi-electricity-market environment.
+\newblock In {\em INFOCOM, 2010 Proceedings IEEE\/} (2010), IEEE, pp.~1--9.
+
+\bibitem{EFF_JOB_SCHEDULING}
+{\sc Ren, S., He, Y., and Xu, F.}
+\newblock Provably-efficient job scheduling for energy and fairness in
+  geographically distributed data centers.
+\newblock In {\em Distributed Computing Systems (ICDCS), 2012 IEEE 32nd
+  International Conference on\/} (2012), IEEE, pp.~22--31.
+
+\bibitem{ENERGY_DILEMMA}
+{\sc Sharifi, L., Rameshan, N., Freitag, F., and Veiga, L.}
+\newblock Energy efficiency dilemma: P2p-cloud vs. datacenter.
+\newblock In {\em Cloud Computing Technology and Science (CloudCom), 2014 IEEE
+  6th International Conference on\/} (Dec 2014), pp.~611--619.
+
+\bibitem{RAPL1}
+{\sc Subramaniam, B., and chun Feng, W.}
+\newblock Towards energy-proportional computing for enterprise-class server
+  workloads.
+\newblock {\em CPE '13 Proceedings of the 4th ACM/SPEC International Conference
+  on Performance Engineering\/} (2012).
+
+\bibitem{ATLAS}
+{\sc ten Kate, H.}
+\newblock Superconducting magnet system for the atlas detector at cern.
+\newblock {\em Applied Superconductivity, IEEE Transactions on 9}, 2 (June
+  1999), 841--846.
+
+\bibitem{TASK_SCHED}
+{\sc Wang, Y., Li, K., Chen, H., He, L., and Li, K.}
+\newblock Energy-aware data allocation and task scheduling on heterogeneous
+  multiprocessor systems with time constraints.
+\newblock {\em Emerging Topics in Computing, IEEE Transactions on 2}, 2 (June
+  2014), 134--148.
+
+\bibitem{SCICOMPUTING_REQS}
+{\sc Yang, C.-L., Hwang, B.-N., and Yuan, B.}
+\newblock Key consideration factors of adopting cloud computing for science.
+\newblock In {\em Cloud Computing Technology and Science (CloudCom), 2012 IEEE
+  4th International Conference on\/} (Dec 2012), pp.~597--600.
+
+\bibitem{DYN_PRICING_HPC}
+{\sc Yang, X., Zhou, Z., Wallace, S., Lan, Z., Tang, W., Coghlan, S., and
+  Papka, M.}
+\newblock Integrating dynamic pricing of electricity into energy aware
+  scheduling for hpc systems.
+\newblock In {\em High Performance Computing, Networking, Storage and Analysis
+  (SC), 2013 International Conference for\/} (Nov 2013), pp.~1--11.
+
+\bibitem{EXE_METHOD}
+{\sc Zeng, G., Yu, L., and Ding, C.}
+\newblock An executing method for time and energy optimization in heterogeneous
+  computing.
+\newblock In {\em Green Computing and Communications (GreenCom), 2011 IEEE/ACM
+  International Conference on\/} (Aug 2011), pp.~69--74.
+
+\bibitem{MODEL1}
+{\sc Zhu, J., Qiao, C., and Wang, X.}
+\newblock On accurate energy consumption models for wireless ad hoc networks.
+\newblock {\em Wireless Communications, IEEE Transactions on 5}, 11 (November
+  2006), 3077--3086.
+
+\end{thebibliography}
