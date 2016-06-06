@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.16)  28 MAY 2016 16:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.16)  6 JUN 2016 21:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1283,12 +1283,12 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 115--116
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[58] <"img/prices_final_table".png, id=779, 1128.215pt x 657.45625pt>
+[58] <"img/prices_final_table".png, id=779, 932.48375pt x 444.66125pt>
 File: "img/prices_final_table".png Graphic file (type png)
 
 <use "img/prices_final_table".png>
 Package pdftex.def Info: "img/prices_final_table".png used on input line 131.
-(pdftex.def)             Requested size: 426.79134pt x 248.71239pt.
+(pdftex.def)             Requested size: 426.79134pt x 203.51534pt.
 
 Overfull \hbox (36.79134pt too wide) in paragraph at lines 131--132
  [][] 
@@ -1350,7 +1350,7 @@ public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015basic/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015basic/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on energy_efficiency_scy_computing.pdf (72 pages, 1855856 bytes)
+Output written on energy_efficiency_scy_computing.pdf (72 pages, 1902072 bytes)
 .
 PDF statistics:
  974 PDF objects out of 1000 (max. 8388607)
