@@ -180,7 +180,7 @@ Below, we outline the most important specifications of the hardware setups we us
   \item[] \textbf{Memory  (MemTotal)}:        3925084  kB (4GB)
 \end{itemize}
 
-For more detailed specs refer to \cite{atom_specs}
+For more detailed specs refer to the official Atom specs \cite{atom_specs}.
 
 \vspace{10mm}
 \textbf{Intel Quad}
@@ -191,7 +191,7 @@ For more detailed specs refer to \cite{atom_specs}
   \item[] \textbf{Memory  (MemTotal)}:        7928892 kB (8GB)
 \end{itemize}
 
-For more detailed specs refer to \cite{quad_specs}
+For more detailed specs refer to the official Intel Quad specs \cite{quad_specs}.
 
 \vspace{10mm}
 \textbf{ARM Viridis}
@@ -202,7 +202,7 @@ For more detailed specs refer to \cite{quad_specs}
   \item[] \textbf{Memory  (MemTotal)}:        4137780 kB (4GB) 
 \end{itemize}
 
-For more detailed specs refer to \cite{viridis_specs}
+For more detailed specs refer to the official ARM Viridis specs \cite{viridis_specs}.
 
 
 \subsubsection*{Software and workload}
@@ -210,13 +210,13 @@ We used the CMSSW framework in the generation-simulation mode (GEN\-SIM). The wo
 At the time of the experiments, the CMSSW port for ARM had limitations on the multi-threading support. We wanted to study the energy consumption of each hardware setup given different core load. Thus, we spin up different processes instead of threads. The core-load levels used were 1/4, 1/2, 1 and 2 processes per number of physical cores. 
 
 \subsubsection*{Metrics}
-The energy efficiency metric used in this study is the ratio of performance per power consumed (in Watts). Performance consist on the average of events computed per second. Considering this metrics for comparing energy consumption, we consider a system to be as energy efficient as higher the ratio \textit{nr\_of\_events/s/W} is.
+The energy efficiency metric used in this study is the ratio of performance per power consumed (in watts). Performance consist on the average of events computed per second. Considering this metrics for comparing energy consumption, we consider a system to be as energy efficient as higher the ratio \textit{nr\_of\_events/s/W} is.
 
 Given the hardware disparities of the setups we had in place to run our experiments, we used the performance (average events computed per second) as a way to uniform the results.
 
 \subsubsection*{Tools for measuring energy consumption}
 For this set of experiments, we performed physical measurements using an external clamp meter. The clamp was a Mini AC/DC Clamp meter
-Mastech MS2102 AC/DC (see Figure \ref{fig:clamp}). The clamp meter supports a maximum of 200A current, which was enough for our experiments. In addition, it presents an accuracy of +-2.5\%. For more specifications about the clamp used, refer to [REF].
+Mastech MS2102 AC/DC (see Figure \ref{fig:clamp}). The clamp meter supports a maximum of 200A current, which was enough for our experiments. In addition, it presents an accuracy of +-2.5\%.
 
 \begin{figure}[]
   \centering
@@ -261,7 +261,7 @@ Below, we outline the most important aspects of the hardware setups we used for 
   \item[] \textbf{Memory  (MemTotal)}:        4137780 kB (4GB) 
 \end{itemize}
 
-For more detailed specs refer to \cite{viridis_specs}
+For more detailed specs refer to the official ARM Viridis specs \cite{viridis_specs}.
 
 
 \vspace{10mm}
@@ -273,7 +273,7 @@ For more detailed specs refer to \cite{viridis_specs}
   \item[] \textbf{Memory}:        2GB
 \end{itemize}
 
-For more detailed specs refer to \cite{odroid_specs}
+For more detailed specs refer to the official ARM Odroid specs \cite{odroid_specs}.
 
 
 \vspace{10mm}
@@ -285,7 +285,7 @@ For more detailed specs refer to \cite{odroid_specs}
   \item[] \textbf{Memory}:        252GB
 \end{itemize}
 
-For more detailed specs refer to \cite{xeon_specs}
+For more detailed specs refer to the official Intel Xeon specs \cite{xeon_specs}.
 
 
 \subsubsection*{Software and workload}
